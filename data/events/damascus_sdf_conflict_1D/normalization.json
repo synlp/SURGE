@@ -1,0 +1,21 @@
+{
+  "event": "damascus_sdf_conflict",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 19.112903225806452,
+      "std": 54.277989609853904,
+      "n_train": 62
+    },
+    "sentiment_polarity": {
+      "mean": -0.24760165986928617,
+      "std": 0.39760085076852447,
+      "n_train": 62
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "event": "synthetic_tech_keynote",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 213.2222,
+      "std": 115.8013,
+      "n_train": 9
+    },
+    "sentiment_polarity": {
+      "mean": 0.4314,
+      "std": 0.1251,
+      "n_train": 9
+    },
+    "sentiment_category_count": {
+      "positive": {
+        "mean": 127.1111,
+        "std": 74.1147,
+        "n_train": 9
+      },
+      "neutral": {
+        "mean": 42.8889,
+        "std": 23.0094,
+        "n_train": 9
+      },
+      "negative": {
+        "mean": 43.2222,
+        "std": 19.6343,
+        "n_train": 9
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "nba_finals",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 453.66101694915255,
+      "std": 405.5966217238108,
+      "n_train": 177
+    },
+    "sentiment_polarity": {
+      "mean": 0.03217225890552079,
+      "std": 0.18715496427939998,
+      "n_train": 177
+    }
+  }
+}

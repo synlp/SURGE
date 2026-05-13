@@ -1,0 +1,21 @@
+{
+  "event": "change_6_moon_mission",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 2.5625,
+      "std": 2.3443749166888814,
+      "n_train": 32
+    },
+    "sentiment_polarity": {
+      "mean": 0.3880208333333333,
+      "std": 0.5470919708476557,
+      "n_train": 32
+    }
+  }
+}

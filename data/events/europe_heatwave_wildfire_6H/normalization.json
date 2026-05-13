@@ -1,0 +1,21 @@
+{
+  "event": "europe_heatwave_wildfire",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 90.8905109489051,
+      "std": 66.20480045577183,
+      "n_train": 137
+    },
+    "sentiment_polarity": {
+      "mean": -0.31572792510824377,
+      "std": 0.16146195351487005,
+      "n_train": 137
+    }
+  }
+}

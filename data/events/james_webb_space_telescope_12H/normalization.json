@@ -1,0 +1,21 @@
+{
+  "event": "james_webb_space_telescope",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 31.195652173913043,
+      "std": 53.74805135606936,
+      "n_train": 46
+    },
+    "sentiment_polarity": {
+      "mean": 0.4927322433489037,
+      "std": 0.2854109423937658,
+      "n_train": 46
+    }
+  }
+}

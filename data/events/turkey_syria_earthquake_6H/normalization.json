@@ -1,0 +1,21 @@
+{
+  "event": "turkey_syria_earthquake",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 29.78205128205128,
+      "std": 64.56275965487984,
+      "n_train": 156
+    },
+    "sentiment_polarity": {
+      "mean": -0.18942605964421314,
+      "std": 0.3629326603185823,
+      "n_train": 156
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "iran_israel_conflict",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 178.0,
+      "std": 123.5326677442044,
+      "n_train": 25
+    },
+    "sentiment_polarity": {
+      "mean": -0.36159137668138763,
+      "std": 0.13439959147613983,
+      "n_train": 25
+    }
+  }
+}

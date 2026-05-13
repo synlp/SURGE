@@ -1,0 +1,21 @@
+{
+  "event": "kate_middleton_controversy",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 21.085714285714285,
+      "std": 60.887423720723625,
+      "n_train": 70
+    },
+    "sentiment_polarity": {
+      "mean": 0.6321752776709965,
+      "std": 0.5507448765283832,
+      "n_train": 70
+    }
+  }
+}

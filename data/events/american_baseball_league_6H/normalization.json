@@ -1,0 +1,21 @@
+{
+  "event": "american_baseball_league",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 26.166666666666668,
+      "std": 39.99631927509775,
+      "n_train": 60
+    },
+    "sentiment_polarity": {
+      "mean": 0.21815584764277632,
+      "std": 0.30346969845954247,
+      "n_train": 60
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "fifa_club_world_cup_2025",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 24.586046511627906,
+      "std": 48.4441734869638,
+      "n_train": 430
+    },
+    "sentiment_polarity": {
+      "mean": -0.3183456518398781,
+      "std": 0.6368767455129759,
+      "n_train": 430
+    }
+  }
+}

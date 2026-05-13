@@ -1,0 +1,21 @@
+{
+  "event": "beijing_winter_olympics_2022",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 101.73972602739725,
+      "std": 119.29209315933684,
+      "n_train": 146
+    },
+    "sentiment_polarity": {
+      "mean": -0.10702474762256635,
+      "std": 0.3284682454638306,
+      "n_train": 146
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "google_gemini_release",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 8.102564102564102,
+      "std": 36.01365801255271,
+      "n_train": 1014
+    },
+    "sentiment_polarity": {
+      "mean": -0.058238747152566064,
+      "std": 0.7943295169840247,
+      "n_train": 1014
+    }
+  }
+}

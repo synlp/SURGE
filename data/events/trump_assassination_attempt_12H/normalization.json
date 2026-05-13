@@ -1,0 +1,21 @@
+{
+  "event": "trump_assassination_attempt",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 280.8985507246377,
+      "std": 266.7420262137638,
+      "n_train": 69
+    },
+    "sentiment_polarity": {
+      "mean": -0.4365631164585467,
+      "std": 0.12873499163790095,
+      "n_train": 69
+    }
+  }
+}

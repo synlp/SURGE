@@ -1,0 +1,21 @@
+{
+  "event": "sean_diddy_combs_investigation",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 22.65573770491803,
+      "std": 22.607763968798555,
+      "n_train": 122
+    },
+    "sentiment_polarity": {
+      "mean": -0.3558812363348581,
+      "std": 0.2648909998983463,
+      "n_train": 122
+    }
+  }
+}

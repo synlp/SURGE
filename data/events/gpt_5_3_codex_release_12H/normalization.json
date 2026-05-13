@@ -1,0 +1,21 @@
+{
+  "event": "gpt_5_3_codex_release",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 14.241379310344827,
+      "std": 25.951088173867543,
+      "n_train": 58
+    },
+    "sentiment_polarity": {
+      "mean": 0.22897844233116815,
+      "std": 0.3478966458574363,
+      "n_train": 58
+    }
+  }
+}

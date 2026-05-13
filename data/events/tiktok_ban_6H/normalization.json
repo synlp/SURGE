@@ -1,0 +1,21 @@
+{
+  "event": "tiktok_ban",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 22.80952380952381,
+      "std": 45.188092666330384,
+      "n_train": 21
+    },
+    "sentiment_polarity": {
+      "mean": -0.022262996011196294,
+      "std": 0.7879473558278762,
+      "n_train": 21
+    }
+  }
+}

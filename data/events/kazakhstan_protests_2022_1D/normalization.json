@@ -1,0 +1,21 @@
+{
+  "event": "kazakhstan_protests_2022",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 26.857142857142858,
+      "std": 28.897661322881696,
+      "n_train": 21
+    },
+    "sentiment_polarity": {
+      "mean": -0.21620205758025865,
+      "std": 0.298585784153518,
+      "n_train": 21
+    }
+  }
+}

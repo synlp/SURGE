@@ -1,0 +1,21 @@
+{
+  "event": "israel_judicial_reform_protests",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 15.886363636363637,
+      "std": 14.201817919949718,
+      "n_train": 44
+    },
+    "sentiment_polarity": {
+      "mean": -0.44672777790465495,
+      "std": 0.37374126589958995,
+      "n_train": 44
+    }
+  }
+}

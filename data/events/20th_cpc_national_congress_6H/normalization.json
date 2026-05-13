@@ -1,0 +1,21 @@
+{
+  "event": "20th_cpc_national_congress",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 2.375,
+      "std": 2.348536778506992,
+      "n_train": 64
+    },
+    "sentiment_polarity": {
+      "mean": 0.08298611111111111,
+      "std": 0.48015485361399196,
+      "n_train": 64
+    }
+  }
+}

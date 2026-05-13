@@ -1,0 +1,21 @@
+{
+  "event": "fifa_world_cup_2022",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 85.38235294117646,
+      "std": 92.20789002411324,
+      "n_train": 170
+    },
+    "sentiment_polarity": {
+      "mean": -0.0070616426087565095,
+      "std": 0.2444085454797473,
+      "n_train": 170
+    }
+  }
+}

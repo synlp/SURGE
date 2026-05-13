@@ -1,0 +1,21 @@
+{
+  "event": "cannes_film_festival_2024",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 9.76,
+      "std": 23.345286462153343,
+      "n_train": 100
+    },
+    "sentiment_polarity": {
+      "mean": 0.13800849769314072,
+      "std": 0.5814515224901262,
+      "n_train": 100
+    }
+  }
+}

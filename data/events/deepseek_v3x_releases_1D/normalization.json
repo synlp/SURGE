@@ -1,0 +1,21 @@
+{
+  "event": "deepseek_v3x_releases",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 125.33870967741936,
+      "std": 115.03462922492389,
+      "n_train": 62
+    },
+    "sentiment_polarity": {
+      "mean": -0.05471892866063014,
+      "std": 0.1492961536204063,
+      "n_train": 62
+    }
+  }
+}

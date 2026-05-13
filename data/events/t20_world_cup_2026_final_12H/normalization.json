@@ -1,0 +1,21 @@
+{
+  "event": "t20_world_cup_2026_final",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 95.16,
+      "std": 91.97942378597509,
+      "n_train": 25
+    },
+    "sentiment_polarity": {
+      "mean": 0.04696462872599742,
+      "std": 0.3469405531482809,
+      "n_train": 25
+    }
+  }
+}

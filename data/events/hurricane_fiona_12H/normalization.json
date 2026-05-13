@@ -1,0 +1,21 @@
+{
+  "event": "hurricane_fiona",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 188.1875,
+      "std": 126.68031553382711,
+      "n_train": 16
+    },
+    "sentiment_polarity": {
+      "mean": -0.11135484903318477,
+      "std": 0.17821272218239273,
+      "n_train": 16
+    }
+  }
+}

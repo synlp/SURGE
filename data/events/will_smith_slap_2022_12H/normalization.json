@@ -1,0 +1,21 @@
+{
+  "event": "will_smith_slap_2022",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 5.938534278959811,
+      "std": 21.18702053112739,
+      "n_train": 423
+    },
+    "sentiment_polarity": {
+      "mean": -0.6852624167012273,
+      "std": 0.5827925587018017,
+      "n_train": 423
+    }
+  }
+}

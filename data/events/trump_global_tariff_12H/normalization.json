@@ -1,0 +1,21 @@
+{
+  "event": "trump_global_tariff",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 222.359375,
+      "std": 295.9446932698902,
+      "n_train": 64
+    },
+    "sentiment_polarity": {
+      "mean": -0.3633606538483215,
+      "std": 0.21048850267338615,
+      "n_train": 64
+    }
+  }
+}

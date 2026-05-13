@@ -1,0 +1,21 @@
+{
+  "event": "battle_of_bakhmut_2023",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 11.327868852459016,
+      "std": 11.979109290453795,
+      "n_train": 61
+    },
+    "sentiment_polarity": {
+      "mean": 0.07166781233173265,
+      "std": 0.5746003185763013,
+      "n_train": 61
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "kanye_west_controversy",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 55.3,
+      "std": 72.4179042581519,
+      "n_train": 140
+    },
+    "sentiment_polarity": {
+      "mean": -0.4561033823636576,
+      "std": 0.2107827035247524,
+      "n_train": 140
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "paris_olympics_2024",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 292.2741935483871,
+      "std": 377.28085582591746,
+      "n_train": 62
+    },
+    "sentiment_polarity": {
+      "mean": -0.0190238999917872,
+      "std": 0.1688063451262452,
+      "n_train": 62
+    }
+  }
+}

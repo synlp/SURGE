@@ -1,0 +1,21 @@
+{
+  "event": "robotaxi_launch",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 59.44392523364486,
+      "std": 78.88341175439297,
+      "n_train": 428
+    },
+    "sentiment_polarity": {
+      "mean": -0.23489560156719258,
+      "std": 0.2543947154303019,
+      "n_train": 428
+    }
+  }
+}

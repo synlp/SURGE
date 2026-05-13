@@ -1,0 +1,38 @@
+{
+  "event": "synthetic_storm_alert",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 157.0,
+      "std": 37.0,
+      "n_train": 2
+    },
+    "sentiment_polarity": {
+      "mean": -0.4718,
+      "std": 0.0542,
+      "n_train": 2
+    },
+    "sentiment_category_count": {
+      "positive": {
+        "mean": 34.0,
+        "std": 11.0,
+        "n_train": 4
+      },
+      "neutral": {
+        "mean": 31.5,
+        "std": 7.5,
+        "n_train": 4
+      },
+      "negative": {
+        "mean": 91.5,
+        "std": 18.5,
+        "n_train": 4
+      }
+    }
+  }
+}

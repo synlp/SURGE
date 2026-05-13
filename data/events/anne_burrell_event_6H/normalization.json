@@ -1,0 +1,21 @@
+{
+  "event": "anne_burrell_event",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 23.763157894736842,
+      "std": 40.434114186262335,
+      "n_train": 38
+    },
+    "sentiment_polarity": {
+      "mean": -0.2015305709055818,
+      "std": 0.4049388757031084,
+      "n_train": 38
+    }
+  }
+}

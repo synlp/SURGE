@@ -1,0 +1,21 @@
+{
+  "event": "axiom_mission_2023",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 18.783783783783782,
+      "std": 45.960697155072374,
+      "n_train": 37
+    },
+    "sentiment_polarity": {
+      "mean": 0.248594610950195,
+      "std": 0.4374954080921225,
+      "n_train": 37
+    }
+  }
+}

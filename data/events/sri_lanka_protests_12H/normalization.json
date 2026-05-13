@@ -1,0 +1,21 @@
+{
+  "event": "sri_lanka_protests",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 71.0576923076923,
+      "std": 98.72288594879694,
+      "n_train": 52
+    },
+    "sentiment_polarity": {
+      "mean": -0.19958411742597407,
+      "std": 0.2193993186789726,
+      "n_train": 52
+    }
+  }
+}

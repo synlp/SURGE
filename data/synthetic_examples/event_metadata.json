@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "name": "synthetic_tech_keynote",
+      "display_name": "Synthetic Tech Keynote Announcement",
+      "category": "synthetic",
+      "start_time": "2026-03-01T00:00:00",
+      "end_time": "2026-03-15T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "Fully synthetic event for schema demonstration. Do not use for evaluation."
+    },
+    {
+      "name": "synthetic_storm_alert",
+      "display_name": "Synthetic Regional Storm Alert",
+      "category": "synthetic",
+      "start_time": "2026-04-10T00:00:00",
+      "end_time": "2026-04-17T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "Fully synthetic event for schema demonstration. Do not use for evaluation."
+    }
+  ],
+  "note": "These two events are fully synthetic. Their numerical series, text content, and reply edges are all fabricated for the purpose of demonstrating the SURGE schema. They must not be used for any quantitative evaluation."
+}

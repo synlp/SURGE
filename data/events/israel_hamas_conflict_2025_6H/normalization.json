@@ -1,0 +1,21 @@
+{
+  "event": "israel_hamas_conflict_2025",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 372.0062893081761,
+      "std": 347.14023948887615,
+      "n_train": 159
+    },
+    "sentiment_polarity": {
+      "mean": -0.5825227984377775,
+      "std": 0.11193941205644307,
+      "n_train": 159
+    }
+  }
+}

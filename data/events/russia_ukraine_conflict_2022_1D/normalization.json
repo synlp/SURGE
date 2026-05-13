@@ -1,0 +1,21 @@
+{
+  "event": "russia_ukraine_conflict_2022",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 63.28947368421053,
+      "std": 66.24710833599372,
+      "n_train": 38
+    },
+    "sentiment_polarity": {
+      "mean": -0.2120393577839102,
+      "std": 0.2856090228463529,
+      "n_train": 38
+    }
+  }
+}

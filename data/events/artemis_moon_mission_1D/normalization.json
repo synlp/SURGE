@@ -1,0 +1,21 @@
+{
+  "event": "artemis_moon_mission",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 43.86206896551724,
+      "std": 95.90107120250715,
+      "n_train": 29
+    },
+    "sentiment_polarity": {
+      "mean": 0.10408183328464948,
+      "std": 0.15537458982081845,
+      "n_train": 29
+    }
+  }
+}

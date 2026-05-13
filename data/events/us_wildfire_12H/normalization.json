@@ -1,0 +1,21 @@
+{
+  "event": "us_wildfire",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 84.24,
+      "std": 80.96136362487974,
+      "n_train": 25
+    },
+    "sentiment_polarity": {
+      "mean": -0.24437432174798826,
+      "std": 0.2226632040311079,
+      "n_train": 25
+    }
+  }
+}

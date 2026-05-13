@@ -1,0 +1,21 @@
+{
+  "event": "gpt_release",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 63.25098039215686,
+      "std": 91.1840185785693,
+      "n_train": 255
+    },
+    "sentiment_polarity": {
+      "mean": -0.05171020402551607,
+      "std": 0.2558570421258276,
+      "n_train": 255
+    }
+  }
+}

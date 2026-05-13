@@ -1,0 +1,21 @@
+{
+  "event": "queen_elizabeth_ii_death",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 46.151162790697676,
+      "std": 39.8257884903799,
+      "n_train": 172
+    },
+    "sentiment_polarity": {
+      "mean": -0.22152425906493523,
+      "std": 0.2227823048121022,
+      "n_train": 172
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "event": "indian_plane_crash",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 17.448979591836736,
+      "std": 24.565664792833697,
+      "n_train": 49
+    },
+    "sentiment_polarity": {
+      "mean": -0.5663113859088069,
+      "std": 0.32803562665218206,
+      "n_train": 49
+    }
+  }
+}

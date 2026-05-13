@@ -1,0 +1,21 @@
+{
+  "event": "rafah_military_operation",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 8.613262599469497,
+      "std": 30.753672385871475,
+      "n_train": 1885
+    },
+    "sentiment_polarity": {
+      "mean": -0.48859247273375833,
+      "std": 0.550809018140911,
+      "n_train": 1885
+    }
+  }
+}

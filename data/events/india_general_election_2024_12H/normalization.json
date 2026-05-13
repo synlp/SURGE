@@ -1,0 +1,21 @@
+{
+  "event": "india_general_election_2024",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 10.046979865771812,
+      "std": 19.94971381957185,
+      "n_train": 149
+    },
+    "sentiment_polarity": {
+      "mean": -0.34914682703945615,
+      "std": 0.4763160271194174,
+      "n_train": 149
+    }
+  }
+}

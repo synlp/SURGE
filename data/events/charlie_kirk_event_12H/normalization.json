@@ -1,0 +1,21 @@
+{
+  "event": "charlie_kirk_event",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 307.04347826086956,
+      "std": 186.4119977154087,
+      "n_train": 23
+    },
+    "sentiment_polarity": {
+      "mean": -0.3396156476639508,
+      "std": 0.12049960762239467,
+      "n_train": 23
+    }
+  }
+}

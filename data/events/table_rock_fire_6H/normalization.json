@@ -1,0 +1,21 @@
+{
+  "event": "table_rock_fire",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 6.571428571428571,
+      "std": 6.662413609349154,
+      "n_train": 56
+    },
+    "sentiment_polarity": {
+      "mean": -0.1312165982534459,
+      "std": 0.4225848686275698,
+      "n_train": 56
+    }
+  }
+}

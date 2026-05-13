@@ -1,0 +1,21 @@
+{
+  "event": "fifa_womens_world_cup",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 12.186666666666667,
+      "std": 27.70191810446827,
+      "n_train": 225
+    },
+    "sentiment_polarity": {
+      "mean": -0.4971758642912392,
+      "std": 0.721317629496263,
+      "n_train": 225
+    }
+  }
+}

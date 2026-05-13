@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local outputs (not part of the released artifact)
+checkpoints/
+runs/
+logs/
+outputs/
+results/
+*.log
+
+# Environment
+.env
+
+# Notebooks
+.ipynb_checkpoints/

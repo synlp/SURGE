@@ -1,0 +1,21 @@
+{
+  "event": "ai_multimodal_launch",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 3.7831050228310503,
+      "std": 19.098183887525945,
+      "n_train": 438
+    },
+    "sentiment_polarity": {
+      "mean": 0.20727485291060146,
+      "std": 0.38853748548492095,
+      "n_train": 438
+    }
+  }
+}

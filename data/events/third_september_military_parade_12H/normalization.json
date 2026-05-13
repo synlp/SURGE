@@ -1,0 +1,21 @@
+{
+  "event": "third_september_military_parade",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 212.48717948717947,
+      "std": 262.78585137291606,
+      "n_train": 39
+    },
+    "sentiment_polarity": {
+      "mean": -0.16283741815769995,
+      "std": 0.2159884407010923,
+      "n_train": 39
+    }
+  }
+}

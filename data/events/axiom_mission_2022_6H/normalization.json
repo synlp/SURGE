@@ -1,0 +1,21 @@
+{
+  "event": "axiom_mission_2022",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 6.9640718562874255,
+      "std": 26.186546853577262,
+      "n_train": 167
+    },
+    "sentiment_polarity": {
+      "mean": 0.3181255254148863,
+      "std": 0.48655285586283986,
+      "n_train": 167
+    }
+  }
+}

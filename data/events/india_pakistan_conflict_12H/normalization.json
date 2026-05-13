@@ -1,0 +1,21 @@
+{
+  "event": "india_pakistan_conflict",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 324.19354838709677,
+      "std": 267.0051853253692,
+      "n_train": 31
+    },
+    "sentiment_polarity": {
+      "mean": -0.4120898098724915,
+      "std": 0.0871909498683673,
+      "n_train": 31
+    }
+  }
+}

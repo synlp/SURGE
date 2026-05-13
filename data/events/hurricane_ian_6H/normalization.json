@@ -1,0 +1,21 @@
+{
+  "event": "hurricane_ian",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 123.05555555555556,
+      "std": 108.99055627908636,
+      "n_train": 18
+    },
+    "sentiment_polarity": {
+      "mean": -0.12352216856739094,
+      "std": 0.14027212810318473,
+      "n_train": 18
+    }
+  }
+}

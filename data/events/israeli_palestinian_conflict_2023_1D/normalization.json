@@ -1,0 +1,21 @@
+{
+  "event": "israeli_palestinian_conflict_2023",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 188.64912280701753,
+      "std": 142.33559198192336,
+      "n_train": 57
+    },
+    "sentiment_polarity": {
+      "mean": -0.41316093246189867,
+      "std": 0.12974117007733083,
+      "n_train": 57
+    }
+  }
+}

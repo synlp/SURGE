@@ -1,0 +1,21 @@
+{
+  "event": "new_glenn_milestone",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 10.567307692307692,
+      "std": 48.527899275943255,
+      "n_train": 104
+    },
+    "sentiment_polarity": {
+      "mean": 0.5012108906458879,
+      "std": 0.3886394699280946,
+      "n_train": 104
+    }
+  }
+}

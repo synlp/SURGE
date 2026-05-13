@@ -1,0 +1,21 @@
+{
+  "event": "golden_globes_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 26.62162162162162,
+      "std": 56.54147071737573,
+      "n_train": 37
+    },
+    "sentiment_polarity": {
+      "mean": 0.10047803990544775,
+      "std": 0.372723961042809,
+      "n_train": 37
+    }
+  }
+}

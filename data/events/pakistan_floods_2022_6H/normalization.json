@@ -1,0 +1,21 @@
+{
+  "event": "pakistan_floods_2022",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 33.77391304347826,
+      "std": 32.673100455630816,
+      "n_train": 115
+    },
+    "sentiment_polarity": {
+      "mean": -0.31651482129692177,
+      "std": 0.25807341191277516,
+      "n_train": 115
+    }
+  }
+}

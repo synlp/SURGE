@@ -1,0 +1,21 @@
+{
+  "event": "texas_flood",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 133.1875,
+      "std": 110.18746454905839,
+      "n_train": 16
+    },
+    "sentiment_polarity": {
+      "mean": -0.3378389706731798,
+      "std": 0.16090976354315373,
+      "n_train": 16
+    }
+  }
+}

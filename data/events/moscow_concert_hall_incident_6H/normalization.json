@@ -1,0 +1,21 @@
+{
+  "event": "moscow_concert_hall_incident",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 35.0,
+      "std": 58.10565090132514,
+      "n_train": 30
+    },
+    "sentiment_polarity": {
+      "mean": -0.2118979033306536,
+      "std": 0.519159621593368,
+      "n_train": 30
+    }
+  }
+}

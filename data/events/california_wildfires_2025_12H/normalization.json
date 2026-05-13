@@ -1,0 +1,21 @@
+{
+  "event": "california_wildfires_2025",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 84.5814696485623,
+      "std": 226.29698723091522,
+      "n_train": 313
+    },
+    "sentiment_polarity": {
+      "mean": -0.2769905111998184,
+      "std": 0.49058238054142844,
+      "n_train": 313
+    }
+  }
+}

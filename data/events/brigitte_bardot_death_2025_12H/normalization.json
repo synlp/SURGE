@@ -1,0 +1,21 @@
+{
+  "event": "brigitte_bardot_death_2025",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 19.266666666666666,
+      "std": 42.97552274906677,
+      "n_train": 60
+    },
+    "sentiment_polarity": {
+      "mean": -0.35945287348689425,
+      "std": 0.4535209025556956,
+      "n_train": 60
+    }
+  }
+}

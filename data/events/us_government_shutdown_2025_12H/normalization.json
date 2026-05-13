@@ -1,0 +1,21 @@
+{
+  "event": "us_government_shutdown_2025",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 642.92,
+      "std": 676.3981768159935,
+      "n_train": 100
+    },
+    "sentiment_polarity": {
+      "mean": -0.6177189791968001,
+      "std": 0.13956199630574762,
+      "n_train": 100
+    }
+  }
+}

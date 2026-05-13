@@ -1,0 +1,794 @@
+{
+  "events": [
+    {
+      "name": "baltimore_bridge_collapse",
+      "display_name": "Baltimore Bridge Collapse",
+      "category": "natural_disaster",
+      "start_time": "2024-03-26T06:00:00",
+      "end_time": "2024-04-02T18:00:00",
+      "available_granularities": [
+        "6H"
+      ]
+    },
+    {
+      "name": "california_wildfires_2025",
+      "display_name": "California Wildfires 2025",
+      "category": "natural_disaster",
+      "start_time": "2024-12-04T00:00:00",
+      "end_time": "2026-01-20T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "europe_heatwave_wildfire",
+      "display_name": "Europe Heatwave & Wildfire",
+      "category": "natural_disaster",
+      "start_time": "2022-06-12T00:00:00",
+      "end_time": "2022-07-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "hurricane_fiona",
+      "display_name": "Hurricane Fiona",
+      "category": "natural_disaster",
+      "start_time": "2022-09-18T00:00:00",
+      "end_time": "2022-09-29T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "hurricane_ian",
+      "display_name": "Hurricane Ian",
+      "category": "natural_disaster",
+      "start_time": "2022-09-24T12:00:00",
+      "end_time": "2022-09-30T18:00:00",
+      "available_granularities": [
+        "6H"
+      ]
+    },
+    {
+      "name": "indian_plane_crash",
+      "display_name": "Indian Plane Crash",
+      "category": "natural_disaster",
+      "start_time": "2025-06-12T00:00:00",
+      "end_time": "2025-07-16T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "noto_earthquake_japan",
+      "display_name": "Noto Earthquake (Japan)",
+      "category": "natural_disaster",
+      "start_time": "2024-01-01T00:00:00",
+      "end_time": "2024-01-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "pakistan_floods_2022",
+      "display_name": "Pakistan Floods 2022",
+      "category": "natural_disaster",
+      "start_time": "2022-08-20T00:00:00",
+      "end_time": "2022-09-30T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "table_rock_fire",
+      "display_name": "Table Rock (SC) Fire",
+      "category": "natural_disaster",
+      "start_time": "2025-03-20T00:00:00",
+      "end_time": "2025-04-09T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "texas_flood",
+      "display_name": "Texas Flood",
+      "category": "natural_disaster",
+      "start_time": "2025-07-03T00:00:00",
+      "end_time": "2025-07-14T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "turkey_syria_earthquake",
+      "display_name": "Turkey-Syria Earthquake",
+      "category": "natural_disaster",
+      "start_time": "2023-02-01T00:00:00",
+      "end_time": "2023-03-29T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "us_wildfire",
+      "display_name": "US Wildfire",
+      "category": "natural_disaster",
+      "start_time": "2025-01-08T12:00:00",
+      "end_time": "2025-03-04T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "20th_cpc_national_congress",
+      "display_name": "20th CPC National Congress",
+      "category": "political",
+      "start_time": "2022-10-10T00:00:00",
+      "end_time": "2022-11-02T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "battle_of_bakhmut_2023",
+      "display_name": "Battle of Bakhmut 2023",
+      "category": "political",
+      "start_time": "2023-01-03T00:00:00",
+      "end_time": "2023-03-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "damascus_sdf_conflict",
+      "display_name": "Damascus-SDF Conflict",
+      "category": "political",
+      "start_time": "2025-12-17T00:00:00",
+      "end_time": "2026-03-16T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "gaza_ceasefire",
+      "display_name": "Gaza Ceasefire",
+      "category": "political",
+      "start_time": "2024-12-09T00:00:00",
+      "end_time": "2025-12-17T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "india_general_election_2024",
+      "display_name": "India General Election 2024",
+      "category": "political",
+      "start_time": "2024-03-11T00:00:00",
+      "end_time": "2024-06-25T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "india_pakistan_conflict",
+      "display_name": "India-Pakistan Conflict",
+      "category": "political",
+      "start_time": "2025-04-22T00:00:00",
+      "end_time": "2025-05-14T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "iran_israel_conflict",
+      "display_name": "Iran-Israel Conflict",
+      "category": "political",
+      "start_time": "2025-06-13T00:00:00",
+      "end_time": "2025-06-30T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "israel_hamas_conflict_2025",
+      "display_name": "Israel-Hamas Conflict 2025",
+      "category": "political",
+      "start_time": "2025-09-20T00:00:00",
+      "end_time": "2025-11-15T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "israeli_palestinian_conflict_2023",
+      "display_name": "Israeli-Palestinian Conflict 2023",
+      "category": "political",
+      "start_time": "2023-10-01T00:00:00",
+      "end_time": "2023-12-23T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "kazakhstan_protests_2022",
+      "display_name": "Kazakhstan Protests 2022",
+      "category": "political",
+      "start_time": "2022-01-01T00:00:00",
+      "end_time": "2022-01-31T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "rafah_military_operation",
+      "display_name": "Rafah Military Operation",
+      "category": "political",
+      "start_time": "2024-02-01T00:00:00",
+      "end_time": "2025-12-05T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "tiktok_ban",
+      "display_name": "TikTok Ban",
+      "category": "political",
+      "start_time": "2024-05-04T06:00:00",
+      "end_time": "2024-05-11T18:00:00",
+      "available_granularities": [
+        "6H"
+      ]
+    },
+    {
+      "name": "trump_assassination_attempt",
+      "display_name": "Trump Assassination Attempt",
+      "category": "political",
+      "start_time": "2024-07-12T00:00:00",
+      "end_time": "2024-08-31T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "trump_global_tariff",
+      "display_name": "Trump Global Tariff",
+      "category": "political",
+      "start_time": "2025-03-30T00:00:00",
+      "end_time": "2025-05-14T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "trump_inauguration",
+      "display_name": "Trump Inauguration",
+      "category": "political",
+      "start_time": "2024-12-02T00:00:00",
+      "end_time": "2025-02-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "russia_ukraine_conflict_2022",
+      "display_name": "Russia-Ukraine Conflict 2022",
+      "category": "political",
+      "start_time": "2022-02-01T00:00:00",
+      "end_time": "2022-03-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "us_government_shutdown_2025",
+      "display_name": "US Government Shutdown 2025",
+      "category": "political",
+      "start_time": "2025-09-15T00:00:00",
+      "end_time": "2025-11-25T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "anne_burrell_event",
+      "display_name": "Anne Burrell Event",
+      "category": "social_movement",
+      "start_time": "2025-06-14T00:00:00",
+      "end_time": "2025-06-27T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "brigitte_bardot_death_2025",
+      "display_name": "Brigitte Bardot Death 2025",
+      "category": "social_movement",
+      "start_time": "2025-12-20T00:00:00",
+      "end_time": "2026-01-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "charlie_kirk_event",
+      "display_name": "Charlie Kirk Event",
+      "category": "social_movement",
+      "start_time": "2025-09-08T00:00:00",
+      "end_time": "2025-09-24T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "israel_judicial_reform_protests",
+      "display_name": "Israel Judicial Reform Protests",
+      "category": "social_movement",
+      "start_time": "2023-03-01T00:00:00",
+      "end_time": "2023-05-03T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "kanye_west_controversy",
+      "display_name": "Kanye West Controversy",
+      "category": "social_movement",
+      "start_time": "2022-10-09T00:00:00",
+      "end_time": "2022-11-27T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "kate_middleton_controversy",
+      "display_name": "Kate Middleton Controversy",
+      "category": "social_movement",
+      "start_time": "2024-02-28T00:00:00",
+      "end_time": "2024-06-06T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "moscow_concert_hall_incident",
+      "display_name": "Moscow Concert Hall Incident",
+      "category": "social_movement",
+      "start_time": "2024-03-22T12:00:00",
+      "end_time": "2024-04-02T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "queen_elizabeth_ii_death",
+      "display_name": "Queen Elizabeth II Death",
+      "category": "social_movement",
+      "start_time": "2022-09-07T00:00:00",
+      "end_time": "2022-11-07T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "sean_diddy_combs_investigation",
+      "display_name": "Sean 'Diddy' Combs Investigation",
+      "category": "social_movement",
+      "start_time": "2025-06-01T00:00:00",
+      "end_time": "2025-07-14T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "sri_lanka_protests",
+      "display_name": "Sri Lanka Protests",
+      "category": "social_movement",
+      "start_time": "2022-06-24T12:00:00",
+      "end_time": "2022-08-18T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "third_september_military_parade",
+      "display_name": "Third September Military Parade",
+      "category": "social_movement",
+      "start_time": "2025-08-20T00:00:00",
+      "end_time": "2025-09-17T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "will_smith_slap_2022",
+      "display_name": "Will Smith Slap 2022",
+      "category": "social_movement",
+      "start_time": "2022-03-28T00:00:00",
+      "end_time": "2023-01-24T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "ai_multimodal_launch",
+      "display_name": "AI Multimodal Launch",
+      "category": "technology",
+      "start_time": "2025-04-01T00:00:00",
+      "end_time": "2026-02-08T06:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "artemis_moon_mission",
+      "display_name": "Artemis Moon Mission",
+      "category": "technology",
+      "start_time": "2022-11-10T00:00:00",
+      "end_time": "2022-12-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "axiom_mission_2022",
+      "display_name": "Axiom Mission 2022",
+      "category": "technology",
+      "start_time": "2022-04-01T00:00:00",
+      "end_time": "2022-05-31T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "axiom_mission_2023",
+      "display_name": "Axiom Mission 2023",
+      "category": "technology",
+      "start_time": "2023-05-02T00:00:00",
+      "end_time": "2023-06-24T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "change_6_moon_mission",
+      "display_name": "Chang'e 6 Moon Mission",
+      "category": "technology",
+      "start_time": "2024-05-05T00:00:00",
+      "end_time": "2024-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "deepseek_v3x_releases",
+      "display_name": "DeepSeek V3.x Releases",
+      "category": "technology",
+      "start_time": "2025-10-15T00:00:00",
+      "end_time": "2026-01-14T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "google_gemini_release",
+      "display_name": "Google Gemini Release",
+      "category": "technology",
+      "start_time": "2024-01-31T00:00:00",
+      "end_time": "2026-01-24T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "gpt_release",
+      "display_name": "GPT Release",
+      "category": "technology",
+      "start_time": "2025-01-01T00:00:00",
+      "end_time": "2025-12-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "gpt_5_3_codex_release",
+      "display_name": "GPT-5.3 & Codex Release",
+      "category": "technology",
+      "start_time": "2026-02-05T00:00:00",
+      "end_time": "2026-03-18T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "james_webb_space_telescope",
+      "display_name": "James Webb Space Telescope",
+      "category": "technology",
+      "start_time": "2022-07-01T00:00:00",
+      "end_time": "2022-08-03T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "new_glenn_milestone",
+      "display_name": "New Glenn Milestone",
+      "category": "technology",
+      "start_time": "2025-11-01T00:00:00",
+      "end_time": "2026-01-14T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "robotaxi_launch",
+      "display_name": "Robotaxi Launch",
+      "category": "technology",
+      "start_time": "2025-05-01T00:00:00",
+      "end_time": "2025-09-30T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "american_baseball_league",
+      "display_name": "American Baseball League",
+      "category": "sports_entertainment",
+      "start_time": "2024-10-22T00:00:00",
+      "end_time": "2024-11-12T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    },
+    {
+      "name": "australian_open_2026",
+      "display_name": "Australian Open 2026",
+      "category": "sports_entertainment",
+      "start_time": "2026-01-05T00:00:00",
+      "end_time": "2026-02-05T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "beijing_winter_olympics_2022",
+      "display_name": "Beijing Winter Olympics 2022",
+      "category": "sports_entertainment",
+      "start_time": "2022-01-17T00:00:00",
+      "end_time": "2022-03-10T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "cannes_film_festival_2024",
+      "display_name": "Cannes Film Festival 2024",
+      "category": "sports_entertainment",
+      "start_time": "2024-04-29T00:00:00",
+      "end_time": "2024-09-19T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "fifa_club_world_cup_2025",
+      "display_name": "FIFA Club World Cup 2025",
+      "category": "sports_entertainment",
+      "start_time": "2025-06-07T12:00:00",
+      "end_time": "2025-11-08T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "fifa_womens_world_cup",
+      "display_name": "FIFA Women's World Cup",
+      "category": "sports_entertainment",
+      "start_time": "2023-07-01T00:00:00",
+      "end_time": "2023-12-08T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "fifa_world_cup_2022",
+      "display_name": "FIFA World Cup 2022",
+      "category": "sports_entertainment",
+      "start_time": "2022-11-01T00:00:00",
+      "end_time": "2022-12-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "golden_globes_2026",
+      "display_name": "Golden Globes 2026",
+      "category": "sports_entertainment",
+      "start_time": "2025-12-08T00:00:00",
+      "end_time": "2026-01-30T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "grammys_2026",
+      "display_name": "Grammys 2026",
+      "category": "sports_entertainment",
+      "start_time": "2025-11-05T00:00:00",
+      "end_time": "2026-03-14T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "gwyneth_paltrow_trial",
+      "display_name": "Gwyneth Paltrow Trial",
+      "category": "sports_entertainment",
+      "start_time": "2023-03-14T00:00:00",
+      "end_time": "2023-04-05T12:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "nba_finals",
+      "display_name": "NBA Finals",
+      "category": "sports_entertainment",
+      "start_time": "2024-10-15T00:00:00",
+      "end_time": "2025-06-26T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "paris_olympics_2024",
+      "display_name": "Paris Olympics 2024",
+      "category": "sports_entertainment",
+      "start_time": "2024-07-01T00:00:00",
+      "end_time": "2024-08-14T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "super_bowl_lx_2026",
+      "display_name": "Super Bowl LX 2026",
+      "category": "sports_entertainment",
+      "start_time": "2026-01-25T00:00:00",
+      "end_time": "2026-02-20T00:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "t20_world_cup_2026_final",
+      "display_name": "T20 World Cup 2026 Final",
+      "category": "sports_entertainment",
+      "start_time": "2026-02-25T00:00:00",
+      "end_time": "2026-03-14T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H"
+      ]
+    }
+  ],
+  "note": "67 events across five paper categories (Natural Disaster 12, Political 17, Social Movement 12, Technology 12, Sports & Entertainment 14). 'available_granularities' is determined by the paper's 21-bin minimum applied per granularity. start_time / end_time bound the active period detected by the construction pipeline (paper Appendix C)."
+}

@@ -1,0 +1,21 @@
+{
+  "event": "grammys_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 20.044077134986225,
+      "std": 45.320872986743666,
+      "n_train": 363
+    },
+    "sentiment_polarity": {
+      "mean": 0.12335341847753735,
+      "std": 0.3923189738143693,
+      "n_train": 363
+    }
+  }
+}

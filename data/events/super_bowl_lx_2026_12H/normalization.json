@@ -1,0 +1,21 @@
+{
+  "event": "super_bowl_lx_2026",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 504.74285714285713,
+      "std": 280.7235898130954,
+      "n_train": 35
+    },
+    "sentiment_polarity": {
+      "mean": -0.09811150102020291,
+      "std": 0.08371440560974121,
+      "n_train": 35
+    }
+  }
+}

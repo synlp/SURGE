@@ -1,0 +1,21 @@
+{
+  "event": "gwyneth_paltrow_trial",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 4.951612903225806,
+      "std": 6.227999780789248,
+      "n_train": 62
+    },
+    "sentiment_polarity": {
+      "mean": -0.3425034329469814,
+      "std": 0.3836577593001501,
+      "n_train": 62
+    }
+  }
+}

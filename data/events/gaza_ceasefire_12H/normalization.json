@@ -1,0 +1,21 @@
+{
+  "event": "gaza_ceasefire",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 15.275862068965518,
+      "std": 51.67167709969507,
+      "n_train": 522
+    },
+    "sentiment_polarity": {
+      "mean": -0.1881283448355537,
+      "std": 0.3479452954549938,
+      "n_train": 522
+    }
+  }
+}

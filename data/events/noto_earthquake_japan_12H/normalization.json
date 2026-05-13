@@ -1,0 +1,21 @@
+{
+  "event": "noto_earthquake_japan",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 62.23255813953488,
+      "std": 150.92564582560027,
+      "n_train": 43
+    },
+    "sentiment_polarity": {
+      "mean": -0.1371734397336459,
+      "std": 0.2787622132119984,
+      "n_train": 43
+    }
+  }
+}

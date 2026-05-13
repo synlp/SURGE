@@ -1,0 +1,21 @@
+{
+  "event": "australian_open_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 250.0952380952381,
+      "std": 157.2183512740299,
+      "n_train": 21
+    },
+    "sentiment_polarity": {
+      "mean": 0.06308538930781708,
+      "std": 0.15876413172431522,
+      "n_train": 21
+    }
+  }
+}

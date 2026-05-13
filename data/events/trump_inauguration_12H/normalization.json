@@ -1,0 +1,21 @@
+{
+  "event": "trump_inauguration",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 268.479674796748,
+      "std": 483.55168630325704,
+      "n_train": 123
+    },
+    "sentiment_polarity": {
+      "mean": -0.40366940168370363,
+      "std": 0.27462361884318576,
+      "n_train": 123
+    }
+  }
+}
