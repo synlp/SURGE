@@ -1,5 +1,7 @@
 # SURGE: Social-media Unified Reaction-Graph Event dataset
 
+Project page: https://synlp.github.io/SURGE/
+
 Companion repository for the dataset paper *SURGE: an event-centric
 social media benchmark pairing sentiment time series with bin-aligned
 text and reply / repost interaction structure*.

@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SURGE is an event-centric social media benchmark pairing sentiment time series with bin-aligned text and reply/repost interaction structure.">
+  <title>SURGE Dataset</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14213d;
+      --muted: #5d677c;
+      --line: #d8dee9;
+      --paper: #ffffff;
+      --wash: #f6f8fb;
+      --blue: #2454a6;
+      --green: #2f7d4f;
+      --orange: #c8651b;
+      --red: #b83a32;
+      --violet: #6e4aa6;
+      --shadow: 0 18px 45px rgba(20, 33, 61, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(216, 222, 233, 0.9);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--blue), var(--green));
+      display: inline-grid;
+      place-items: center;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .hero {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 66px 0 48px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 980px;
+      font-size: 62px;
+      font-weight: 930;
+    }
+
+    .hero-copy {
+      max-width: 820px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      padding: 0 18px;
+      text-decoration: none;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      color: #fff;
+      border-color: var(--blue);
+      background: var(--blue);
+    }
+
+    .button.secondary {
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .figure-band {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto 58px;
+    }
+
+    .figure-frame {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .figure-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .section {
+      padding: 64px 0;
+      border-top: 1px solid rgba(216, 222, 233, 0.85);
+    }
+
+    .section.alt {
+      background: var(--wash);
+    }
+
+    .inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.96fr) minmax(260px, 0.54fr);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 38px;
+      font-weight: 900;
+    }
+
+    .section-head p,
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 19px;
+      font-weight: 850;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .accent-blue {
+      border-top: 4px solid var(--blue);
+    }
+
+    .accent-green {
+      border-top: 4px solid var(--green);
+    }
+
+    .accent-orange {
+      border-top: 4px solid var(--orange);
+    }
+
+    .accent-red {
+      border-top: 4px solid var(--red);
+    }
+
+    .accent-violet {
+      border-top: 4px solid var(--violet);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      width: 34%;
+      background: #fbfcfe;
+      color: var(--ink);
+      font-weight: 850;
+    }
+
+    .data-table td {
+      color: var(--muted);
+    }
+
+    .data-table tr:last-child th,
+    .data-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(320px, 0.5fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    pre {
+      height: 100%;
+      min-height: 330px;
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      overflow: auto;
+      background: #101828;
+      color: #eef4ff;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pill-list li {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 12px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 720;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 34px 0;
+      background: #fff;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .hero-copy {
+        font-size: 18px;
+      }
+
+      .stats,
+      .grid,
+      .section-head,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .nav,
+      .hero,
+      .figure-band,
+      .inner,
+      .footer-inner {
+        width: min(100% - 28px, 1180px);
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .data-table,
+      .data-table tbody,
+      .data-table tr,
+      .data-table th,
+      .data-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .data-table th {
+        border-bottom: 0;
+        padding-bottom: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="SURGE Dataset home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SURGE</span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#data-card">Data Card</a>
+        <a href="#quick-start">Quick Start</a>
+        <a href="https://github.com/synlp/SURGE">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Social-media event benchmark</p>
+      <h1 id="hero-title">SURGE: Social-media Unified Reaction-Graph Event dataset</h1>
+      <p class="hero-copy">
+        SURGE is an event-centric benchmark that pairs sentiment time series with
+        bin-aligned text views and reply / repost interaction structure for public-opinion forecasting.
+      </p>
+      <div class="hero-actions" aria-label="Page shortcuts">
+        <a class="button primary" href="https://github.com/synlp/SURGE">View Repository</a>
+        <a class="button secondary" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read Datasheet</a>
+      </div>
+      <div class="stats" aria-label="Dataset snapshot">
+        <div class="stat">
+          <strong>67</strong>
+          <span>released events after quality filtering</span>
+        </div>
+        <div class="stat">
+          <strong>817K</strong>
+          <span>posts represented in the current release</span>
+        </div>
+        <div class="stat">
+          <strong>3</strong>
+          <span>temporal granularities: 6H, 12H, and 1D</span>
+        </div>
+        <div class="stat">
+          <strong>2</strong>
+          <span>forecasting targets: DI and SP</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="figure-band" aria-label="SURGE visual overview">
+      <div class="figure-frame">
+        <img src="assets/surge-overview.svg" alt="SURGE overview showing event coverage, temporal views, targets, and artifact stack.">
+      </div>
+    </section>
+
+    <section class="section alt" id="overview">
+      <div class="inner">
+        <div class="section-head">
+          <h2>Why SURGE?</h2>
+          <p>
+            Public events unfold through volume, sentiment, text, and interaction structure.
+            SURGE puts those signals into a unified event-level benchmark instead of treating
+            each time series as an isolated numerical trace.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card accent-blue">
+            <h3>Event-Centric</h3>
+            <p>
+              The registry covers 67 real events across natural disasters, politics, social
+              movements, technology, and sports or entertainment.
+            </p>
+          </article>
+          <article class="card accent-green">
+            <h3>Multi-Granularity</h3>
+            <p>
+              Each event is released at 6-hour, 12-hour, and 1-day views when its active period
+              satisfies the minimum-bin threshold.
+            </p>
+          </article>
+          <article class="card accent-orange">
+            <h3>Text And Graph Signals</h3>
+            <p>
+              Numerical targets are paired with sampled bin-aligned text views and reply / repost
+              edges so models can use more than scalar history.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="data-card">
+      <div class="inner">
+        <div class="section-head">
+          <h2>Dataset Card</h2>
+          <p>
+            This page is a project introduction. The repository remains the source of truth for
+            schema files, loaders, synthetic examples, and release notes.
+          </p>
+        </div>
+        <table class="data-table">
+          <tbody>
+            <tr>
+              <th scope="row">Full name</th>
+              <td>Social-media Unified Reaction-Graph Event dataset.</td>
+            </tr>
+            <tr>
+              <th scope="row">Primary tasks</th>
+              <td>Discussion Intensity forecasting and Sentiment Polarity forecasting over event-aligned temporal bins.</td>
+            </tr>
+            <tr>
+              <th scope="row">Release scale</th>
+              <td>67 events and 817,442 posts after deduplication, quality filtering, and active-period refinement.</td>
+            </tr>
+            <tr>
+              <th scope="row">Granularities</th>
+              <td>67 events at 6H, 64 events at 12H, and 55 events at 1D.</td>
+            </tr>
+            <tr>
+              <th scope="row">Core artifacts</th>
+              <td>Raw and normalized CSV time series, normalization statistics, event metadata, sampled text views, and reply / repost edge lists.</td>
+            </tr>
+            <tr>
+              <th scope="row">Licensing</th>
+              <td>MIT for code; CC BY 4.0 for author-created derivative data, as specified in the repository license.</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="pill-list" aria-label="Event categories">
+          <li>natural_disaster</li>
+          <li>political</li>
+          <li>social_movement</li>
+          <li>technology</li>
+          <li>sports_entertainment</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt" id="quick-start">
+      <div class="inner">
+        <div class="section-head">
+          <h2>Quick Start</h2>
+          <p>
+            The benchmark loader uses chronological 70 / 10 / 20 splits and performs split-internal
+            imputation, so missing-bin handling never crosses train, validation, or test boundaries.
+          </p>
+        </div>
+        <div class="layout">
+          <div class="grid" aria-label="Repository links">
+            <article class="card accent-red">
+              <h3>Schema Docs</h3>
+              <p>
+                Field-level documentation is available for numerical series, event metadata,
+                normalization statistics, text views, and edge lists.
+              </p>
+            </article>
+            <article class="card accent-violet">
+              <h3>Synthetic Examples</h3>
+              <p>
+                Two mini-events instantiate every schema at all three granularities for smoke tests
+                and quick loader checks.
+              </p>
+            </article>
+            <article class="card accent-blue">
+              <h3>Benchmark Code</h3>
+              <p>
+                The repository includes dataloaders, metrics, a generic training loop, and a CMA
+                reference probe.
+              </p>
+            </article>
+          </div>
+          <pre aria-label="SURGE quick-start commands">pip install -r requirements.txt
+
+# Inspect the released event registry
+python -c "from event_config import get_real_events; print(len(get_real_events()))"
+
+# Load one pooled forecasting setup
+python -c "
+from benchmark.data_loader import create_dataloaders
+train, val, test, meta = create_dataloaders(
+    data_dir='data/events',
+    interval='1D',
+    variable='sentiment_polarity',
+    seq_len=14,
+    pred_len=7,
+)
+print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.dataset))
+"</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>SURGE Dataset</span>
+      <span><a href="https://github.com/synlp/SURGE">github.com/synlp/SURGE</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="720" viewBox="0 0 1320 720" role="img" aria-labelledby="title desc">
+  <title id="title">SURGE dataset overview</title>
+  <desc id="desc">A visual overview of SURGE showing event coverage, temporal granularities, released artifacts, and benchmark targets.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#14213d" flood-opacity="0.16"/>
+    </filter>
+    <linearGradient id="header" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2454a6"/>
+      <stop offset="1" stop-color="#2f7d4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1320" height="720" fill="#f6f8fb"/>
+  <rect x="52" y="44" width="1216" height="632" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="52" y="44" width="1216" height="118" rx="24" fill="url(#header)"/>
+  <rect x="52" y="126" width="1216" height="36" fill="#2454a6"/>
+  <text x="92" y="104" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">SURGE</text>
+  <text x="252" y="104" fill="#e9f2ff" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="650">Social-media Unified Reaction-Graph Event dataset</text>
+  <text x="92" y="140" fill="#e9f2ff" font-family="Inter, Arial, sans-serif" font-size="17">Event-centric forecasting benchmark with sentiment time series, bin-aligned text, and reply / repost structure</text>
+
+  <g transform="translate(90 210)">
+    <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Released coverage</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">67 events, 817,442 posts, five event families</text>
+    <g transform="translate(0 72)">
+      <rect x="0" y="0" width="310" height="44" rx="8" fill="#edf3ff" stroke="#b9c8e6"/>
+      <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">political</text>
+      <rect x="150" y="12" width="124" height="20" rx="5" fill="#2454a6"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">17</text>
+    </g>
+    <g transform="translate(0 126)">
+      <rect x="0" y="0" width="310" height="44" rx="8" fill="#f7fbf7" stroke="#c7ddcf"/>
+      <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">sports / entertainment</text>
+      <rect x="150" y="12" width="102" height="20" rx="5" fill="#2f7d4f"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">14</text>
+    </g>
+    <g transform="translate(0 180)">
+      <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff8f1" stroke="#edd0b6"/>
+      <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">natural disaster</text>
+      <rect x="150" y="12" width="88" height="20" rx="5" fill="#c8651b"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+    </g>
+    <g transform="translate(0 234)">
+      <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff5f4" stroke="#efc7c3"/>
+      <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">social movement</text>
+      <rect x="150" y="12" width="88" height="20" rx="5" fill="#b83a32"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+    </g>
+    <g transform="translate(0 288)">
+      <rect x="0" y="0" width="310" height="44" rx="8" fill="#f8f5fc" stroke="#d7c9ee"/>
+      <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">technology</text>
+      <rect x="150" y="12" width="88" height="20" rx="5" fill="#6e4aa6"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+    </g>
+  </g>
+
+  <g transform="translate(475 210)">
+    <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Temporal views</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">Every event is released at each granularity that passes the minimum-bin threshold.</text>
+    <g transform="translate(0 82)">
+      <circle cx="66" cy="66" r="58" fill="#edf3ff" stroke="#2454a6" stroke-width="3"/>
+      <text x="66" y="59" text-anchor="middle" fill="#2454a6" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">67</text>
+      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">6H</text>
+    </g>
+    <g transform="translate(152 82)">
+      <circle cx="66" cy="66" r="58" fill="#f7fbf7" stroke="#2f7d4f" stroke-width="3"/>
+      <text x="66" y="59" text-anchor="middle" fill="#2f7d4f" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">64</text>
+      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">12H</text>
+    </g>
+    <g transform="translate(304 82)">
+      <circle cx="66" cy="66" r="58" fill="#fff8f1" stroke="#c8651b" stroke-width="3"/>
+      <text x="66" y="59" text-anchor="middle" fill="#c8651b" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">55</text>
+      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">1D</text>
+    </g>
+    <g transform="translate(0 250)">
+      <rect x="0" y="0" width="438" height="92" rx="12" fill="#fbfcfe" stroke="#d8dee9"/>
+      <text x="22" y="35" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Targets</text>
+      <text x="22" y="65" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">Discussion Intensity and Sentiment Polarity</text>
+    </g>
+  </g>
+
+  <g transform="translate(955 210)">
+    <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Artifact stack</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">Numerical series are paired with text and interaction views.</text>
+    <g transform="translate(0 76)">
+      <rect x="0" y="0" width="276" height="54" rx="10" fill="#edf3ff" stroke="#b9c8e6"/>
+      <text x="18" y="34" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">comment_count.csv</text>
+    </g>
+    <g transform="translate(0 144)">
+      <rect x="0" y="0" width="276" height="54" rx="10" fill="#f7fbf7" stroke="#c7ddcf"/>
+      <text x="18" y="34" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">sentiment_polarity.csv</text>
+    </g>
+    <g transform="translate(0 212)">
+      <rect x="0" y="0" width="276" height="54" rx="10" fill="#fff8f1" stroke="#edd0b6"/>
+      <text x="18" y="34" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">text_view.jsonl</text>
+    </g>
+    <g transform="translate(0 280)">
+      <rect x="0" y="0" width="276" height="54" rx="10" fill="#f8f5fc" stroke="#d7c9ee"/>
+      <text x="18" y="34" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">edges.jsonl</text>
+    </g>
+  </g>
+
+  <text x="90" y="640" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="15">Released series preserve NaN for empty bins; benchmark loading applies split-internal imputation within chronological 70 / 10 / 20 splits.</text>
+</svg>
