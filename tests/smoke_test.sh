@@ -18,8 +18,8 @@ assert len(real) == 102, f'expected 102 real events, got {len(real)}'
 assert len(synth) == 2, f'expected 2 synthetic events, got {len(synth)}'
 counts = {c: len(get_events_by_category(c)) for c in PAPER_CATEGORIES}
 expected = {
-    'natural_disaster': 17, 'political': 31, 'social_movement': 12,
-    'technology': 21, 'sports_entertainment': 21,
+    'natural_disaster': 17, 'political': 31, 'social_movement': 13,
+    'technology': 21, 'sports_entertainment': 20,
 }
 assert counts == expected, f'category counts {counts} != expected {expected}'
 g6  = sum('6H'  in e.available_granularities for e in real)
@@ -31,7 +31,8 @@ print('  registry: 102 / 99 / 90 OK')
 
 echo "=== 2. 35-event ID-only extension ==="
 python -c "
-import json, os
+import hashlib, json, os
+from pathlib import Path
 manifest = json.load(open('data/events/extension_35_manifest.json'))
 assert manifest['event_count'] == 35
 assert manifest['lookup_posts'] == 441631
@@ -40,8 +41,16 @@ assert manifest['contains_text'] is False
 for event in manifest['events']:
     name = event['name']
     assert os.path.isdir(f'data/events/{name}')
+    roots = [Path(f'data/events/{name}')]
     for g in ('6H', '12H', '1D'):
         assert os.path.isdir(f'data/events/{name}_{g}')
+        roots.append(Path(f'data/events/{name}_{g}'))
+    digest = hashlib.sha256()
+    for root in roots:
+        for path in sorted(p for p in root.rglob('*') if p.is_file()):
+            digest.update(path.relative_to('data/events').as_posix().encode())
+            digest.update(path.read_bytes().replace(b'\r\n', b'\n'))
+    assert digest.hexdigest() == event['release_sha256'], f'hash mismatch: {name}'
 print('  extension: 35 events / 441,631 posts / ID-only OK')
 "
 

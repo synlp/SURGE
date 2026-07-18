@@ -19,7 +19,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "770dc47e5aa064041e995021645d16c3c4591c88265d2ebcebc377e1352c9d64"
+      "release_sha256": "194a584e6c1c9773c4ff93e7a9c2dba773702bc328c783026df4e4ccc4c32a11"
     },
     {
       "name": "apple_wwdc_2026",
@@ -34,7 +34,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "f5785f3336fb7e21bc29ad6aed3ca3c6003318f056a35c4f6b84c71b421b3de7"
+      "release_sha256": "ec2a18297ffb5168c11b4efbf0b421aa36d33cede9e35a91df55a94c77b6d5b9"
     },
     {
       "name": "cannes_film_festival_2026",
@@ -49,7 +49,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "b16a7574d5b613f4c72c52a6f5ff4de2138977ceb0174fe3b1ce133188c81538"
+      "release_sha256": "d1be8841cc6eb80ab25d4faad6993ef3cfda334a3cdb1570eabf855a8129deeb"
     },
     {
       "name": "cessna_collision_2026",
@@ -64,7 +64,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "2e9be340a874c1f0581ae5b1519cd1657e0c9bd042e16797314c5677ec6ca411"
+      "release_sha256": "309e90fd3cee948e98e1ddadf041ad638dca1fda64e4fa91b0e902f876ea9efc"
     },
     {
       "name": "colombia_presidential_first_round_2026",
@@ -79,7 +79,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "2d52330e752bb2b4053f4082ba889fbea4174a74e570fa2939b3c819887480c3"
+      "release_sha256": "fbf1aa71e22cfd07f0f20e01c8d8708c2feb7b950d4d6b9a1758f2bac121f19b"
     },
     {
       "name": "computex_2026_ai_hardware",
@@ -94,7 +94,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "22e9bd8be0e2d7323b7771dc7de8b52ed44d5f72740682ba0190b209203a0e3d"
+      "release_sha256": "9f0c6e057ec7be973e962618271365cbfcd7e320ae2d4215164cc2fbb5d2689d"
     },
     {
       "name": "europe_early_heat_dome_2026",
@@ -109,7 +109,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "0e31b34acb77c06860d70300b16ed32133f2f9f50492d4d030a2da60ede1fb1a"
+      "release_sha256": "c2a02db1fc9f734f912d50b5fd0c0898d3dede0f29d15e5211261fecc7263f72"
     },
     {
       "name": "fifa_world_cup_2026_kickoff",
@@ -124,7 +124,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "f4e407629c355dde28a718515dcf699f341af623ac9e6e990a9b900c25dce0b9"
+      "release_sha256": "f2cc6f101fd5b6fd79671c21b38bc852f6d6d8b790c9d2afaa69e098c416df3a"
     },
     {
       "name": "madonna_world_cup_2026",
@@ -139,13 +139,13 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "fd52a2a1eeb6420f44cc812eab944d0888918a043066afb6ded4130f9ea6645e"
+      "release_sha256": "2ecfc67212bccd210a5d62a35047368c8472152a960b0fbdb12d7281ae0a5ac8"
     },
     {
       "name": "may_2026_public_figure_memorials",
       "source_event_id": "May2026PublicFigureMemorials",
       "source_batch": "data9",
-      "category": "sports_entertainment",
+      "category": "social_movement",
       "lookup_posts": 8218,
       "edges": 6321,
       "bins": {
@@ -154,7 +154,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "6f6c901c267f84a812955d6678ed258beba08d01371b7c2e43f209d15a52160b"
+      "release_sha256": "e841bd441cf8dcbbbc9178433d2860f70715bfda8ae009f764a898c8bc261e77"
     },
     {
       "name": "mayon_volcano_activity_2026",
@@ -169,7 +169,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "06875b9c1645a0e3cb2f1660c53c0c2f640c00fde5241b8805ee3fadfe94bd9f"
+      "release_sha256": "ae8c943cdb03a3c90fa0690cb8d4e15b75cf02dcbe52a8b4dcda1fe34ea4ee1c"
     },
     {
       "name": "microsoft_build_2026_copilot_ecosystem",
@@ -184,7 +184,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "e30c60cb5a6c47627461b4fc58962cc980e02d6afc7a59980003b4bd8d7300b5"
+      "release_sha256": "824a3034941772375e98b098d843532961688b30a6ee86b5b8ef71085ee27a00"
     },
     {
       "name": "nba_finals_2026",
@@ -199,7 +199,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "89b41507628761254c1dc39bde61d69463f9ce66a4d71a34d1d5abcdb03db4ea"
+      "release_sha256": "4096d0379f4c47c3b235574aabcb63a343879cd28cf322308a3022f3ff8c4f04"
     },
     {
       "name": "nyc_flash_flooding_2026",
@@ -214,7 +214,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "a80d3662518f250697449c190c3bfe44a8af49c656b4d13b9455215e8bb52f8a"
+      "release_sha256": "8bf6897d5bf975c0011437fa56985821b0fdc0a78ca3944ebdf5ee9587847aff"
     },
     {
       "name": "philippines_marcos_duterte_feud",
@@ -229,7 +229,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "d6a3fed5413696a1c6365f1053ec1b31705c1da12d45c91874e88666ba9ed414"
+      "release_sha256": "182faaf4d21eb4360afd38700738eb15fde029044c439c12a0f4f5e3b38cd2d1"
     },
     {
       "name": "sxsw_london_2026_cross_culture",
@@ -244,7 +244,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "9fca1ecdda77e4782e4949ff221faaa9de059a4044960716fdb4dbea1a9d85b2"
+      "release_sha256": "ff6090345a1735ad285bac042313f80781d0864c96f87bafbca5c53ab795e558"
     },
     {
       "name": "ucl_final_2026_psg_arsenal",
@@ -259,7 +259,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "4d89a6ad892ea039d27bdfde85ea33fd544798e95234669ccfd69fe6edb1a450"
+      "release_sha256": "6b2d960023d61ecaa7dca06b3f05fa9ebb1608f949fac06a7d14a649e044f336"
     },
     {
       "name": "uk_local_elections_2026",
@@ -274,7 +274,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "e7bbc5b29162e0fd7e33d6973514eebe6b4cd10147757a10b900a4b5b185cc4f"
+      "release_sha256": "ff6d4cb13d319e40e29fde9c86d639875df4d05d4acfa71c127580990f7404d2"
     },
     {
       "name": "vivatech_2026",
@@ -289,7 +289,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "eb4e23e3e245ebe0a5ff07023dc6b2eff2eacd7048c8c611e15846fdb7127786"
+      "release_sha256": "42b08bba571ef1c11c1d017d907c091a450b1f7f9aa1f219ca3a7037e3f143ef"
     },
     {
       "name": "yongchuan_floods_2026",
@@ -304,7 +304,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "46b2b02167d6b885afa53f5d61cddb1417f3894f0acdfb78b1571c8dcf1f1344"
+      "release_sha256": "94d7933160f52350e89304573fd4cdd5305ff11080e8a5820c76b3821904b926"
     },
     {
       "name": "iran_war_us_israel_2026",
@@ -319,7 +319,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "d64771eeb43deb13783a0ed6ddaabfee36c64470339f1abda3a0181926ee869d"
+      "release_sha256": "fa283a65575c0df1c18c6e6ef61e7067f034bb93a6b621fbfbe4e34d882467f3"
     },
     {
       "name": "strait_of_hormuz_shipping_oil_2026",
@@ -334,7 +334,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "6a9bdc8cf4b04bc796570f8e82b22c78b1285d35f83268fa089dca677036e7de"
+      "release_sha256": "ec10ffcdf1ab7f3770e09b0980cfd3f545f7c7932ce7f801521f0c69d71729c3"
     },
     {
       "name": "iran_internet_shutdown_2026",
@@ -349,7 +349,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "8e8b5f5be29ef9e08c7ddf3488e987ed1533f542650d889afc4ba556cdb24e77"
+      "release_sha256": "5799ca3ac1d9871d6b23e20dc161e12492f581b2804b4e378af85070046e0391"
     },
     {
       "name": "gaza_west_bank_humanitarian_2026",
@@ -364,7 +364,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "f1420406258ba11de2ddb9d06092e45a502a278829d5cc3c52b9d97f50232e94"
+      "release_sha256": "3757c2db264d792a18a510967de951716a81f51b48207c0542055518e89cb2e2"
     },
     {
       "name": "australia_federal_election_2025",
@@ -379,7 +379,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "22ecba1f2e3d5b99029bac8eb81a68ad44508cc3c80f1b1ee225217b24d013cb"
+      "release_sha256": "09f712e8be05a58d18b2500cc75280b97aefc4c3dbb8b41d8f360e4d36b62740"
     },
     {
       "name": "poland_presidential_election_2025",
@@ -394,7 +394,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "78f2754da83f8d907213e8be0b7a75807c791a6397137251ea77fa51e3cc7f83"
+      "release_sha256": "efe134c9e1d56b87654e48e1d08b3174233fe14839f2b5334022c1116b9ab646"
     },
     {
       "name": "japan_snap_election_2026",
@@ -409,7 +409,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "de274443e447aa1c1a744d20c23d99bb6d99b21c0e01aad3387e895f12df726f"
+      "release_sha256": "a0dad695982278c07afe47b115caf6c42ba633bbc86b546b6e0ee850fd607c79"
     },
     {
       "name": "assam_election_2026",
@@ -424,7 +424,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "e140b42eeb3cccd42d0ef934a5cb8081833405e49993c8cfe5bc72c189d2ca42"
+      "release_sha256": "1ef29baf7ea6f37bcda13d536c07ec6f51bfa62876f19d05e2f53d46ebe36670"
     },
     {
       "name": "west_bengal_election_2026",
@@ -439,7 +439,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "fa6c8bc60a14988eb05c83b6620b718a9f29ad07c6c2ec626385d7011f9a5966"
+      "release_sha256": "88dc7e40353f528c60260d1d75816afc31c8f0c2594c0b1779768418068ba00a"
     },
     {
       "name": "tamil_nadu_election_2026",
@@ -454,7 +454,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "f9bfb626f3f835068f39c4a6a78f7031547bf482c1f656a3d58adbc2eebe0df1"
+      "release_sha256": "12d72bf675e76b58bf2ec792799cba997ec0f4c6c996d7dace4d85c970061092"
     },
     {
       "name": "bitcoin_all_time_high_2025",
@@ -469,7 +469,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "a234830fe5ffe2272391adf679cdd338b8e9ecb9708c66b1fe2561341e524365"
+      "release_sha256": "5b815672602a7737923b4928cf41d6030874b8c9c487a4a1d6670841d33107ee"
     },
     {
       "name": "genius_act_stablecoin_2025",
@@ -484,7 +484,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "e47691c457e0d106d261b63f6ce532e1a1127796b3b8ecac4524345c6fdd7e04"
+      "release_sha256": "13b99c84fccd0d194a6b361069e2c88b173ae9d1ecea7136f4c15217ff264f99"
     },
     {
       "name": "nvidia_record_revenue_2026",
@@ -499,7 +499,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "f2ef64f50b9b5f85f2fcf3989b1295e2efc2c76c3acb89ebfc6e11d16de1e77c"
+      "release_sha256": "c78041176d5c980dd73ca37d9c01405e88697a007edd68449141cb8d2d2d704d"
     },
     {
       "name": "stargate_project_2025",
@@ -514,7 +514,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "e6e8d559ad799d8b27ba75d9bddd6b3be0e5e0d63fdb72d5977595cbd20595dd"
+      "release_sha256": "9696a3a4fb42dfbae8466e6a20e3728c952e6ac533c4a1b964fd5293a34ea07f"
     },
     {
       "name": "gemini_2_5_release_2025",
@@ -529,7 +529,7 @@
         "1D": 28
       },
       "contains_text": false,
-      "release_sha256": "bd38c975c246d1f4035eff13fcbeca63027c3f853c33967dd3703cfe6c4d1cf0"
+      "release_sha256": "236cb486f4e5200d416e030e929633faa4b8c43092d70ac36916211d88c7fa9b"
     }
   ]
 }

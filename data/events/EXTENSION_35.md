@@ -26,3 +26,7 @@ public event name, post/edge/bin counts, privacy mode, and deterministic hash
 of every event's released files. The 35 event names were checked against the
 original registry, and their post IDs have zero overlap with the existing
 public textual-artifact subset.
+
+The release hash is calculated over each event's relative file paths and file
+bytes in sorted order, with text line endings canonicalized to LF. This makes
+the checksum reproducible after either Windows or Unix checkouts.

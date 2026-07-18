@@ -1148,7 +1148,7 @@
     {
       "name": "may_2026_public_figure_memorials",
       "display_name": "May 2026 Public Figure Memorials",
-      "category": "sports_entertainment",
+      "category": "social_movement",
       "start_time": "2026-05-04T00:00:00",
       "end_time": "2026-05-31T18:00:00",
       "available_granularities": [
@@ -1245,5 +1245,5 @@
       "notes": "2026 ID-only extension; source batch data9; original event ID UCLFinal2026PSGArsenal."
     }
   ],
-  "note": "102 real events across five categories after the 35-event ID-only extension (Natural Disaster 17, Political 31, Social Movement 12, Technology 21, Sports & Entertainment 21). The original paper benchmark contained 67 events. All extension events provide 6H, 12H, and 1D artifacts."
+  "note": "102 real events across five categories after the 35-event ID-only extension (Natural Disaster 17, Political 31, Social Movement 13, Technology 21, Sports & Entertainment 20). The original paper benchmark contained 67 events. All extension events provide 6H, 12H, and 1D artifacts."
 }

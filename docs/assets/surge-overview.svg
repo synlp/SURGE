@@ -30,8 +30,8 @@
     <g transform="translate(0 126)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#f7fbf7" stroke="#c7ddcf"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">sports / entertainment</text>
-      <rect x="150" y="12" width="102" height="20" rx="5" fill="#2f7d4f"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">21</text>
+      <rect x="150" y="12" width="98" height="20" rx="5" fill="#2f7d4f"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">20</text>
     </g>
     <g transform="translate(0 180)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff8f1" stroke="#edd0b6"/>
@@ -42,8 +42,8 @@
     <g transform="translate(0 234)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff5f4" stroke="#efc7c3"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">social movement</text>
-      <rect x="150" y="12" width="88" height="20" rx="5" fill="#b83a32"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+      <rect x="150" y="12" width="92" height="20" rx="5" fill="#b83a32"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">13</text>
     </g>
     <g transform="translate(0 288)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#f8f5fc" stroke="#d7c9ee"/>

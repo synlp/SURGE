@@ -36,8 +36,8 @@ from any automated classifier. The original paper benchmark contains
 Natural Disaster (12), Political (17), Social Movement (12), Technology
 (12), and Sports & Entertainment (14), totaling 67 events. The 35-event
 extension brings the current registry to Natural Disaster (17), Political
-(31), Social Movement (12), Technology (21), and Sports & Entertainment
-(21), totaling 102.
+(31), Social Movement (13), Technology (21), and Sports & Entertainment
+(20), totaling 102.
 
 ## Synthetic events
 

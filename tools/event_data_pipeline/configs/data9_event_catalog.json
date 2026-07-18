@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "category_status": "editorial_mapping_for_pipeline; project-owner review recommended",
+  "category_status": "editorial_mapping_for_pipeline; project-owner reviewed 2026-07-18",
   "events": [
     {"event_id": "AISummitLondon2026", "display_name": "AI Summit London 2026", "category": "technology"},
     {"event_id": "AppleWWDC2026", "display_name": "Apple WWDC 2026", "category": "technology"},
@@ -11,7 +11,7 @@
     {"event_id": "EuropeEarlyHeatDome2026", "display_name": "Europe Early Heat Dome 2026", "category": "natural_disaster"},
     {"event_id": "FIFAWorldCup2026Kickoff", "display_name": "FIFA World Cup 2026 Kickoff", "category": "sports_entertainment"},
     {"event_id": "MadonnaWorldCup2026", "display_name": "Madonna World Cup 2026", "category": "sports_entertainment"},
-    {"event_id": "May2026PublicFigureMemorials", "display_name": "May 2026 Public Figure Memorials", "category": "sports_entertainment"},
+    {"event_id": "May2026PublicFigureMemorials", "display_name": "May 2026 Public Figure Memorials", "category": "social_movement"},
     {"event_id": "MayonVolcanoActivity2026", "display_name": "Mayon Volcano Activity 2026", "category": "natural_disaster"},
     {"event_id": "MicrosoftBuild2026CopilotEcosystem", "display_name": "Microsoft Build 2026 Copilot Ecosystem", "category": "technology"},
     {"event_id": "NBAFinals2026", "display_name": "NBA Finals 2026", "category": "sports_entertainment"},
