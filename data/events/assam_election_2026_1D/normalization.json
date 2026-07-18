@@ -1,0 +1,23 @@
+{
+  "event": "assam_election_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 531.8947368421053,
+      "std": 839.7330336881097,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.20892361811925927,
+      "std": 0.16962476199910306,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

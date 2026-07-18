@@ -1,0 +1,23 @@
+{
+  "event": "ucl_final_2026_psg_arsenal",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 164.7948717948718,
+      "std": 386.66895530846864,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.06465528829382067,
+      "std": 0.29896798325921603,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

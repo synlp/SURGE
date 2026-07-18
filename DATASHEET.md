@@ -23,9 +23,12 @@ Polarity ($\bar{s}_t$, mean of LLM-assigned per-post polarity scores
 in the bin) — released in both raw and per-event z-score normalized
 form (NaN preserved for empty bins).
 
-The collection contains 67 events covering 817,442 posts, organized
-into 67 events at 6-hour granularity, 64 events at 12-hour
-granularity, and 55 events at 1-day granularity. The lower event
+The original paper collection contains 67 events covering 817,442 posts,
+organized into 67 events at 6-hour granularity, 64 events at 12-hour
+granularity, and 55 events at 1-day granularity. A later 35-event,
+441,631-post ID-only extension brings the repository release to 102
+events and 1,259,073 posts, with coverage of 102 / 99 / 90 events at
+6H / 12H / 1D. The lower event
 count at larger granularities reflects events whose active period is
 too short to satisfy the paper's minimum-bin threshold.
 
@@ -35,6 +38,10 @@ after the deduplication and quality filtering pipeline documented
 in the paper's data-preprocessing appendix and the active-period
 refinement step documented in the paper's time-series-construction
 appendix.
+
+The extension distributes derived numerical series, anonymous post IDs,
+platform/URL lookup records, interaction edges, and ID-only sampled views.
+It does not redistribute social-platform post text.
 
 Bins that contain no posts are kept as missing (`NaN`) in the
 released CSV files. The benchmark pipeline imputes them via

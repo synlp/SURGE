@@ -1,0 +1,23 @@
+{
+  "event": "sxsw_london_2026_cross_culture",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 10.307692307692308,
+      "std": 20.463418074455227,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.14958286503874726,
+      "std": 0.44900770271300894,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

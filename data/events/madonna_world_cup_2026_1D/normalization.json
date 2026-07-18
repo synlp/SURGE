@@ -1,0 +1,23 @@
+{
+  "event": "madonna_world_cup_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 42.578947368421055,
+      "std": 44.447859210153766,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.41404787718163943,
+      "std": 0.4302317934896517,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

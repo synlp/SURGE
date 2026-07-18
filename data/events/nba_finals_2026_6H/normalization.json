@@ -1,0 +1,23 @@
+{
+  "event": "nba_finals_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 341.3205128205128,
+      "std": 683.2518868333079,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.19373498225476427,
+      "std": 0.5005517351687869,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

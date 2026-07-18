@@ -17,8 +17,9 @@ data/events/<event_name>_<granularity>/
 
 `<granularity>` is one of `6H`, `12H`, `1D`. Some shorter events do not
 have enough bins to populate the larger granularities; in that case the
-corresponding directory is simply absent. The release covers 67 events
-at 6H, 64 events at 12H, and 55 events at 1D.
+corresponding directory is simply absent. The current repository release
+covers 102 events at 6H, 99 events at 12H, and 90 events at 1D; the
+original paper benchmark covered 67 / 64 / 55 respectively.
 
 The two released variables match the paper's Equation 1: Discussion
 Intensity $c_t = |\mathcal{P}_t|$ and Sentiment Polarity

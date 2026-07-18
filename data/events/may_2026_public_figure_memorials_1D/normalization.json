@@ -1,0 +1,23 @@
+{
+  "event": "may_2026_public_figure_memorials",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 417.05263157894734,
+      "std": 402.003858803712,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.018920734971040576,
+      "std": 0.2010996294338517,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

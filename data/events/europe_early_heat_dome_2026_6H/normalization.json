@@ -1,0 +1,23 @@
+{
+  "event": "europe_early_heat_dome_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 364.5897435897436,
+      "std": 449.71046058141064,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.2511909584690291,
+      "std": 0.1845474670137972,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "event": "iran_war_us_israel_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 1147.0,
+      "std": 688.4534154633543,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.16524255738870225,
+      "std": 0.09303486950845577,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "event": "japan_snap_election_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 802.578947368421,
+      "std": 1132.4762953619766,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.05507238591089458,
+      "std": 0.15543317366030307,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

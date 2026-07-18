@@ -1,0 +1,23 @@
+{
+  "event": "poland_presidential_election_2025",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 161.02564102564102,
+      "std": 438.4517625240963,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.21696862757802585,
+      "std": 0.3153623421769251,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

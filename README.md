@@ -33,8 +33,10 @@ within each chronological 70 / 10 / 20 segment, so no imputation
 reference crosses a split boundary. Field-level documentation lives
 in `schema/`.
 
-The release covers 67 events at `6H`, 64 events at `12H`, and 55
-events at `1D`. The full event registry is
+The repository release covers 102 events at `6H`, 99 events at `12H`,
+and 90 events at `1D`. This consists of the original paper benchmark
+(67 / 64 / 55) plus a 35-event ID-only extension released at all three
+granularities. The full event registry is
 `data/events/event_metadata.json`, also exposed programmatically
 through `event_config.py`.
 
@@ -45,7 +47,7 @@ pip install -r requirements.txt
 
 # Inspect the registry
 python -c "from event_config import get_real_events; print(len(get_real_events()))"
-# 67
+# 102
 
 # Load a granularity into the standard pooled train / val / test loaders
 python -c "
@@ -68,7 +70,7 @@ print('events:', len(meta['event_names']),
 ├── DATASHEET.md             Datasheet excerpt
 ├── CHANGELOG.md
 ├── requirements.txt
-├── event_config.py          EventConfig dataclass + 67-event registry loader
+├── event_config.py          EventConfig dataclass + 102-event registry loader
 ├── common/                  Shared schemas, IO and time utilities
 ├── benchmark/
 │   ├── data_loader.py       Per-event dataloader with split-internal imputation

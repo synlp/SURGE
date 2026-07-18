@@ -2,7 +2,7 @@
 SURGE event registry.
 
 Provides the :class:`EventConfig` schema and utility functions for
-loading the 67-event registry from the per-corpus metadata JSON. The
+loading the 102-event registry from the per-corpus metadata JSON. The
 canonical list of events lives in ``data/events/event_metadata.json``
 (real events) and ``data/synthetic_examples/event_metadata.json``
 (synthetic demo events), both following the same schema.
@@ -126,7 +126,7 @@ def load_events_from_metadata(metadata_path: Path | str) -> list[EventConfig]:
 def get_real_events(
     metadata_path: Path | str = DEFAULT_REAL_METADATA,
 ) -> list[EventConfig]:
-    """Return the 67 real events. Empty list if metadata file is absent."""
+    """Return the 102 real events. Empty list if metadata file is absent."""
     p = Path(metadata_path)
     if not p.exists():
         return []

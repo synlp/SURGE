@@ -1,0 +1,23 @@
+{
+  "event": "gemini_2_5_release_2025",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 1.6538461538461537,
+      "std": 2.246518235283116,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.5869499781264488,
+      "std": 0.5668097205633634,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

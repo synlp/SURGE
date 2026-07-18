@@ -14,22 +14,38 @@ python -c "
 from event_config import get_real_events, get_synthetic_events, get_events_by_category, PAPER_CATEGORIES
 real = get_real_events()
 synth = get_synthetic_events()
-assert len(real) == 67, f'expected 67 real events, got {len(real)}'
+assert len(real) == 102, f'expected 102 real events, got {len(real)}'
 assert len(synth) == 2, f'expected 2 synthetic events, got {len(synth)}'
 counts = {c: len(get_events_by_category(c)) for c in PAPER_CATEGORIES}
 expected = {
-    'natural_disaster': 12, 'political': 17, 'social_movement': 12,
-    'technology': 12, 'sports_entertainment': 14,
+    'natural_disaster': 17, 'political': 31, 'social_movement': 12,
+    'technology': 21, 'sports_entertainment': 21,
 }
 assert counts == expected, f'category counts {counts} != expected {expected}'
 g6  = sum('6H'  in e.available_granularities for e in real)
 g12 = sum('12H' in e.available_granularities for e in real)
 g1  = sum('1D'  in e.available_granularities for e in real)
-assert (g6, g12, g1) == (67, 64, 55), f'coverage {(g6, g12, g1)} != (67, 64, 55)'
-print('  registry: 67 / 64 / 55 OK')
+assert (g6, g12, g1) == (102, 99, 90), f'coverage {(g6, g12, g1)} != (102, 99, 90)'
+print('  registry: 102 / 99 / 90 OK')
 "
 
-echo "=== 2. Synthetic demo schema ==="
+echo "=== 2. 35-event ID-only extension ==="
+python -c "
+import json, os
+manifest = json.load(open('data/events/extension_35_manifest.json'))
+assert manifest['event_count'] == 35
+assert manifest['lookup_posts'] == 441631
+assert manifest['edges'] == 349770
+assert manifest['contains_text'] is False
+for event in manifest['events']:
+    name = event['name']
+    assert os.path.isdir(f'data/events/{name}')
+    for g in ('6H', '12H', '1D'):
+        assert os.path.isdir(f'data/events/{name}_{g}')
+print('  extension: 35 events / 441,631 posts / ID-only OK')
+"
+
+echo "=== 3. Synthetic demo schema ==="
 python -c "
 import os
 for ev in ['synthetic_tech_keynote', 'synthetic_storm_alert']:
@@ -45,7 +61,7 @@ for ev in ['synthetic_tech_keynote', 'synthetic_storm_alert']:
 print('  synthetic schema OK')
 "
 
-echo "=== 3. Dataloader ==="
+echo "=== 4. Dataloader ==="
 python -c "
 import numpy as np
 from benchmark.data_loader import _impute_split_internal, create_dataloaders
@@ -67,14 +83,14 @@ assert not np.isnan(yb.numpy()).any()
 print('  dataloader OK')
 "
 
-echo "=== 4. MAE_reply k thresholds ==="
+echo "=== 5. MAE_reply k thresholds ==="
 python -c "
 from benchmark.evaluate import MAE_REPLY_K_PERCENTS
 assert MAE_REPLY_K_PERCENTS == (5, 10, 20, 50), f'unexpected: {MAE_REPLY_K_PERCENTS}'
 print('  k thresholds OK')
 "
 
-echo "=== 5. CMA module imports ==="
+echo "=== 6. CMA module imports ==="
 python -c "
 from benchmark.cma.dataset import CMADataset, build_datasets, MAX_TOKENS_PER_BIN
 from benchmark.cma.blocks import IntraBinEncoder, TextAuxHead
@@ -83,10 +99,10 @@ assert MAX_TOKENS_PER_BIN == 9
 print('  CMA imports OK')
 "
 
-echo "=== 6. Dataloader unit tests ==="
+echo "=== 7. Dataloader unit tests ==="
 python tests/test_data_loader.py | tail -1
 
-echo "=== 7. Phase D textual artifacts ==="
+echo "=== 8. Phase D textual artifacts ==="
 python -c "
 import json, os
 selected = json.load(open('tests/phase_d_events.json'))['events']

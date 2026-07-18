@@ -1,0 +1,23 @@
+{
+  "event": "computex_2026_ai_hardware",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 392.36842105263156,
+      "std": 283.2587083301683,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.2859879741160889,
+      "std": 0.12496701412325482,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

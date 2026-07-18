@@ -1,0 +1,23 @@
+{
+  "event": "mayon_volcano_activity_2026",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 39.256410256410255,
+      "std": 66.69591074564215,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.037592969283983764,
+      "std": 0.19277259959968193,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}
