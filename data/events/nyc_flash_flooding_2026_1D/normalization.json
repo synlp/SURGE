@@ -1,0 +1,23 @@
+{
+  "event": "nyc_flash_flooding_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 54.78947368421053,
+      "std": 127.60406648666616,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.16673110958240528,
+      "std": 0.5718988147633165,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

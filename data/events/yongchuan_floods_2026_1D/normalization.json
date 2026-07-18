@@ -1,0 +1,23 @@
+{
+  "event": "yongchuan_floods_2026",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 24.842105263157894,
+      "std": 48.23000066337258,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.07461384527947997,
+      "std": 0.2562428965189351,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "event": "strait_of_hormuz_shipping_oil_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 153.25641025641025,
+      "std": 204.25621390901935,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.18543684612576575,
+      "std": 0.1865462213735178,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

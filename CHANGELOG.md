@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.2
+
+- Added a 35-event public ID-only extension with 441,631 post IDs and
+  complete 6H / 12H / 1D derived artifacts.
+- Expanded the registry to 102 events with 102 / 99 / 90 granularity
+  coverage while preserving the original 67-event paper benchmark.
+- Added `extension_35_manifest.json` with per-event provenance, counts,
+  privacy mode, and deterministic release hashes.
+
 ## v0.1
 
 Initial release.

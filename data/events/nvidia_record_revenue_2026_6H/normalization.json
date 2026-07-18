@@ -1,0 +1,23 @@
+{
+  "event": "nvidia_record_revenue_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 25.192307692307693,
+      "std": 43.04382313479103,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.29589623891682637,
+      "std": 0.31024633929949896,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

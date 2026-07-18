@@ -1,0 +1,23 @@
+{
+  "event": "fifa_world_cup_2026_kickoff",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 604.6666666666666,
+      "std": 642.3865093154022,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.022901366495747918,
+      "std": 0.20431060650954064,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

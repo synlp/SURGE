@@ -1,0 +1,23 @@
+{
+  "event": "philippines_marcos_duterte_feud",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 162.33333333333334,
+      "std": 104.65433538334622,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.24459176485320086,
+      "std": 0.08929809776730506,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "event": "gaza_west_bank_humanitarian_2026",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 256.0,
+      "std": 256.4436260337412,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.5949048883338158,
+      "std": 0.09882872974289411,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

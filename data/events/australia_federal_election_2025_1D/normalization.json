@@ -1,0 +1,23 @@
+{
+  "event": "australia_federal_election_2025",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 682.1578947368421,
+      "std": 880.3382282520074,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.4361326904527873,
+      "std": 0.10708732292027559,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

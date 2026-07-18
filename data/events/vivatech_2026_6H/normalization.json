@@ -1,0 +1,23 @@
+{
+  "event": "vivatech_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 33.38461538461539,
+      "std": 65.13737569192942,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.38373293192264984,
+      "std": 0.4790371602450645,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

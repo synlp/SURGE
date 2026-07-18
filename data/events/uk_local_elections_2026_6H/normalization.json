@@ -1,0 +1,23 @@
+{
+  "event": "uk_local_elections_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 117.07692307692308,
+      "std": 189.18839946755892,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.35007133545633623,
+      "std": 0.2928050570681015,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

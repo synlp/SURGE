@@ -1,0 +1,23 @@
+{
+  "event": "stargate_project_2025",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 6.948717948717949,
+      "std": 19.747701869472692,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.07579598160763319,
+      "std": 0.4461333585387934,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "event": "ai_summit_london_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 2.2435897435897436,
+      "std": 3.3212057489052786,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.14414817208934855,
+      "std": 0.33338772802844424,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}
