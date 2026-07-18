@@ -1,0 +1,23 @@
+{
+  "event": "bitcoin_all_time_high_2025",
+  "granularity": "1D",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 714.7368421052631,
+      "std": 577.8461680290154,
+      "n_train": 19,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.4728312389666584,
+      "std": 0.1329627449006234,
+      "n_train": 19,
+      "std_was_zero": false
+    }
+  }
+}

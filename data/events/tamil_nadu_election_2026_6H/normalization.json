@@ -1,0 +1,23 @@
+{
+  "event": "tamil_nadu_election_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 205.07692307692307,
+      "std": 284.6098890668332,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.14941726452915766,
+      "std": 0.17561927064096358,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

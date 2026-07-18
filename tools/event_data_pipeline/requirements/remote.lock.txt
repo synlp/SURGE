@@ -1,0 +1,2 @@
+# Exact optional dependency for SSH/SFTP transfer tools.
+paramiko==3.5.1

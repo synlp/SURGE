@@ -32,10 +32,12 @@ The five event categories are used in the paper's stratified analyses
 (per-category MAE breakdowns and leave-one-category-out cross-event
 generalization). Each event is assigned a single category. Category
 labels are intentionally coarse and editorial; they are not derived
-from any automated classifier. The per-category event counts in the
-release match the paper's event-list appendix:
-Natural Disaster (12), Political (17), Social Movement (12),
-Technology (12), and Sports & Entertainment (14), totaling 67 events.
+from any automated classifier. The original paper benchmark contains
+Natural Disaster (12), Political (17), Social Movement (12), Technology
+(12), and Sports & Entertainment (14), totaling 67 events. The 35-event
+extension brings the current registry to Natural Disaster (17), Political
+(31), Social Movement (13), Technology (21), and Sports & Entertainment
+(20), totaling 102.
 
 ## Synthetic events
 

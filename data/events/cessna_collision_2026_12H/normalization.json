@@ -1,0 +1,23 @@
+{
+  "event": "cessna_collision_2026",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 12.35897435897436,
+      "std": 23.865528385139655,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.011036141021141576,
+      "std": 0.05666976436632929,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

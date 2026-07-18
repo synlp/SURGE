@@ -1,0 +1,23 @@
+{
+  "event": "colombia_presidential_first_round_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 115.33333333333333,
+      "std": 199.972348515839,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.2503215056362258,
+      "std": 0.2540696235573009,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

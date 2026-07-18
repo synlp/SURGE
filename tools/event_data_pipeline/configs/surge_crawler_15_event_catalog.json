@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "category_status": "provisional SURGE five-category editorial mapping; project-owner review recommended",
+  "events": [
+    {"event_id":"E001","display_name":"Iran war US Israel 2026","category":"political","source_category":"International Relations, Conflict, and Humanitarian Affairs"},
+    {"event_id":"E002","display_name":"Strait of Hormuz shipping oil 2026","category":"political","source_category":"International Relations, Conflict, and Humanitarian Affairs"},
+    {"event_id":"E003","display_name":"Iran internet shutdown January 2026","category":"political","source_category":"International Relations, Conflict, and Humanitarian Affairs"},
+    {"event_id":"E004","display_name":"Gaza West Bank humanitarian April 2026","category":"political","source_category":"International Relations, Conflict, and Humanitarian Affairs"},
+    {"event_id":"E025","display_name":"Australia federal election 2025","category":"political","source_category":"Elections, Government, and Public Policy"},
+    {"event_id":"E028","display_name":"Poland presidential election 2025","category":"political","source_category":"Elections, Government, and Public Policy"},
+    {"event_id":"E029","display_name":"Japan snap election Takaichi February 2026","category":"political","source_category":"Elections, Government, and Public Policy"},
+    {"event_id":"E037","display_name":"Assam election 2026","category":"political","source_category":"Elections, Government, and Public Policy"},
+    {"event_id":"E038","display_name":"West Bengal election 2026","category":"political","source_category":"Elections, Government, and Public Policy"},
+    {"event_id":"E039","display_name":"Tamil Nadu election 2026","category":"political","source_category":"Elections, Government, and Public Policy"},
+    {"event_id":"E053","display_name":"Bitcoin all time high 2025","category":"technology","source_category":"Macroeconomics, Trade, and Markets","notes":"Crypto-market event mapped to technology under SURGE's coarse taxonomy."},
+    {"event_id":"E054","display_name":"GENIUS Act stablecoin 2025","category":"political","source_category":"Macroeconomics, Trade, and Markets","notes":"Legislation event mapped to political under SURGE's coarse taxonomy."},
+    {"event_id":"E057","display_name":"Nvidia record revenue May 2026","category":"technology","source_category":"Macroeconomics, Trade, and Markets"},
+    {"event_id":"E062","display_name":"Stargate Project OpenAI SoftBank Oracle","category":"technology","source_category":"Artificial Intelligence and Advanced Computing"},
+    {"event_id":"E065","display_name":"Gemini 2.5 release","category":"technology","source_category":"Artificial Intelligence and Advanced Computing"}
+  ]
+}

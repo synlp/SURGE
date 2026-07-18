@@ -1,0 +1,23 @@
+{
+  "event": "iran_internet_shutdown_2026",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 218.07692307692307,
+      "std": 168.08687994916608,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": -0.1780914322886938,
+      "std": 0.20777568228691368,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

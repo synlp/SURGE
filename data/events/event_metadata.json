@@ -23,6 +23,32 @@
       ]
     },
     {
+      "name": "cessna_collision_2026",
+      "display_name": "Cessna Collision 2026",
+      "category": "natural_disaster",
+      "start_time": "2026-05-24T00:00:00",
+      "end_time": "2026-06-20T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID CessnaCollision2026."
+    },
+    {
+      "name": "europe_early_heat_dome_2026",
+      "display_name": "Europe Early Heat Dome 2026",
+      "category": "natural_disaster",
+      "start_time": "2026-06-12T00:00:00",
+      "end_time": "2026-07-09T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID EuropeEarlyHeatDome2026."
+    },
+    {
       "name": "europe_heatwave_wildfire",
       "display_name": "Europe Heatwave & Wildfire",
       "category": "natural_disaster",
@@ -68,6 +94,19 @@
       ]
     },
     {
+      "name": "mayon_volcano_activity_2026",
+      "display_name": "Mayon Volcano Activity 2026",
+      "category": "natural_disaster",
+      "start_time": "2026-05-01T00:00:00",
+      "end_time": "2026-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID MayonVolcanoActivity2026."
+    },
+    {
       "name": "noto_earthquake_japan",
       "display_name": "Noto Earthquake (Japan)",
       "category": "natural_disaster",
@@ -78,6 +117,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "nyc_flash_flooding_2026",
+      "display_name": "NYC Flash Flooding 2026",
+      "category": "natural_disaster",
+      "start_time": "2026-05-20T00:00:00",
+      "end_time": "2026-06-16T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID NYCFlashFlooding2026."
     },
     {
       "name": "pakistan_floods_2022",
@@ -138,6 +190,19 @@
       ]
     },
     {
+      "name": "yongchuan_floods_2026",
+      "display_name": "Yongchuan Floods 2026",
+      "category": "natural_disaster",
+      "start_time": "2026-05-23T00:00:00",
+      "end_time": "2026-06-19T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID YongchuanFloods2026."
+    },
+    {
       "name": "20th_cpc_national_congress",
       "display_name": "20th CPC National Congress",
       "category": "political",
@@ -150,6 +215,32 @@
       ]
     },
     {
+      "name": "assam_election_2026",
+      "display_name": "Assam Election 2026",
+      "category": "political",
+      "start_time": "2026-05-01T00:00:00",
+      "end_time": "2026-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E037."
+    },
+    {
+      "name": "australia_federal_election_2025",
+      "display_name": "Australia Federal Election 2025",
+      "category": "political",
+      "start_time": "2025-05-01T00:00:00",
+      "end_time": "2025-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E025."
+    },
+    {
       "name": "battle_of_bakhmut_2023",
       "display_name": "Battle of Bakhmut 2023",
       "category": "political",
@@ -160,6 +251,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "colombia_presidential_first_round_2026",
+      "display_name": "Colombia Presidential First Round 2026",
+      "category": "political",
+      "start_time": "2026-05-30T00:00:00",
+      "end_time": "2026-06-26T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID ColombiaPresidentialFirstRound2026."
     },
     {
       "name": "damascus_sdf_conflict",
@@ -186,6 +290,32 @@
       ]
     },
     {
+      "name": "gaza_west_bank_humanitarian_2026",
+      "display_name": "Gaza and West Bank Humanitarian Crisis 2026",
+      "category": "political",
+      "start_time": "2026-04-01T00:00:00",
+      "end_time": "2026-04-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E004."
+    },
+    {
+      "name": "genius_act_stablecoin_2025",
+      "display_name": "GENIUS Act and Stablecoins 2025",
+      "category": "political",
+      "start_time": "2025-07-01T00:00:00",
+      "end_time": "2025-07-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E054."
+    },
+    {
       "name": "india_general_election_2024",
       "display_name": "India General Election 2024",
       "category": "political",
@@ -210,6 +340,19 @@
       ]
     },
     {
+      "name": "iran_internet_shutdown_2026",
+      "display_name": "Iran Internet Shutdown 2026",
+      "category": "political",
+      "start_time": "2026-01-01T00:00:00",
+      "end_time": "2026-01-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E003."
+    },
+    {
       "name": "iran_israel_conflict",
       "display_name": "Iran-Israel Conflict",
       "category": "political",
@@ -219,6 +362,19 @@
         "6H",
         "12H"
       ]
+    },
+    {
+      "name": "iran_war_us_israel_2026",
+      "display_name": "Iran War, US and Israel 2026",
+      "category": "political",
+      "start_time": "2026-02-24T00:00:00",
+      "end_time": "2026-03-23T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E001."
     },
     {
       "name": "israel_hamas_conflict_2025",
@@ -245,6 +401,19 @@
       ]
     },
     {
+      "name": "japan_snap_election_2026",
+      "display_name": "Japan Snap Election 2026",
+      "category": "political",
+      "start_time": "2026-01-23T00:00:00",
+      "end_time": "2026-02-19T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E029."
+    },
+    {
       "name": "kazakhstan_protests_2022",
       "display_name": "Kazakhstan Protests 2022",
       "category": "political",
@@ -257,6 +426,32 @@
       ]
     },
     {
+      "name": "philippines_marcos_duterte_feud",
+      "display_name": "Philippines Marcos-Duterte Feud",
+      "category": "political",
+      "start_time": "2025-04-15T00:00:00",
+      "end_time": "2025-05-12T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID PhilippinesMarcosDuterteFeud."
+    },
+    {
+      "name": "poland_presidential_election_2025",
+      "display_name": "Poland Presidential Election 2025",
+      "category": "political",
+      "start_time": "2025-06-01T00:00:00",
+      "end_time": "2025-06-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E028."
+    },
+    {
       "name": "rafah_military_operation",
       "display_name": "Rafah Military Operation",
       "category": "political",
@@ -267,6 +462,44 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "russia_ukraine_conflict_2022",
+      "display_name": "Russia-Ukraine Conflict 2022",
+      "category": "political",
+      "start_time": "2022-02-01T00:00:00",
+      "end_time": "2022-03-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
+      "name": "strait_of_hormuz_shipping_oil_2026",
+      "display_name": "Strait of Hormuz Shipping and Oil 2026",
+      "category": "political",
+      "start_time": "2026-03-01T00:00:00",
+      "end_time": "2026-03-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E002."
+    },
+    {
+      "name": "tamil_nadu_election_2026",
+      "display_name": "Tamil Nadu Election 2026",
+      "category": "political",
+      "start_time": "2026-05-01T00:00:00",
+      "end_time": "2026-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E039."
     },
     {
       "name": "tiktok_ban",
@@ -315,16 +548,17 @@
       ]
     },
     {
-      "name": "russia_ukraine_conflict_2022",
-      "display_name": "Russia-Ukraine Conflict 2022",
+      "name": "uk_local_elections_2026",
+      "display_name": "UK Local Elections 2026",
       "category": "political",
-      "start_time": "2022-02-01T00:00:00",
-      "end_time": "2022-03-28T18:00:00",
+      "start_time": "2026-04-22T00:00:00",
+      "end_time": "2026-05-19T18:00:00",
       "available_granularities": [
         "6H",
         "12H",
         "1D"
-      ]
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID UKLocalElections2026."
     },
     {
       "name": "us_government_shutdown_2025",
@@ -337,6 +571,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "west_bengal_election_2026",
+      "display_name": "West Bengal Election 2026",
+      "category": "political",
+      "start_time": "2026-05-01T00:00:00",
+      "end_time": "2026-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E038."
     },
     {
       "name": "anne_burrell_event",
@@ -492,6 +739,32 @@
       ]
     },
     {
+      "name": "ai_summit_london_2026",
+      "display_name": "AI Summit London 2026",
+      "category": "technology",
+      "start_time": "2026-06-08T00:00:00",
+      "end_time": "2026-07-05T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID AISummitLondon2026."
+    },
+    {
+      "name": "apple_wwdc_2026",
+      "display_name": "Apple WWDC 2026",
+      "category": "technology",
+      "start_time": "2026-05-25T00:00:00",
+      "end_time": "2026-06-21T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID AppleWWDC2026."
+    },
+    {
       "name": "artemis_moon_mission",
       "display_name": "Artemis Moon Mission",
       "category": "technology",
@@ -528,6 +801,19 @@
       ]
     },
     {
+      "name": "bitcoin_all_time_high_2025",
+      "display_name": "Bitcoin All-Time High 2025",
+      "category": "technology",
+      "start_time": "2025-07-01T00:00:00",
+      "end_time": "2025-07-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E053."
+    },
+    {
       "name": "change_6_moon_mission",
       "display_name": "Chang'e 6 Moon Mission",
       "category": "technology",
@@ -538,6 +824,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "computex_2026_ai_hardware",
+      "display_name": "Computex 2026 AI Hardware",
+      "category": "technology",
+      "start_time": "2026-05-25T00:00:00",
+      "end_time": "2026-06-21T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID Computex2026AIHardware."
     },
     {
       "name": "deepseek_v3x_releases",
@@ -552,23 +851,24 @@
       ]
     },
     {
+      "name": "gemini_2_5_release_2025",
+      "display_name": "Gemini 2.5 Release 2025",
+      "category": "technology",
+      "start_time": "2025-03-01T00:00:00",
+      "end_time": "2025-03-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E065."
+    },
+    {
       "name": "google_gemini_release",
       "display_name": "Google Gemini Release",
       "category": "technology",
       "start_time": "2024-01-31T00:00:00",
       "end_time": "2026-01-24T12:00:00",
-      "available_granularities": [
-        "6H",
-        "12H",
-        "1D"
-      ]
-    },
-    {
-      "name": "gpt_release",
-      "display_name": "GPT Release",
-      "category": "technology",
-      "start_time": "2025-01-01T00:00:00",
-      "end_time": "2025-12-31T18:00:00",
       "available_granularities": [
         "6H",
         "12H",
@@ -588,6 +888,18 @@
       ]
     },
     {
+      "name": "gpt_release",
+      "display_name": "GPT Release",
+      "category": "technology",
+      "start_time": "2025-01-01T00:00:00",
+      "end_time": "2025-12-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ]
+    },
+    {
       "name": "james_webb_space_telescope",
       "display_name": "James Webb Space Telescope",
       "category": "technology",
@@ -598,6 +910,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "microsoft_build_2026_copilot_ecosystem",
+      "display_name": "Microsoft Build 2026 Copilot Ecosystem",
+      "category": "technology",
+      "start_time": "2026-05-26T00:00:00",
+      "end_time": "2026-06-22T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID MicrosoftBuild2026CopilotEcosystem."
     },
     {
       "name": "new_glenn_milestone",
@@ -612,6 +937,19 @@
       ]
     },
     {
+      "name": "nvidia_record_revenue_2026",
+      "display_name": "Nvidia Record Revenue 2026",
+      "category": "technology",
+      "start_time": "2026-05-01T00:00:00",
+      "end_time": "2026-05-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E057."
+    },
+    {
       "name": "robotaxi_launch",
       "display_name": "Robotaxi Launch",
       "category": "technology",
@@ -622,6 +960,32 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "stargate_project_2025",
+      "display_name": "Stargate Project 2025",
+      "category": "technology",
+      "start_time": "2025-01-01T00:00:00",
+      "end_time": "2025-01-28T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch crawler_15; original event ID E062."
+    },
+    {
+      "name": "vivatech_2026",
+      "display_name": "VivaTech 2026",
+      "category": "technology",
+      "start_time": "2026-06-14T00:00:00",
+      "end_time": "2026-07-11T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID VivaTech2026."
     },
     {
       "name": "american_baseball_league",
@@ -671,6 +1035,19 @@
       ]
     },
     {
+      "name": "cannes_film_festival_2026",
+      "display_name": "Cannes Film Festival 2026",
+      "category": "sports_entertainment",
+      "start_time": "2026-05-12T00:00:00",
+      "end_time": "2026-06-08T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID CannesFilmFestival2026."
+    },
+    {
       "name": "fifa_club_world_cup_2025",
       "display_name": "FIFA Club World Cup 2025",
       "category": "sports_entertainment",
@@ -705,6 +1082,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "fifa_world_cup_2026_kickoff",
+      "display_name": "FIFA World Cup 2026 Kickoff",
+      "category": "sports_entertainment",
+      "start_time": "2026-06-03T00:00:00",
+      "end_time": "2026-06-30T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID FIFAWorldCup2026Kickoff."
     },
     {
       "name": "golden_globes_2026",
@@ -743,6 +1133,32 @@
       ]
     },
     {
+      "name": "madonna_world_cup_2026",
+      "display_name": "Madonna World Cup 2026",
+      "category": "sports_entertainment",
+      "start_time": "2026-05-14T00:00:00",
+      "end_time": "2026-06-10T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID MadonnaWorldCup2026."
+    },
+    {
+      "name": "may_2026_public_figure_memorials",
+      "display_name": "May 2026 Public Figure Memorials",
+      "category": "social_movement",
+      "start_time": "2026-05-04T00:00:00",
+      "end_time": "2026-05-31T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID May2026PublicFigureMemorials."
+    },
+    {
       "name": "nba_finals",
       "display_name": "NBA Finals",
       "category": "sports_entertainment",
@@ -753,6 +1169,19 @@
         "12H",
         "1D"
       ]
+    },
+    {
+      "name": "nba_finals_2026",
+      "display_name": "NBA Finals 2026",
+      "category": "sports_entertainment",
+      "start_time": "2026-06-14T00:00:00",
+      "end_time": "2026-07-11T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID NBAFinals2026."
     },
     {
       "name": "paris_olympics_2024",
@@ -779,6 +1208,19 @@
       ]
     },
     {
+      "name": "sxsw_london_2026_cross_culture",
+      "display_name": "SXSW London 2026 Cross-Culture",
+      "category": "sports_entertainment",
+      "start_time": "2026-05-20T00:00:00",
+      "end_time": "2026-06-16T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID SXSWLondon2026CrossCulture."
+    },
+    {
       "name": "t20_world_cup_2026_final",
       "display_name": "T20 World Cup 2026 Final",
       "category": "sports_entertainment",
@@ -788,7 +1230,20 @@
         "6H",
         "12H"
       ]
+    },
+    {
+      "name": "ucl_final_2026_psg_arsenal",
+      "display_name": "UCL Final 2026 PSG-Arsenal",
+      "category": "sports_entertainment",
+      "start_time": "2026-05-20T00:00:00",
+      "end_time": "2026-06-16T18:00:00",
+      "available_granularities": [
+        "6H",
+        "12H",
+        "1D"
+      ],
+      "notes": "2026 ID-only extension; source batch data9; original event ID UCLFinal2026PSGArsenal."
     }
   ],
-  "note": "67 events across five paper categories (Natural Disaster 12, Political 17, Social Movement 12, Technology 12, Sports & Entertainment 14). 'available_granularities' is determined by the paper's 21-bin minimum applied per granularity. start_time / end_time bound the active period detected by the construction pipeline (paper Appendix C)."
+  "note": "102 real events across five categories after the 35-event ID-only extension (Natural Disaster 17, Political 31, Social Movement 13, Technology 21, Sports & Entertainment 20). The original paper benchmark contained 67 events. All extension events provide 6H, 12H, and 1D artifacts."
 }

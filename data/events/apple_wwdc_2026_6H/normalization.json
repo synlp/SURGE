@@ -1,0 +1,23 @@
+{
+  "event": "apple_wwdc_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 148.9102564102564,
+      "std": 238.6583324302669,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.2048572575684103,
+      "std": 0.16640242084057214,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "event": "genius_act_stablecoin_2025",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 347.7435897435897,
+      "std": 616.5506911573458,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.2982253680357323,
+      "std": 0.17491965382133262,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

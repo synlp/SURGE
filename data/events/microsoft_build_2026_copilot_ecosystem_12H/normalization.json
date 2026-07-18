@@ -1,0 +1,23 @@
+{
+  "event": "microsoft_build_2026_copilot_ecosystem",
+  "granularity": "12H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 9.23076923076923,
+      "std": 9.26936376114829,
+      "n_train": 39,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.23336520445058193,
+      "std": 0.43595224548460915,
+      "n_train": 39,
+      "std_was_zero": false
+    }
+  }
+}

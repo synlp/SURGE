@@ -1,0 +1,535 @@
+{
+  "schema_version": "1.0.0",
+  "release_mode": "public_id_only",
+  "event_count": 35,
+  "lookup_posts": 441631,
+  "edges": 349770,
+  "contains_text": false,
+  "events": [
+    {
+      "name": "ai_summit_london_2026",
+      "source_event_id": "AISummitLondon2026",
+      "source_batch": "data9",
+      "category": "technology",
+      "lookup_posts": 61,
+      "edges": 39,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "194a584e6c1c9773c4ff93e7a9c2dba773702bc328c783026df4e4ccc4c32a11"
+    },
+    {
+      "name": "apple_wwdc_2026",
+      "source_event_id": "AppleWWDC2026",
+      "source_batch": "data9",
+      "category": "technology",
+      "lookup_posts": 12736,
+      "edges": 11378,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "ec2a18297ffb5168c11b4efbf0b421aa36d33cede9e35a91df55a94c77b6d5b9"
+    },
+    {
+      "name": "cannes_film_festival_2026",
+      "source_event_id": "CannesFilmFestival2026",
+      "source_batch": "data9",
+      "category": "sports_entertainment",
+      "lookup_posts": 249,
+      "edges": 42,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "d1be8841cc6eb80ab25d4faad6993ef3cfda334a3cdb1570eabf855a8129deeb"
+    },
+    {
+      "name": "cessna_collision_2026",
+      "source_event_id": "CessnaCollision2026",
+      "source_batch": "data9",
+      "category": "natural_disaster",
+      "lookup_posts": 281,
+      "edges": 199,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "309e90fd3cee948e98e1ddadf041ad638dca1fda64e4fa91b0e902f876ea9efc"
+    },
+    {
+      "name": "colombia_presidential_first_round_2026",
+      "source_event_id": "ColombiaPresidentialFirstRound2026",
+      "source_batch": "data9",
+      "category": "political",
+      "lookup_posts": 22718,
+      "edges": 21310,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "fbf1aa71e22cfd07f0f20e01c8d8708c2feb7b950d4d6b9a1758f2bac121f19b"
+    },
+    {
+      "name": "computex_2026_ai_hardware",
+      "source_event_id": "Computex2026AIHardware",
+      "source_batch": "data9",
+      "category": "technology",
+      "lookup_posts": 7683,
+      "edges": 6675,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "9f0c6e057ec7be973e962618271365cbfcd7e320ae2d4215164cc2fbb5d2689d"
+    },
+    {
+      "name": "europe_early_heat_dome_2026",
+      "source_event_id": "EuropeEarlyHeatDome2026",
+      "source_batch": "data9",
+      "category": "natural_disaster",
+      "lookup_posts": 29293,
+      "edges": 26383,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "c2a02db1fc9f734f912d50b5fd0c0898d3dede0f29d15e5211261fecc7263f72"
+    },
+    {
+      "name": "fifa_world_cup_2026_kickoff",
+      "source_event_id": "FIFAWorldCup2026Kickoff",
+      "source_batch": "data9",
+      "category": "sports_entertainment",
+      "lookup_posts": 87922,
+      "edges": 84339,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "f2cc6f101fd5b6fd79671c21b38bc852f6d6d8b790c9d2afaa69e098c416df3a"
+    },
+    {
+      "name": "madonna_world_cup_2026",
+      "source_event_id": "MadonnaWorldCup2026",
+      "source_batch": "data9",
+      "category": "sports_entertainment",
+      "lookup_posts": 904,
+      "edges": 263,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "2ecfc67212bccd210a5d62a35047368c8472152a960b0fbdb12d7281ae0a5ac8"
+    },
+    {
+      "name": "may_2026_public_figure_memorials",
+      "source_event_id": "May2026PublicFigureMemorials",
+      "source_batch": "data9",
+      "category": "social_movement",
+      "lookup_posts": 8218,
+      "edges": 6321,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "e841bd441cf8dcbbbc9178433d2860f70715bfda8ae009f764a898c8bc261e77"
+    },
+    {
+      "name": "mayon_volcano_activity_2026",
+      "source_event_id": "MayonVolcanoActivity2026",
+      "source_batch": "data9",
+      "category": "natural_disaster",
+      "lookup_posts": 2282,
+      "edges": 1343,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "ae8c943cdb03a3c90fa0690cb8d4e15b75cf02dcbe52a8b4dcda1fe34ea4ee1c"
+    },
+    {
+      "name": "microsoft_build_2026_copilot_ecosystem",
+      "source_event_id": "MicrosoftBuild2026CopilotEcosystem",
+      "source_batch": "data9",
+      "category": "technology",
+      "lookup_posts": 348,
+      "edges": 264,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "824a3034941772375e98b098d843532961688b30a6ee86b5b8ef71085ee27a00"
+    },
+    {
+      "name": "nba_finals_2026",
+      "source_event_id": "NBAFinals2026",
+      "source_batch": "data9",
+      "category": "sports_entertainment",
+      "lookup_posts": 26606,
+      "edges": 25863,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "4096d0379f4c47c3b235574aabcb63a343879cd28cf322308a3022f3ff8c4f04"
+    },
+    {
+      "name": "nyc_flash_flooding_2026",
+      "source_event_id": "NYCFlashFlooding2026",
+      "source_batch": "data9",
+      "category": "natural_disaster",
+      "lookup_posts": 1036,
+      "edges": 910,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "8bf6897d5bf975c0011437fa56985821b0fdc0a78ca3944ebdf5ee9587847aff"
+    },
+    {
+      "name": "philippines_marcos_duterte_feud",
+      "source_event_id": "PhilippinesMarcosDuterteFeud",
+      "source_batch": "data9",
+      "category": "political",
+      "lookup_posts": 8005,
+      "edges": 5732,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "182faaf4d21eb4360afd38700738eb15fde029044c439c12a0f4f5e3b38cd2d1"
+    },
+    {
+      "name": "sxsw_london_2026_cross_culture",
+      "source_event_id": "SXSWLondon2026CrossCulture",
+      "source_batch": "data9",
+      "category": "sports_entertainment",
+      "lookup_posts": 764,
+      "edges": 610,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "ff6090345a1735ad285bac042313f80781d0864c96f87bafbca5c53ab795e558"
+    },
+    {
+      "name": "ucl_final_2026_psg_arsenal",
+      "source_event_id": "UCLFinal2026PSGArsenal",
+      "source_batch": "data9",
+      "category": "sports_entertainment",
+      "lookup_posts": 6408,
+      "edges": 5745,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "6b2d960023d61ecaa7dca06b3f05fa9ebb1608f949fac06a7d14a649e044f336"
+    },
+    {
+      "name": "uk_local_elections_2026",
+      "source_event_id": "UKLocalElections2026",
+      "source_batch": "data9",
+      "category": "political",
+      "lookup_posts": 10141,
+      "edges": 9217,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "ff6d4cb13d319e40e29fde9c86d639875df4d05d4acfa71c127580990f7404d2"
+    },
+    {
+      "name": "vivatech_2026",
+      "source_event_id": "VivaTech2026",
+      "source_batch": "data9",
+      "category": "technology",
+      "lookup_posts": 2570,
+      "edges": 2078,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "42b08bba571ef1c11c1d017d907c091a450b1f7f9aa1f219ca3a7037e3f143ef"
+    },
+    {
+      "name": "yongchuan_floods_2026",
+      "source_event_id": "YongchuanFloods2026",
+      "source_batch": "data9",
+      "category": "natural_disaster",
+      "lookup_posts": 465,
+      "edges": 264,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "94d7933160f52350e89304573fd4cdd5305ff11080e8a5820c76b3821904b926"
+    },
+    {
+      "name": "iran_war_us_israel_2026",
+      "source_event_id": "E001",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 28945,
+      "edges": 25521,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "fa283a65575c0df1c18c6e6ef61e7067f034bb93a6b621fbfbe4e34d882467f3"
+    },
+    {
+      "name": "strait_of_hormuz_shipping_oil_2026",
+      "source_event_id": "E002",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 17235,
+      "edges": 5539,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "ec10ffcdf1ab7f3770e09b0980cfd3f545f7c7932ce7f801521f0c69d71729c3"
+    },
+    {
+      "name": "iran_internet_shutdown_2026",
+      "source_event_id": "E003",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 3842,
+      "edges": 3679,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "5799ca3ac1d9871d6b23e20dc161e12492f581b2804b4e378af85070046e0391"
+    },
+    {
+      "name": "gaza_west_bank_humanitarian_2026",
+      "source_event_id": "E004",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 11562,
+      "edges": 5040,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "3757c2db264d792a18a510967de951716a81f51b48207c0542055518e89cb2e2"
+    },
+    {
+      "name": "australia_federal_election_2025",
+      "source_event_id": "E025",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 13689,
+      "edges": 6297,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "09f712e8be05a58d18b2500cc75280b97aefc4c3dbb8b41d8f360e4d36b62740"
+    },
+    {
+      "name": "poland_presidential_election_2025",
+      "source_event_id": "E028",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 13190,
+      "edges": 11570,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "efe134c9e1d56b87654e48e1d08b3174233fe14839f2b5334022c1116b9ab646"
+    },
+    {
+      "name": "japan_snap_election_2026",
+      "source_event_id": "E029",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 17201,
+      "edges": 13456,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "a0dad695982278c07afe47b115caf6c42ba633bbc86b546b6e0ee850fd607c79"
+    },
+    {
+      "name": "assam_election_2026",
+      "source_event_id": "E037",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 10934,
+      "edges": 8045,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "1ef29baf7ea6f37bcda13d536c07ec6f51bfa62876f19d05e2f53d46ebe36670"
+    },
+    {
+      "name": "west_bengal_election_2026",
+      "source_event_id": "E038",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 12773,
+      "edges": 4708,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "88dc7e40353f528c60260d1d75816afc31c8f0c2594c0b1779768418068ba00a"
+    },
+    {
+      "name": "tamil_nadu_election_2026",
+      "source_event_id": "E039",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 17967,
+      "edges": 9762,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "12d72bf675e76b58bf2ec792799cba997ec0f4c6c996d7dace4d85c970061092"
+    },
+    {
+      "name": "bitcoin_all_time_high_2025",
+      "source_event_id": "E053",
+      "source_batch": "crawler_15",
+      "category": "technology",
+      "lookup_posts": 15250,
+      "edges": 10396,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "5b815672602a7737923b4928cf41d6030874b8c9c487a4a1d6670841d33107ee"
+    },
+    {
+      "name": "genius_act_stablecoin_2025",
+      "source_event_id": "E054",
+      "source_batch": "crawler_15",
+      "category": "political",
+      "lookup_posts": 16928,
+      "edges": 9788,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "13b99c84fccd0d194a6b361069e2c88b173ae9d1ecea7136f4c15217ff264f99"
+    },
+    {
+      "name": "nvidia_record_revenue_2026",
+      "source_event_id": "E057",
+      "source_batch": "crawler_15",
+      "category": "technology",
+      "lookup_posts": 6245,
+      "edges": 4840,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "c78041176d5c980dd73ca37d9c01405e88697a007edd68449141cb8d2d2d704d"
+    },
+    {
+      "name": "stargate_project_2025",
+      "source_event_id": "E062",
+      "source_batch": "crawler_15",
+      "category": "technology",
+      "lookup_posts": 18480,
+      "edges": 14646,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "9696a3a4fb42dfbae8466e6a20e3728c952e6ac533c4a1b964fd5293a34ea07f"
+    },
+    {
+      "name": "gemini_2_5_release_2025",
+      "source_event_id": "E065",
+      "source_batch": "crawler_15",
+      "category": "technology",
+      "lookup_posts": 8700,
+      "edges": 7508,
+      "bins": {
+        "6H": 112,
+        "12H": 56,
+        "1D": 28
+      },
+      "contains_text": false,
+      "release_sha256": "236cb486f4e5200d416e030e929633faa4b8c43092d70ac36916211d88c7fa9b"
+    }
+  ]
+}

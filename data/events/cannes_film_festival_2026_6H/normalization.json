@@ -1,0 +1,23 @@
+{
+  "event": "cannes_film_festival_2026",
+  "granularity": "6H",
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.1,
+    "test": 0.2
+  },
+  "variables": {
+    "comment_count": {
+      "mean": 3.58974358974359,
+      "std": 3.3947013668585364,
+      "n_train": 78,
+      "std_was_zero": false
+    },
+    "sentiment_polarity": {
+      "mean": 0.34055389055389057,
+      "std": 0.52153359191339,
+      "n_train": 78,
+      "std_was_zero": false
+    }
+  }
+}
