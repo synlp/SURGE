@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "category_status": "editorial_mapping_for_pipeline; project-owner review recommended",
+  "events": [
+    {"event_id": "AISummitLondon2026", "display_name": "AI Summit London 2026", "category": "technology"},
+    {"event_id": "AppleWWDC2026", "display_name": "Apple WWDC 2026", "category": "technology"},
+    {"event_id": "CannesFilmFestival2026", "display_name": "Cannes Film Festival 2026", "category": "sports_entertainment"},
+    {"event_id": "CessnaCollision2026", "display_name": "Cessna Collision 2026", "category": "natural_disaster", "notes": "Transportation accident mapped to SURGE's closest coarse category."},
+    {"event_id": "ColombiaPresidentialFirstRound2026", "display_name": "Colombia Presidential First Round 2026", "category": "political"},
+    {"event_id": "Computex2026AIHardware", "display_name": "Computex 2026 AI Hardware", "category": "technology"},
+    {"event_id": "EuropeEarlyHeatDome2026", "display_name": "Europe Early Heat Dome 2026", "category": "natural_disaster"},
+    {"event_id": "FIFAWorldCup2026Kickoff", "display_name": "FIFA World Cup 2026 Kickoff", "category": "sports_entertainment"},
+    {"event_id": "MadonnaWorldCup2026", "display_name": "Madonna World Cup 2026", "category": "sports_entertainment"},
+    {"event_id": "May2026PublicFigureMemorials", "display_name": "May 2026 Public Figure Memorials", "category": "sports_entertainment"},
+    {"event_id": "MayonVolcanoActivity2026", "display_name": "Mayon Volcano Activity 2026", "category": "natural_disaster"},
+    {"event_id": "MicrosoftBuild2026CopilotEcosystem", "display_name": "Microsoft Build 2026 Copilot Ecosystem", "category": "technology"},
+    {"event_id": "NBAFinals2026", "display_name": "NBA Finals 2026", "category": "sports_entertainment"},
+    {"event_id": "NYCFlashFlooding2026", "display_name": "NYC Flash Flooding 2026", "category": "natural_disaster"},
+    {"event_id": "PhilippinesMarcosDuterteFeud", "display_name": "Philippines Marcos-Duterte Feud", "category": "political"},
+    {"event_id": "SXSWLondon2026CrossCulture", "display_name": "SXSW London 2026 Cross-Culture", "category": "sports_entertainment"},
+    {"event_id": "UCLFinal2026PSGArsenal", "display_name": "UCL Final 2026 PSG-Arsenal", "category": "sports_entertainment"},
+    {"event_id": "UKLocalElections2026", "display_name": "UK Local Elections 2026", "category": "political"},
+    {"event_id": "VivaTech2026", "display_name": "VivaTech 2026", "category": "technology"},
+    {"event_id": "YongchuanFloods2026", "display_name": "Yongchuan Floods 2026", "category": "natural_disaster"}
+  ]
+}

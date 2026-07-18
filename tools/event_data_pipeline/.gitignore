@@ -1,0 +1,32 @@
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Credentials and runtime state
+.env
+.env.*
+!.env.example
+.runtime/
+secrets/
+
+# Raw, intermediate, and generated datasets
+data/raw/**
+data/unified/**
+data/release/**
+data/reports/**
+data/sentiment/**
+data/surge_crawler_15/**
+!data/raw/.gitkeep
+!data/unified/.gitkeep
+!data/release/.gitkeep
+!data/reports/.gitkeep
+
+# Logs and temporary outputs
+logs/
+tmp/
+*.log

@@ -88,6 +88,13 @@ print('events:', len(meta['event_names']),
     └── synthetic_examples/  Two synthetic mini-events demonstrating the schema
 ```
 
+## Data processing tools
+
+The independently runnable [`tools/event_data_pipeline/`](tools/event_data_pipeline/)
+normalizes supported collected-event formats and builds validated
+SURGE-compatible artifacts. Raw source data, model weights, credentials and
+generated releases are intentionally excluded from the repository.
+
 ## License
 
 See `LICENSE`. Code is MIT; author-created derivative data under
