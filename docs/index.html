@@ -168,9 +168,21 @@
       background: var(--blue);
     }
 
+    .button.events {
+      border-color: var(--green);
+      background: var(--green);
+    }
+
     .button.secondary {
       color: var(--ink);
       background: #fff;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(20, 33, 61, 0.12);
+      outline: none;
     }
 
     .stats {
@@ -199,6 +211,116 @@
       color: var(--muted);
       font-size: 14px;
       line-height: 1.35;
+    }
+
+    .pathways {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto 28px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 16px;
+    }
+
+    .pathway-card {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      background: var(--paper);
+    }
+
+    .pathway-card.events {
+      border-color: transparent;
+      background: linear-gradient(135deg, #204d98 0%, #2f7d4f 115%);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .pathway-kicker {
+      margin: 0 0 10px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .pathway-card.events .pathway-kicker {
+      color: #d9f2e3;
+    }
+
+    .pathway-card h2 {
+      max-width: 620px;
+      font-size: 30px;
+    }
+
+    .pathway-card > p {
+      max-width: 650px;
+      margin: 13px 0 0;
+      color: var(--muted);
+    }
+
+    .pathway-card.events > p {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .pathway-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      margin: 24px 0;
+    }
+
+    .pathway-metric strong,
+    .pathway-metric span {
+      display: block;
+    }
+
+    .pathway-metric strong {
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .pathway-metric span {
+      margin-top: 5px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+    }
+
+    .pathway-card .button {
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .pathway-card.events .button {
+      border-color: #fff;
+      background: #fff;
+      color: var(--blue);
+    }
+
+    .pathway-links {
+      display: grid;
+      gap: 0;
+      margin-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .pathway-links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .pathway-links a span {
+      color: var(--blue);
     }
 
     .figure-band {
@@ -413,6 +535,7 @@
       }
 
       .stats,
+      .pathways,
       .grid,
       .section-head,
       .layout {
@@ -423,6 +546,7 @@
     @media (max-width: 540px) {
       .nav,
       .hero,
+      .pathways,
       .figure-band,
       .inner,
       .footer-inner {
@@ -435,6 +559,10 @@
 
       h2 {
         font-size: 30px;
+      }
+
+      .pathway-card {
+        padding: 22px;
       }
 
       .data-table,
@@ -479,7 +607,8 @@
         bin-aligned text views and reply / repost interaction structure for public-opinion forecasting.
       </p>
       <div class="hero-actions" aria-label="Page shortcuts">
-        <a class="button primary" href="https://github.com/synlp/SURGE">View Repository</a>
+        <a class="button primary events" href="live/index.html">Explore Public Events</a>
+        <a class="button secondary" href="https://github.com/synlp/SURGE">View Repository</a>
         <a class="button secondary" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read Datasheet</a>
       </div>
       <div class="stats" aria-label="Dataset snapshot">
@@ -500,6 +629,46 @@
           <span>forecasting targets: DI and SP</span>
         </div>
       </div>
+    </section>
+
+    <section class="pathways" aria-label="Ways to use SURGE">
+      <article class="pathway-card events">
+        <p class="pathway-kicker">Public event explorer</p>
+        <h2>Move from the dataset to individual events</h2>
+        <p>
+          Search the complete collection, compare discussion activity and sentiment,
+          and open an event for a more detailed time-based analysis.
+        </p>
+        <div class="pathway-metrics" aria-label="Event explorer coverage">
+          <div class="pathway-metric">
+            <strong>297</strong>
+            <span>public events</span>
+          </div>
+          <div class="pathway-metric">
+            <strong>5</strong>
+            <span>event categories</span>
+          </div>
+          <div class="pathway-metric">
+            <strong>2.60M</strong>
+            <span>posts represented</span>
+          </div>
+        </div>
+        <a class="button" href="live/index.html">Browse all events <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="pathway-card">
+        <p class="pathway-kicker">Benchmark resources</p>
+        <h2>Work with the released dataset</h2>
+        <p>
+          Review the forecasting tasks, release structure, chronological splits,
+          schemas, and loader examples already documented below.
+        </p>
+        <div class="pathway-links">
+          <a href="#data-card">Read the Dataset Card <span aria-hidden="true">↓</span></a>
+          <a href="#quick-start">Open the Quick Start <span aria-hidden="true">↓</span></a>
+          <a href="https://github.com/synlp/SURGE">View the repository <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
     </section>
 
     <section class="figure-band" aria-label="SURGE visual overview">
