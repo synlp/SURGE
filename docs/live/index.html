@@ -207,7 +207,11 @@
     }
     .category-card {
       min-width: 0;
-      padding: 13px 14px;
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 13px;
       border: 1px solid var(--line);
       border-radius: 10px;
       background: #fbfcfd;
@@ -215,6 +219,18 @@
       cursor: pointer;
       text-align: left;
     }
+    .category-icon {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 9px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 15px;
+      font-weight: 850;
+    }
+    .category-copy { min-width: 0; }
     .category-card:hover, .category-card:focus-visible { border-color: var(--blue); background: var(--blue-soft); outline: none; }
     .category-card strong { display: block; overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
     .category-card span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
@@ -420,7 +436,7 @@
       <div>
         <p class="eyebrow">SURGE Events</p>
         <h1 id="page-title">Explore public events</h1>
-        <p class="hero-copy">Search the complete event collection or begin with the latest discussions and broad event categories.</p>
+        <p class="hero-copy">Choose an event, then examine its activity, emotional tone, topics, and emerging viewpoints in one place.</p>
       </div>
       <aside class="hero-stats" aria-label="Published event collection">
         <div class="hero-stat"><span>Events</span><strong id="event-total">—</strong></div>
@@ -497,6 +513,13 @@
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
     })[character]);
     const categoryLabel = value => String(value || "Other").replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
+    const categoryIcon = value => ({
+      political: "◆",
+      natural_disaster: "≈",
+      social_movement: "◎",
+      technology: "⌘",
+      sports_entertainment: "★"
+    })[String(value || "").toLowerCase()] || "•";
     const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);
 
     function normalizedEvent(event) {
@@ -552,7 +575,8 @@
       $("#category-grid").innerHTML = [...counts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([category, count]) => `<button class="category-card" type="button" data-category="${escapeHtml(category)}">
-          <strong>${escapeHtml(categoryLabel(category))}</strong><span>${fmt.format(count)} events</span>
+          <span class="category-icon" aria-hidden="true">${escapeHtml(categoryIcon(category))}</span>
+          <span class="category-copy"><strong>${escapeHtml(categoryLabel(category))}</strong><span>${fmt.format(count)} events</span></span>
         </button>`).join("");
       document.querySelectorAll("[data-category]").forEach(button => button.addEventListener("click", () => {
         $("#category-filter").value = button.dataset.category;
@@ -568,7 +592,7 @@
         <div class="card-top"><span class="category">${escapeHtml(categoryLabel(event.category))}</span><span class="time">${escapeHtml(eventDate(event) || "Date unavailable")}</span></div>
         <h3>${escapeHtml(event.title)}</h3>
         <p class="event-summary">${escapeHtml(event.summary || "Open the event to explore its published activity and sentiment timeline.")}</p>
-        <div class="card-footer"><span><strong>${fmt.format(event.postCount)}</strong> posts</span><span class="open-event">View event →</span></div>
+        <div class="card-footer"><span><strong>${fmt.format(event.postCount)}</strong> posts</span><span class="open-event">Open analysis →</span></div>
       </a>`).join("");
     }
 

@@ -108,6 +108,10 @@
       width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
       padding: 66px 0 48px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+      gap: 42px;
+      align-items: end;
     }
 
     .eyebrow {
@@ -128,8 +132,8 @@
     }
 
     h1 {
-      max-width: 980px;
-      font-size: 62px;
+      max-width: 820px;
+      font-size: 58px;
       font-weight: 930;
     }
 
@@ -187,17 +191,19 @@
 
     .stats {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 34px;
+      grid-column: 1 / -1;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 8px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
 
     .stat {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
-      background: #fff;
+      padding: 18px 22px;
+      border-left: 1px solid var(--line);
     }
+    .stat:first-child { border-left: 0; padding-left: 0; }
 
     .stat strong {
       display: block;
@@ -212,6 +218,34 @@
       font-size: 14px;
       line-height: 1.35;
     }
+
+    .hero-guide {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .guide-head { padding: 20px 21px 17px; border-bottom: 1px solid var(--line); background: var(--wash); }
+    .guide-label { display: block; margin-bottom: 5px; color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+    .guide-head h2 { font-size: 23px; }
+    .guide-list { display: grid; padding: 7px 20px; }
+    .guide-item { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .guide-item:last-child { border-bottom: 0; }
+    .guide-icon, .card-icon, .pathway-icon {
+      display: inline-grid;
+      place-items: center;
+      border-radius: 9px;
+      background: #eaf0fb;
+      color: var(--blue);
+      font-weight: 900;
+      line-height: 1;
+    }
+    .guide-icon { width: 36px; height: 36px; font-size: 16px; }
+    .guide-item strong, .guide-item span { display: block; }
+    .guide-item strong { font-size: 13px; }
+    .guide-item span { margin-top: 2px; color: var(--muted); font-size: 11px; }
+    .guide-link { display: flex; justify-content: space-between; padding: 14px 20px; border-top: 1px solid var(--line); color: var(--blue); font-size: 13px; font-weight: 850; text-decoration: none; }
 
     .pathways {
       width: min(1180px, calc(100% - 40px));
@@ -255,6 +289,9 @@
       max-width: 620px;
       font-size: 30px;
     }
+    .pathway-title { display: flex; align-items: center; gap: 12px; }
+    .pathway-icon { width: 40px; height: 40px; flex: 0 0 40px; background: rgba(255, 255, 255, .15); color: #fff; font-size: 18px; }
+    .pathway-card:not(.events) .pathway-icon { background: var(--wash); color: var(--blue); }
 
     .pathway-card > p {
       max-width: 650px;
@@ -394,6 +431,11 @@
       font-size: 19px;
       font-weight: 850;
     }
+    .card-icon { width: 34px; height: 34px; margin-bottom: 16px; font-size: 15px; }
+    .accent-green .card-icon { background: #e8f3ec; color: var(--green); }
+    .accent-orange .card-icon { background: #f8eee5; color: var(--orange); }
+    .accent-red .card-icon { background: #faecea; color: var(--red); }
+    .accent-violet .card-icon { background: #f0ebf8; color: var(--violet); }
 
     .card p {
       margin: 0;
@@ -524,6 +566,7 @@
 
       .hero {
         padding-top: 44px;
+        grid-template-columns: 1fr;
       }
 
       h1 {
@@ -541,6 +584,7 @@
       .layout {
         grid-template-columns: 1fr;
       }
+      .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
 
     @media (max-width: 540px) {
@@ -556,6 +600,9 @@
       h1 {
         font-size: 35px;
       }
+      .stats { grid-template-columns: 1fr; }
+      .stat, .stat:first-child { padding: 14px 0; border-left: 0; border-top: 1px solid var(--line); }
+      .stat:first-child { border-top: 0; }
 
       h2 {
         font-size: 30px;
@@ -600,17 +647,28 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Social-media event benchmark</p>
-      <h1 id="hero-title">SURGE: Social-media Unified Reaction-Graph Event dataset</h1>
-      <p class="hero-copy">
-        SURGE is an event-centric benchmark that pairs sentiment time series with
-        bin-aligned text views and reply / repost interaction structure for public-opinion forecasting.
-      </p>
-      <div class="hero-actions" aria-label="Page shortcuts">
-        <a class="button primary events" href="live/index.html">Explore Public Events</a>
-        <a class="button secondary" href="https://github.com/synlp/SURGE">View Repository</a>
-        <a class="button secondary" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read Datasheet</a>
+      <div class="hero-main">
+        <p class="eyebrow">Social-media event intelligence</p>
+        <h1 id="hero-title">Understand how public conversations evolve around real-world events.</h1>
+        <p class="hero-copy">
+          SURGE brings activity, sentiment, topics, text, and interaction structure
+          into one event-centered view—while retaining a reproducible benchmark for research.
+        </p>
+        <div class="hero-actions" aria-label="Page shortcuts">
+          <a class="button primary events" href="live/index.html">Explore Public Events <span aria-hidden="true">→</span></a>
+          <a class="button secondary" href="https://github.com/synlp/SURGE">View Repository</a>
+          <a class="button secondary" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read Datasheet</a>
+        </div>
       </div>
+      <aside class="hero-guide" aria-label="Analysis available for each event">
+        <div class="guide-head"><span class="guide-label">Inside each event</span><h2>One event, multiple signals</h2></div>
+        <div class="guide-list">
+          <div class="guide-item"><span class="guide-icon" aria-hidden="true">↗</span><div><strong>Activity</strong><span>See when attention rises, peaks, and fades.</span></div></div>
+          <div class="guide-item"><span class="guide-icon" aria-hidden="true">◐</span><div><strong>Sentiment</strong><span>Follow changes in the emotional tone.</span></div></div>
+          <div class="guide-item"><span class="guide-icon" aria-hidden="true">◎</span><div><strong>Topics and viewpoints</strong><span>Understand what people debate and how positions differ.</span></div></div>
+        </div>
+        <a class="guide-link" href="live/index.html"><span>Open the event explorer</span><span aria-hidden="true">→</span></a>
+      </aside>
       <div class="stats" aria-label="Dataset snapshot">
         <div class="stat">
           <strong>297</strong>
@@ -621,12 +679,8 @@
           <span>posts represented in the current release</span>
         </div>
         <div class="stat">
-          <strong>3</strong>
-          <span>temporal granularities: 6H, 12H, and 1D</span>
-        </div>
-        <div class="stat">
-          <strong>2</strong>
-          <span>forecasting targets: DI and SP</span>
+          <strong>5</strong>
+          <span>event families spanning public affairs, crises, technology, and culture</span>
         </div>
       </div>
     </section>
@@ -634,7 +688,7 @@
     <section class="pathways" aria-label="Ways to use SURGE">
       <article class="pathway-card events">
         <p class="pathway-kicker">Public event explorer</p>
-        <h2>Move from the dataset to individual events</h2>
+        <div class="pathway-title"><span class="pathway-icon" aria-hidden="true">⌕</span><h2>Start with an event, then examine it from several angles</h2></div>
         <p>
           Search the complete collection, compare discussion activity and sentiment,
           and open an event for a more detailed time-based analysis.
@@ -658,7 +712,7 @@
 
       <article class="pathway-card">
         <p class="pathway-kicker">Benchmark resources</p>
-        <h2>Work with the released dataset</h2>
+        <div class="pathway-title"><span class="pathway-icon" aria-hidden="true">{ }</span><h2>Work with the released dataset</h2></div>
         <p>
           Review the forecasting tasks, release structure, chronological splits,
           schemas, and loader examples already documented below.
@@ -689,6 +743,7 @@
         </div>
         <div class="grid">
           <article class="card accent-blue">
+            <span class="card-icon" aria-hidden="true">◎</span>
             <h3>Event-Centric</h3>
             <p>
               The registry covers 297 real events across natural disasters, politics, social
@@ -696,6 +751,7 @@
             </p>
           </article>
           <article class="card accent-green">
+            <span class="card-icon" aria-hidden="true">↔</span>
             <h3>Multi-Granularity</h3>
             <p>
               Each event is released at 6-hour, 12-hour, and 1-day views when its active period
@@ -703,6 +759,7 @@
             </p>
           </article>
           <article class="card accent-orange">
+            <span class="card-icon" aria-hidden="true">⌘</span>
             <h3>Text And Graph Signals</h3>
             <p>
               Numerical targets are paired with sampled bin-aligned text views and reply / repost
@@ -772,6 +829,7 @@
         <div class="layout">
           <div class="grid" aria-label="Repository links">
             <article class="card accent-red">
+              <span class="card-icon" aria-hidden="true">#</span>
               <h3>Schema Docs</h3>
               <p>
                 Field-level documentation is available for numerical series, event metadata,
@@ -779,6 +837,7 @@
               </p>
             </article>
             <article class="card accent-violet">
+              <span class="card-icon" aria-hidden="true">◇</span>
               <h3>Synthetic Examples</h3>
               <p>
                 Two mini-events instantiate every schema at all three granularities for smoke tests
@@ -786,6 +845,7 @@
               </p>
             </article>
             <article class="card accent-blue">
+              <span class="card-icon" aria-hidden="true">›_</span>
               <h3>Benchmark Code</h3>
               <p>
                 The repository includes dataloaders, metrics, a generic training loop, and a CMA
