@@ -24,38 +24,41 @@
     <g transform="translate(0 72)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#edf3ff" stroke="#b9c8e6"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">political</text>
-      <rect x="150" y="12" width="114" height="20" rx="5" fill="#2454a6"/>
+      <rect x="190" y="12" width="70" height="20" rx="5" fill="#2454a6"/>
       <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">59</text>
     </g>
     <g transform="translate(0 126)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#f7fbf7" stroke="#c7ddcf"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">sports / entertainment</text>
-      <rect x="150" y="12" width="102" height="20" rx="5" fill="#2f7d4f"/>
+      <rect x="190" y="12" width="76" height="20" rx="5" fill="#2f7d4f"/>
       <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">64</text>
     </g>
     <g transform="translate(0 180)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff8f1" stroke="#edd0b6"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">natural disaster</text>
-      <rect x="150" y="12" width="112" height="20" rx="5" fill="#c8651b"/>
+      <rect x="190" y="12" width="69" height="20" rx="5" fill="#c8651b"/>
       <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">58</text>
     </g>
     <g transform="translate(0 234)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff5f4" stroke="#efc7c3"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">social movement</text>
-      <rect x="150" y="12" width="103" height="20" rx="5" fill="#b83a32"/>
+      <rect x="190" y="12" width="63" height="20" rx="5" fill="#b83a32"/>
       <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">53</text>
     </g>
     <g transform="translate(0 288)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#f8f5fc" stroke="#d7c9ee"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">technology</text>
-      <rect x="150" y="12" width="122" height="20" rx="5" fill="#6e4aa6"/>
+      <rect x="190" y="12" width="75" height="20" rx="5" fill="#6e4aa6"/>
       <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">63</text>
     </g>
   </g>
 
   <g transform="translate(475 210)">
     <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Temporal views</text>
-    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">Every event is released at each granularity that passes the minimum-bin threshold.</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="14">
+      <tspan x="0" dy="0">Event-aligned 6H, 12H, and 1D views.</tspan>
+      <tspan x="0" dy="20">Availability follows minimum-bin thresholds.</tspan>
+    </text>
     <g transform="translate(0 82)">
       <circle cx="66" cy="66" r="58" fill="#edf3ff" stroke="#2454a6" stroke-width="3"/>
       <text x="66" y="59" text-anchor="middle" fill="#2454a6" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">6H</text>
@@ -80,7 +83,10 @@
 
   <g transform="translate(955 210)">
     <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Artifact stack</text>
-    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">Numerical series are paired with text and interaction views.</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="14">
+      <tspan x="0" dy="0">Numerical series paired with</tspan>
+      <tspan x="0" dy="20">text and interaction views.</tspan>
+    </text>
     <g transform="translate(0 76)">
       <rect x="0" y="0" width="276" height="54" rx="10" fill="#edf3ff" stroke="#b9c8e6"/>
       <text x="18" y="34" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">comment_count.csv</text>
