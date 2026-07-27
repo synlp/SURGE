@@ -1,0 +1,14 @@
+{
+  "name": "SURGE Web",
+  "version": "2.0.0",
+  "releaseDate": "2026-07-27",
+  "entryPoint": "index.html",
+  "releaseMode": "static-github-pages",
+  "eventCount": 297,
+  "postCount": 2600877,
+  "timeGranularity": "6H",
+  "sentiment": "aggregate post-level labels",
+  "topics": "not included in this public timeline release",
+  "stance": "illustrative four-group layout only",
+  "privacy": "aggregate output only"
+}

@@ -1,0 +1,2157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed SURGE event pages covering discussion activity, timing, engagement, conversation structure, and available aggregate sentiment.">
+  <meta name="surge-static-snapshot" content="data/events-v9-1.json">
+  <title>SURGE Event</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14213d;
+      --muted: #627085;
+      --line: #d9e0e8;
+      --paper: #ffffff;
+      --wash: #f3f6f8;
+      --blue: #2454a6;
+      --blue-soft: #e9f0fb;
+      --green: #2f7d4f;
+      --green-soft: #e8f3ec;
+      --orange: #b85f1c;
+      --orange-soft: #f8eee5;
+      --red: #b43b35;
+      --red-soft: #faecea;
+      --violet: #6e4aa6;
+      --chart-grid: #dce3eb;
+      --shadow: 0 12px 30px rgba(20, 33, 61, 0.06);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    button, select, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(217, 224, 232, 0.92);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+    }
+    .nav {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: inline-grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue), var(--green));
+      font-weight: 500;
+    }
+    .brand-copy { display: flex; align-items: baseline; gap: 9px; }
+    .brand-copy small { color: var(--muted); font-size: 12px; font-weight: 400; }
+    .nav-links { display: flex; align-items: center; gap: 18px; color: var(--muted); font-size: 14px; font-weight: 700; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--ink); }
+    .nav-live { color: var(--green) !important; font-weight: 500; }
+
+    .data-notice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding: 10px 12px;
+      border: 1px solid #e8c7a9;
+      border-radius: 10px;
+      background: var(--orange-soft);
+      color: #7c4218;
+      font-size: 13px;
+    }
+    .data-notice[hidden] { display: none; }
+    .data-notice-icon { display: inline-grid; width: 22px; height: 22px; flex: 0 0 22px; place-items: center; border-radius: 50%; background: rgba(184, 95, 28, .12); font-weight: 700; }
+
+    .shell {
+      width: min(1280px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 0 0 60px;
+    }
+    .breadcrumb {
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .breadcrumb a {
+      color: var(--blue);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover, .breadcrumb a:focus-visible { text-decoration: underline; }
+    .breadcrumb-separator { color: #a7b1bf; }
+    .breadcrumb-current { color: var(--muted); }
+    .masthead-main { min-width: 0; }
+    .masthead .event-chip { margin-bottom: 10px; }
+    .masthead .focus-summary { max-width: 780px; font-size: 16px; line-height: 1.65; }
+    .event-meta-line { margin: 10px 0 0; color: var(--muted); font-size: 13px; }
+    .masthead .focus-title {
+      margin: 0 0 8px;
+      max-width: 900px;
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1.08;
+      font-weight: 600;
+      letter-spacing: -0.035em;
+    }
+    .masthead {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 0;
+      padding: 24px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+    .eyebrow a { color: inherit; text-decoration: none; }
+    .eyebrow a:hover, .eyebrow a:focus-visible { text-decoration: underline; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 4px; font-size: clamp(30px, 4vw, 48px); line-height: 1.08; font-weight: 500; letter-spacing: -0.03em; }
+    h2 { margin-bottom: 0; font-size: 18px; line-height: 1.2; font-weight: 500; }
+    h3 { margin-bottom: 0; font-size: 15px; font-weight: 500; }
+    .masthead-copy { margin: 0; max-width: 720px; color: var(--muted); }
+
+    .status-cluster { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+    .badge {
+      min-height: 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 12px;
+      background: var(--paper);
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .badge.demo { border-color: #b9d5c4; color: var(--green); background: var(--green-soft); }
+    .badge.candidate { border-color: #e8c7a9; color: #8a491b; background: var(--orange-soft); }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+
+    .controls, .range-group { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .control-label { color: var(--muted); font-size: 12px; }
+    select, .control-button {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      padding: 0 11px;
+    }
+    .control-button { cursor: pointer; }
+    a.control-button { display: inline-flex; align-items: center; text-decoration: none; }
+    .control-button:hover { border-color: #aab6c5; }
+    .control-button[aria-pressed="true"] { border-color: var(--ink); color: #fff; background: var(--ink); }
+    .control-button.primary { border-color: var(--blue); color: #fff; background: var(--blue); }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin: 18px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--paper);
+    }
+    .metrics.activity-only { grid-template-columns: 1fr; }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--paper);
+    }
+    .metric {
+      min-width: 0;
+      padding: 17px 18px;
+      border-left: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .metric:first-child { border-left: 0; }
+    .metric-label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 12px; }
+    .metric-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .metric-value { font-size: 25px; line-height: 1; font-weight: 500; letter-spacing: -0.03em; }
+    .metric-delta { font-size: 12px; white-space: nowrap; }
+    .positive { color: var(--green); }
+    .negative { color: var(--red); }
+    .neutral { color: var(--muted); }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(260px, 0.8fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .panel { min-width: 0; overflow: hidden; }
+    .panel-head {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+      padding: 14px 18px;
+      background: #fbfcfd;
+    }
+    .panel-kicker { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+    .timeline-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; }
+
+    .focus-panel { overflow: visible; }
+    .focus-title { margin: 0 0 5px; font-size: clamp(21px, 2.3vw, 29px); font-weight: 500; letter-spacing: -0.025em; }
+    .focus-summary { max-width: 720px; margin: 0; color: var(--muted); }
+    .event-chip { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 9px; background: var(--blue-soft); color: var(--blue); font-size: 11px; white-space: nowrap; }
+
+    .chart-wrap { position: relative; padding: 0 12px 4px; }
+    .chart-title-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 8px 0; }
+    .chart-legend { display: flex; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 11px; }
+    .legend-key { display: inline-flex; align-items: center; gap: 6px; }
+    .legend-line { width: 18px; height: 2px; background: var(--blue); }
+    .legend-line.sentiment { background: var(--green); }
+    .chart-svg { width: 100%; height: auto; display: block; overflow: visible; }
+    .chart-grid { stroke: var(--chart-grid); stroke-width: 1; }
+    .chart-axis { fill: var(--muted); font-size: 11px; }
+    .volume-area { fill: rgba(36, 84, 166, 0.1); }
+    .volume-line { fill: none; stroke: var(--blue); stroke-width: 2.2; vector-effect: non-scaling-stroke; }
+    .sentiment-line { fill: none; stroke: var(--green); stroke-width: 2.2; vector-effect: non-scaling-stroke; }
+    .zero-line { stroke: var(--line); stroke-width: 1; stroke-dasharray: 4 4; }
+    .point { fill: var(--paper); stroke: var(--blue); stroke-width: 2; cursor: pointer; }
+    .sentiment-point { stroke: var(--green); }
+    .point.active { fill: var(--ink); stroke: var(--ink); }
+    .cursor-line { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.35; }
+    .chart-tooltip {
+      position: absolute;
+      z-index: 4;
+      min-width: 142px;
+      pointer-events: none;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 8px 10px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      color: var(--ink);
+      font-size: 12px;
+      opacity: 0;
+      transform: translate(-50%, -105%);
+    }
+    .chart-tooltip.visible { opacity: 1; }
+    .tooltip-time { display: block; color: var(--muted); }
+
+    .replay {
+      display: grid;
+      grid-template-columns: minmax(150px, 1fr) minmax(220px, 2fr);
+      align-items: center;
+      gap: 16px;
+      border-top: 1px solid var(--line);
+      padding: 14px 18px 16px;
+    }
+    .replay strong { display: block; font-weight: 500; }
+    .replay small { color: var(--muted); }
+    .replay input { width: 100%; accent-color: var(--blue); }
+
+    .signal-list { display: grid; grid-template-columns: 1fr; padding: 8px 16px 16px; }
+    .signal-group { min-width: 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .signal-group:last-child { border-bottom: 0; }
+    .signal-label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+    .signal-value { display: block; font-size: 20px; line-height: 1.15; font-weight: 500; }
+    .signal-context { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; }
+    .sentiment-mix { display: flex; height: 9px; margin-top: 10px; overflow: hidden; border-radius: 999px; background: var(--wash); }
+    .sentiment-mix span { display: block; height: 100%; }
+    .sentiment-mix .positive { background: var(--green); }
+    .sentiment-mix .neutral { background: #9aa7b6; }
+    .sentiment-mix .negative { background: var(--red); }
+
+    .sentiment-series-panel { margin-top: 14px; padding: 0; }
+    .series-head { align-items: center; }
+    .series-body { padding: 14px 18px 18px; }
+    .series-tabs {
+      display: inline-flex;
+      flex: 0 0 auto;
+      gap: 4px;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--wash);
+    }
+    .series-tab {
+      min-height: 34px;
+      padding: 7px 11px;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .series-tab[aria-pressed="true"] {
+      background: var(--paper);
+      color: var(--ink);
+      box-shadow: 0 1px 3px rgba(26, 39, 55, .1);
+    }
+    .series-chart-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+    .series-chart-meta { margin: 0; color: var(--muted); font-size: 11px; }
+    .series-legend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; color: var(--muted); font-size: 11px; }
+    .series-legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .series-legend i { display: inline-block; width: 18px; height: 2px; border-radius: 999px; background: currentColor; }
+    .series-legend .total { color: var(--blue); }
+    .series-legend .total i { background: repeating-linear-gradient(90deg, currentColor 0 6px, transparent 6px 10px); }
+    .series-legend .positive { color: var(--green); }
+    .series-legend .neutral { color: #7a8796; }
+    .series-legend .negative { color: var(--red); }
+    .series-chart-wrap { position: relative; overflow-x: auto; }
+    .series-chart { display: block; width: 100%; min-width: 620px; height: auto; }
+    .series-grid { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+    .series-axis { fill: var(--muted); font-size: 10px; }
+    .series-line { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .series-line.total { stroke: var(--blue); stroke-dasharray: 6 5; }
+    .series-line.positive { stroke: var(--green); }
+    .series-line.neutral { stroke: #7a8796; }
+    .series-line.negative { stroke: var(--red); }
+    .series-dot { stroke: var(--paper); stroke-width: 1; vector-effect: non-scaling-stroke; }
+    .series-dot.total { fill: var(--blue); }
+    .series-dot.positive { fill: var(--green); }
+    .series-dot.neutral { fill: #7a8796; }
+    .series-dot.negative { fill: var(--red); }
+    .series-hit { fill: transparent; cursor: crosshair; pointer-events: all; }
+    .series-focus-line { stroke: var(--blue); stroke-width: 1; stroke-dasharray: 3 4; opacity: .45; vector-effect: non-scaling-stroke; }
+    .series-empty { padding: 36px; color: var(--muted); text-align: center; }
+
+    .insights {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 0 0 18px;
+    }
+    .insight { padding: 17px 18px; }
+    .insight p { margin: 8px 0 0; color: var(--muted); }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+    .moment-list { display: grid; gap: 9px; margin-top: 13px; }
+    .moment-item { display: grid; grid-template-columns: 110px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding-top: 9px; border-top: 1px solid var(--line); }
+    .moment-item:first-child { padding-top: 0; border-top: 0; }
+    .moment-time, .moment-meta { color: var(--muted); font-size: 11px; }
+    .moment-item strong { font-size: 13px; }
+    .detail-list { display: grid; gap: 9px; margin-top: 12px; }
+    .detail-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    .detail-row:last-child { padding-bottom: 0; border-bottom: 0; }
+    .detail-row span { color: var(--muted); font-size: 12px; }
+    .detail-row strong { text-align: right; font-size: 13px; }
+    .tag { border-radius: 999px; padding: 4px 9px; background: var(--wash); color: var(--muted); font-size: 12px; }
+    .mini-bars { display: grid; gap: 10px; margin-top: 14px; }
+    .bar-row { display: grid; grid-template-columns: 76px 1fr 42px; align-items: center; gap: 8px; font-size: 12px; }
+    .bar-track { height: 7px; border-radius: 999px; background: var(--wash); overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: inherit; background: var(--blue); }
+    .bar-fill.green { background: var(--green); }
+    .bar-fill.violet { background: var(--violet); }
+    .topic-panel, .stance-panel { margin-top: 14px; padding: 0; }
+    .analysis-panel-body { padding: 18px; }
+    .stance-intro { max-width: 850px; margin: 8px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .stance-question { margin-top: 13px; padding: 11px 12px; border-left: 3px solid var(--blue); background: var(--blue-soft); }
+    .stance-question span { display: block; color: var(--muted); font-size: 9px; letter-spacing: .04em; text-transform: uppercase; }
+    .stance-question strong { display: block; margin-top: 4px; font-size: 12px; line-height: 1.4; }
+    .stance-issue-tabs { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px; margin-top: 12px; }
+    .stance-issue-button { min-width: 0; padding: 10px 11px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); color: var(--ink); cursor: pointer; font: inherit; text-align: left; }
+    .stance-issue-button:hover { background: var(--blue-soft); }
+    .stance-issue-button[aria-pressed="true"] { border-color: var(--blue); background: var(--blue-soft); box-shadow: inset 0 0 0 1px var(--blue); }
+    .stance-issue-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+    .stance-issue-head strong { min-width: 0; overflow: hidden; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+    .stance-issue-head span { color: var(--blue); font-size: 11px; font-weight: 650; white-space: nowrap; }
+    .stance-issue-meta { display: block; margin-top: 4px; color: var(--muted); font-size: 9px; }
+    .stance-issue-track { display: flex; height: 6px; margin-top: 8px; overflow: hidden; border-radius: 999px; background: var(--wash); }
+    .stance-issue-track span { height: 100%; }
+    .stance-issue-track .favorable { background: var(--green); }
+    .stance-issue-track .critical { background: var(--red); }
+    .stance-issue-track .mixed { background: var(--violet); }
+    .stance-issue-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 8px; margin-top: 5px; color: var(--muted); font-size: 9px; }
+    .stance-summary { margin-top: 13px; color: var(--ink); font-size: 12px; }
+    .stance-legend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px 12px; margin-top: 10px; color: var(--muted); font-size: 9px; }
+    .stance-legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .stance-dot { width: 7px; height: 7px; border-radius: 50%; }
+    .stance-groups { display: grid; gap: 8px; margin-top: 10px; }
+    .stance-row { display: grid; grid-template-columns: minmax(145px, .8fr) minmax(240px, 2fr) 82px; align-items: center; gap: 12px; padding: 10px 11px; border: 1px solid var(--line); border-radius: 8px; }
+    .stance-label strong { display: block; font-size: 12px; }
+    .stance-label span { display: block; margin-top: 2px; color: var(--muted); font-size: 9px; }
+    .stance-emotion-track { display: flex; height: 12px; overflow: hidden; border-radius: 999px; background: var(--wash); }
+    .stance-emotion-segment { min-width: 0; height: 100%; }
+    .stance-emotion-segment.positive { background: var(--green); }
+    .stance-emotion-segment.neutral { background: #9aa7b6; }
+    .stance-emotion-segment.negative { background: var(--red); }
+    .stance-emotion-segment.mixed { background: var(--violet); }
+    .stance-emotion-segment.unavailable { background: var(--line); }
+    .stance-share { color: var(--blue); font-size: 14px; font-weight: 650; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+    .stance-empty { margin-top: 12px; padding: 13px; border: 1px dashed var(--line); border-radius: 9px; background: var(--wash); color: var(--muted); font-size: 11px; }
+    .stance-detail { margin-top: 12px; overflow: hidden; border: 1px solid var(--line); border-radius: 9px; }
+    .stance-detail > summary { padding: 10px 12px; color: var(--blue); cursor: pointer; font-size: 10px; }
+    .stance-detail-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding: 0 12px 12px; }
+    .stance-detail-card { padding: 9px 10px; border-radius: 8px; background: var(--wash); }
+    .stance-detail-card span { display: block; color: var(--muted); font-size: 9px; }
+    .stance-detail-card strong { display: block; margin-top: 3px; font-size: 12px; }
+    .stance-stage { min-width: 0; padding: 11px 12px; border: 1px solid var(--line); border-radius: 9px; background: var(--wash); }
+    .stance-stage span { display: inline-grid; width: 20px; height: 20px; place-items: center; border-radius: 50%; background: var(--blue-soft); color: var(--blue); font-size: 9px; font-weight: 750; }
+    .stance-stage strong { display: block; margin-top: 7px; font-size: 11px; }
+    .stance-stage small { display: block; margin-top: 3px; color: var(--muted); font-size: 9px; line-height: 1.4; }
+    .stance-row.is-placeholder { color: var(--muted); }
+    .stance-row.is-placeholder .stance-emotion-track { background: repeating-linear-gradient(135deg, var(--wash), var(--wash) 7px, #e9edf1 7px, #e9edf1 14px); }
+    .topic-coverage-block { margin-top: 14px; }
+    .topic-coverage-head, .topic-evolution-head, .topic-detail-head, .heatmap-axis {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .topic-coverage-head { margin-bottom: 7px; color: var(--muted); font-size: 11px; }
+    .topic-coverage-head strong { color: var(--ink); font-size: 12px; }
+    .coverage-track { display: flex; height: 9px; overflow: hidden; border-radius: 999px; background: var(--wash); }
+    .coverage-segment { height: 100%; transition: width .25s ease; }
+    .coverage-breakdown { display: flex; flex-wrap: wrap; gap: 7px 14px; margin-top: 9px; }
+    .coverage-reason { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 10px; }
+    .coverage-reason strong { color: var(--ink); font-size: 10px; font-weight: 650; }
+    .coverage-dot { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; }
+    .topic-summary {
+      margin: 15px 0 0;
+      padding-top: 13px;
+      border-top: 1px solid var(--line);
+    }
+    .quick-insights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .quick-insight { display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center; gap: 9px; min-width: 0; padding: 10px 11px; border: 1px solid var(--line); border-radius: 9px; background: var(--wash); }
+    .quick-insight-icon { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 8px; background: var(--paper); color: var(--blue); }
+    .quick-insight-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+    .quick-insight-label { display: block; color: var(--muted); font-size: 9px; letter-spacing: .04em; text-transform: uppercase; }
+    .quick-insight-value { display: -webkit-box; overflow: hidden; margin-top: 2px; color: var(--ink); font-size: 12px; font-weight: 650; line-height: 1.25; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+    .quick-insight-context { display: block; overflow: hidden; margin-top: 2px; color: var(--muted); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+    .summary-explanation { margin-top: 7px; }
+    .summary-explanation > summary { width: max-content; color: var(--blue); cursor: pointer; font-size: 10px; list-style-position: inside; }
+    .summary-explanation p { margin: 6px 0 0; padding: 8px 10px; border-left: 2px solid var(--blue); background: var(--blue-soft); color: var(--muted); font-size: 10px; line-height: 1.45; }
+    .topic-disclosure { margin-top: 12px; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+    .topic-disclosure > summary, .context-disclosure > summary {
+      display: grid;
+      grid-template-columns: 18px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 14px;
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+    }
+    .topic-disclosure > summary::-webkit-details-marker, .context-disclosure > summary::-webkit-details-marker { display: none; }
+    .topic-disclosure > summary::before, .context-disclosure > summary::before {
+      display: grid;
+      width: 18px;
+      height: 18px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--wash);
+      color: var(--muted);
+      content: "+";
+      font-size: 14px;
+      line-height: 1;
+    }
+    .topic-disclosure[open] > summary::before, .context-disclosure[open] > summary::before { content: "−"; }
+    .topic-disclosure[open] > summary, .context-disclosure[open] > summary { border-bottom: 1px solid var(--line); }
+    .disclosure-title { font-size: 12px; font-weight: 650; }
+    .disclosure-meta { color: var(--muted); font-size: 10px; text-align: right; }
+    .topic-disclosure-body { padding: 14px; }
+    .topic-quality {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+    .topic-quality-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .topic-quality-head h3 { margin: 0; font-size: 13px; }
+    .topic-quality-status { color: var(--muted); font-size: 11px; font-weight: 650; }
+    .topic-quality-status[data-tone="good"] { color: var(--green); }
+    .topic-quality-status[data-tone="watch"] { color: var(--orange); }
+    .topic-quality-status[data-tone="limited"] { color: var(--red); }
+    .topic-quality-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 11px;
+    }
+    .quality-card {
+      min-width: 0;
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--muted);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+    .quality-card[data-tone="good"] { border-top-color: var(--green); }
+    .quality-card[data-tone="watch"] { border-top-color: var(--orange); }
+    .quality-card[data-tone="limited"] { border-top-color: var(--red); }
+    .quality-card[data-tone="neutral"] { border-top-color: var(--blue); }
+    .quality-label { display: block; color: var(--muted); font-size: 10px; letter-spacing: .04em; text-transform: uppercase; }
+    .quality-value { display: block; margin-top: 5px; color: var(--ink); font-size: 17px; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .quality-context { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 1.35; }
+    .topic-quality-note { margin: 9px 0 0; color: var(--muted); font-size: 10px; }
+    .conversation-quality {
+      margin-top: 12px;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--wash);
+    }
+    .conversation-quality-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .conversation-quality-head strong { font-size: 11px; }
+    .conversation-quality-head span { color: var(--muted); font-size: 9px; text-align: right; }
+    .conversation-quality-track { display: flex; height: 9px; margin-top: 9px; overflow: hidden; border-radius: 999px; background: var(--paper); }
+    .conversation-quality-segment { min-width: 0; height: 100%; }
+    .conversation-quality-segment.content { background: var(--green); }
+    .conversation-quality-segment.low-information { background: var(--orange); }
+    .conversation-quality-segment.uncertain { background: #9aa7b6; }
+    .conversation-quality-legend { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-top: 8px; }
+    .conversation-quality-item { min-width: 0; color: var(--muted); font-size: 9px; }
+    .conversation-quality-item strong { display: block; margin-top: 2px; color: var(--ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+    .conversation-quality-dot { display: inline-block; width: 7px; height: 7px; margin-right: 5px; border-radius: 50%; }
+    .conversation-quality-note { margin: 8px 0 0; color: var(--muted); font-size: 9px; line-height: 1.4; }
+    .conversation-quality-empty { margin: 8px 0 0; color: var(--muted); font-size: 10px; }
+    .topic-review-context {
+      margin-top: 11px;
+      padding: 11px 12px;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      background: var(--blue-soft);
+    }
+    .topic-review-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .topic-review-head strong { font-size: 11px; }
+    .topic-review-badge { color: var(--blue); font-size: 10px; font-weight: 650; }
+    .topic-review-summary { margin: 6px 0 0; color: var(--ink); font-size: 11px; line-height: 1.45; }
+    .topic-review-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+    .topic-review-tag { padding: 3px 7px; border-radius: 999px; background: var(--paper); color: var(--muted); font-size: 9px; }
+    .topic-review-meta { margin: 7px 0 0; color: var(--muted); font-size: 9px; }
+    .topic-layout {
+      display: grid;
+      grid-template-columns: minmax(160px, .36fr) minmax(320px, 1.64fr);
+      align-items: center;
+      gap: 26px;
+      margin-top: 18px;
+    }
+    .topic-visual { position: relative; width: min(100%, 180px); margin: 0 auto; }
+    .topic-chart { display: block; width: 100%; height: auto; overflow: visible; }
+    .topic-track { fill: none; stroke: var(--wash); stroke-width: 28; }
+    .topic-slice { fill: none; stroke-width: 28; transition: stroke-dasharray .25s ease; }
+    .topic-total { fill: var(--ink); font-size: 23px; font-weight: 650; text-anchor: middle; }
+    .topic-total-label { fill: var(--muted); font-size: 10px; text-anchor: middle; }
+    .topic-bars { display: grid; gap: 10px; }
+    .topic-bars-head {
+      display: grid;
+      grid-template-columns: minmax(150px, 1fr) 82px 88px 66px;
+      gap: 10px;
+      padding: 0 7px 1px;
+      color: var(--muted);
+      font-size: 11px;
+      text-align: right;
+    }
+    .topic-bars-head span:first-child { text-align: left; }
+    .topic-bar-button {
+      display: grid;
+      grid-template-columns: minmax(150px, 1fr) 82px 88px 66px;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 5px 7px;
+      border: 0;
+      border-radius: 7px;
+      color: var(--ink);
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+    }
+    .topic-bar-button:hover { background: var(--blue-soft); }
+    .topic-bar-button[aria-pressed="true"] { background: var(--blue-soft); box-shadow: inset 0 0 0 1px var(--line); }
+    .topic-bar-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; font-weight: 650; }
+    .topic-bar-share { text-align: right; font-size: 12px; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .topic-bar-all { color: var(--muted); text-align: right; font-size: 11px; font-variant-numeric: tabular-nums; }
+    .topic-bar-count { color: var(--muted); text-align: right; font-size: 11px; font-variant-numeric: tabular-nums; }
+    .topic-bar-track { grid-column: 1 / -1; height: 7px; overflow: hidden; border-radius: 999px; background: var(--wash); }
+    .topic-bar-fill { display: block; height: 100%; border-radius: inherit; transition: width .25s ease; }
+    .topic-detail { margin-top: 13px; padding: 12px 14px; border-left: 3px solid var(--blue); background: var(--blue-soft); }
+    .topic-detail-head strong { font-size: 13px; }
+    .topic-detail-head span { color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+    .topic-detail-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-top: 9px; }
+    .topic-detail-stat { padding: 7px 8px; border-radius: 7px; background: rgba(255,255,255,.72); color: var(--muted); font-size: 9px; }
+    .topic-detail-stat strong { display: block; color: var(--ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+    .topic-keywords { display: flex; flex-wrap: wrap; gap: 6px; }
+    .topic-keyword { padding: 3px 7px; border-radius: 999px; background: var(--paper); color: var(--muted); font-size: 10px; }
+    .keyword-reveal { position: relative; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; padding: 4px 8px; border-radius: 999px; background: var(--paper); color: var(--muted); font-size: 9px; cursor: help; outline: none; }
+    .keyword-reveal::before { content: "⌁"; color: var(--blue); font-size: 12px; }
+    .keyword-reveal:focus { box-shadow: 0 0 0 2px rgba(36,84,166,.2); }
+    .keyword-reveal-panel { position: absolute; top: calc(100% + 6px); left: 0; z-index: 12; display: flex; visibility: hidden; width: max-content; max-width: min(360px, calc(100vw - 64px)); flex-wrap: wrap; gap: 6px; padding: 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translateY(-3px); transition: opacity .15s ease, transform .15s ease, visibility .15s ease; }
+    .keyword-reveal:hover .keyword-reveal-panel, .keyword-reveal:focus .keyword-reveal-panel, .keyword-reveal:focus-within .keyword-reveal-panel { visibility: visible; opacity: 1; transform: translateY(0); }
+    .topic-sentiment { margin: 0; padding: 14px; border: 0; border-radius: 0; background: var(--paper); }
+    .topic-sentiment-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .topic-sentiment-head strong { font-size: 12px; }
+    .topic-sentiment-head span { color: var(--muted); font-size: 10px; }
+    .sentiment-stack { display: flex; height: 11px; margin-top: 10px; overflow: hidden; border-radius: 999px; background: var(--wash); }
+    .sentiment-segment { min-width: 0; height: 100%; transition: width .25s ease; }
+    .sentiment-segment.negative { background: var(--red); }
+    .sentiment-segment.neutral { background: #9aa7b6; }
+    .sentiment-segment.positive { background: var(--green); }
+    .sentiment-legend { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-top: 9px; }
+    .sentiment-item { color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+    .sentiment-item strong { display: block; margin-top: 2px; color: var(--ink); font-size: 12px; }
+    .sentiment-dot { display: inline-block; width: 7px; height: 7px; margin-right: 5px; border-radius: 50%; }
+    .sentiment-note { margin: 9px 0 0; color: var(--muted); font-size: 9px; line-height: 1.4; }
+    .sentiment-relative { margin: 9px 0 0; padding: 7px 9px; border-left: 2px solid var(--blue); background: var(--blue-soft); color: var(--muted); font-size: 9px; }
+    .sentiment-relative strong { color: var(--ink); }
+    .sentiment-trend-block { margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--line); }
+    .sentiment-trend-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .sentiment-trend-head strong { font-size: 11px; }
+    .sentiment-trend-head span { color: var(--muted); font-size: 9px; text-align: right; }
+    .sentiment-trend-chart { display: block; width: 100%; height: 104px; margin-top: 6px; overflow: visible; }
+    .sentiment-trend-zone-positive { fill: rgba(47, 125, 79, .08); }
+    .sentiment-trend-zone-negative { fill: rgba(184, 58, 50, .07); }
+    .sentiment-trend-zero { stroke: var(--line); stroke-width: 1; stroke-dasharray: 4 4; }
+    .sentiment-trend-line { fill: none; stroke: var(--blue); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .sentiment-trend-point { stroke: var(--paper); stroke-width: 1.5; }
+    .sentiment-trend-point.low-evidence { fill: var(--paper); stroke-width: 2; }
+    .sentiment-trend-label { fill: var(--muted); font-size: 8px; }
+    .sentiment-trend-evidence { margin: 2px 0 0; color: var(--muted); font-size: 8px; }
+    .sentiment-comparison { margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--line); }
+    .sentiment-comparison-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .sentiment-comparison-head strong { font-size: 11px; }
+    .sentiment-comparison-head span { color: var(--muted); font-size: 9px; }
+    .sentiment-comparison-list { display: grid; gap: 4px; margin-top: 7px; }
+    .sentiment-comparison-row { display: grid; grid-template-columns: minmax(130px, 1.1fr) minmax(150px, 1.8fr) 94px; align-items: center; gap: 10px; width: 100%; padding: 6px 7px; border: 0; border-radius: 7px; background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+    .sentiment-comparison-row:hover, .sentiment-comparison-row[aria-pressed="true"] { background: var(--blue-soft); }
+    .sentiment-comparison-name { min-width: 0; overflow: hidden; font-size: 10px; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
+    .sentiment-comparison-axis { position: relative; height: 7px; border-radius: 999px; background: linear-gradient(90deg, rgba(184,58,50,.35), var(--wash) 50%, rgba(47,125,79,.35)); }
+    .sentiment-comparison-axis::after { position: absolute; top: -3px; bottom: -3px; left: 50%; width: 1px; background: var(--line); content: ""; }
+    .sentiment-comparison-baseline { position: absolute; top: -4px; bottom: -4px; z-index: 1; width: 2px; border-radius: 2px; background: var(--ink); opacity: .55; transform: translateX(-50%); }
+    .sentiment-comparison-dot { position: absolute; top: 50%; z-index: 2; width: 9px; height: 9px; border: 2px solid var(--paper); border-radius: 50%; box-shadow: 0 0 0 1px currentColor; transform: translate(-50%, -50%); }
+    .sentiment-comparison-value { text-align: right; font-size: 9px; font-variant-numeric: tabular-nums; }
+    .sentiment-comparison-value strong { display: block; font-size: 10px; }
+    .sentiment-comparison-value span { color: var(--muted); }
+    .sentiment-highlights { margin: 8px 0 0; padding: 8px 9px; border-radius: 7px; background: var(--wash); color: var(--muted); font-size: 9px; line-height: 1.45; }
+    .sentiment-highlights strong { color: var(--ink); }
+    .topic-evolution { margin: 0; padding: 14px; border: 0; }
+    .topic-evolution-head h3 { margin: 0; font-size: 13px; }
+    .topic-evolution-head span { color: var(--muted); font-size: 11px; }
+    .topic-heatmap { display: grid; gap: 3px 2px; align-items: center; margin-top: 12px; }
+    .heatmap-topic { min-width: 0; overflow: hidden; padding-right: 8px; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+    .heatmap-topic.selected { color: var(--ink); font-weight: 650; }
+    .heat-cell { display: block; min-width: 3px; height: 15px; border-radius: 2px; }
+    .heatmap-axis { margin: 6px 0 0 132px; color: var(--muted); font-size: 9px; }
+    .heatmap-scale { display: inline-flex; align-items: center; gap: 5px; }
+    .heatmap-scale-swatch { display: inline-block; width: 42px; height: 7px; border-radius: 999px; background: linear-gradient(90deg, var(--wash), var(--blue)); }
+    .topic-meta { margin: 13px 0 0; color: var(--muted); font-size: 11px; }
+    .topic-meta strong { color: var(--ink); font-weight: 650; }
+    .context-disclosure { margin-top: 14px; padding: 0; overflow: hidden; }
+    .context-disclosure .insights { margin: 0; padding: 14px; background: var(--wash); }
+    .note {
+      margin: 14px 0 0;
+      padding: 12px 14px;
+      border-left: 3px solid var(--orange);
+      background: var(--orange-soft);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .note-disclosure > summary { cursor: pointer; font-weight: 650; list-style-position: inside; }
+    .note-disclosure p { margin: 8px 0 0; color: var(--muted); }
+    #activity-overview, #signals-title, #topics-title, #stance-title, #topic-quality-disclosure { scroll-margin-top: 82px; }
+
+    @media (max-width: 1120px) {
+      .dashboard { grid-template-columns: minmax(0, 2fr) minmax(250px, .8fr); }
+    }
+    @media (max-width: 900px) {
+      .nav { min-height: 58px; gap: 14px; padding: 8px 0; }
+      .nav-links { gap: 14px; }
+      .nav-secondary { display: none; }
+    }
+    @media (max-width: 820px) {
+      .nav { width: min(100% - 28px, 1180px); }
+      .brand-copy small { display: none; }
+      .shell { width: min(100% - 24px, 1440px); padding-top: 20px; }
+      .masthead { align-items: flex-start; flex-direction: column; }
+      .status-cluster { justify-content: flex-start; }
+      .dashboard { grid-template-columns: 1fr; }
+      .signals-panel { grid-column: auto; }
+      .signal-list { grid-template-columns: repeat(2, 1fr); }
+      .signal-group { padding: 14px 10px; }
+      .signal-group:nth-child(odd) { border-right: 1px solid var(--line); padding-left: 0; }
+      .signal-group:nth-child(even) { padding-right: 0; }
+      .signal-group:nth-last-child(-n+2) { border-bottom: 0; }
+      .topic-layout { grid-template-columns: 1fr; }
+      .stance-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topic-quality-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .insights { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 540px) {
+      .nav { width: calc(100% - 24px); }
+      .brand { gap: 7px; }
+      .brand-mark { width: 28px; height: 28px; border-radius: 8px; }
+      .brand-copy { font-size: 13px; }
+      .nav-links { gap: 10px; font-size: 12px; }
+      .metrics { grid-template-columns: 1fr; }
+      .metric { padding: 12px; }
+      .metric, .metric:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+      .metric:first-child { border-top: 0; }
+      .focus-panel .panel-head { align-items: flex-start; flex-direction: column; }
+      .timeline-actions { width: 100%; align-items: center; justify-content: space-between; }
+      .series-head { align-items: flex-start; flex-direction: column; }
+      .series-tabs { display: grid; width: 100%; grid-template-columns: 1fr 1fr; }
+      .series-body { padding: 12px 14px 14px; }
+      .analysis-panel-body { padding: 14px; }
+      .series-chart-toolbar { align-items: flex-start; flex-direction: column; }
+      .series-legend { justify-content: flex-start; }
+      .replay { grid-template-columns: 1fr; }
+      .signal-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 10px; }
+      .signal-group { padding: 10px 0; }
+      .chart-axis { font-size: 9px; }
+      .topic-visual { width: 150px; }
+      .topic-quality-head { align-items: flex-start; flex-direction: column; gap: 4px; }
+      .topic-quality-grid { grid-template-columns: 1fr; }
+      .stance-row { grid-template-columns: 1fr; gap: 7px; }
+      .stance-share { text-align: left; }
+      .stance-detail-grid { grid-template-columns: 1fr; }
+      .topic-bars-head, .topic-bar-button { grid-template-columns: minmax(72px, 1fr) 50px 58px 44px; gap: 4px; padding-inline: 4px; }
+      .heatmap-axis { margin-left: 104px; }
+      .sentiment-trend-head { align-items: flex-start; flex-direction: column; gap: 3px; }
+      .sentiment-trend-head span { text-align: left; }
+      .sentiment-trend-chart { height: 120px; }
+      .sentiment-comparison-head { align-items: flex-start; flex-direction: column; gap: 3px; }
+      .sentiment-comparison-row { grid-template-columns: minmax(84px, 1fr) minmax(80px, 1.25fr) 66px; gap: 6px; padding-inline: 4px; }
+      .topic-disclosure > summary, .context-disclosure > summary { grid-template-columns: 18px minmax(0, 1fr); }
+      .disclosure-meta { grid-column: 2; margin-top: -4px; text-align: left; }
+      .quick-insights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .quick-insight { display: grid; grid-template-columns: 26px minmax(0, 1fr); padding: 9px; }
+      .quick-insight:first-child { grid-column: 1 / -1; }
+      .quick-insight-icon { width: 26px; height: 26px; margin-bottom: 6px; }
+      .quick-insight-icon svg { width: 15px; height: 15px; }
+      .quick-insight-context { display: block; }
+      .topic-detail-head { align-items: flex-start; flex-direction: column; gap: 3px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    main.shell { display: flex; flex-direction: column; }
+    main.shell > .breadcrumb { order: 1; }
+    main.shell > .masthead { order: 2; }
+    main.shell > .data-notice { order: 3; }
+    main.shell > .metrics { order: 4; }
+    main.shell > .dashboard { order: 5; }
+    main.shell > .sentiment-series-panel { order: 6; }
+    main.shell > .stance-panel { order: 7; }
+    main.shell > .topic-panel { order: 8; }
+    main.shell > .context-disclosure { order: 9; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="Back to SURGE Dataset home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy"><span>SURGE</span><small>Event Analysis</small></span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-secondary" href="../index.html#overview">Dataset</a>
+        <a class="nav-live" href="index.html">Events</a>
+        <a class="nav-secondary" href="https://github.com/synlp/SURGE">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shell" id="monitor" aria-busy="true">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a id="catalog-back" href="index.html">Events</a>
+      <span class="breadcrumb-separator" aria-hidden="true">/</span>
+      <span class="breadcrumb-current" aria-current="page">Analysis</span>
+    </nav>
+
+    <section class="masthead" aria-labelledby="focus-title">
+      <div class="masthead-main">
+        <span class="event-chip" id="event-category">Event</span>
+        <h1 class="focus-title" id="focus-title">Loading event</h1>
+        <p class="focus-summary" id="focus-summary">Loading event overview.</p>
+        <p class="event-meta-line" id="event-window">Loading event dates.</p>
+      </div>
+      <div class="status-cluster" aria-label="Data status">
+        <span class="badge demo" id="mode-badge"><span class="status-dot" aria-hidden="true"></span> Activity and sentiment</span>
+        <span class="badge" id="freshness">Loading</span>
+      </div>
+    </section>
+
+    <div class="data-notice" id="data-notice" role="status" aria-live="polite" hidden>
+      <span class="data-notice-icon" aria-hidden="true">!</span>
+      <span id="data-notice-text">Preparing event analysis.</span>
+    </div>
+
+    <section class="metrics" id="activity-overview" aria-label="Event summary metrics">
+      <article class="metric">
+        <span class="metric-label">Posts in event window</span>
+        <div class="metric-row"><strong class="metric-value" id="metric-window-posts">—</strong><span class="metric-delta neutral">total</span></div>
+      </article>
+      <article class="metric" data-analysis-only>
+        <span class="metric-label">Sentiment coverage</span>
+        <div class="metric-row"><strong class="metric-value" id="metric-sentiment-coverage">—</strong><span class="metric-delta neutral">of event posts</span></div>
+      </article>
+      <article class="metric" data-analysis-only>
+        <span class="metric-label">Average sentiment</span>
+        <div class="metric-row"><strong class="metric-value" id="metric-average-sentiment">—</strong><span class="metric-delta" id="metric-average-sentiment-label">—</span></div>
+      </article>
+    </section>
+
+    <section class="dashboard" aria-label="SURGE event monitor">
+      <article class="panel focus-panel" aria-labelledby="timeline-title">
+        <div class="panel-head">
+          <div>
+            <h2 id="timeline-title">Discussion over time</h2>
+            <p class="panel-kicker">Activity and sentiment in six-hour intervals</p>
+          </div>
+          <div class="timeline-actions">
+            <div class="range-group" role="group" aria-label="Chart time range">
+              <button class="control-button" type="button" data-range="4" aria-pressed="false">24H</button>
+              <button class="control-button" type="button" data-range="28" aria-pressed="false">7D</button>
+              <button class="control-button" type="button" data-range="all" aria-pressed="true">All</button>
+            </div>
+            <span class="badge" id="focus-time">—</span>
+          </div>
+        </div>
+        <div class="chart-wrap" id="chart-wrap">
+          <div class="chart-title-row">
+            <h3>Discussion intensity</h3>
+            <div class="chart-legend" aria-label="Chart legend">
+              <span class="legend-key"><span class="legend-line" aria-hidden="true"></span>Posts per 6H</span>
+            </div>
+          </div>
+          <svg class="chart-svg" id="volume-chart" viewBox="0 0 820 290" role="img" aria-label="Discussion intensity time series"></svg>
+          <div class="chart-title-row">
+            <h3>Sentiment polarity</h3>
+            <div class="chart-legend"><span>−1 negative</span><span>0 neutral</span><span>+1 positive</span></div>
+          </div>
+          <svg class="chart-svg" id="sentiment-chart" data-analysis-only viewBox="0 0 820 125" role="img" aria-label="Sentiment polarity time series"></svg>
+          <div class="chart-tooltip" id="chart-tooltip" role="status" aria-live="polite"></div>
+        </div>
+
+        <div class="replay">
+          <div><strong id="replay-label">Explore the timeline</strong><small id="replay-detail">Choose a time point</small></div>
+          <input id="replay-slider" type="range" min="0" max="23" value="23" aria-label="Timeline position">
+        </div>
+      </article>
+
+      <aside class="panel signals-panel" aria-labelledby="signals-title">
+        <div class="panel-head"><div><h2 id="signals-title">At a glance</h2><p class="panel-kicker">Whole event window</p></div></div>
+        <div class="signal-list">
+          <div class="signal-group" data-analysis-only>
+            <span class="signal-label">Overall mood</span>
+            <strong class="signal-value" id="mood-value">—</strong>
+            <span class="signal-context" id="mood-context">—</span>
+          </div>
+          <div class="signal-group" data-analysis-only>
+            <span class="signal-label">Sentiment coverage</span>
+            <strong class="signal-value" id="coverage-value">—</strong>
+            <span class="signal-context" id="coverage-context">—</span>
+          </div>
+          <div class="signal-group">
+            <span class="signal-label">Peak activity</span>
+            <strong class="signal-value" id="peak-value">—</strong>
+            <span class="signal-context" id="peak-context">—</span>
+          </div>
+          <div class="signal-group" data-analysis-only>
+            <span class="signal-label">Sentiment mix</span>
+            <strong class="signal-value" id="sentiment-mix-value">—</strong>
+            <span class="signal-context" id="sentiment-mix-context">—</span>
+            <div class="sentiment-mix" id="sentiment-mix" aria-label="Sentiment distribution"></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="panel sentiment-series-panel" aria-labelledby="sentiment-series-title" data-analysis-only>
+      <div class="panel-head series-head">
+        <div>
+          <h2 id="sentiment-series-title">Sentiment over time</h2>
+          <p class="panel-kicker" id="series-mode-note">New content and sentiment in each six-hour interval</p>
+        </div>
+        <div class="series-tabs" role="group" aria-label="Sentiment time-series table">
+          <button class="series-tab" type="button" data-series-mode="interval" aria-pressed="true">Content &amp; sentiment</button>
+          <button class="series-tab" type="button" data-series-mode="cumulative" aria-pressed="false">Sentiment spread</button>
+        </div>
+      </div>
+      <div class="series-body">
+        <div class="series-chart-toolbar">
+          <p class="series-chart-meta" id="series-chart-meta">Loading time-series values.</p>
+          <div class="series-legend" aria-label="Time-series legend">
+            <span class="total"><i aria-hidden="true"></i>Total</span>
+            <span class="positive"><i aria-hidden="true"></i>Positive</span>
+            <span class="neutral"><i aria-hidden="true"></i>Neutral</span>
+            <span class="negative"><i aria-hidden="true"></i>Negative</span>
+          </div>
+        </div>
+        <div class="series-chart-wrap">
+          <svg class="series-chart" id="series-chart" viewBox="0 0 900 330" role="img" aria-label="Sentiment time-series line chart"></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel topic-panel" aria-labelledby="topics-title">
+      <div class="panel-head">
+        <div>
+          <h2 id="topics-title">Topic overview</h2>
+          <p class="panel-kicker" id="topic-window">Primary topics in the selected replay window</p>
+        </div>
+        <span class="badge" id="topic-coverage">Loading aggregate data</span>
+      </div>
+      <div class="analysis-panel-body">
+      <div class="topic-coverage-block">
+        <div class="topic-coverage-head"><strong>Classification coverage</strong><span id="topic-coverage-detail">Waiting for aggregate text data</span></div>
+        <div class="coverage-track" role="img" aria-label="Classification coverage" id="topic-coverage-track"></div>
+        <div class="coverage-breakdown" id="topic-coverage-breakdown" aria-label="Classification outcome breakdown"></div>
+      </div>
+      <div class="topic-summary" id="topic-summary" aria-live="polite">Waiting for aggregate topic data.</div>
+      <div class="topic-layout">
+        <div class="topic-visual">
+          <svg class="topic-chart" id="topic-chart" viewBox="0 0 200 200" role="img" aria-label="Compact topic composition summary"></svg>
+        </div>
+        <div>
+          <div class="topic-bars" id="topic-bars" aria-label="Ranked topic composition"></div>
+          <div class="topic-detail" id="topic-detail" aria-live="polite"></div>
+        </div>
+      </div>
+      <details class="topic-disclosure" id="topic-mood-disclosure" name="topic-details">
+        <summary><span class="disclosure-title">Topic mood and comparison</span><span class="disclosure-meta" id="topic-mood-fold-summary">Select to explore sentiment</span></summary>
+        <div class="topic-sentiment" id="topic-sentiment" aria-live="polite"><div id="topic-sentiment-content"></div></div>
+      </details>
+
+      <details class="topic-disclosure" id="topic-evolution-disclosure" name="topic-details">
+        <summary><span class="disclosure-title">Conversation change over time</span><span class="disclosure-meta" id="topic-evolution-fold-summary">Topic mix across the replay window</span></summary>
+        <div class="topic-evolution">
+          <div class="topic-evolution-head">
+            <h3>How the conversation changed</h3>
+            <span class="heatmap-scale"><span>Lower classified share</span><span class="heatmap-scale-swatch" aria-hidden="true"></span><span>Higher classified share</span></span>
+          </div>
+          <div class="topic-heatmap" id="topic-heatmap" role="img" aria-label="Topic share by six-hour replay bin"></div>
+          <div class="heatmap-axis" id="topic-heatmap-axis"></div>
+        </div>
+      </details>
+
+      <details class="topic-disclosure" id="topic-quality-disclosure" name="topic-details">
+        <summary><span class="disclosure-title">About this view</span><span class="disclosure-meta" id="topic-quality-fold-summary">Coverage and context</span></summary>
+        <div class="topic-disclosure-body">
+          <section class="topic-quality" aria-labelledby="topic-quality-title">
+            <div class="topic-quality-head">
+              <h3 id="topic-quality-title">Data coverage</h3>
+              <span class="topic-quality-status" id="topic-quality-status">Loading</span>
+            </div>
+            <div class="topic-quality-grid" id="topic-quality-grid"></div>
+            <p class="topic-quality-note">Coverage indicators show how much of the discussion supports this view.</p>
+            <section class="conversation-quality" aria-labelledby="conversation-quality-title">
+              <div class="conversation-quality-head"><strong id="conversation-quality-title">Discussion quality</strong><span id="conversation-quality-range">Selected replay window</span></div>
+              <div id="conversation-quality-content" aria-live="polite"><p class="conversation-quality-empty">Loading discussion details.</p></div>
+            </section>
+            <div class="topic-review-context" id="topic-review-context" aria-live="polite">
+              <div class="topic-review-head"><strong>Context</strong><span class="topic-review-badge" id="topic-review-badge">Loading</span></div>
+              <p class="topic-review-summary" id="topic-review-summary">Additional context will appear here.</p>
+              <div class="topic-review-tags" id="topic-review-tags" aria-label="Recorded review dispositions"></div>
+              <p class="topic-review-meta" id="topic-review-meta"></p>
+            </div>
+          </section>
+          <p class="topic-meta" id="topic-method">Loading topic information.</p>
+        </div>
+      </details>
+      </div>
+    </section>
+
+    <section class="panel stance-panel" aria-labelledby="stance-title">
+      <div class="panel-head">
+        <div>
+          <h2 id="stance-title">Stance landscape</h2>
+          <p class="panel-kicker">Positions and mood across the discussion</p>
+        </div>
+        <span class="badge" id="stance-coverage">Checking analysis</span>
+      </div>
+      <div class="analysis-panel-body">
+      <p class="stance-intro">Groups are organized around positions expressed in the event discussion. Mood is shown separately within each group.</p>
+      <div class="stance-issue-tabs" id="stance-issue-tabs" aria-label="Discovered stance issues"></div>
+      <div class="stance-question"><span>Question</span><strong id="stance-question">Loading stance groups.</strong></div>
+      <div class="stance-summary" id="stance-summary" aria-live="polite">Waiting for aggregate stance analysis.</div>
+      <div class="stance-legend" aria-label="Emotion legend">
+        <span><i class="stance-dot" style="background:var(--green)"></i>Positive</span>
+        <span><i class="stance-dot" style="background:#9aa7b6"></i>Neutral</span>
+        <span><i class="stance-dot" style="background:var(--red)"></i>Negative</span>
+        <span><i class="stance-dot" style="background:var(--violet)"></i>Mixed</span>
+      </div>
+      <div class="stance-groups" id="stance-groups"></div>
+      <details class="stance-detail" id="stance-detail">
+        <summary id="stance-detail-summary">More details</summary>
+        <div class="stance-detail-grid" id="stance-detail-grid"></div>
+      </details>
+      </div>
+    </section>
+
+    <details class="panel context-disclosure" id="event-context-disclosure">
+      <summary><span class="disclosure-title">About the data</span><span class="disclosure-meta">Activity peaks, engagement and conversation structure</span></summary>
+      <section class="insights" aria-label="Event analysis details">
+      <article class="panel insight" id="activity-highlights">
+        <h2>Activity high points</h2>
+        <p>The strongest six-hour activity periods.</p>
+        <div class="moment-list" id="moment-list"></div>
+      </article>
+      <article class="panel insight">
+        <h2>Collection coverage</h2>
+        <p id="narrative">—</p>
+        <div class="tag-row" id="tag-row" aria-label="Event signals"></div>
+        <div class="detail-list" id="coverage-details"></div>
+      </article>
+      <article class="panel insight">
+        <h2>Reaction structure</h2>
+        <p>Share of collected posts by public conversation role.</p>
+        <div class="mini-bars" aria-label="Reaction structure sample">
+          <div class="bar-row"><span>Main posts</span><span class="bar-track"><span class="bar-fill" id="bar-main"></span></span><span id="bar-main-value">—</span></div>
+          <div class="bar-row"><span>Replies &amp; reposts</span><span class="bar-track"><span class="bar-fill green" id="bar-replies"></span></span><span id="bar-replies-value">—</span></div>
+          <div class="bar-row"><span>Quotes</span><span class="bar-track"><span class="bar-fill violet" id="bar-quotes"></span></span><span id="bar-quotes-value">—</span></div>
+        </div>
+      </article>
+      <article class="panel insight">
+        <h2>Observed engagement</h2>
+        <p>Aggregate interactions reported for posts inside the displayed event window.</p>
+        <div class="detail-list" id="engagement-details"></div>
+      </article>
+      </section>
+    </details>
+
+  </main>
+
+  <script src="data/events-v9-1.js"></script>
+  <script src="data/runtime-config.js"></script>
+  <script src="assets/data-client.js"></script>
+  <script src="data/stance-issues-v1.js"></script>
+  <script src="data/stance-emotion-v1.js"></script>
+  <script>
+    let activeEvents = [];
+    const topicReviewLedger = window.SURGE_TOPIC_REVIEWS || { reviews: {} };
+    let expressionReplay = window.SURGE_EXPRESSION_DATA || null;
+    const stanceIssues = window.SURGE_STANCE_ISSUES || { events: [] };
+    let stanceEmotion = window.SURGE_STANCE_EMOTION_DATA || null;
+    let liveMetadata = {
+      topicMethod: "Aggregate topic data unavailable",
+      topicLabelMethod: "",
+      granularity: "6H"
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+    const pageParameters = new URLSearchParams(window.location.search);
+    const requestedReturn = pageParameters.get("return") || "";
+    const catalogReturnUrl = /^index\.html(?:\?[^#]*)?$/.test(requestedReturn)
+      ? requestedReturn
+      : /^events\.html(?:\?[^#]*)?$/.test(requestedReturn)
+        ? requestedReturn.replace(/^events\.html/, "index.html")
+        : "index.html";
+    $("#catalog-back").href = catalogReturnUrl;
+    const state = { eventId: null, range: Number.MAX_SAFE_INTEGER, index: 0, seriesMode: "interval", topicSelection: {}, stanceIssueSelection: {} };
+    const els = {
+      volume: $("#volume-chart"), sentiment: $("#sentiment-chart"),
+      slider: $("#replay-slider"), tooltip: $("#chart-tooltip"), wrap: $("#chart-wrap")
+    };
+
+    const showDataNotice = message => {
+      $("#data-notice-text").textContent = message;
+      $("#data-notice").hidden = false;
+    };
+    const hideDataNotice = () => { $("#data-notice").hidden = true; };
+
+    const fmt = new Intl.NumberFormat("en-US");
+    const compactFmt = new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 });
+    const dateFmt = new Intl.DateTimeFormat("en", { dateStyle: "medium", timeZone: "UTC" });
+    const selectedEvent = () => activeEvents.find(event => event.id === state.eventId) || activeEvents[0];
+    const currentPoint = (event) => event.points[Math.min(state.index, event.points.length - 1)];
+    const sentimentLabel = value => value > .2 ? "Positive" : value < -.2 ? "Negative" : "Mixed / neutral";
+    const signed = value => `${value > 0 ? "+" : ""}${value.toFixed(2)}`;
+    const pctDelta = (current, previous) => previous === 0 ? (current === 0 ? 0 : 100) : ((current - previous) / previous) * 100;
+    const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+    })[character]);
+    const topicColors = ["#2454a6", "#2f7d4f", "#c8651b", "#6e4aa6", "#b83a32", "#718096"];
+
+    function linePath(points, xFor, yFor, valueIndex) {
+      let drawing = false;
+      return points.map((point, i) => {
+        if (point[valueIndex] === null || point[valueIndex] === undefined) {
+          drawing = false;
+          return "";
+        }
+        const command = drawing ? "L" : "M";
+        drawing = true;
+        return `${command}${xFor(i).toFixed(1)},${yFor(point[valueIndex]).toFixed(1)}`;
+      }).filter(Boolean).join(" ");
+    }
+
+    function attachPointEvents(svg, event, visiblePoints, offset, xFor, yFor, valueIndex, label) {
+      svg.querySelectorAll(".point").forEach((circle, renderedIndex) => {
+        const localIndex = Number(circle.dataset.pointIndex ?? renderedIndex);
+        const absoluteIndex = offset + localIndex;
+        const point = visiblePoints[localIndex];
+        const show = () => {
+          const rect = svg.getBoundingClientRect();
+          const wrapRect = els.wrap.getBoundingClientRect();
+          const left = rect.left - wrapRect.left + (xFor(localIndex) / 820) * rect.width;
+          const top = rect.top - wrapRect.top + (yFor(point[valueIndex]) / Number(svg.getAttribute("viewBox").split(" ")[3])) * rect.height;
+          els.tooltip.innerHTML = `<span class="tooltip-time">${point[0]}</span><strong>${label}: ${valueIndex === 1 ? fmt.format(point[1]) : signed(point[2])}</strong>`;
+          els.tooltip.style.left = `${Math.max(80, Math.min(left, els.wrap.clientWidth - 80))}px`;
+          els.tooltip.style.top = `${Math.max(55, top)}px`;
+          els.tooltip.classList.add("visible");
+        };
+        circle.addEventListener("mouseenter", show);
+        circle.addEventListener("focus", show);
+        circle.addEventListener("mouseleave", () => els.tooltip.classList.remove("visible"));
+        circle.addEventListener("blur", () => els.tooltip.classList.remove("visible"));
+        circle.addEventListener("click", () => { state.index = absoluteIndex; render(); });
+      });
+    }
+
+    function renderCharts(event) {
+      const end = Math.min(state.index + 1, event.points.length);
+      const start = Math.max(0, end - state.range);
+      const points = event.points.slice(start, end);
+      const pointRadius = points.length > 60 ? 1.8 : 3.2;
+      const width = 820, left = 54, right = 18, plotWidth = width - left - right;
+      const xFor = i => left + (points.length === 1 ? 0 : (i / (points.length - 1)) * plotWidth);
+      const volumeMax = Math.max(...points.map(point => point[1]), 1);
+      const volumeTop = Math.ceil(volumeMax / 100) * 100 || volumeMax;
+      const yVolume = value => 240 - (value / volumeTop) * 190;
+      const volumePath = linePath(points, xFor, yVolume, 1);
+      const areaPath = `${volumePath} L${xFor(points.length - 1).toFixed(1)},240 L${xFor(0).toFixed(1)},240 Z`;
+      const ticks = [0, .25, .5, .75, 1];
+      const grid = ticks.map(ratio => {
+        const y = 240 - ratio * 190;
+        return `<line class="chart-grid" x1="${left}" x2="${width-right}" y1="${y}" y2="${y}"></line><text class="chart-axis" x="${left-9}" y="${y+4}" text-anchor="end">${fmt.format(Math.round(volumeTop * ratio))}</text>`;
+      }).join("");
+      const labelIndexes = [...new Set([0, Math.floor((points.length - 1) / 2), points.length - 1])];
+      const labels = labelIndexes.map(i => `<text class="chart-axis" x="${xFor(i)}" y="267" text-anchor="${i === 0 ? "start" : i === points.length - 1 ? "end" : "middle"}">${points[i][0]}</text>`).join("");
+      const circles = points.map((point, i) => `<circle class="point ${start + i === state.index ? "active" : ""}" data-point-index="${i}" cx="${xFor(i)}" cy="${yVolume(point[1])}" r="${start + i === state.index ? 4.5 : pointRadius}" aria-label="${point[0]}: ${point[1]} posts"></circle>`).join("");
+      els.volume.innerHTML = `<title>Discussion intensity for ${event.title}</title><desc>Posts per six-hour bin across the selected replay window.</desc>${grid}<path class="volume-area" d="${areaPath}"></path><path class="volume-line" d="${volumePath}"></path>${circles}${labels}`;
+
+      attachPointEvents(els.volume, event, points, start, xFor, yVolume, 1, "Posts");
+      if (event.sentimentAvailable === false) {
+        els.sentiment.innerHTML = `<title>Sentiment analysis unavailable for ${event.title}</title><text class="chart-axis" x="410" y="66" text-anchor="middle">Sentiment analysis is not included in this release</text>`;
+      } else {
+        const ySentiment = value => 60 - value * 42;
+        const sentimentPath = linePath(points, xFor, ySentiment, 2);
+        const sentimentGrid = [-1, 0, 1].map(value => `<line class="${value === 0 ? "zero-line" : "chart-grid"}" x1="${left}" x2="${width-right}" y1="${ySentiment(value)}" y2="${ySentiment(value)}"></line><text class="chart-axis" x="${left-9}" y="${ySentiment(value)+4}" text-anchor="end">${value > 0 ? "+" : ""}${value}</text>`).join("");
+        const sentimentCircles = points.map((point, i) => point[2] === null ? "" : `<circle class="point sentiment-point ${start + i === state.index ? "active" : ""}" data-point-index="${i}" cx="${xFor(i)}" cy="${ySentiment(point[2])}" r="${start + i === state.index ? 4.5 : pointRadius}" aria-label="${point[0]}: sentiment ${signed(point[2])}"></circle>`).join("");
+        els.sentiment.innerHTML = `<title>Sentiment polarity for ${event.title}</title><desc>Mean sentiment polarity per six-hour bin from negative one to positive one.</desc>${sentimentGrid}<path class="sentiment-line" d="${sentimentPath}"></path>${sentimentCircles}`;
+        attachPointEvents(els.sentiment, event, points, start, xFor, ySentiment, 2, "Polarity");
+      }
+    }
+
+    function renderMetrics(event) {
+      $("#metric-window-posts").textContent = fmt.format(Number(event.windowPostCount || 0));
+      const fullPeak = Math.max(...event.points.map(item => item[1]));
+      const peakPoint = event.points.find(item => item[1] === fullPeak);
+      $("#peak-value").textContent = fmt.format(fullPeak);
+      $("#peak-context").textContent = `${peakPoint[0]} · posts per 6H`;
+
+      const sentiment = event.sentimentSummary || {};
+      const counts = sentiment.counts || {};
+      const annotated = Number(sentiment.annotatedPosts || 0);
+      const coverage = Number(sentiment.coverage || 0);
+      const mean = Number(sentiment.meanScore);
+      const positive = Number(counts.positive || 0);
+      const neutral = Number(counts.neutral || 0);
+      const negative = Number(counts.negative || 0);
+      const labeled = positive + neutral + negative;
+      if (event.sentimentAvailable === false || !Number.isFinite(mean)) {
+        $("#metric-sentiment-coverage").textContent = "—";
+        $("#metric-average-sentiment").textContent = "—";
+        $("#metric-average-sentiment-label").textContent = "Not analyzed";
+        $("#metric-average-sentiment-label").className = "metric-delta neutral";
+        $("#mood-value").textContent = "Not analyzed";
+        $("#mood-context").textContent = "Sentiment is unavailable";
+        $("#coverage-value").textContent = "—";
+        $("#coverage-context").textContent = "No sentiment labels";
+        $("#sentiment-mix-value").textContent = "—";
+        $("#sentiment-mix-context").textContent = "No sentiment distribution";
+        $("#sentiment-mix").innerHTML = "";
+      } else {
+        const positiveShare = labeled ? positive / labeled * 100 : 0;
+        const neutralShare = labeled ? neutral / labeled * 100 : 0;
+        const negativeShare = labeled ? negative / labeled * 100 : 0;
+        $("#metric-sentiment-coverage").textContent = `${coverage.toFixed(1)}%`;
+        $("#metric-average-sentiment").textContent = signed(mean);
+        $("#metric-average-sentiment-label").textContent = sentimentLabel(mean);
+        $("#metric-average-sentiment-label").className = `metric-delta ${mean > .2 ? "positive" : mean < -.2 ? "negative" : "neutral"}`;
+        $("#mood-value").textContent = sentimentLabel(mean);
+        $("#mood-context").textContent = `Average polarity ${signed(mean)}`;
+        $("#coverage-value").textContent = `${coverage.toFixed(1)}%`;
+        $("#coverage-context").textContent = `${fmt.format(annotated)} labeled posts`;
+        $("#sentiment-mix-value").textContent = `${positiveShare.toFixed(1)}% positive`;
+        $("#sentiment-mix-context").textContent = `${neutralShare.toFixed(1)}% neutral · ${negativeShare.toFixed(1)}% negative`;
+        $("#sentiment-mix").innerHTML = `
+          <span class="positive" style="width:${positiveShare}%"></span>
+          <span class="neutral" style="width:${neutralShare}%"></span>
+          <span class="negative" style="width:${negativeShare}%"></span>`;
+      }
+    }
+
+    function renderSentimentSeries(event) {
+      const end = Math.min(state.index + 1, event.points.length);
+      const start = Math.max(0, end - state.range);
+      const visibleIndexes = Array.from({ length: end - start }, (_, index) => start + index);
+      const cumulative = [];
+      const running = { posts: 0, analyzed: 0, positive: 0, neutral: 0, negative: 0 };
+
+      event.points.forEach(point => {
+        const raw = point[3] || {};
+        const counts = raw.sentimentCounts || {};
+        running.posts += Number(point[1] || 0);
+        running.analyzed += Number(raw.sentimentAnnotatedPosts || 0);
+        running.positive += Number(counts.positive || 0);
+        running.neutral += Number(counts.neutral || 0);
+        running.negative += Number(counts.negative || 0);
+        cumulative.push({ ...running });
+      });
+
+      const intervalMode = state.seriesMode === "interval";
+      $("#series-mode-note").textContent = intervalMode
+        ? "New content and sentiment in each six-hour interval"
+        : "Cumulative sentiment propagation from the beginning of the event";
+      $("#series-chart-meta").textContent = intervalMode
+        ? `${visibleIndexes.length} six-hour intervals in the selected chart range`
+        : `${visibleIndexes.length} visible checkpoints · cumulative totals begin at the event start`;
+
+      const rows = visibleIndexes.map(index => {
+        const point = event.points[index];
+        const raw = point[3] || {};
+        const counts = raw.sentimentCounts || {};
+        const values = intervalMode ? {
+          total: Number(point[1] || 0),
+          positive: Number(counts.positive || 0),
+          neutral: Number(counts.neutral || 0),
+          negative: Number(counts.negative || 0)
+        } : {
+          total: cumulative[index].posts,
+          positive: cumulative[index].positive,
+          neutral: cumulative[index].neutral,
+          negative: cumulative[index].negative
+        };
+        return { label: point[0], absoluteIndex: index, ...values };
+      });
+
+      const svg = $("#series-chart");
+      if (!rows.length) {
+        svg.innerHTML = `<text class="series-axis" x="450" y="165" text-anchor="middle">No sentiment time-series values are available</text>`;
+        return;
+      }
+
+      const width = 900, height = 330, left = 62, right = 22, top = 22, bottom = 48;
+      const plotWidth = width - left - right;
+      const plotHeight = height - top - bottom;
+      const xFor = index => left + (rows.length === 1 ? 0 : index / (rows.length - 1) * plotWidth);
+      const maximum = Math.max(1, ...rows.flatMap(row => [row.total, row.positive, row.neutral, row.negative]));
+      const magnitude = 10 ** Math.max(0, Math.floor(Math.log10(maximum)));
+      const yMaximum = Math.ceil(maximum / magnitude) * magnitude;
+      const yFor = value => top + plotHeight - value / yMaximum * plotHeight;
+      const yTicks = [0, .25, .5, .75, 1];
+      const grid = yTicks.map(ratio => {
+        const y = top + plotHeight - ratio * plotHeight;
+        return `<line class="series-grid" x1="${left}" x2="${width - right}" y1="${y}" y2="${y}"></line>
+          <text class="series-axis" x="${left - 10}" y="${y + 4}" text-anchor="end">${compactFmt.format(Math.round(yMaximum * ratio))}</text>`;
+      }).join("");
+      const labelIndexes = [...new Set([0, Math.round((rows.length - 1) * .25), Math.round((rows.length - 1) * .5), Math.round((rows.length - 1) * .75), rows.length - 1])];
+      const xLabels = labelIndexes.map(index =>
+        `<text class="series-axis" x="${xFor(index)}" y="${height - 18}" text-anchor="${index === 0 ? "start" : index === rows.length - 1 ? "end" : "middle"}">${escapeHtml(rows[index].label.replace(" UTC", ""))}</text>`
+      ).join("");
+      const pathFor = key => rows.map((row, index) => `${index ? "L" : "M"}${xFor(index).toFixed(1)},${yFor(row[key]).toFixed(1)}`).join(" ");
+      const keys = ["total", "positive", "neutral", "negative"];
+      const lines = keys.map(key => `<path class="series-line ${key}" d="${pathFor(key)}"></path>`).join("");
+      const showDots = rows.length <= 40;
+      const dots = keys.map(key => rows.map((row, index) => {
+        const radius = row.absoluteIndex === state.index ? 3.8 : showDots ? 2.2 : 0;
+        if (!radius) return "";
+        return `<circle class="series-dot ${key}" cx="${xFor(index)}" cy="${yFor(row[key])}" r="${radius}">
+          <title>${row.label}: ${key} ${fmt.format(row[key])}</title>
+        </circle>`;
+      }).join("")).join("");
+      const hits = rows.map((row, index) => {
+        const hitLeft = index === 0 ? left : (xFor(index - 1) + xFor(index)) / 2;
+        const hitRight = index === rows.length - 1 ? width - right : (xFor(index) + xFor(index + 1)) / 2;
+        return `<rect class="series-hit" x="${hitLeft}" y="${top}" width="${hitRight - hitLeft}" height="${plotHeight}">
+          <title>${row.label} · Total ${fmt.format(row.total)} · Positive ${fmt.format(row.positive)} · Neutral ${fmt.format(row.neutral)} · Negative ${fmt.format(row.negative)}</title>
+        </rect>`;
+      }).join("");
+      const focusX = xFor(rows.length - 1);
+      svg.setAttribute("aria-label", `${intervalMode ? "Content and sentiment" : "Cumulative sentiment spread"} across ${rows.length} six-hour checkpoints`);
+      svg.innerHTML = `<title>${intervalMode ? "Content and sentiment over time" : "Cumulative sentiment spread over time"}</title>
+        <desc>Total, positive, neutral and negative post counts across the selected event timeline.</desc>
+        ${grid}<line class="series-focus-line" x1="${focusX}" x2="${focusX}" y1="${top}" y2="${top + plotHeight}"></line>${lines}${dots}${hits}${xLabels}`;
+    }
+
+    function renderTopicReview(event) {
+      const review = (topicReviewLedger.reviews || {})[event.sourceEventId];
+      const badge = $("#topic-review-badge");
+      const summary = $("#topic-review-summary");
+      const tags = $("#topic-review-tags");
+      const meta = $("#topic-review-meta");
+      if (!review || review.modelVersion !== event.modelVersion) {
+        badge.textContent = "Review pending";
+        summary.textContent = "No review record matches this model version yet.";
+        tags.innerHTML = `<span class="topic-review-tag">Pending review</span>`;
+        meta.textContent = `${event.modelVersion || "Unknown model"} · structural review is not an accuracy certification.`;
+        return;
+      }
+      const dispositionLabels = {
+        accepted_with_context: "Accepted with context",
+        renamed_for_clarity: "Labels clarified",
+        retain_current_model: "Current model retained"
+      };
+      const dispositions = [...new Set(Object.values(review.flags || {}).map(flag => flag.disposition))];
+      badge.textContent = "Version-matched review";
+      summary.textContent = review.publicSummary;
+      tags.innerHTML = dispositions.length
+        ? dispositions.map(disposition => `<span class="topic-review-tag">${dispositionLabels[disposition] || "Reviewed"}</span>`).join("")
+        : `<span class="topic-review-tag">No structural warning</span>`;
+      meta.textContent = `${review.modelVersion} · structural evidence, not accuracy certification.`;
+    }
+
+    function renderConversationQuality(event) {
+      const content = $("#conversation-quality-content");
+      const range = $("#conversation-quality-range");
+      const replayEvent = expressionReplay && Array.isArray(expressionReplay.events)
+        ? expressionReplay.events.find(item => item.sourceEventId === event.sourceEventId)
+        : null;
+      const matchesSnapshot = expressionReplay
+        && expressionReplay.sourceGeneratedAt === liveMetadata.generatedAt
+        && replayEvent
+        && replayEvent.modelVersion === event.modelVersion
+        && replayEvent.points.length === event.points.length;
+      if (!matchesSnapshot) {
+        range.textContent = "Aggregate unavailable";
+        content.innerHTML = `<p class="conversation-quality-empty">Discussion-quality detail is unavailable for this snapshot.</p>`;
+        return;
+      }
+      const end = Math.min(state.index + 1, replayEvent.points.length);
+      const start = Math.max(0, end - state.range);
+      const points = replayEvent.points.slice(start, end);
+      const totals = points.reduce((sum, point) => ({
+        content: sum.content + Number(point.content || 0),
+        lowInformation: sum.lowInformation + Number(point.lowInformation || 0),
+        uncertain: sum.uncertain + Number(point.uncertain || 0),
+        unavailableText: sum.unavailableText + Number(point.unavailableText || 0)
+      }), { content: 0, lowInformation: 0, uncertain: 0, unavailableText: 0 });
+      const available = totals.content + totals.lowInformation + totals.uncertain;
+      const observed = available + totals.unavailableText;
+      const share = value => available ? value / available * 100 : 0;
+      const contentShare = share(totals.content);
+      const lowShare = share(totals.lowInformation);
+      const uncertainShare = share(totals.uncertain);
+      const textCoverage = observed ? available / observed * 100 : 0;
+      const topicPoints = event.points.slice(start, end);
+      const topicObserved = topicPoints.reduce((sum, point) => sum + Number(point[1] || 0), 0);
+      const topicClassified = topicPoints.reduce((sum, point) => sum + Number((point[3] || {}).classifiedPosts || 0), 0);
+      const topicUnknownShare = topicObserved ? (topicObserved - topicClassified) / topicObserved * 100 : 0;
+      range.textContent = `${points.length} bin${points.length === 1 ? "" : "s"} · ${event.points[start][0]} to ${event.points[end - 1][0]}`;
+      $("#topic-quality-fold-summary").textContent += ` · ${contentShare.toFixed(0)}% substantive`;
+      content.innerHTML = `
+        <div class="conversation-quality-track" role="img" aria-label="Among posts with usable text: ${contentShare.toFixed(1)} percent substantive content, ${lowShare.toFixed(1)} percent low-information conversation, and ${uncertainShare.toFixed(1)} percent uncertain">
+          <span class="conversation-quality-segment content" style="width:${contentShare}%"></span>
+          <span class="conversation-quality-segment low-information" style="width:${lowShare}%"></span>
+          <span class="conversation-quality-segment uncertain" style="width:${uncertainShare}%"></span>
+        </div>
+        <div class="conversation-quality-legend">
+          <span class="conversation-quality-item"><span class="conversation-quality-dot" style="background:var(--green)"></span>Substantive<strong>${contentShare.toFixed(1)}%</strong></span>
+          <span class="conversation-quality-item"><span class="conversation-quality-dot" style="background:var(--orange)"></span>Low-information<strong>${lowShare.toFixed(1)}%</strong></span>
+          <span class="conversation-quality-item"><span class="conversation-quality-dot" style="background:#9aa7b6"></span>Uncertain<strong>${uncertainShare.toFixed(1)}%</strong></span>
+        </div>
+        <p class="conversation-quality-note">Usable text covers ${textCoverage.toFixed(1)}% of observed posts. Topic-unclassified discussion is ${topicUnknownShare.toFixed(1)}% and is measured separately.</p>`;
+    }
+
+    function renderStanceEmotion(event) {
+      const coverage = $("#stance-coverage");
+      const issueTabs = $("#stance-issue-tabs");
+      const question = $("#stance-question");
+      const summary = $("#stance-summary");
+      const groups = $("#stance-groups");
+      const detail = $("#stance-detail");
+      const detailSummary = $("#stance-detail-summary");
+      const detailGrid = $("#stance-detail-grid");
+      const issueEvent = Array.isArray(stanceIssues.events)
+        ? stanceIssues.events.find(item => item.sourceEventId === event.sourceEventId)
+        : null;
+      const stanceEvent = stanceEmotion && Array.isArray(stanceEmotion.events)
+        ? stanceEmotion.events.find(item => item.sourceEventId === event.sourceEventId)
+        : null;
+      const syntheticPreview = stanceEmotion?.displayMode === "synthetic_layout_preview"
+        && issueEvent?.displayMode === "synthetic_layout_preview"
+        && stanceEvent?.displayMode === "synthetic_layout_preview";
+      coverage.className = syntheticPreview ? "badge candidate" : "badge";
+      if (event.stanceAnalysisAvailable === false && !syntheticPreview) {
+        coverage.className = "badge candidate";
+        coverage.textContent = "Framework ready · data pending";
+        issueTabs.setAttribute("aria-label", "Planned stance analysis stages");
+        issueTabs.innerHTML = `
+          <article class="stance-stage"><span>1</span><strong>Discover event issues</strong><small>Identify contested, post-derived issues without imposing a fixed political axis.</small></article>
+          <article class="stance-stage"><span>2</span><strong>Group expressed positions</strong><small>Separate favorable, critical, and mixed or conditional responses using conversation context.</small></article>
+          <article class="stance-stage"><span>3</span><strong>Compare mood within groups</strong><small>Show positive, neutral, negative, and mixed emotion separately from stance.</small></article>`;
+        question.textContent = "Waiting for a version-matched, post-derived stance question for this event.";
+        summary.textContent = "The display contract is ready. Counts and percentages will remain blank until event-level results pass coverage, version, privacy, and consistency checks.";
+        groups.innerHTML = ["Favorable", "Critical", "Mixed / conditional"].map(label => `
+          <article class="stance-row is-placeholder" aria-label="${label}: analysis pending">
+            <div class="stance-label"><strong>${label}</strong><span>Account count pending</span></div>
+            <div class="stance-emotion-track" aria-hidden="true"></div>
+            <div class="stance-share">—</div>
+          </article>`).join("");
+        detail.hidden = false;
+        detailSummary.textContent = "Coverage and interpretation · pending";
+        detailGrid.innerHTML = `
+          <div class="stance-detail-card"><span>Relevant posts</span><strong>—</strong></div>
+          <div class="stance-detail-card"><span>Stance-bearing accounts</span><strong>—</strong></div>
+          <div class="stance-detail-card"><span>Neutral / reporting</span><strong>—</strong></div>
+          <div class="stance-detail-card"><span>Unclear</span><strong>—</strong></div>`;
+        return;
+      }
+      const discoveredIssues = issueEvent?.issues || [];
+      const savedIssueId = state.stanceIssueSelection[event.id];
+      const selectedIssue = discoveredIssues.find(item => item.issueId === savedIssueId) || discoveredIssues[0] || null;
+      if (selectedIssue) state.stanceIssueSelection[event.id] = selectedIssue.issueId;
+      const eventAnalysisMatches = stanceEmotion
+        && stanceEmotion.sourceGeneratedAt === liveMetadata.generatedAt
+        && stanceEvent
+        && stanceEvent.modelVersion === event.modelVersion
+        && issueEvent
+        && stanceEvent.discoveryRevision === issueEvent.discoveryRevision;
+      issueTabs.innerHTML = discoveredIssues.map(issue => {
+        const result = eventAnalysisMatches
+          ? stanceEvent.issues?.find(item => item.issueId === issue.issueId)
+          : null;
+        const issueAccounts = Number(result?.summary?.anonymousAccounts || 0);
+        const expressingAccounts = Number(result?.summary?.stanceExpressingAccounts || 0);
+        const issueCoverage = issueAccounts ? expressingAccounts / issueAccounts * 100 : 0;
+        const expressedGroups = (result?.groups || []).filter(group =>
+          group.expressedSharePercent !== null && group.expressedSharePercent !== undefined
+        );
+        const previewColors = ["var(--green)", "var(--red)", "var(--violet)", "var(--blue)"];
+        const groupSegments = expressedGroups.map((group, index) =>
+          `<span style="width:${Number(group.expressedSharePercent || 0)}%;background:${previewColors[index % previewColors.length]}"></span>`
+        ).join("");
+        const groupSummary = expressedGroups.map(group =>
+          `<span>${escapeHtml(group.label || group.stance)} ${Number(group.expressedSharePercent || 0).toFixed(1)}%</span>`
+        ).join("");
+        const evidence = issue.evidence || {};
+        return `<button class="stance-issue-button" type="button" data-stance-issue="${escapeHtml(issue.issueId)}" aria-pressed="${issue.issueId === selectedIssue?.issueId}">
+          <span class="stance-issue-head"><strong>${escapeHtml(issue.label)}</strong><span>${result ? `${issueCoverage.toFixed(1)}%` : "Pending"}</span></span>
+          <span class="stance-issue-meta">${result ? `${fmt.format(expressingAccounts)} stance-bearing of ${fmt.format(issueAccounts)} accounts` : `${fmt.format(Number(evidence.matchedPosts || 0))} matching posts`}</span>
+          <span class="stance-issue-track" aria-hidden="true">${groupSegments}</span>
+          <span class="stance-issue-foot">${result ? groupSummary : "<span>Awaiting stance analysis</span>"}</span>
+        </button>`;
+      }).join("");
+      issueTabs.querySelectorAll("[data-stance-issue]").forEach(button => button.addEventListener("click", () => {
+        state.stanceIssueSelection[event.id] = button.dataset.stanceIssue;
+        renderStanceEmotion(event);
+      }));
+
+      question.textContent = selectedIssue?.stanceQuestion || "No sufficiently contested issue was discovered in this event window.";
+      if (!selectedIssue) {
+        coverage.textContent = "No contested issue";
+        summary.textContent = "The post-derived topics did not yet show enough two-direction evaluative evidence for a responsible stance split.";
+        groups.innerHTML = `<div class="stance-empty">Topic and mood analysis remains available. This event is not forced into favorable and critical groups when the discussion does not support that distinction.</div>`;
+        detail.hidden = true;
+        return;
+      }
+      const analyzedIssue = stanceEvent?.issues?.find(item => item.issueId === selectedIssue.issueId) || null;
+      const matchesSnapshot = eventAnalysisMatches && analyzedIssue;
+      if (!matchesSnapshot) {
+        coverage.textContent = `${discoveredIssues.length} issue${discoveredIssues.length === 1 ? "" : "s"} found`;
+        const evidence = selectedIssue.evidence || {};
+        summary.textContent = `This question was generated from ${fmt.format(Number(evidence.matchedPosts || 0))} matching posts; ${Number(evidence.evaluativeSharePercent || 0).toFixed(1)}% contained lightweight evaluative signals. Account-level stance analysis is still pending.`;
+        groups.innerHTML = `<div class="stance-empty">The issue was discovered from event posts rather than predefined. Once its version-matched batch analysis passes privacy checks, this area will compare account groups and their observed emotions.</div>`;
+        detail.hidden = true;
+        return;
+      }
+
+      detail.hidden = false;
+      const totals = analyzedIssue.summary || {};
+      const analyzedPosts = Number(totals.analyzedPosts || 0);
+      const linkedPosts = Number(totals.linkedPosts || 0);
+      const users = Number(totals.anonymousAccounts || 0);
+      const stanceUsers = Number(totals.stanceExpressingAccounts || 0);
+      const contextUsed = Number(totals.contextUsedPosts || 0);
+      const neutral = Number(totals.neutralAccounts || 0);
+      const unclear = Number(totals.unclearAccounts || 0);
+      const stanceCoverage = users ? stanceUsers / users * 100 : 0;
+      coverage.textContent = syntheticPreview
+        ? "Example · four equal groups"
+        : `${stanceCoverage.toFixed(1)}% stance coverage`;
+      summary.textContent = syntheticPreview
+        ? "Example layout only: groups A, B, C, and D each represent 25%. Replace these sample values with analyzed results."
+        : users
+        ? `${fmt.format(stanceUsers)} of ${fmt.format(users)} anonymous accounts express a classifiable stance (${stanceCoverage.toFixed(1)}% coverage). The percentages below use only these stance-bearing accounts; each account is counted once.`
+        : `No account-level stance result was found among ${fmt.format(analyzedPosts)} analyzed posts.`;
+
+      const stanceLabels = {
+        favorable: "Favorable",
+        critical: "Critical",
+        mixed: "Mixed / conditional",
+        neutral: "Neutral / reporting",
+        unclear: "Unclear"
+      };
+      const emotionLabels = {
+        positive: "positive",
+        neutral: "neutral",
+        negative: "negative",
+        mixed: "mixed",
+        unavailable: "emotion unavailable"
+      };
+      const emotionOrder = ["positive", "neutral", "negative", "mixed", "unavailable"];
+      groups.innerHTML = (analyzedIssue.groups || []).filter(group =>
+        !["neutral", "unclear"].includes(group.stance)
+      ).map(group => {
+        const emotions = group.emotions || {};
+        const emotionTotal = emotionOrder.reduce((sum, key) => sum + Number(emotions[key] || 0), 0);
+        const segments = emotionOrder.map(key => {
+          const value = Number(emotions[key] || 0);
+          const width = emotionTotal ? value / emotionTotal * 100 : 0;
+          return value
+            ? `<span class="stance-emotion-segment ${key}" style="width:${width}%" title="${escapeHtml(emotionLabels[key])}: ${fmt.format(value)} accounts"></span>`
+            : "";
+        }).join("");
+        const emotionDescription = emotionOrder
+          .filter(key => Number(emotions[key] || 0))
+          .map(key => `${emotionLabels[key]} ${fmt.format(Number(emotions[key]))}`)
+          .join(", ") || "emotion unavailable";
+        return `<article class="stance-row">
+          <div class="stance-label"><strong>${escapeHtml(group.label || stanceLabels[group.stance] || group.stance)}</strong><span>${fmt.format(Number(group.accountCount || 0))} accounts</span></div>
+          <div class="stance-emotion-track" role="img" aria-label="${escapeHtml(`${group.label || stanceLabels[group.stance] || group.stance}: ${emotionDescription}`)}">${segments}</div>
+          <div class="stance-share">${Number(group.expressedSharePercent || 0).toFixed(1)}%</div>
+        </article>`;
+      }).join("") || `<div class="stance-empty">No account group met the current evidence rules.</div>`;
+
+      detailSummary.textContent = syntheticPreview
+        ? "About this example"
+        : `More details · ${fmt.format(contextUsed)} posts used conversation context`;
+      detailGrid.innerHTML = syntheticPreview ? `
+        <div class="stance-detail-card"><span>Groups</span><strong>4</strong></div>
+        <div class="stance-detail-card"><span>Share per group</span><strong>25%</strong></div>
+        <div class="stance-detail-card"><span>Status</span><strong>Example values</strong></div>` : `
+        <div class="stance-detail-card"><span>Analyzed posts</span><strong>${fmt.format(analyzedPosts)}</strong></div>
+        <div class="stance-detail-card"><span>Posts linked to accounts</span><strong>${fmt.format(linkedPosts)}</strong></div>
+        <div class="stance-detail-card"><span>Anonymous accounts</span><strong>${fmt.format(users)}</strong></div>
+        <div class="stance-detail-card"><span>Neutral / reporting</span><strong>${fmt.format(neutral)}</strong></div>
+        <div class="stance-detail-card"><span>Unclear accounts</span><strong>${fmt.format(unclear)}</strong></div>
+        <div class="stance-detail-card"><span>Analysis method</span><strong>${escapeHtml(stanceEmotion.analysisMethod || "Unspecified")}</strong></div>`;
+    }
+
+    function renderTopics(event) {
+      const chart = $("#topic-chart");
+      const bars = $("#topic-bars");
+      const detail = $("#topic-detail");
+      const topicSentiment = $("#topic-sentiment-content");
+      const heatmap = $("#topic-heatmap");
+      const heatmapAxis = $("#topic-heatmap-axis");
+      const qualityGrid = $("#topic-quality-grid");
+      const qualityStatus = $("#topic-quality-status");
+      const moodFoldSummary = $("#topic-mood-fold-summary");
+      const evolutionFoldSummary = $("#topic-evolution-fold-summary");
+      const qualityFoldSummary = $("#topic-quality-fold-summary");
+      renderTopicReview(event);
+      const topics = event.topics || [];
+      const end = Math.min(state.index + 1, event.points.length);
+      const start = Math.max(0, end - state.range);
+      const windowPoints = event.points.slice(start, end);
+      evolutionFoldSummary.textContent = `${windowPoints.length} bins · ${windowPoints[0]?.[0] || "No start"} to ${windowPoints[windowPoints.length - 1]?.[0] || "No end"}`;
+      const counts = topics.map(() => 0);
+      let classified = 0;
+      let observed = 0;
+      const reasonGroups = [
+        { id: "empty", label: "No usable text", summary: "missing usable text", color: "var(--line)", keys: ["empty_text"] },
+        { id: "short", label: "Too short", summary: "text being too short", color: "var(--muted)", keys: ["short_text"] },
+        { id: "vocabulary", label: "Vocabulary gap", summary: "vocabulary gaps", color: "var(--orange)", keys: ["out_of_vocabulary"] },
+        { id: "weak", label: "Weak signal", summary: "weak topic evidence", color: "var(--violet)", keys: ["insufficient_features", "no_topic_signal", "weak_topic_signal"] },
+        { id: "overlap", label: "Topic overlap", summary: "overlapping topic signals", color: "var(--green)", keys: ["ambiguous_topic_mix"] },
+        { id: "unavailable", label: "Unavailable", summary: "unavailable records", color: "#aab5c2", keys: ["unavailable_record"] }
+      ];
+      const rawReasons = {};
+
+      windowPoints.forEach(point => {
+        observed += Number(point[1] || 0);
+        const detail = point[3] || {};
+        classified += Number(detail.classifiedPosts || 0);
+        Object.entries(detail.unknownReasons || {}).forEach(([reason, value]) => {
+          rawReasons[reason] = (rawReasons[reason] || 0) + Number(value || 0);
+        });
+        (detail.topicCounts || []).forEach((value, index) => {
+          if (index < counts.length) counts[index] += Number(value || 0);
+        });
+      });
+
+      const groupedReasons = reasonGroups.map(group => ({
+        ...group,
+        count: group.keys.reduce((sum, key) => sum + Number(rawReasons[key] || 0), 0)
+      }));
+      const explainedUnknown = groupedReasons.reduce((sum, group) => sum + group.count, 0);
+      groupedReasons.find(group => group.id === "unavailable").count += Math.max(0, observed - classified - explainedUnknown);
+      const coverage = observed ? Math.min(100, classified / observed * 100) : 0;
+      const outcomes = [
+        { label: "Assigned", count: classified, color: "var(--blue)" },
+        ...groupedReasons
+      ].filter(outcome => outcome.count > 0);
+      const coverageTrack = $("#topic-coverage-track");
+      coverageTrack.innerHTML = outcomes.map(outcome => {
+        const share = observed ? outcome.count / observed * 100 : 0;
+        return `<span class="coverage-segment" style="width:${share.toFixed(3)}%;background:${outcome.color}" title="${outcome.label}: ${share.toFixed(1)}%"></span>`;
+      }).join("");
+      $("#topic-coverage-breakdown").innerHTML = outcomes.map(outcome => {
+        const share = observed ? outcome.count / observed * 100 : 0;
+        return `<span class="coverage-reason"><span class="coverage-dot" style="background:${outcome.color}"></span>${outcome.label}<strong>${share.toFixed(1)}%</strong></span>`;
+      }).join("");
+      coverageTrack.setAttribute("aria-label", `${coverage.toFixed(1)} percent assigned; remaining posts are broken down by reason below`);
+      $("#topic-coverage-detail").textContent = `${fmt.format(classified)} assigned · ${fmt.format(Math.max(0, observed - classified))} unclassified`;
+      $("#topic-coverage").textContent = `${coverage.toFixed(1)}% topic coverage`;
+
+      if (!topics.length || !classified) {
+        chart.innerHTML = `<circle class="topic-track" cx="100" cy="100" r="68"></circle><text class="topic-total" x="100" y="98">—</text><text class="topic-total-label" x="100" y="117">topic data unavailable</text>`;
+        bars.innerHTML = `<div class="topic-meta">The static fallback loaded without aggregate topic assignments.</div>`;
+        detail.innerHTML = `<div class="topic-detail-head"><strong>No topic detail available</strong></div>`;
+        topicSentiment.innerHTML = `<div class="topic-sentiment-head"><strong>Mood within this topic</strong><span>Unavailable</span></div><p class="sentiment-note">Topic-level sentiment requires both a topic assignment and a sentiment annotation.</p>`;
+        moodFoldSummary.textContent = "Mood unavailable";
+        heatmap.innerHTML = "";
+        heatmapAxis.innerHTML = "";
+        qualityGrid.innerHTML = `<div class="quality-card" data-tone="limited"><span class="quality-label">Diagnostics</span><strong class="quality-value">Unavailable</strong><span class="quality-context">No classified topic data in this replay window.</span></div>`;
+        qualityStatus.textContent = "Limited signal";
+        qualityStatus.dataset.tone = "limited";
+        qualityFoldSummary.textContent = "Limited signal";
+        $("#topic-summary").textContent = "A topic summary is unavailable for this replay window.";
+        if (!observed) {
+          coverageTrack.innerHTML = `<span class="coverage-segment" style="width:100%;background:var(--line)"></span>`;
+          $("#topic-coverage-breakdown").innerHTML = `<span class="coverage-reason">Aggregate topic data unavailable</span>`;
+          $("#topic-coverage-detail").textContent = "Aggregate topic data unavailable";
+          $("#topic-coverage").textContent = "No topic data";
+        }
+        $("#topic-method").textContent = liveMetadata.topicMethod;
+        return;
+      }
+
+      let offset = 0;
+      const slices = topics.map((topic, index) => {
+        const share = counts[index] / classified * 100;
+        const slice = `<circle class="topic-slice" cx="100" cy="100" r="68" pathLength="100" stroke="${topicColors[index % topicColors.length]}" stroke-dasharray="${share.toFixed(3)} ${(100-share).toFixed(3)}" stroke-dashoffset="${(-offset).toFixed(3)}" transform="rotate(-90 100 100)"><title>${topic.label}: ${share.toFixed(1)}%</title></circle>`;
+        offset += share;
+        return slice;
+      }).join("");
+      chart.innerHTML = `<circle class="topic-track" cx="100" cy="100" r="68"></circle>${slices}<text class="topic-total" x="100" y="98">${fmt.format(classified)}</text><text class="topic-total-label" x="100" y="117">classified posts</text>`;
+      chart.setAttribute("aria-label", `${fmt.format(classified)} classified posts; donut slices show each topic's share of classified posts`);
+
+      $("#topic-window").textContent = `${windowPoints.length * 6}H replay window · classified and all-discussion shares shown together`;
+
+      const sortedIndexes = counts
+        .map((count, index) => ({ count, index }))
+        .sort((left, right) => right.count - left.count)
+        .map(item => item.index);
+      const previousPoints = event.points.slice(Math.max(0, start - windowPoints.length), start);
+      const previousCounts = topics.map(() => 0);
+      let previousClassified = 0;
+      previousPoints.forEach(point => {
+        const pointDetail = point[3] || {};
+        previousClassified += Number(pointDetail.classifiedPosts || 0);
+        (pointDetail.topicCounts || []).forEach((value, index) => {
+          if (index < previousCounts.length) previousCounts[index] += Number(value || 0);
+        });
+      });
+      const leadIndex = sortedIndexes[0];
+      const leadClassifiedShare = counts[leadIndex] / classified * 100;
+      const leadAllShare = observed ? counts[leadIndex] / observed * 100 : 0;
+      const overlapCount = Number(rawReasons.ambiguous_topic_mix || 0);
+      const overlapShare = observed ? overlapCount / observed * 100 : 0;
+      const topicProbabilities = counts.filter(count => count > 0).map(count => count / classified);
+      const effectiveTopics = topicProbabilities.length
+        ? Math.exp(-topicProbabilities.reduce((sum, probability) => sum + probability * Math.log(probability), 0))
+        : 0;
+      const coverageTone = coverage >= 75 ? "good" : coverage >= 60 ? "watch" : "limited";
+      const overlapTone = overlapShare <= 10 ? "good" : overlapShare <= 20 ? "watch" : "limited";
+      const evidenceTone = classified >= 1000 ? "good" : classified >= 250 ? "watch" : "limited";
+      const balanceLabel = leadClassifiedShare >= 75 ? "Highly concentrated" : leadClassifiedShare >= 55 ? "Concentrated" : "Mixed";
+      const qualityOutcome = topicSupport(event);
+      qualityStatus.textContent = qualityOutcome.label;
+      qualityStatus.dataset.tone = qualityOutcome.tone;
+      qualityFoldSummary.textContent = `${qualityOutcome.shortLabel} · ${coverage.toFixed(0)}% topic coverage`;
+      qualityGrid.innerHTML = `
+        <div class="quality-card" data-tone="${coverageTone}"><span class="quality-label">Topic coverage</span><strong class="quality-value">${coverage.toFixed(1)}%</strong><span class="quality-context">Share of discussion assigned to a topic.</span></div>
+        <div class="quality-card" data-tone="${overlapTone}"><span class="quality-label">Topic overlap</span><strong class="quality-value">${overlapShare.toFixed(1)}%</strong><span class="quality-context">Posts rejected because two topic signals were too close.</span></div>
+        <div class="quality-card" data-tone="${evidenceTone}"><span class="quality-label">Classified sample</span><strong class="quality-value">${fmt.format(classified)}</strong><span class="quality-context">Posts supporting the proportions in this window.</span></div>
+        <div class="quality-card" data-tone="neutral"><span class="quality-label">Topic balance</span><strong class="quality-value">${leadClassifiedShare.toFixed(1)}% lead</strong><span class="quality-context">${balanceLabel}; the spread resembles ${effectiveTopics.toFixed(1)} equally sized topics.</span></div>`;
+      const midpoint = Math.max(1, Math.floor(windowPoints.length / 2));
+      const halfCounts = [topics.map(() => 0), topics.map(() => 0)];
+      const halfClassified = [0, 0];
+      windowPoints.forEach((point, pointIndex) => {
+        const half = pointIndex < midpoint ? 0 : 1;
+        const pointDetail = point[3] || {};
+        halfClassified[half] += Number(pointDetail.classifiedPosts || 0);
+        (pointDetail.topicCounts || []).forEach((value, index) => {
+          if (index < topics.length) halfCounts[half][index] += Number(value || 0);
+        });
+      });
+      let movementText = "More replay history is needed to describe topic movement.";
+      let movementValue = "More history needed";
+      let movementContext = "No half-window comparison";
+      if (halfClassified[0] && halfClassified[1]) {
+        const changes = topics.map((topic, index) => (
+          halfCounts[1][index] / halfClassified[1] * 100
+          - halfCounts[0][index] / halfClassified[0] * 100
+        ));
+        const fastestIndex = changes.reduce(
+          (best, value, index) => value > changes[best] ? index : best,
+          0
+        );
+        const fastestChange = changes[fastestIndex];
+        if (Math.abs(fastestChange) < 0.05) {
+          movementValue = "Stable topic mix";
+          movementContext = "First half vs second half";
+          movementText = "The topic mix was broadly stable between the first and second halves of this replay window.";
+        } else {
+          movementValue = topics[fastestIndex].label;
+          movementContext = `${fastestChange >= 0 ? "+" : ""}${fastestChange.toFixed(1)} share points`;
+          movementText = `<strong>${topics[fastestIndex].label}</strong> rose fastest (${fastestChange >= 0 ? "+" : ""}${fastestChange.toFixed(1)} classified-share points from the first half to the second half of this replay window).`;
+        }
+      }
+      const unclassified = Math.max(0, observed - classified);
+      const unclassifiedShare = observed ? unclassified / observed * 100 : 0;
+      const mainUnknownReason = groupedReasons
+        .filter(group => group.count > 0)
+        .sort((left, right) => right.count - left.count)[0];
+      const unknownText = unclassified
+        ? `${unclassifiedShare.toFixed(1)}% of all discussion remains unclassified${mainUnknownReason ? `, mainly because of ${mainUnknownReason.summary}` : ""}.`
+        : "All observed posts received a topic assignment.";
+      const leadIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v8M8 12h8"></path></svg>`;
+      const movementIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-5 4 3 7-8"></path><path d="M15 7h5v5"></path></svg>`;
+      const unknownIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M9.8 9a2.4 2.4 0 0 1 4.5 1.2c0 1.8-2.3 2-2.3 3.6M12 17h.01"></path></svg>`;
+      $("#topic-summary").innerHTML = `<div class="quick-insights">
+        <article class="quick-insight" title="${topics[leadIndex].label} leads with ${leadClassifiedShare.toFixed(1)}% of classified posts"><span class="quick-insight-icon">${leadIcon}</span><span><span class="quick-insight-label">Leading topic</span><strong class="quick-insight-value">${topics[leadIndex].label}</strong><span class="quick-insight-context">${leadClassifiedShare.toFixed(1)}% classified · ${leadAllShare.toFixed(1)}% overall</span></span></article>
+        <article class="quick-insight" title="${movementValue}: ${movementContext}"><span class="quick-insight-icon">${movementIcon}</span><span><span class="quick-insight-label">Fastest change</span><strong class="quick-insight-value">${movementValue}</strong><span class="quick-insight-context">${movementContext}</span></span></article>
+        <article class="quick-insight" title="${unknownText}"><span class="quick-insight-icon">${unknownIcon}</span><span><span class="quick-insight-label">Unclassified</span><strong class="quick-insight-value">${unclassifiedShare.toFixed(1)}%</strong><span class="quick-insight-context">${mainUnknownReason ? mainUnknownReason.label : "All posts assigned"}</span></span></article>
+      </div><details class="summary-explanation"><summary>Read the interpretation</summary><p><strong>${topics[leadIndex].label}</strong> leads with ${leadClassifiedShare.toFixed(1)}% of classified posts and ${leadAllShare.toFixed(1)}% of all discussion. ${movementText} ${unknownText}</p></details>`;
+      const savedSelection = state.topicSelection[event.id];
+      const selectedIndex = topics.findIndex(topic => topic.id === savedSelection);
+      const activeTopicIndex = selectedIndex >= 0 ? selectedIndex : sortedIndexes[0];
+      state.topicSelection[event.id] = topics[activeTopicIndex].id;
+
+      const barsHeader = `<div class="topic-bars-head" aria-hidden="true"><span>Topic</span><span>Classified</span><span>All discussion</span><span>Posts</span></div>`;
+      bars.innerHTML = barsHeader + sortedIndexes.map(index => {
+        const topic = topics[index];
+        const share = counts[index] / classified * 100;
+        const allShare = observed ? counts[index] / observed * 100 : 0;
+        const selected = index === activeTopicIndex;
+        return `<button class="topic-bar-button" type="button" data-topic-index="${index}" aria-pressed="${selected}" aria-label="${topic.label}: ${share.toFixed(1)} percent of classified posts, ${allShare.toFixed(1)} percent of all discussion, ${fmt.format(counts[index])} posts"><span class="topic-bar-label">${topic.label}</span><span class="topic-bar-share">${share.toFixed(1)}%</span><span class="topic-bar-all">${allShare.toFixed(1)}%</span><span class="topic-bar-count">${fmt.format(counts[index])}</span><span class="topic-bar-track" aria-hidden="true"><span class="topic-bar-fill" style="width:${share.toFixed(3)}%;background:${topicColors[index % topicColors.length]}"></span></span></button>`;
+      }).join("");
+      bars.querySelectorAll("[data-topic-index]").forEach(button => button.addEventListener("click", () => {
+        const index = Number(button.dataset.topicIndex);
+        state.topicSelection[event.id] = topics[index].id;
+        renderTopics(event);
+      }));
+
+      const selectedTopic = topics[activeTopicIndex];
+      const selectedShare = counts[activeTopicIndex] / classified * 100;
+      const selectedAllShare = observed ? counts[activeTopicIndex] / observed * 100 : 0;
+      const previousCount = previousCounts[activeTopicIndex];
+      const previousShare = previousClassified ? previousCount / previousClassified * 100 : null;
+      const change = previousShare === null ? null : selectedShare - previousShare;
+      const changeText = change === null
+        ? "No prior window"
+        : `${change >= 0 ? "+" : ""}${change.toFixed(1)} pts vs prior`;
+      const sentimentLabels = ["negative", "neutral", "positive"];
+      const sentimentColors = { negative: "var(--red)", neutral: "#9aa7b6", positive: "var(--green)" };
+      const selectedSentiment = { negative: 0, neutral: 0, positive: 0, unavailable: 0 };
+      const unknownSentiment = { negative: 0, neutral: 0, positive: 0, unavailable: 0 };
+      windowPoints.forEach(point => {
+        const pointDetail = point[3] || {};
+        const sentimentCounts = (pointDetail.topicSentimentCounts || [])[activeTopicIndex] || {};
+        sentimentLabels.forEach(label => {
+          selectedSentiment[label] += Number(sentimentCounts[label] || 0);
+          unknownSentiment[label] += Number((pointDetail.unknownSentimentCounts || {})[label] || 0);
+        });
+        selectedSentiment.unavailable += Number(sentimentCounts.unavailable || 0);
+        unknownSentiment.unavailable += Number((pointDetail.unknownSentimentCounts || {}).unavailable || 0);
+      });
+      const annotatedSentiment = sentimentLabels.reduce((sum, label) => sum + selectedSentiment[label], 0);
+      const sentimentTotal = annotatedSentiment + selectedSentiment.unavailable;
+      const sentimentCoverage = sentimentTotal ? annotatedSentiment / sentimentTotal * 100 : 0;
+      if (!annotatedSentiment) {
+        topicSentiment.innerHTML = `<div class="topic-sentiment-head"><strong>Mood within this topic</strong><span>No annotated posts</span></div><p class="sentiment-note">No sentiment annotation overlaps this topic in the selected replay window.</p>`;
+        moodFoldSummary.textContent = `${selectedTopic.label} · no annotated posts`;
+      } else {
+        const moodScore = (selectedSentiment.positive - selectedSentiment.negative) / annotatedSentiment;
+        const mood = sentimentLabel(moodScore);
+        moodFoldSummary.textContent = `${selectedTopic.label} · ${mood} · ${sentimentCoverage.toFixed(1)}% coverage`;
+        const unknownAnnotated = sentimentLabels.reduce((sum, label) => sum + unknownSentiment[label], 0);
+        const unknownContext = unknownAnnotated
+          ? ` For context, unclassified discussion is ${(unknownSentiment.negative / unknownAnnotated * 100).toFixed(1)}% negative, ${(unknownSentiment.neutral / unknownAnnotated * 100).toFixed(1)}% neutral, and ${(unknownSentiment.positive / unknownAnnotated * 100).toFixed(1)}% positive.`
+          : "";
+        const sentimentBins = windowPoints.map(point => {
+          const values = ((point[3] || {}).topicSentimentCounts || [])[activeTopicIndex] || {};
+          const annotated = sentimentLabels.reduce((sum, label) => sum + Number(values[label] || 0), 0);
+          return {
+            label: point[0],
+            annotated,
+            negative: Number(values.negative || 0),
+            positive: Number(values.positive || 0),
+            score: annotated ? (Number(values.positive || 0) - Number(values.negative || 0)) / annotated : null
+          };
+        });
+        const aggregateMood = bins => {
+          const totals = bins.reduce((result, bin) => ({
+            annotated: result.annotated + bin.annotated,
+            negative: result.negative + bin.negative,
+            positive: result.positive + bin.positive
+          }), { annotated: 0, negative: 0, positive: 0 });
+          return totals.annotated ? (totals.positive - totals.negative) / totals.annotated : null;
+        };
+        const trendMidpoint = Math.max(1, Math.floor(sentimentBins.length / 2));
+        const earlyMood = aggregateMood(sentimentBins.slice(0, trendMidpoint));
+        const lateMood = aggregateMood(sentimentBins.slice(trendMidpoint));
+        const moodChange = earlyMood === null || lateMood === null ? null : lateMood - earlyMood;
+        const trendSummary = moodChange === null
+          ? "Not enough annotated bins for a comparison"
+          : moodChange > .08
+          ? `More positive in the second half (+${moodChange.toFixed(2)})`
+          : moodChange < -.08
+          ? `More negative in the second half (${moodChange.toFixed(2)})`
+          : `Broadly stable between halves (${moodChange >= 0 ? "+" : ""}${moodChange.toFixed(2)})`;
+        const chartLeft = 28;
+        const chartRight = 612;
+        const chartZero = 52;
+        const chartRange = 40;
+        const plottedSentimentBins = sentimentBins.map((bin, index) => ({
+          ...bin,
+          x: sentimentBins.length === 1 ? (chartLeft + chartRight) / 2 : chartLeft + index / (sentimentBins.length - 1) * (chartRight - chartLeft),
+          y: bin.score === null ? null : chartZero - bin.score * chartRange
+        }));
+        const validSentimentBins = plottedSentimentBins.filter(bin => bin.y !== null);
+        let trendPathStarted = false;
+        const trendPath = plottedSentimentBins.map(bin => {
+          if (bin.y === null) {
+            trendPathStarted = false;
+            return "";
+          }
+          const command = trendPathStarted ? "L" : "M";
+          trendPathStarted = true;
+          return `${command}${bin.x.toFixed(1)},${bin.y.toFixed(1)}`;
+        }).filter(Boolean).join(" ");
+        const lowEvidenceBins = validSentimentBins.filter(bin => bin.annotated < 25).length;
+        const emptySentimentBins = sentimentBins.length - validSentimentBins.length;
+        const trendPoints = validSentimentBins.map(bin => {
+          const pointColor = bin.score > .05 ? "var(--green)" : bin.score < -.05 ? "var(--red)" : "#9aa7b6";
+          const lowEvidence = bin.annotated < 25;
+          return `<circle class="sentiment-trend-point${lowEvidence ? " low-evidence" : ""}" cx="${bin.x.toFixed(1)}" cy="${bin.y.toFixed(1)}" r="${lowEvidence ? "3" : "3.2"}" fill="${lowEvidence ? "var(--paper)" : pointColor}" stroke="${lowEvidence ? pointColor : "var(--paper)"}"><title>${bin.label}: net mood ${signed(bin.score)}, ${fmt.format(bin.annotated)} annotated posts${lowEvidence ? "; low-sample bin" : ""}</title></circle>`;
+        }).join("");
+        const evidenceText = `${lowEvidenceBins} low-sample bin${lowEvidenceBins === 1 ? "" : "s"} (<25 posts) · ${emptySentimentBins} empty bin${emptySentimentBins === 1 ? "" : "s"}`;
+        const trendMarkup = validSentimentBins.length
+          ? `<div class="sentiment-trend-block"><div class="sentiment-trend-head"><strong>Mood over time</strong><span>${trendSummary}</span></div><svg class="sentiment-trend-chart" viewBox="0 0 640 108" role="img" aria-label="Net mood for ${selectedTopic.label} over ${validSentimentBins.length} annotated six-hour bins; gaps indicate empty bins"><rect class="sentiment-trend-zone-positive" x="${chartLeft}" y="12" width="${chartRight - chartLeft}" height="40"></rect><rect class="sentiment-trend-zone-negative" x="${chartLeft}" y="52" width="${chartRight - chartLeft}" height="40"></rect><line class="sentiment-trend-zero" x1="${chartLeft}" y1="${chartZero}" x2="${chartRight}" y2="${chartZero}"></line><path class="sentiment-trend-line" d="${trendPath}"></path>${trendPoints}<text class="sentiment-trend-label" x="2" y="15">+1</text><text class="sentiment-trend-label" x="10" y="55">0</text><text class="sentiment-trend-label" x="4" y="95">−1</text><text class="sentiment-trend-label" x="${chartLeft}" y="105">${sentimentBins[0].label}</text><text class="sentiment-trend-label" x="${chartRight}" y="105" text-anchor="end">${sentimentBins[sentimentBins.length - 1].label}</text></svg><p class="sentiment-trend-evidence">Solid points have at least 25 annotated posts; hollow points have fewer. Gaps mean no annotated posts. ${evidenceText}.</p></div>`
+          : "";
+        const topicMoodRows = topics.map((topic, topicIndex) => {
+          const totals = { negative: 0, neutral: 0, positive: 0 };
+          windowPoints.forEach(point => {
+            const values = ((point[3] || {}).topicSentimentCounts || [])[topicIndex] || {};
+            sentimentLabels.forEach(label => { totals[label] += Number(values[label] || 0); });
+          });
+          const annotated = sentimentLabels.reduce((sum, label) => sum + totals[label], 0);
+          const score = annotated ? (totals.positive - totals.negative) / annotated : null;
+          return { topic, topicIndex, annotated, score };
+        }).sort((left, right) => {
+          if (left.score === null) return 1;
+          if (right.score === null) return -1;
+          return right.score - left.score;
+        });
+        const classifiedAnnotated = topicMoodRows.reduce((sum, row) => sum + row.annotated, 0);
+        const classifiedMood = classifiedAnnotated
+          ? topicMoodRows.reduce((sum, row) => sum + Number(row.score || 0) * row.annotated, 0) / classifiedAnnotated
+          : 0;
+        const baselinePosition = (classifiedMood + 1) / 2 * 100;
+        const selectedMoodDelta = moodScore - classifiedMood;
+        const relativeMoodText = Math.abs(selectedMoodDelta) < .05
+          ? `close to the classified discussion baseline (${signed(classifiedMood)})`
+          : `${Math.abs(selectedMoodDelta).toFixed(2)} ${selectedMoodDelta > 0 ? "more positive" : "more negative"} than the classified discussion baseline (${signed(classifiedMood)})`;
+        const relativeMarkup = `<p class="sentiment-relative"><strong>Compared with this event:</strong> ${selectedTopic.label} is ${relativeMoodText}.</p>`;
+        const eligibleMoodRows = topicMoodRows.filter(row => row.annotated >= 50 && row.score !== null);
+        const highestMood = eligibleMoodRows[0];
+        const lowestMood = eligibleMoodRows[eligibleMoodRows.length - 1];
+        const eligibleMoodSpread = highestMood && lowestMood ? highestMood.score - lowestMood.score : null;
+        const highlightsMarkup = highestMood && lowestMood
+          ? eligibleMoodSpread < .05
+            ? `<p class="sentiment-highlights"><strong>At a glance:</strong> Eligible topic moods are closely grouped, ranging only from ${signed(lowestMood.score)} to ${signed(highestMood.score)}. No strong topic-level separation is visible. Topics need at least 50 annotated posts to enter this summary.</p>`
+            : `<p class="sentiment-highlights"><strong>At a glance:</strong> Among topics with at least 50 annotated posts, <strong>${highestMood.topic.label}</strong> has the highest net mood (${signed(highestMood.score)}), while <strong>${lowestMood.topic.label}</strong> has the lowest (${signed(lowestMood.score)}). Smaller topics remain visible but are excluded from this summary.</p>`
+          : `<p class="sentiment-highlights"><strong>At a glance:</strong> More annotated discussion is needed before comparing topic extremes.</p>`;
+        const comparisonMarkup = `<div class="sentiment-comparison"><div class="sentiment-comparison-head"><strong>Compare topic mood</strong><span>Center = neutral · dark marker = event baseline ${signed(classifiedMood)}</span></div>${highlightsMarkup}<div class="sentiment-comparison-list">${topicMoodRows.map(row => {
+          const scoreLabel = row.score === null ? "No data" : sentimentLabel(row.score);
+          const dotColor = row.score === null ? "var(--muted)" : row.score > .05 ? "var(--green)" : row.score < -.05 ? "var(--red)" : "#718096";
+          const position = row.score === null ? 50 : (row.score + 1) / 2 * 100;
+          return `<button class="sentiment-comparison-row" type="button" data-mood-topic-index="${row.topicIndex}" aria-pressed="${row.topicIndex === activeTopicIndex}" aria-label="${row.topic.label}: ${scoreLabel}, net mood ${row.score === null ? "unavailable" : signed(row.score)}, ${fmt.format(row.annotated)} annotated posts; event baseline ${signed(classifiedMood)}"><span class="sentiment-comparison-name">${row.topic.label}</span><span class="sentiment-comparison-axis" aria-hidden="true"><span class="sentiment-comparison-baseline" style="left:${baselinePosition.toFixed(2)}%"><title>Classified discussion baseline ${signed(classifiedMood)}</title></span><span class="sentiment-comparison-dot" style="left:${position.toFixed(2)}%;color:${dotColor};background:${dotColor}"></span></span><span class="sentiment-comparison-value"><strong>${scoreLabel}</strong><span>${row.score === null ? "—" : signed(row.score)} · ${fmt.format(row.annotated)}</span></span></button>`;
+        }).join("")}</div></div>`;
+        topicSentiment.innerHTML = `
+          <div class="topic-sentiment-head"><strong>Mood within this topic</strong><span>${mood} · ${sentimentCoverage.toFixed(1)}% sentiment coverage</span></div>
+          <div class="sentiment-stack" role="img" aria-label="${selectedTopic.label}: ${sentimentLabels.map(label => `${(selectedSentiment[label] / annotatedSentiment * 100).toFixed(1)} percent ${label}`).join(", ")}">${sentimentLabels.map(label => `<span class="sentiment-segment ${label}" style="width:${(selectedSentiment[label] / annotatedSentiment * 100).toFixed(3)}%"></span>`).join("")}</div>
+          <div class="sentiment-legend">${sentimentLabels.map(label => `<span class="sentiment-item"><span class="sentiment-dot" style="background:${sentimentColors[label]}"></span>${label[0].toUpperCase() + label.slice(1)}<strong>${(selectedSentiment[label] / annotatedSentiment * 100).toFixed(1)}% · ${fmt.format(selectedSentiment[label])}</strong></span>`).join("")}</div>
+          ${relativeMarkup}
+          ${trendMarkup}
+          ${comparisonMarkup}
+          <p class="sentiment-note">Among ${fmt.format(annotatedSentiment)} sentiment-annotated posts assigned to this topic; ${fmt.format(selectedSentiment.unavailable)} assigned posts lack a sentiment label.${unknownContext} Association only: mood does not explain why a topic grew.</p>`;
+        topicSentiment.querySelectorAll("[data-mood-topic-index]").forEach(button => button.addEventListener("click", () => {
+          const index = Number(button.dataset.moodTopicIndex);
+          state.topicSelection[event.id] = topics[index].id;
+          renderTopics(event);
+        }));
+      }
+
+      detail.style.borderLeftColor = topicColors[activeTopicIndex % topicColors.length];
+      const keywordList = selectedTopic.keywords || [];
+      detail.innerHTML = `<div class="topic-detail-head"><strong>${selectedTopic.label}</strong><span title="Change in classified-topic share compared with the preceding replay window">${changeText}</span></div><div class="topic-detail-stats"><span class="topic-detail-stat"><strong>${selectedShare.toFixed(1)}%</strong>classified share</span><span class="topic-detail-stat"><strong>${selectedAllShare.toFixed(1)}%</strong>all discussion</span><span class="topic-detail-stat"><strong>${fmt.format(counts[activeTopicIndex])}</strong>posts</span></div><span class="keyword-reveal" tabindex="0" aria-label="Representative terms: ${keywordList.join(", ")}">Representative terms (${keywordList.length})<span class="keyword-reveal-panel" aria-hidden="true"><span class="topic-keywords">${keywordList.map(keyword => `<span class="topic-keyword">${keyword}</span>`).join("")}</span></span></span>`;
+
+      const binShares = windowPoints.map(point => {
+        const pointDetail = point[3] || {};
+        const pointClassified = Number(pointDetail.classifiedPosts || 0);
+        return topics.map((topic, index) => pointClassified
+          ? Number((pointDetail.topicCounts || [])[index] || 0) / pointClassified * 100
+          : 0);
+      });
+      const maximumBinShare = Math.max(1, ...binShares.flat());
+      const colorWithAlpha = (hex, alpha) => {
+        const value = Number.parseInt(hex.slice(1), 16);
+        return `rgba(${value >> 16}, ${(value >> 8) & 255}, ${value & 255}, ${alpha.toFixed(3)})`;
+      };
+      heatmap.style.gridTemplateColumns = `minmax(90px, 1.45fr) repeat(${windowPoints.length}, minmax(3px, 1fr))`;
+      heatmap.innerHTML = sortedIndexes.map(index => {
+        const topic = topics[index];
+        const cells = windowPoints.map((point, pointIndex) => {
+          const share = binShares[pointIndex][index];
+          const alpha = share ? 0.16 + 0.84 * share / maximumBinShare : 0.06;
+          return `<span class="heat-cell" style="background:${colorWithAlpha(topicColors[index % topicColors.length], alpha)}" aria-label="${topic.label}, ${point[0]}: ${share.toFixed(1)} percent"></span>`;
+        }).join("");
+        return `<span class="heatmap-topic ${index === activeTopicIndex ? "selected" : ""}">${topic.label}</span>${cells}`;
+      }).join("");
+      heatmapAxis.innerHTML = `<span>${windowPoints[0][0]}</span><span>${windowPoints[windowPoints.length - 1][0]}</span>`;
+      heatmap.setAttribute("aria-label", `Topic share among classified posts across ${windowPoints.length} six-hour bins from ${windowPoints[0][0]} to ${windowPoints[windowPoints.length - 1][0]}`);
+      const method = liveMetadata.topicMethod;
+      const labelMethod = liveMetadata.topicLabelMethod;
+      $("#topic-method").innerHTML = `<strong>${method}</strong> · ${labelMethod}. Aggregate output only; no post text is loaded by this page.`;
+    }
+
+    function renderInsights(event) {
+      $("#narrative").textContent = event.narrative;
+      $("#tag-row").innerHTML = (event.tags || []).map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+      const [main, replies, quotes] = event.structure;
+      [["main", main], ["replies", replies], ["quotes", quotes]].forEach(([name, value]) => {
+        $(`#bar-${name}`).style.width = `${value}%`;
+        $(`#bar-${name}-value`).textContent = `${value}%`;
+      });
+      const highlights = event.activityHighlights || [];
+      $("#moment-list").innerHTML = highlights.length
+        ? highlights.map(item => `<div class="moment-item">
+            <span class="moment-time">${escapeHtml(item.label)}</span>
+            <strong>${escapeHtml(item.title)}</strong>
+            <span class="moment-meta">${fmt.format(item.volume)} posts</span>
+          </div>`).join("")
+        : `<p class="panel-kicker">No activity high points are available.</p>`;
+      const platforms = (event.platforms || []).map(item => `${item.name} ${item.share}%`).join(", ") || "Not reported";
+      const languages = (event.languages || []).slice(0, 3).map(item => `${item.code.toUpperCase()} ${item.share}%`).join(", ") || "Not reported";
+      const coverageRows = [
+        ["Displayed window", `${dateFmt.format(new Date(event.windowStart))} – ${dateFmt.format(new Date(event.windowEnd))}`],
+        ["Posts displayed", `${fmt.format(event.windowPostCount)} of ${fmt.format(event.sourcePostCount)}`],
+        ["Platforms", platforms],
+        ["Top languages", languages],
+        ["Time resolution", liveMetadata.granularity || "6H"]
+      ];
+      $("#coverage-details").innerHTML = coverageRows.map(([label, value]) =>
+        `<div class="detail-row"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`
+      ).join("");
+      const engagement = event.engagement || {};
+      const engagementRows = [
+        ["Likes", compactFmt.format(Number(engagement.likes || 0))],
+        ["Replies", compactFmt.format(Number(engagement.replies || 0))],
+        ["Reposts", compactFmt.format(Number(engagement.reposts || 0))],
+        ["Quotes", compactFmt.format(Number(engagement.quotes || 0))],
+        ["Views", `${compactFmt.format(Number(engagement.views || 0))} (${Number(engagement.viewCoverage || 0).toFixed(1)}% coverage)`]
+      ];
+      if (event.sentimentAvailable) {
+        const sentiment = event.sentimentSummary || {};
+        const counts = sentiment.counts || {};
+        engagementRows.push(
+          ["Sentiment coverage", `${Number(sentiment.coverage || 0).toFixed(1)}%`],
+          ["Sentiment labels", `${fmt.format(Number(counts.positive || 0))} positive · ${fmt.format(Number(counts.neutral || 0))} neutral · ${fmt.format(Number(counts.negative || 0))} negative`]
+        );
+      }
+      $("#engagement-details").innerHTML = engagementRows.map(([label, value]) =>
+        `<div class="detail-row"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`
+      ).join("");
+    }
+
+    function render() {
+      const event = selectedEvent();
+      const topicsAvailable = event.topicAnalysisAvailable !== false;
+      document.querySelector(".stance-panel").hidden = false;
+      document.querySelector(".topic-panel").hidden = !topicsAvailable;
+      document.querySelectorAll("[data-analysis-only]").forEach(element => {
+        element.hidden = event.sentimentAvailable === false;
+      });
+      document.querySelector(".metrics").classList.toggle("activity-only", event.sentimentAvailable === false);
+      if (event.sentimentAvailable === false) {
+        $("#mode-badge").className = "badge demo";
+        $("#mode-badge").textContent = "Activity";
+      } else {
+        $("#mode-badge").className = "badge";
+        $("#mode-badge").textContent = "Activity and sentiment";
+      }
+      els.slider.max = event.points.length - 1;
+      els.slider.value = state.index;
+      $("#focus-title").textContent = event.title;
+      document.title = `${event.title} | SURGE Live`;
+      $("#focus-summary").textContent = event.summary;
+      $("#event-category").textContent = event.category;
+      const windowDays = Math.max(1, Math.round((new Date(event.windowEnd) - new Date(event.windowStart)) / 86400000));
+      $("#event-window").textContent = `${dateFmt.format(new Date(event.windowStart))} – ${dateFmt.format(new Date(event.windowEnd))} · ${windowDays}-day event window`;
+      $("#focus-time").textContent = currentPoint(event)[0];
+      $("#replay-detail").textContent = `${currentPoint(event)[0]} · ${state.index + 1} of ${event.points.length}`;
+      $("#freshness").textContent = `Through ${currentPoint(event)[0]}`;
+      renderCharts(event);
+      renderMetrics(event);
+      renderSentimentSeries(event);
+      renderTopics(event);
+      renderConversationQuality(event);
+      renderStanceEmotion(event);
+      renderInsights(event);
+    }
+
+    function renderUnavailable() {
+      activeEvents = [];
+      state.eventId = null;
+      state.index = 0;
+      document.querySelectorAll("[data-range], #replay-slider").forEach(control => { control.disabled = true; });
+      $("#metric-window-posts").textContent = "—";
+      $("#metric-sentiment-coverage").textContent = "—";
+      $("#metric-average-sentiment").textContent = "—";
+      $("#metric-average-sentiment-label").textContent = "Unavailable";
+      $("#focus-title").textContent = "Published event data unavailable";
+      $("#focus-summary").textContent = "Refresh the page to try again.";
+      $("#event-window").textContent = "Event dates unavailable";
+      $("#event-category").textContent = "Unavailable";
+      $("#focus-time").textContent = "No data";
+      $("#replay-detail").textContent = "Timeline unavailable";
+      $("#freshness").textContent = "Data unavailable";
+      $("#mood-value").textContent = "Unavailable";
+      $("#mood-context").textContent = "Sentiment data unavailable";
+      $("#coverage-value").textContent = "—";
+      $("#coverage-context").textContent = "No sentiment labels";
+      $("#peak-value").textContent = "—";
+      $("#peak-context").textContent = "Activity data unavailable";
+      $("#sentiment-mix-value").textContent = "Unavailable";
+      $("#sentiment-mix-context").textContent = "No sentiment distribution";
+      $("#sentiment-mix").innerHTML = "";
+      $("#series-chart-meta").textContent = "Time-series data unavailable";
+      $("#series-chart").innerHTML = `<text class="series-axis" x="450" y="165" text-anchor="middle">Event data unavailable</text>`;
+      els.volume.innerHTML = `<title>Discussion intensity unavailable</title><text class="chart-axis" x="410" y="145" text-anchor="middle">Event data unavailable</text>`;
+      els.sentiment.innerHTML = `<title>Sentiment polarity unavailable</title><text class="chart-axis" x="410" y="66" text-anchor="middle">Event data unavailable</text>`;
+      $("#topic-coverage").textContent = "Unavailable";
+      $("#topic-coverage-detail").textContent = "Published aggregate could not be loaded";
+      $("#topic-coverage-track").innerHTML = "";
+      $("#topic-coverage-breakdown").innerHTML = `<span class="coverage-reason">No substitute data displayed</span>`;
+      $("#topic-summary").textContent = "Topic analysis is unavailable until the published aggregate loads.";
+      $("#topic-chart").innerHTML = `<circle class="topic-track" cx="100" cy="100" r="68"></circle><text class="topic-total" x="100" y="98">—</text><text class="topic-total-label" x="100" y="117">data unavailable</text>`;
+      $("#topic-bars").innerHTML = `<div class="topic-meta">No topic proportions are being shown.</div>`;
+      $("#topic-detail").innerHTML = "";
+      $("#topic-quality-fold-summary").textContent = "Unavailable";
+      $("#topic-method").textContent = "Published aggregate unavailable; the page does not substitute unrelated demonstration events.";
+      $("#stance-coverage").textContent = "Unavailable";
+      $("#stance-issue-tabs").innerHTML = "";
+      $("#stance-question").textContent = "Post-derived stance issues are unavailable.";
+      $("#stance-summary").textContent = "Stance and emotion analysis is unavailable until the published event snapshot loads.";
+      $("#stance-groups").innerHTML = "";
+      $("#stance-detail").hidden = true;
+    }
+
+    document.querySelectorAll("[data-range]").forEach(button => button.addEventListener("click", () => {
+      state.range = button.dataset.range === "all" ? selectedEvent().points.length : Number(button.dataset.range);
+      document.querySelectorAll("[data-range]").forEach(peer => peer.setAttribute("aria-pressed", String(peer === button)));
+      render();
+    }));
+    document.querySelectorAll("[data-series-mode]").forEach(button => button.addEventListener("click", () => {
+      state.seriesMode = button.dataset.seriesMode;
+      document.querySelectorAll("[data-series-mode]").forEach(peer => peer.setAttribute("aria-pressed", String(peer === button)));
+      renderSentimentSeries(selectedEvent());
+    }));
+    els.slider.addEventListener("input", event => { state.index = Number(event.target.value); render(); });
+
+    async function loadAggregateEvents() {
+      const loadingNoticeTimer = window.setTimeout(() => showDataNotice("Loading event activity and sentiment."), 400);
+      try {
+        const payload = await window.SurgeData.getSnapshot();
+        if (!Array.isArray(payload.events) || !payload.events.length) throw new Error("aggregate data has no events");
+        activeEvents = payload.events.map(event => ({
+          ...event,
+          points: event.points.map(point => [point.label, point.volume, point.sentiment, point])
+        }));
+        liveMetadata = payload;
+        const requestedEventId = new URLSearchParams(window.location.search).get("id");
+        const requestedEvent = requestedEventId && activeEvents.find(event => event.id === requestedEventId);
+        state.eventId = requestedEvent?.id || activeEvents[0].id;
+        state.index = selectedEvent().points.length - 1;
+        state.range = selectedEvent().points.length;
+        render();
+        if (requestedEventId && !requestedEvent) {
+          showDataNotice("That event could not be found. Showing the first available event instead.");
+        } else {
+          hideDataNotice();
+        }
+      } catch (error) {
+        renderUnavailable();
+        showDataNotice("Event data could not be loaded. Please refresh the page and try again.");
+        console.warn(error);
+      } finally {
+        window.clearTimeout(loadingNoticeTimer);
+        $("#monitor").setAttribute("aria-busy", "false");
+      }
+    }
+
+    loadAggregateEvents();
+  </script>
+</body>
+</html>

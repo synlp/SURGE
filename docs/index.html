@@ -99,6 +99,10 @@
       color: var(--ink);
     }
 
+    .nav-live {
+      color: var(--green) !important;
+    }
+
     .hero {
       width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
@@ -459,6 +463,7 @@
         <a href="#overview">Overview</a>
         <a href="#data-card">Data Card</a>
         <a href="#quick-start">Quick Start</a>
+        <a class="nav-live" href="live/index.html">Explore Events</a>
         <a href="https://github.com/synlp/SURGE">GitHub</a>
       </div>
     </nav>
@@ -473,16 +478,17 @@
         bin-aligned text views and reply / repost interaction structure for public-opinion forecasting.
       </p>
       <div class="hero-actions" aria-label="Page shortcuts">
-        <a class="button primary" href="https://github.com/synlp/SURGE">View Repository</a>
+        <a class="button primary" href="live/index.html">Open Live Monitor</a>
+        <a class="button secondary" href="https://github.com/synlp/SURGE">View Repository</a>
         <a class="button secondary" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read Datasheet</a>
       </div>
       <div class="stats" aria-label="Dataset snapshot">
         <div class="stat">
-          <strong>67</strong>
+          <strong>297</strong>
           <span>released events after quality filtering</span>
         </div>
         <div class="stat">
-          <strong>817K</strong>
+          <strong>2.60M</strong>
           <span>posts represented in the current release</span>
         </div>
         <div class="stat">
@@ -516,7 +522,7 @@
           <article class="card accent-blue">
             <h3>Event-Centric</h3>
             <p>
-              The registry covers 102 real events across natural disasters, politics, social
+              The registry covers 297 real events across natural disasters, politics, social
               movements, technology, and sports or entertainment.
             </p>
           </article>
@@ -559,11 +565,11 @@
             </tr>
             <tr>
               <th scope="row">Release scale</th>
-              <td>102 events and 1,259,073 posts, including the 35-event public ID-only extension.</td>
+              <td>297 events and 2,600,877 posts in the complete event collection.</td>
             </tr>
             <tr>
               <th scope="row">Granularities</th>
-              <td>102 events at 6H, 99 events at 12H, and 90 events at 1D.</td>
+              <td>The public event collection uses 6H summaries; benchmark exports also support 12H and 1D views.</td>
             </tr>
             <tr>
               <th scope="row">Core artifacts</th>
