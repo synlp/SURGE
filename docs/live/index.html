@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore and search 297 public SURGE social-media events.">
+  <title>SURGE Events | Explore Public Discussion</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14213d;
+      --muted: #627085;
+      --line: #d9e0e8;
+      --paper: #ffffff;
+      --wash: #f3f6f8;
+      --blue: #2454a6;
+      --blue-soft: #e9f0fb;
+      --green: #2f7d4f;
+      --green-soft: #e8f3ec;
+      --red: #b43b35;
+      --shadow: 0 18px 48px rgba(20, 33, 61, .08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    button, input, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+    [hidden] { display: none !important; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(217, 224, 232, .92);
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(16px);
+    }
+    .nav {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: linear-gradient(135deg, var(--blue), var(--green));
+      color: #fff;
+    }
+    .brand-copy { display: flex; align-items: baseline; gap: 9px; }
+    .brand-copy small { color: var(--muted); font-size: 12px; font-weight: 500; }
+    .nav-links { display: flex; align-items: center; gap: 18px; color: var(--muted); font-size: 14px; font-weight: 650; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--ink); }
+    .nav-live { color: var(--green) !important; }
+
+    .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 52px 0 70px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(290px, .55fr);
+      gap: 38px;
+      align-items: end;
+      margin-bottom: 26px;
+    }
+    .eyebrow {
+      margin: 0 0 9px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.02;
+      letter-spacing: -.052em;
+    }
+    .hero-copy {
+      max-width: 720px;
+      margin: 17px 0 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .hero-stat { padding: 16px 17px; border-left: 1px solid var(--line); }
+    .hero-stat:first-child { border-left: 0; }
+    .hero-stat span { display: block; color: var(--muted); font-size: 11px; }
+    .hero-stat strong { display: block; margin-top: 4px; font-size: 24px; letter-spacing: -.03em; }
+    .hero-update { grid-column: 1 / -1; padding: 11px 17px; border-top: 1px solid var(--line); color: var(--green); font-size: 12px; font-weight: 700; }
+
+    .filter-panel {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.35fr) minmax(160px, .55fr) minmax(170px, .55fr) auto;
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 20px;
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .field { min-width: 0; }
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .055em;
+      text-transform: uppercase;
+    }
+    .search-input, .filter-select {
+      width: 100%;
+      min-height: 43px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--paper);
+      color: var(--ink);
+      padding: 9px 11px;
+    }
+    .search-input {
+      padding-left: 39px;
+      background:
+        linear-gradient(45deg, transparent 46%, var(--muted) 47% 53%, transparent 54%) 24px 27px / 7px 7px no-repeat,
+        radial-gradient(circle, transparent 42%, var(--muted) 44% 57%, transparent 59%) 11px 9px / 18px 18px no-repeat,
+        var(--paper);
+    }
+    .search-input:focus, .filter-select:focus {
+      outline: 3px solid rgba(36, 84, 166, .13);
+      border-color: var(--blue);
+    }
+    .clear-button, .action-button, .page-button {
+      min-height: 43px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--paper);
+      color: var(--blue);
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .action-button.primary { border-color: var(--blue); background: var(--blue); color: #fff; }
+    .clear-button:hover, .clear-button:focus-visible,
+    .action-button:hover, .action-button:focus-visible,
+    .page-button:hover:not(:disabled), .page-button:focus-visible {
+      border-color: var(--blue);
+      outline: none;
+    }
+
+    .surface {
+      padding: 21px;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      background: var(--paper);
+    }
+    .discovery-stack { display: grid; gap: 18px; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+    .section-head h2 { margin: 0; font-size: 24px; letter-spacing: -.03em; }
+    .section-head p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+    .section-actions { display: flex; align-items: center; gap: 12px; }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 9px;
+    }
+    .category-card {
+      min-width: 0;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fbfcfd;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: left;
+    }
+    .category-card:hover, .category-card:focus-visible { border-color: var(--blue); background: var(--blue-soft); outline: none; }
+    .category-card strong { display: block; overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+    .category-card span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 13px;
+    }
+    .event-card {
+      position: relative;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 238px;
+      overflow: hidden;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: var(--paper);
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .event-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, var(--blue), var(--green));
+    }
+    .event-card:hover, .event-card:focus-visible {
+      outline: none;
+      transform: translateY(-2px);
+      border-color: rgba(36, 84, 166, .5);
+      box-shadow: 0 14px 30px rgba(20, 33, 61, .09);
+    }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .category {
+      display: inline-flex;
+      max-width: 100%;
+      overflow: hidden;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .time { color: var(--muted); font-size: 10px; white-space: nowrap; }
+    .event-card h3 { margin: 15px 0 7px; font-size: 18px; line-height: 1.25; letter-spacing: -.025em; }
+    .event-summary {
+      display: -webkit-box;
+      min-height: 58px;
+      overflow: hidden;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 14px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .card-footer strong { color: var(--ink); font-size: 13px; }
+    .open-event { color: var(--blue); font-weight: 750; }
+
+    .results-surface { padding: 0; overflow: hidden; }
+    .results-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfd;
+    }
+    .results-head h2 { margin: 0; font-size: 20px; }
+    .results-head p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+    .column-head, .event-row {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.65fr) minmax(120px, .55fr) minmax(145px, .65fr) minmax(80px, .35fr) 120px;
+      gap: 14px;
+      align-items: center;
+    }
+    .column-head {
+      min-height: 40px;
+      padding: 0 20px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .055em;
+      text-transform: uppercase;
+    }
+    .event-list { padding: 0 10px; }
+    .event-row { min-height: 82px; padding: 12px 10px; border-bottom: 1px solid var(--line); }
+    .event-row:last-child { border-bottom: 0; }
+    .event-row:hover { background: #fbfcfd; }
+    .event-main { min-width: 0; }
+    .event-title { display: block; overflow: hidden; font-size: 14px; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
+    .event-description { display: block; overflow: hidden; margin-top: 3px; color: var(--muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+    .cell-label { display: none; color: var(--muted); font-size: 9px; text-transform: uppercase; }
+    .cell-value { display: block; color: var(--muted); font-size: 12px; }
+    .row-action {
+      justify-self: end;
+      min-width: 116px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+    .row-action:hover, .row-action:focus-visible { border-color: var(--blue); background: var(--blue-soft); outline: none; }
+    .empty { padding: 46px 20px; color: var(--muted); text-align: center; }
+    .empty strong { display: block; margin-bottom: 4px; color: var(--ink); }
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .page-button:disabled { cursor: default; opacity: .42; }
+    .page-label { min-width: 116px; color: var(--muted); font-size: 12px; text-align: center; }
+    .notice { margin-bottom: 16px; padding: 14px; border: 1px solid #e8c7a9; border-radius: 10px; background: #f8eee5; color: #7c4218; font-size: 12px; }
+
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-stats { max-width: 420px; }
+      .filter-panel { grid-template-columns: 1fr 1fr; }
+      .filter-panel .search-field { grid-column: 1 / -1; }
+      .filter-panel .clear-button { width: 100%; }
+      .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .event-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .column-head, .event-row { grid-template-columns: minmax(220px, 1.4fr) minmax(100px, .55fr) minmax(130px, .65fr) 110px; }
+      .column-head > :nth-child(4), .event-row > :nth-child(4) { display: none; }
+    }
+    @media (max-width: 680px) {
+      .nav, .shell { width: min(100% - 28px, 1180px); }
+      .brand-copy small, .nav-secondary { display: none; }
+      .shell { padding-top: 34px; }
+      .hero { gap: 24px; }
+      .filter-panel { grid-template-columns: 1fr; padding: 14px; }
+      .filter-panel .search-field { grid-column: auto; }
+      .category-grid { grid-template-columns: 1fr 1fr; }
+      .event-grid { grid-template-columns: 1fr; }
+      .section-head, .results-head { align-items: stretch; flex-direction: column; }
+      .section-actions { justify-content: flex-start; }
+      .column-head { display: none; }
+      .event-row { grid-template-columns: 1fr auto; gap: 9px 12px; padding: 15px 10px; }
+      .event-main { grid-column: 1 / -1; }
+      .event-row > :nth-child(2) { grid-column: 1; grid-row: 2; }
+      .event-row > :nth-child(3) { grid-column: 2; grid-row: 2; }
+      .event-row > :nth-child(4) { display: none; }
+      .row-action { grid-column: 1 / -1; grid-row: 3; justify-self: stretch; }
+      .cell-label { display: block; }
+    }
+    @media (max-width: 430px) {
+      .category-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 39px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .event-card { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="SURGE Dataset home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy"><span>SURGE</span><small>Events</small></span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-secondary" href="../index.html#overview">Dataset</a>
+        <a class="nav-live" href="index.html" aria-current="page">Events</a>
+        <a class="nav-secondary" href="https://github.com/synlp/SURGE">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="shell" id="main" aria-busy="true">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">SURGE Events</p>
+        <h1 id="page-title">Explore public events</h1>
+        <p class="hero-copy">Search the complete event collection or begin with the latest discussions and broad event categories.</p>
+      </div>
+      <aside class="hero-stats" aria-label="Published event collection">
+        <div class="hero-stat"><span>Events</span><strong id="event-total">—</strong></div>
+        <div class="hero-stat"><span>Posts</span><strong id="post-total">—</strong></div>
+        <div class="hero-update" id="collection-status">Loading the published collection</div>
+      </aside>
+    </section>
+
+    <section class="filter-panel" aria-label="Find events">
+      <div class="field search-field">
+        <label for="event-search">Search events</label>
+        <input class="search-input" id="event-search" type="search" placeholder="Event name, summary, or ID" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="category-filter">Category</label>
+        <select class="filter-select" id="category-filter"><option value="all">All categories</option></select>
+      </div>
+      <div class="field">
+        <label for="sort-filter">Sort by</label>
+        <select class="filter-select" id="sort-filter">
+          <option value="window_desc">Latest event window</option>
+          <option value="posts_desc">Post volume</option>
+          <option value="title_asc">Event name</option>
+        </select>
+      </div>
+      <button class="clear-button" id="reset-view" type="button">Reset</button>
+    </section>
+
+    <div class="notice" id="data-notice" role="status" aria-live="polite" hidden></div>
+
+    <div class="discovery-stack" id="discovery-view">
+      <section class="surface" aria-labelledby="categories-title">
+        <div class="section-head">
+          <div><h2 id="categories-title">Browse by category</h2><p>Choose a broad area to open its complete event list.</p></div>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </section>
+
+      <section class="surface" aria-labelledby="latest-title">
+        <div class="section-head">
+          <div><h2 id="latest-title">Latest events</h2><p>The six most recent published event windows.</p></div>
+          <div class="section-actions"><button class="action-button primary" id="browse-all" type="button">Browse all events</button></div>
+        </div>
+        <div class="event-grid" id="latest-events"></div>
+      </section>
+    </div>
+
+    <section class="surface results-surface" id="results-view" aria-labelledby="results-title" hidden>
+      <div class="results-head">
+        <div><h2 id="results-title">Event results</h2><p id="result-count" aria-live="polite">Loading events</p></div>
+        <button class="action-button" id="show-overview" type="button">Back to overview</button>
+      </div>
+      <div class="column-head" aria-hidden="true"><span>Event</span><span>Category</span><span>Date</span><span>Posts</span><span></span></div>
+      <div class="event-list" id="event-list"></div>
+      <nav class="pagination" aria-label="Event result pages">
+        <button class="page-button" id="previous-page" type="button">Previous</button>
+        <span class="page-label" id="page-label">Page 1</span>
+        <button class="page-button" id="next-page" type="button">Next</button>
+      </nav>
+    </section>
+  </main>
+
+  <script src="data/event-catalog-v1.js"></script>
+  <script src="data/runtime-config.js"></script>
+  <script src="assets/data-client.js"></script>
+  <script>
+    const $ = selector => document.querySelector(selector);
+    const fmt = new Intl.NumberFormat("en-US");
+    const compactFmt = new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 2 });
+    const pageSize = 30;
+    const state = { events: [], browse: false, page: 1 };
+
+    const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, character => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+    })[character]);
+    const categoryLabel = value => String(value || "Other").replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
+    const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);
+
+    function normalizedEvent(event) {
+      return {
+        ...event,
+        id: String(event.id || event.sourceEventId || ""),
+        title: String(event.title || event.displayName || event.display_name || event.id || "Untitled event"),
+        category: String(event.category || "Other"),
+        postCount: Number(event.postCount || event.sourcePostCount || 0),
+        updatedAt: event.updatedAt || event.generatedAt || "",
+        eventDate: event.eventDate || event.startDate || event.date || "",
+        windowStart: event.windowStart || "",
+        windowEnd: event.windowEnd || "",
+        location: String(event.location || ""),
+        summary: String(event.summary || "")
+      };
+    }
+
+    function filteredEvents() {
+      const query = $("#event-search").value.trim().toLowerCase();
+      const category = $("#category-filter").value;
+      const sort = $("#sort-filter").value;
+      const result = state.events.filter(event => {
+        const searchText = `${event.title} ${event.summary} ${event.location} ${event.id} ${event.sourceEventId || ""}`.toLowerCase();
+        return (!query || searchText.includes(query)) && (category === "all" || event.category === category);
+      });
+      result.sort((a, b) => {
+        if (sort === "title_asc") return a.title.localeCompare(b.title);
+        if (sort === "posts_desc") return b.postCount - a.postCount || a.title.localeCompare(b.title);
+        return eventDate(b).localeCompare(eventDate(a)) || a.title.localeCompare(b.title);
+      });
+      return result;
+    }
+
+    function updateUrl() {
+      const params = new URLSearchParams();
+      if (state.browse) params.set("view", "all");
+      if ($("#event-search").value.trim()) params.set("q", $("#event-search").value.trim());
+      if ($("#category-filter").value !== "all") params.set("category", $("#category-filter").value);
+      if ($("#sort-filter").value !== "window_desc") params.set("sort", $("#sort-filter").value);
+      if (state.browse && state.page > 1) params.set("page", state.page);
+      history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}`);
+    }
+
+    function eventHref(event, returnTarget) {
+      const base = event.analysisHref || `event.html?id=${encodeURIComponent(event.id)}`;
+      return `${base}${base.includes("?") ? "&" : "?"}return=${encodeURIComponent(returnTarget)}`;
+    }
+
+    function renderCategories() {
+      const counts = new Map();
+      state.events.forEach(event => counts.set(event.category, (counts.get(event.category) || 0) + 1));
+      $("#category-grid").innerHTML = [...counts.entries()]
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .map(([category, count]) => `<button class="category-card" type="button" data-category="${escapeHtml(category)}">
+          <strong>${escapeHtml(categoryLabel(category))}</strong><span>${fmt.format(count)} events</span>
+        </button>`).join("");
+      document.querySelectorAll("[data-category]").forEach(button => button.addEventListener("click", () => {
+        $("#category-filter").value = button.dataset.category;
+        state.browse = true;
+        state.page = 1;
+        render();
+      }));
+    }
+
+    function renderLatest() {
+      const latest = [...state.events].sort((a, b) => eventDate(b).localeCompare(eventDate(a)) || a.title.localeCompare(b.title)).slice(0, 6);
+      $("#latest-events").innerHTML = latest.map(event => `<a class="event-card" href="${escapeHtml(eventHref(event, "index.html"))}">
+        <div class="card-top"><span class="category">${escapeHtml(categoryLabel(event.category))}</span><span class="time">${escapeHtml(eventDate(event) || "Date unavailable")}</span></div>
+        <h3>${escapeHtml(event.title)}</h3>
+        <p class="event-summary">${escapeHtml(event.summary || "Open the event to explore its published activity and sentiment timeline.")}</p>
+        <div class="card-footer"><span><strong>${fmt.format(event.postCount)}</strong> posts</span><span class="open-event">View event →</span></div>
+      </a>`).join("");
+    }
+
+    function renderResults() {
+      const filtered = filteredEvents();
+      const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
+      state.page = Math.min(state.page, pageCount);
+      updateUrl();
+      const start = (state.page - 1) * pageSize;
+      const visible = filtered.slice(start, start + pageSize);
+      const returnTarget = `index.html${window.location.search}`;
+      $("#result-count").textContent = `${fmt.format(filtered.length)} matching event${filtered.length === 1 ? "" : "s"}`;
+      $("#page-label").textContent = `Page ${state.page} of ${pageCount}`;
+      $("#previous-page").disabled = state.page <= 1;
+      $("#next-page").disabled = state.page >= pageCount;
+      if (!visible.length) {
+        $("#event-list").innerHTML = `<div class="empty"><strong>No matching events</strong>Try a broader search or reset the current filters.</div>`;
+        return;
+      }
+      $("#event-list").innerHTML = visible.map(event => {
+        const date = event.windowStart && event.windowEnd
+          ? `${String(event.windowStart).slice(0, 10)} – ${String(event.windowEnd).slice(0, 10)}`
+          : eventDate(event) || "Date unavailable";
+        return `<article class="event-row">
+          <div class="event-main"><span class="event-title">${escapeHtml(event.title)}</span><span class="event-description">${escapeHtml(event.summary || event.id)}</span></div>
+          <div><span class="cell-label">Category</span><span class="category">${escapeHtml(categoryLabel(event.category))}</span></div>
+          <div><span class="cell-label">Date</span><span class="cell-value">${escapeHtml(date)}</span></div>
+          <div><span class="cell-label">Posts</span><span class="cell-value">${fmt.format(event.postCount)}</span></div>
+          <a class="row-action" href="${escapeHtml(eventHref(event, returnTarget))}">View event →</a>
+        </article>`;
+      }).join("");
+    }
+
+    function render() {
+      $("#discovery-view").hidden = state.browse;
+      $("#results-view").hidden = !state.browse;
+      if (state.browse) renderResults();
+      else updateUrl();
+    }
+
+    function resetToOverview() {
+      $("#event-search").value = "";
+      $("#category-filter").value = "all";
+      $("#sort-filter").value = "window_desc";
+      state.browse = false;
+      state.page = 1;
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function restoreState(categories) {
+      const params = new URLSearchParams(location.search);
+      $("#event-search").value = params.get("q") || "";
+      const requestedCategory = params.get("category") || "all";
+      $("#category-filter").value = categories.includes(requestedCategory) ? requestedCategory : "all";
+      $("#sort-filter").value = ["window_desc", "posts_desc", "title_asc"].includes(params.get("sort")) ? params.get("sort") : "window_desc";
+      state.page = Math.max(1, Number(params.get("page") || 1));
+      state.browse = params.get("view") === "all" || Boolean(params.get("q") || params.get("category") || params.get("sort") || params.get("page"));
+    }
+
+    async function loadCatalog() {
+      try {
+        const payload = await window.SurgeData.getCatalog();
+        state.events = payload.events.map(normalizedEvent).filter(event => event.id);
+        const categories = [...new Set(state.events.map(event => event.category))].sort();
+        $("#category-filter").insertAdjacentHTML("beforeend", categories.map(category =>
+          `<option value="${escapeHtml(category)}">${escapeHtml(categoryLabel(category))}</option>`
+        ).join(""));
+        restoreState(categories);
+        $("#event-total").textContent = fmt.format(state.events.length);
+        $("#post-total").textContent = compactFmt.format(state.events.reduce((total, event) => total + event.postCount, 0));
+        $("#collection-status").textContent = `${fmt.format(categories.length)} categories · aggregate public data`;
+        renderCategories();
+        renderLatest();
+        render();
+      } catch (error) {
+        $("#event-total").textContent = "0";
+        $("#post-total").textContent = "0";
+        $("#collection-status").textContent = "Collection unavailable";
+        $("#data-notice").textContent = "The published event collection could not be loaded. Please refresh the page and try again.";
+        $("#data-notice").hidden = false;
+        console.warn(error);
+      } finally {
+        $("#main").setAttribute("aria-busy", "false");
+      }
+    }
+
+    $("#event-search").addEventListener("input", () => { state.browse = true; state.page = 1; render(); });
+    ["category-filter", "sort-filter"].forEach(id => $(`#${id}`).addEventListener("change", () => {
+      state.browse = true;
+      state.page = 1;
+      render();
+    }));
+    $("#browse-all").addEventListener("click", () => { state.browse = true; state.page = 1; render(); $("#results-view").scrollIntoView({ behavior: "smooth" }); });
+    $("#reset-view").addEventListener("click", resetToOverview);
+    $("#show-overview").addEventListener("click", resetToOverview);
+    $("#previous-page").addEventListener("click", () => { state.page -= 1; renderResults(); $("#results-view").scrollIntoView({ behavior: "smooth" }); });
+    $("#next-page").addEventListener("click", () => { state.page += 1; renderResults(); $("#results-view").scrollIntoView({ behavior: "smooth" }); });
+    loadCatalog();
+  </script>
+</body>
+</html>

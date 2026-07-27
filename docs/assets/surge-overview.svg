@@ -20,36 +20,36 @@
 
   <g transform="translate(90 210)">
     <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Released coverage</text>
-    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">67 events, 817,442 posts, five event families</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">297 events, 2,600,877 posts, five event families</text>
     <g transform="translate(0 72)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#edf3ff" stroke="#b9c8e6"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">political</text>
-      <rect x="150" y="12" width="124" height="20" rx="5" fill="#2454a6"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">17</text>
+      <rect x="150" y="12" width="114" height="20" rx="5" fill="#2454a6"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">59</text>
     </g>
     <g transform="translate(0 126)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#f7fbf7" stroke="#c7ddcf"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">sports / entertainment</text>
       <rect x="150" y="12" width="102" height="20" rx="5" fill="#2f7d4f"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">14</text>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">64</text>
     </g>
     <g transform="translate(0 180)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff8f1" stroke="#edd0b6"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">natural disaster</text>
-      <rect x="150" y="12" width="88" height="20" rx="5" fill="#c8651b"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+      <rect x="150" y="12" width="112" height="20" rx="5" fill="#c8651b"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">58</text>
     </g>
     <g transform="translate(0 234)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#fff5f4" stroke="#efc7c3"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">social movement</text>
-      <rect x="150" y="12" width="88" height="20" rx="5" fill="#b83a32"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+      <rect x="150" y="12" width="103" height="20" rx="5" fill="#b83a32"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">53</text>
     </g>
     <g transform="translate(0 288)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#f8f5fc" stroke="#d7c9ee"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">technology</text>
-      <rect x="150" y="12" width="88" height="20" rx="5" fill="#6e4aa6"/>
-      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">12</text>
+      <rect x="150" y="12" width="122" height="20" rx="5" fill="#6e4aa6"/>
+      <text x="286" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">63</text>
     </g>
   </g>
 
@@ -58,18 +58,18 @@
     <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">Every event is released at each granularity that passes the minimum-bin threshold.</text>
     <g transform="translate(0 82)">
       <circle cx="66" cy="66" r="58" fill="#edf3ff" stroke="#2454a6" stroke-width="3"/>
-      <text x="66" y="59" text-anchor="middle" fill="#2454a6" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">67</text>
-      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">6H</text>
+      <text x="66" y="59" text-anchor="middle" fill="#2454a6" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">6H</text>
+      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">primary</text>
     </g>
     <g transform="translate(152 82)">
       <circle cx="66" cy="66" r="58" fill="#f7fbf7" stroke="#2f7d4f" stroke-width="3"/>
-      <text x="66" y="59" text-anchor="middle" fill="#2f7d4f" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">64</text>
-      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">12H</text>
+      <text x="66" y="59" text-anchor="middle" fill="#2f7d4f" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">12H</text>
+      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">derived</text>
     </g>
     <g transform="translate(304 82)">
       <circle cx="66" cy="66" r="58" fill="#fff8f1" stroke="#c8651b" stroke-width="3"/>
-      <text x="66" y="59" text-anchor="middle" fill="#c8651b" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">55</text>
-      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">1D</text>
+      <text x="66" y="59" text-anchor="middle" fill="#c8651b" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="850">1D</text>
+      <text x="66" y="87" text-anchor="middle" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760">derived</text>
     </g>
     <g transform="translate(0 250)">
       <rect x="0" y="0" width="438" height="92" rx="12" fill="#fbfcfe" stroke="#d8dee9"/>
