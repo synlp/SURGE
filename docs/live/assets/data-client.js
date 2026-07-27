@@ -6,6 +6,7 @@
     apiBaseUrl: "",
     snapshotUrl: "data/events-v9-1.json",
     catalogUrl: "data/event-catalog-v1.json",
+    eventDetailBaseUrl: "data/event-details-v1",
     requestTimeoutMs: 10000,
     endpoints: {
       events: "/api/v1/events",
@@ -22,6 +23,7 @@
     endpoints: { ...defaults.endpoints, ...(supplied.endpoints || {}) }
   };
   let snapshotPromise = null;
+  const eventPromises = new Map();
 
   const endpoint = (name, eventId) => {
     const template = config.endpoints[name];
@@ -117,12 +119,26 @@
   async function getEvent(eventId) {
     if (!eventId) throw new Error("eventId is required");
     if (config.mode === "api") return requestJson(endpoint("event", eventId));
-    const payload = await getSnapshot();
-    const event = (payload.events || []).find(item =>
-      item.id === eventId || item.sourceEventId === eventId
-    );
-    if (!event) throw new Error(`event not found: ${eventId}`);
-    return { ...payload, event };
+    if (!eventPromises.has(eventId)) {
+      eventPromises.set(eventId, (async () => {
+        try {
+          const base = String(config.eventDetailBaseUrl || "").replace(/\/$/, "");
+          const payload = await requestJson(`${base}/${encodeURIComponent(eventId)}.json`);
+          if (!payload || !payload.event) {
+            throw new Error("event detail response does not contain an event");
+          }
+          return payload;
+        } catch (detailError) {
+          const payload = await getSnapshot();
+          const event = (payload.events || []).find(item =>
+            item.id === eventId || item.sourceEventId === eventId
+          );
+          if (!event) throw detailError;
+          return { ...payload, event };
+        }
+      })());
+    }
+    return eventPromises.get(eventId);
   }
 
   async function getEventAnalysis(eventId) {
@@ -130,12 +146,7 @@
     if (config.mode === "api") {
       return requestJson(endpoint("analysis", eventId));
     }
-    const result = await getEvent(eventId);
-    return {
-      schemaVersion: "surge-event-analysis-static-v1",
-      generatedAt: result.generatedAt,
-      event: result.event
-    };
+    return getEvent(eventId);
   }
 
   function subscribeToEvent(eventId, handlers = {}) {

@@ -282,6 +282,22 @@
     .chart-tooltip.visible { opacity: 1; }
     .tooltip-time { display: block; color: var(--muted); }
 
+    .selected-moment {
+      display: grid;
+      grid-template-columns: minmax(180px, 1.1fr) repeat(3, minmax(110px, .8fr));
+      gap: 12px;
+      align-items: center;
+      margin: 0 18px;
+      padding: 12px 14px;
+      border: 1px solid #c8d8f4;
+      border-radius: 10px;
+      background: var(--blue-soft);
+    }
+    .selected-moment-label { display: block; margin-bottom: 3px; color: var(--blue); font-size: 10px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+    .selected-moment strong { display: block; font-size: 14px; }
+    .selected-moment-stat { min-width: 0; padding-left: 12px; border-left: 1px solid #c8d8f4; }
+    .selected-moment-stat span { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; }
+
     .replay {
       display: grid;
       grid-template-columns: minmax(150px, 1fr) minmax(220px, 2fr);
@@ -748,6 +764,8 @@
       .series-chart-toolbar { align-items: flex-start; flex-direction: column; }
       .series-legend { justify-content: flex-start; }
       .replay { grid-template-columns: 1fr; }
+      .selected-moment { grid-template-columns: 1fr 1fr; }
+      .selected-moment-stat:nth-child(2) { border-left: 0; padding-left: 0; }
       .signal-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 10px; }
       .signal-group { padding: 10px 0; }
       .chart-axis { font-size: 9px; }
@@ -875,6 +893,13 @@
           </div>
           <svg class="chart-svg" id="sentiment-chart" data-analysis-only viewBox="0 0 820 125" role="img" aria-label="Sentiment polarity time series"></svg>
           <div class="chart-tooltip" id="chart-tooltip" role="status" aria-live="polite"></div>
+        </div>
+
+        <div class="selected-moment" aria-live="polite" aria-label="Selected timeline interval">
+          <div><span class="selected-moment-label">Selected interval</span><strong id="selected-time">—</strong></div>
+          <div class="selected-moment-stat"><strong id="selected-posts">—</strong><span>Posts in this interval</span></div>
+          <div class="selected-moment-stat"><strong id="selected-mood">—</strong><span>Average mood</span></div>
+          <div class="selected-moment-stat"><strong id="selected-coverage">—</strong><span>Sentiment coverage</span></div>
         </div>
 
         <div class="replay">
@@ -1066,7 +1091,6 @@
 
   </main>
 
-  <script src="data/events-v9-1.js"></script>
   <script src="data/runtime-config.js"></script>
   <script src="assets/data-client.js"></script>
   <script src="data/stance-issues-v1.js"></script>
@@ -1149,7 +1173,17 @@
         circle.addEventListener("focus", show);
         circle.addEventListener("mouseleave", () => els.tooltip.classList.remove("visible"));
         circle.addEventListener("blur", () => els.tooltip.classList.remove("visible"));
-        circle.addEventListener("click", () => { state.index = absoluteIndex; render(); });
+        const selectPoint = () => { state.index = absoluteIndex; render(); };
+        circle.setAttribute("tabindex", "0");
+        circle.setAttribute("role", "button");
+        circle.setAttribute("aria-pressed", String(absoluteIndex === state.index));
+        circle.addEventListener("click", selectPoint);
+        circle.addEventListener("keydown", keyEvent => {
+          if (keyEvent.key === "Enter" || keyEvent.key === " ") {
+            keyEvent.preventDefault();
+            selectPoint();
+          }
+        });
       });
     }
 
@@ -2052,6 +2086,19 @@
       $("#focus-time").textContent = currentPoint(event)[0];
       $("#replay-detail").textContent = `${currentPoint(event)[0]} · ${state.index + 1} of ${event.points.length}`;
       $("#freshness").textContent = `Through ${currentPoint(event)[0]}`;
+      const selected = currentPoint(event);
+      const selectedDetail = selected[3] || {};
+      const selectedVolume = Number(selected[1] || 0);
+      const selectedAnnotated = Number(selectedDetail.sentimentAnnotatedPosts || 0);
+      const selectedSentiment = selected[2];
+      $("#selected-time").textContent = selected[0];
+      $("#selected-posts").textContent = fmt.format(selectedVolume);
+      $("#selected-mood").textContent = selectedSentiment === null || selectedSentiment === undefined
+        ? "Unavailable"
+        : `${sentimentLabel(selectedSentiment)} (${signed(selectedSentiment)})`;
+      $("#selected-coverage").textContent = selectedVolume
+        ? `${((selectedAnnotated / selectedVolume) * 100).toFixed(1)}%`
+        : "No posts";
       renderCharts(event);
       renderMetrics(event);
       renderSentimentSeries(event);
@@ -2076,6 +2123,10 @@
       $("#event-category").textContent = "Unavailable";
       $("#focus-time").textContent = "No data";
       $("#replay-detail").textContent = "Timeline unavailable";
+      $("#selected-time").textContent = "Unavailable";
+      $("#selected-posts").textContent = "—";
+      $("#selected-mood").textContent = "Unavailable";
+      $("#selected-coverage").textContent = "Unavailable";
       $("#freshness").textContent = "Data unavailable";
       $("#mood-value").textContent = "Unavailable";
       $("#mood-context").textContent = "Sentiment data unavailable";
@@ -2123,24 +2174,24 @@
     async function loadAggregateEvents() {
       const loadingNoticeTimer = window.setTimeout(() => showDataNotice("Loading event activity and sentiment."), 400);
       try {
-        const payload = await window.SurgeData.getSnapshot();
-        if (!Array.isArray(payload.events) || !payload.events.length) throw new Error("aggregate data has no events");
-        activeEvents = payload.events.map(event => ({
-          ...event,
-          points: event.points.map(point => [point.label, point.volume, point.sentiment, point])
-        }));
+        let requestedEventId = new URLSearchParams(window.location.search).get("id");
+        if (!requestedEventId) {
+          const catalog = await window.SurgeData.getCatalog();
+          requestedEventId = catalog.events[0]?.id;
+        }
+        if (!requestedEventId) throw new Error("no event id is available");
+        const payload = await window.SurgeData.getEventAnalysis(requestedEventId);
+        if (!payload?.event) throw new Error("event detail response has no event");
+        activeEvents = [{
+          ...payload.event,
+          points: payload.event.points.map(point => [point.label, point.volume, point.sentiment, point])
+        }];
         liveMetadata = payload;
-        const requestedEventId = new URLSearchParams(window.location.search).get("id");
-        const requestedEvent = requestedEventId && activeEvents.find(event => event.id === requestedEventId);
-        state.eventId = requestedEvent?.id || activeEvents[0].id;
+        state.eventId = activeEvents[0].id;
         state.index = selectedEvent().points.length - 1;
         state.range = selectedEvent().points.length;
         render();
-        if (requestedEventId && !requestedEvent) {
-          showDataNotice("That event could not be found. Showing the first available event instead.");
-        } else {
-          hideDataNotice();
-        }
+        hideDataNotice();
       } catch (error) {
         renderUnavailable();
         showDataNotice("Event data could not be loaded. Please refresh the page and try again.");
