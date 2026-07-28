@@ -219,193 +219,6 @@
       line-height: 1.35;
     }
 
-    .hero-guide {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-    .guide-head { padding: 20px 21px 17px; border-bottom: 1px solid var(--line); background: var(--wash); }
-    .guide-label { display: block; margin-bottom: 5px; color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
-    .guide-head h2 { font-size: 23px; }
-    .guide-list { display: grid; padding: 7px 20px; }
-    .guide-item { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }
-    .guide-item:last-child { border-bottom: 0; }
-    .guide-icon, .card-icon, .pathway-icon {
-      display: inline-grid;
-      place-items: center;
-      border-radius: 9px;
-      background: #eaf0fb;
-      color: var(--blue);
-      font-weight: 900;
-      line-height: 1;
-    }
-    .guide-icon { width: 36px; height: 36px; font-size: 16px; }
-    .guide-item strong, .guide-item span { display: block; }
-    .guide-item strong { font-size: 13px; }
-    .guide-item span { margin-top: 2px; color: var(--muted); font-size: 11px; }
-    .guide-link { display: flex; justify-content: space-between; padding: 14px 20px; border-top: 1px solid var(--line); color: var(--blue); font-size: 13px; font-weight: 850; text-decoration: none; }
-
-    .pathways {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto 28px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-      gap: 16px;
-    }
-
-    .pathway-card {
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 28px;
-      background: var(--paper);
-    }
-
-    .pathway-card.events {
-      border-color: transparent;
-      background: linear-gradient(135deg, #204d98 0%, #2f7d4f 115%);
-      color: #fff;
-      box-shadow: var(--shadow);
-    }
-
-    .pathway-kicker {
-      margin: 0 0 10px;
-      color: var(--green);
-      font-size: 12px;
-      font-weight: 850;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .pathway-card.events .pathway-kicker {
-      color: #d9f2e3;
-    }
-
-    .pathway-card h2 {
-      max-width: 620px;
-      font-size: 30px;
-    }
-    .pathway-title { display: flex; align-items: center; gap: 12px; }
-    .pathway-icon { width: 40px; height: 40px; flex: 0 0 40px; background: rgba(255, 255, 255, .15); color: #fff; font-size: 18px; }
-    .pathway-card:not(.events) .pathway-icon { background: var(--wash); color: var(--blue); }
-
-    .pathway-card > p {
-      max-width: 650px;
-      margin: 13px 0 0;
-      color: var(--muted);
-    }
-
-    .pathway-card.events > p {
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .pathway-metrics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-      margin: 24px 0;
-    }
-
-    .pathway-metric strong,
-    .pathway-metric span {
-      display: block;
-    }
-
-    .pathway-metric strong {
-      font-size: 23px;
-      line-height: 1;
-    }
-
-    .pathway-metric span {
-      margin-top: 5px;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 12px;
-    }
-
-    .pathway-card .button {
-      align-self: flex-start;
-      margin-top: auto;
-    }
-
-    .pathway-card.events .button {
-      border-color: #fff;
-      background: #fff;
-      color: var(--blue);
-    }
-
-    .pathway-links {
-      display: grid;
-      gap: 0;
-      margin-top: 20px;
-      border-top: 1px solid var(--line);
-    }
-
-    .pathway-links a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 13px 0;
-      border-bottom: 1px solid var(--line);
-      color: var(--ink);
-      font-weight: 800;
-      text-decoration: none;
-    }
-
-    .pathway-links a span {
-      color: var(--blue);
-    }
-
-    .system-overview {
-      margin-top: 58px;
-      padding: 54px 0;
-      background: var(--ink);
-      color: #fff;
-    }
-    .system-overview-inner {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(250px, .7fr) minmax(0, 1.5fr);
-      gap: 58px;
-      align-items: start;
-    }
-    .overview-intro .eyebrow { color: #9dd8b4; }
-    .overview-intro h2 { max-width: 430px; font-size: 35px; }
-    .overview-intro p:not(.eyebrow) { max-width: 410px; margin: 16px 0 0; color: rgba(255, 255, 255, .68); font-size: 15px; }
-    .overview-intro a { display: inline-flex; gap: 8px; margin-top: 22px; color: #fff; font-size: 13px; font-weight: 850; text-decoration: none; }
-    .overview-model { min-width: 0; }
-    .overview-steps {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      border-top: 1px solid rgba(255, 255, 255, .2);
-      border-bottom: 1px solid rgba(255, 255, 255, .2);
-    }
-    .overview-step {
-      min-width: 0;
-      padding: 24px 22px 25px;
-      border-left: 1px solid rgba(255, 255, 255, .2);
-    }
-    .overview-step:first-child { padding-left: 0; border-left: 0; }
-    .overview-step-number { display: block; margin-bottom: 22px; color: #9dd8b4; font-size: 11px; font-weight: 850; letter-spacing: .1em; }
-    .overview-step strong { display: block; font-size: 21px; }
-    .overview-step p { margin: 9px 0 0; color: rgba(255, 255, 255, .62); font-size: 12px; line-height: 1.55; }
-    .overview-targets {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 9px 22px;
-      padding-top: 19px;
-      color: rgba(255, 255, 255, .62);
-      font-size: 12px;
-    }
-    .overview-targets > span:first-child { color: #9dd8b4; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-    .overview-targets strong { color: #fff; font-size: 13px; }
-
     .section {
       padding: 64px 0;
       border-top: 1px solid rgba(216, 222, 233, 0.85);
@@ -438,55 +251,6 @@
       margin: 0;
       color: var(--muted);
       font-size: 18px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 22px;
-      background: #fff;
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 19px;
-      font-weight: 850;
-    }
-    .card-icon { width: 34px; height: 34px; margin-bottom: 16px; font-size: 15px; }
-    .accent-green .card-icon { background: #e8f3ec; color: var(--green); }
-    .accent-orange .card-icon { background: #f8eee5; color: var(--orange); }
-    .accent-red .card-icon { background: #faecea; color: var(--red); }
-    .accent-violet .card-icon { background: #f0ebf8; color: var(--violet); }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .accent-blue {
-      border-top: 4px solid var(--blue);
-    }
-
-    .accent-green {
-      border-top: 4px solid var(--green);
-    }
-
-    .accent-orange {
-      border-top: 4px solid var(--orange);
-    }
-
-    .accent-red {
-      border-top: 4px solid var(--red);
-    }
-
-    .accent-violet {
-      border-top: 4px solid var(--violet);
     }
 
     .data-table {
@@ -522,13 +286,6 @@
       border-bottom: 0;
     }
 
-    .layout {
-      display: grid;
-      grid-template-columns: minmax(0, 0.8fr) minmax(320px, 0.5fr);
-      gap: 18px;
-      align-items: stretch;
-    }
-
     pre {
       height: 100%;
       min-height: 330px;
@@ -561,6 +318,101 @@
       font-size: 14px;
       font-weight: 720;
     }
+
+    .featured-event {
+      min-width: 0;
+      padding: 4px 0 4px 34px;
+      border-left: 1px solid var(--line);
+    }
+    .featured-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 17px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .featured-status { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); letter-spacing: 0; text-transform: none; }
+    .featured-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+    .featured-event h2 { max-width: 420px; font-size: 27px; line-height: 1.13; }
+    .featured-summary { display: -webkit-box; max-width: 440px; overflow: hidden; margin: 12px 0 0; color: var(--muted); font-size: 14px; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+    .featured-meta { display: flex; flex-wrap: wrap; gap: 9px 20px; margin-top: 17px; color: var(--muted); font-size: 12px; }
+    .featured-meta strong { color: var(--ink); }
+    .signal-preview { height: 72px; display: flex; align-items: end; gap: 5px; margin: 22px 0 8px; border-bottom: 1px solid var(--line); }
+    .signal-preview span { width: 100%; min-width: 4px; border-radius: 3px 3px 0 0; background: linear-gradient(180deg, var(--blue), #8ca9dc); opacity: .82; }
+    .signal-caption { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 10px; }
+    .featured-link { display: inline-flex; align-items: center; gap: 9px; margin-top: 20px; color: var(--blue); font-size: 13px; font-weight: 850; text-decoration: none; }
+
+    .audience-paths {
+      width: min(1180px, calc(100% - 40px));
+      margin: 12px auto 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .audience-path {
+      display: grid;
+      grid-template-columns: 42px 1fr auto;
+      gap: 18px;
+      align-items: center;
+      min-height: 138px;
+      padding: 25px 30px;
+      text-decoration: none;
+    }
+    .audience-path + .audience-path { border-left: 1px solid var(--line); }
+    .audience-path:hover, .audience-path:focus-visible { background: var(--wash); outline: none; }
+    .audience-number { align-self: start; color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .08em; }
+    .audience-copy strong, .audience-copy span { display: block; }
+    .audience-copy strong { font-size: 20px; line-height: 1.2; }
+    .audience-copy span { max-width: 440px; margin-top: 7px; color: var(--muted); font-size: 13px; }
+    .audience-arrow { color: var(--blue); font-size: 19px; }
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .principle { min-width: 0; padding: 28px 26px; border-left: 1px solid var(--line); }
+    .principle:first-child { padding-left: 0; border-left: 0; }
+    .principle-index { display: block; margin-bottom: 26px; color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .1em; }
+    .principle h3 { margin-bottom: 10px; font-size: 20px; }
+    .principle p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .research-hub { padding: 64px 0 78px; border-top: 1px solid var(--line); background: var(--paper); }
+    .research-intro { display: grid; grid-template-columns: minmax(0, .9fr) minmax(260px, .55fr); gap: 48px; align-items: end; margin-bottom: 26px; }
+    .research-intro p { margin: 0; color: var(--muted); font-size: 16px; }
+    .research-disclosure { border-top: 1px solid var(--line); }
+    .research-disclosure:last-of-type { border-bottom: 1px solid var(--line); }
+    .research-disclosure summary {
+      min-height: 88px;
+      display: grid;
+      grid-template-columns: 34px minmax(180px, .7fr) minmax(240px, 1.2fr) auto;
+      gap: 18px;
+      align-items: center;
+      cursor: pointer;
+      list-style: none;
+    }
+    .research-disclosure summary::-webkit-details-marker { display: none; }
+    .research-disclosure summary:hover, .research-disclosure summary:focus-visible { color: var(--blue); outline: none; }
+    .research-index { color: var(--green); font-size: 11px; font-weight: 850; }
+    .research-title { font-size: 20px; font-weight: 900; }
+    .research-summary { color: var(--muted); font-size: 13px; }
+    .research-toggle { color: var(--blue); font-size: 20px; transition: transform .18s ease; }
+    .research-disclosure[open] .research-toggle { transform: rotate(45deg); }
+    .research-body { padding: 6px 0 34px 52px; }
+    .research-body .lead { margin-bottom: 18px; font-size: 14px; }
+    .resource-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 18px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .resource-item { padding: 18px 18px; border-left: 1px solid var(--line); }
+    .resource-item:first-child { padding-left: 0; border-left: 0; }
+    .resource-item strong, .resource-item span { display: block; }
+    .resource-item strong { font-size: 14px; }
+    .resource-item span { margin-top: 5px; color: var(--muted); font-size: 12px; }
 
     .footer {
       border-top: 1px solid var(--line);
@@ -605,24 +457,28 @@
       }
 
       .stats,
-      .pathways,
-      .grid,
       .section-head,
-      .layout,
-      .system-overview-inner {
+      .research-intro {
         grid-template-columns: 1fr;
       }
       .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .system-overview-inner { gap: 34px; }
+      .audience-paths, .principles { grid-template-columns: 1fr; }
+      .audience-path + .audience-path, .principle { border-left: 0; border-top: 1px solid var(--line); }
+      .principle:first-child { border-top: 0; }
+      .principle, .principle:first-child { padding: 24px 0; }
+      .research-disclosure summary { grid-template-columns: 34px 1fr auto; }
+      .research-summary { grid-column: 2 / -1; padding-bottom: 18px; }
+      .resource-list { grid-template-columns: 1fr; }
+      .resource-item, .resource-item:first-child { padding: 15px 0; border-top: 1px solid var(--line); border-left: 0; }
+      .resource-item:first-child { border-top: 0; }
     }
 
     @media (max-width: 540px) {
       .nav,
       .hero,
-      .pathways,
       .inner,
       .footer-inner,
-      .system-overview-inner {
+      .audience-paths {
         width: min(100% - 28px, 1180px);
       }
 
@@ -632,17 +488,15 @@
       .stats { grid-template-columns: 1fr; }
       .stat, .stat:first-child { padding: 14px 0; border-left: 0; border-top: 1px solid var(--line); }
       .stat:first-child { border-top: 0; }
-      .system-overview { margin-top: 40px; padding: 40px 0; }
-      .overview-steps { grid-template-columns: 1fr; }
-      .overview-step, .overview-step:first-child { padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, .2); border-left: 0; }
-      .overview-step:first-child { border-top: 0; }
+      .featured-event { padding: 27px 0 0; border-top: 1px solid var(--line); border-left: 0; }
+      .audience-path { grid-template-columns: 32px 1fr auto; gap: 12px; min-height: 124px; padding: 21px 0; }
+      .research-hub { padding: 48px 0 58px; }
+      .research-disclosure summary { min-height: 76px; grid-template-columns: 28px 1fr auto; gap: 10px; }
+      .research-summary { display: none; }
+      .research-body { padding: 5px 0 28px; }
 
       h2 {
         font-size: 30px;
-      }
-
-      .pathway-card {
-        padding: 22px;
       }
 
       .data-table,
@@ -670,8 +524,7 @@
       </a>
       <div class="nav-links">
         <a href="#overview">Overview</a>
-        <a href="#data-card">Data Card</a>
-        <a href="#quick-start">Quick Start</a>
+        <a href="#research">Research</a>
         <a class="nav-live" href="live/index.html">Explore Events</a>
         <a href="https://github.com/synlp/SURGE">GitHub</a>
       </div>
@@ -693,14 +546,16 @@
           <a class="button secondary" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read Datasheet</a>
         </div>
       </div>
-      <aside class="hero-guide" aria-label="Analysis available for each event">
-        <div class="guide-head"><span class="guide-label">Inside each event</span><h2>One event, multiple signals</h2></div>
-        <div class="guide-list">
-          <div class="guide-item"><span class="guide-icon" aria-hidden="true">↗</span><div><strong>Activity</strong><span>See when attention rises, peaks, and fades.</span></div></div>
-          <div class="guide-item"><span class="guide-icon" aria-hidden="true">◐</span><div><strong>Sentiment</strong><span>Follow changes in the emotional tone.</span></div></div>
-          <div class="guide-item"><span class="guide-icon" aria-hidden="true">◎</span><div><strong>Topics and viewpoints</strong><span>Understand what people debate and how positions differ.</span></div></div>
+      <aside class="featured-event" aria-labelledby="featured-title">
+        <div class="featured-label"><span>Latest published analysis</span><span class="featured-status">297 events online</span></div>
+        <h2 id="featured-title">Explore the latest public event</h2>
+        <p class="featured-summary" id="featured-summary">Open an event to follow attention, sentiment, topics, and emerging viewpoints across its published timeline.</p>
+        <div class="featured-meta"><span id="featured-category">Event analysis</span><span><strong id="featured-posts">2.60M</strong> posts</span><span id="featured-date">Updated release</span></div>
+        <div class="signal-preview" aria-hidden="true">
+          <span style="height:22%"></span><span style="height:31%"></span><span style="height:28%"></span><span style="height:46%"></span><span style="height:39%"></span><span style="height:61%"></span><span style="height:83%"></span><span style="height:67%"></span><span style="height:74%"></span><span style="height:49%"></span><span style="height:58%"></span><span style="height:37%"></span><span style="height:42%"></span><span style="height:27%"></span>
         </div>
-        <a class="guide-link" href="live/index.html"><span>Open the event explorer</span><span aria-hidden="true">→</span></a>
+        <div class="signal-caption"><span>Discussion activity</span><span>Event timeline</span></div>
+        <a class="featured-link" id="featured-link" href="live/index.html">Open event analysis <span aria-hidden="true">→</span></a>
       </aside>
       <div class="stats" aria-label="Dataset snapshot">
         <div class="stat">
@@ -718,79 +573,17 @@
       </div>
     </section>
 
-    <section class="pathways" aria-label="Ways to use SURGE">
-      <article class="pathway-card events">
-        <p class="pathway-kicker">Public event explorer</p>
-        <div class="pathway-title"><span class="pathway-icon" aria-hidden="true">⌕</span><h2>Start with an event, then examine it from several angles</h2></div>
-        <p>
-          Search the complete collection, compare discussion activity and sentiment,
-          and open an event for a more detailed time-based analysis.
-        </p>
-        <div class="pathway-metrics" aria-label="Event explorer coverage">
-          <div class="pathway-metric">
-            <strong>297</strong>
-            <span>public events</span>
-          </div>
-          <div class="pathway-metric">
-            <strong>5</strong>
-            <span>event categories</span>
-          </div>
-          <div class="pathway-metric">
-            <strong>2.60M</strong>
-            <span>posts represented</span>
-          </div>
-        </div>
-        <a class="button" href="live/index.html">Browse all events <span aria-hidden="true">→</span></a>
-      </article>
-
-      <article class="pathway-card">
-        <p class="pathway-kicker">Benchmark resources</p>
-        <div class="pathway-title"><span class="pathway-icon" aria-hidden="true">{ }</span><h2>Work with the released dataset</h2></div>
-        <p>
-          Review the forecasting tasks, release structure, chronological splits,
-          schemas, and loader examples already documented below.
-        </p>
-        <div class="pathway-links">
-          <a href="#data-card">Read the Dataset Card <span aria-hidden="true">↓</span></a>
-          <a href="#quick-start">Open the Quick Start <span aria-hidden="true">↓</span></a>
-          <a href="https://github.com/synlp/SURGE">View the repository <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-    </section>
-
-    <section class="system-overview" aria-labelledby="system-overview-title">
-      <div class="system-overview-inner">
-        <div class="overview-intro">
-          <p class="eyebrow">How the release is organized</p>
-          <h2 id="system-overview-title">From public events to explainable time-based analysis.</h2>
-          <p>SURGE connects the numerical timeline to the text and interaction evidence behind it, so an event can be examined rather than reduced to a single score.</p>
-          <a href="#data-card">Review the release structure <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="overview-model">
-          <div class="overview-steps">
-            <div class="overview-step">
-              <span class="overview-step-number">01 · COVERAGE</span>
-              <strong>297 events</strong>
-              <p>2,600,877 posts across five broad event families.</p>
-            </div>
-            <div class="overview-step">
-              <span class="overview-step-number">02 · TIME</span>
-              <strong>6H primary view</strong>
-              <p>Event-aligned 12H and 1D derivatives support broader temporal comparisons.</p>
-            </div>
-            <div class="overview-step">
-              <span class="overview-step-number">03 · EVIDENCE</span>
-              <strong>Text + interaction graph</strong>
-              <p>Numerical series remain connected to aligned text and reply or repost structure.</p>
-            </div>
-          </div>
-          <div class="overview-targets">
-            <span>Forecasting targets</span>
-            <strong>Discussion Intensity</strong>
-            <strong>Sentiment Polarity</strong>
-          </div>
-        </div>
-      </div>
+    <section class="audience-paths" aria-label="Ways to use SURGE">
+      <a class="audience-path" href="live/index.html">
+        <span class="audience-number">01</span>
+        <span class="audience-copy"><strong>Explore public events</strong><span>Search the collection and open activity, sentiment, topic, and viewpoint analysis.</span></span>
+        <span class="audience-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="audience-path" href="#research">
+        <span class="audience-number">02</span>
+        <span class="audience-copy"><strong>Use the research benchmark</strong><span>Review forecasting tasks, release structure, schemas, and reproducible loader examples.</span></span>
+        <span class="audience-arrow" aria-hidden="true">↓</span>
+      </a>
     </section>
 
     <section class="section alt" id="overview">
@@ -803,25 +596,25 @@
             each time series as an isolated numerical trace.
           </p>
         </div>
-        <div class="grid">
-          <article class="card accent-blue">
-            <span class="card-icon" aria-hidden="true">◎</span>
+        <div class="principles">
+          <article class="principle">
+            <span class="principle-index">01 · EVENT</span>
             <h3>Event-Centric</h3>
             <p>
               The registry covers 297 real events across natural disasters, politics, social
               movements, technology, and sports or entertainment.
             </p>
           </article>
-          <article class="card accent-green">
-            <span class="card-icon" aria-hidden="true">↔</span>
+          <article class="principle">
+            <span class="principle-index">02 · TIME</span>
             <h3>Multi-Granularity</h3>
             <p>
               Each event is released at 6-hour, 12-hour, and 1-day views when its active period
               satisfies the minimum-bin threshold.
             </p>
           </article>
-          <article class="card accent-orange">
-            <span class="card-icon" aria-hidden="true">⌘</span>
+          <article class="principle">
+            <span class="principle-index">03 · CONTEXT</span>
             <h3>Text And Graph Signals</h3>
             <p>
               Numerical targets are paired with sampled bin-aligned text views and reply / repost
@@ -832,15 +625,15 @@
       </div>
     </section>
 
-    <section class="section" id="data-card">
+    <section class="research-hub" id="research">
       <div class="inner">
-        <div class="section-head">
-          <h2>Dataset Card</h2>
-          <p>
-            This page is a project introduction. The repository remains the source of truth for
-            schema files, loaders, synthetic examples, and release notes.
-          </p>
+        <div class="research-intro">
+          <div><p class="eyebrow">Research resources</p><h2>Dataset documentation, when you need it.</h2></div>
+          <p>The public homepage stays focused on events. Technical specifications and reproducible examples remain available below without dominating the first visit.</p>
         </div>
+        <details class="research-disclosure" id="data-card">
+          <summary><span class="research-index">01</span><span class="research-title">Dataset Card</span><span class="research-summary">Scale, tasks, granularities, artifacts, and licensing.</span><span class="research-toggle" aria-hidden="true">+</span></summary>
+          <div class="research-body">
         <table class="data-table">
           <tbody>
             <tr>
@@ -876,46 +669,18 @@
           <li>technology</li>
           <li>sports_entertainment</li>
         </ul>
-      </div>
-    </section>
-
-    <section class="section alt" id="quick-start">
-      <div class="inner">
-        <div class="section-head">
-          <h2>Quick Start</h2>
-          <p>
-            The benchmark loader uses chronological 70 / 10 / 20 splits and performs split-internal
-            imputation, so missing-bin handling never crosses train, validation, or test boundaries.
-          </p>
-        </div>
-        <div class="layout">
-          <div class="grid" aria-label="Repository links">
-            <article class="card accent-red">
-              <span class="card-icon" aria-hidden="true">#</span>
-              <h3>Schema Docs</h3>
-              <p>
-                Field-level documentation is available for numerical series, event metadata,
-                normalization statistics, text views, and edge lists.
-              </p>
-            </article>
-            <article class="card accent-violet">
-              <span class="card-icon" aria-hidden="true">◇</span>
-              <h3>Synthetic Examples</h3>
-              <p>
-                Two mini-events instantiate every schema at all three granularities for smoke tests
-                and quick loader checks.
-              </p>
-            </article>
-            <article class="card accent-blue">
-              <span class="card-icon" aria-hidden="true">›_</span>
-              <h3>Benchmark Code</h3>
-              <p>
-                The repository includes dataloaders, metrics, a generic training loop, and a CMA
-                reference probe.
-              </p>
-            </article>
           </div>
-          <pre aria-label="SURGE quick-start commands">pip install -r requirements.txt
+        </details>
+        <details class="research-disclosure" id="quick-start">
+          <summary><span class="research-index">02</span><span class="research-title">Quick Start</span><span class="research-summary">Schemas, synthetic examples, benchmark code, and chronological splits.</span><span class="research-toggle" aria-hidden="true">+</span></summary>
+          <div class="research-body">
+            <div class="resource-list" aria-label="Repository resources">
+              <div class="resource-item"><strong>Schema Docs</strong><span>Field-level documentation for numerical series, metadata, text views, and edges.</span></div>
+              <div class="resource-item"><strong>Synthetic Examples</strong><span>Two mini-events instantiate every schema at all three granularities.</span></div>
+              <div class="resource-item"><strong>Benchmark Code</strong><span>Dataloaders, metrics, training loop, and CMA reference probe.</span></div>
+            </div>
+            <p class="lead">Chronological 70 / 10 / 20 splits and split-internal imputation keep missing-bin handling inside train, validation, and test boundaries.</p>
+            <pre aria-label="SURGE quick-start commands">pip install -r requirements.txt
 
 # Inspect the released event registry
 python -c "from event_config import get_real_events; print(len(get_real_events()))"
@@ -932,7 +697,8 @@ train, val, test, meta = create_dataloaders(
 )
 print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.dataset))
 "</pre>
-        </div>
+          </div>
+        </details>
       </div>
     </section>
   </main>
@@ -943,5 +709,20 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       <span><a href="https://github.com/synlp/SURGE">github.com/synlp/SURGE</a></span>
     </div>
   </footer>
+  <script src="live/data/event-catalog-v1.js"></script>
+  <script>
+    (() => {
+      const catalog = window.SURGE_EVENT_CATALOG;
+      if (!catalog || !Array.isArray(catalog.events) || !catalog.events.length) return;
+      const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);
+      const latest = [...catalog.events].sort((a, b) => eventDate(b).localeCompare(eventDate(a)) || String(a.title).localeCompare(String(b.title)))[0];
+      document.querySelector("#featured-title").textContent = latest.title || "Explore the latest public event";
+      document.querySelector("#featured-summary").textContent = latest.summary || "Open the event to examine its published activity, sentiment, topics, and viewpoints.";
+      document.querySelector("#featured-category").textContent = String(latest.category || "Event analysis").replaceAll("_", " ");
+      document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(latest.postCount || latest.sourcePostCount || 0));
+      document.querySelector("#featured-date").textContent = eventDate(latest) || "Published event";
+      document.querySelector("#featured-link").href = `live/event.html?id=${encodeURIComponent(latest.id)}&return=index.html`;
+    })();
+  </script>
 </body>
 </html>
