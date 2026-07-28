@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SURGE dataset details: release scope, data model, measurements, quality standards, benchmark tasks, and expansion policy.">
+  <title>SURGE Dataset Details</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14213d;
+      --muted: #5d677c;
+      --line: #d8dee9;
+      --paper: #ffffff;
+      --wash: #f6f8fb;
+      --blue: #2454a6;
+      --green: #2f7d4f;
+      --orange: #b85f1c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.6; }
+    a { color: inherit; }
+    .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(216, 222, 233, .9); background: rgba(255, 255, 255, .94); backdrop-filter: blur(14px); }
+    .nav { width: min(1180px, calc(100% - 40px)); min-height: 64px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; text-decoration: none; white-space: nowrap; }
+    .brand-mark { width: 32px; height: 32px; display: inline-grid; place-items: center; border-radius: 8px; background: linear-gradient(135deg, var(--blue), var(--green)); color: #fff; font-size: 15px; }
+    .nav-links { display: flex; align-items: center; gap: 18px; color: var(--muted); font-size: 14px; font-weight: 700; white-space: nowrap; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus-visible, .nav-links .active { color: var(--green); outline: none; }
+    .shell, .inner { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .hero { padding: 70px 0 52px; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); gap: 64px; align-items: end; }
+    .eyebrow { margin: 0 0 12px; color: var(--green); font-size: 12px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 820px; margin-bottom: 0; font-size: clamp(43px, 6vw, 67px); line-height: 1.02; letter-spacing: -.045em; }
+    h2 { margin-bottom: 0; font-size: clamp(30px, 4vw, 42px); line-height: 1.08; letter-spacing: -.025em; }
+    h3 { margin-bottom: 0; font-size: 18px; line-height: 1.2; }
+    .hero-copy { max-width: 760px; margin: 21px 0 0; color: var(--muted); font-size: 19px; }
+    .hero-side { padding-left: 30px; border-left: 1px solid var(--line); }
+    .hero-side strong { display: block; font-size: 17px; }
+    .hero-side p { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .button { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 16px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); font-size: 13px; font-weight: 800; text-decoration: none; }
+    .button.primary { border-color: var(--green); background: var(--green); color: #fff; }
+    .button:hover, .button:focus-visible { border-color: var(--blue); outline: none; }
+    .release-compare { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .release-column { min-width: 0; padding: 29px 34px; }
+    .release-column:first-child { padding-left: 0; }
+    .release-column + .release-column { border-left: 1px solid var(--line); }
+    .release-tag { display: block; margin-bottom: 16px; color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+    .release-column h2 { font-size: 27px; }
+    .release-column > p { max-width: 510px; margin: 11px 0 0; color: var(--muted); font-size: 13px; }
+    .release-metrics { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 23px; }
+    .release-metric strong, .release-metric span { display: block; }
+    .release-metric strong { font-size: 23px; line-height: 1; }
+    .release-metric span { margin-top: 5px; color: var(--muted); font-size: 10px; text-transform: uppercase; }
+    .section { padding: 68px 0; border-top: 1px solid var(--line); }
+    .section.alt { background: var(--wash); }
+    .section-head { display: grid; grid-template-columns: minmax(0, .85fr) minmax(280px, .55fr); gap: 54px; align-items: end; margin-bottom: 32px; }
+    .section-head p { margin: 0; color: var(--muted); font-size: 16px; }
+    .layer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .layer { min-width: 0; padding: 27px 23px; border-left: 1px solid var(--line); }
+    .layer:first-child { padding-left: 0; border-left: 0; }
+    .layer-index { display: block; margin-bottom: 28px; color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .1em; }
+    .layer p { margin: 9px 0 0; color: var(--muted); font-size: 13px; }
+    .layer code { display: inline-block; margin-top: 13px; color: var(--blue); font-size: 11px; }
+    .measurement-table, .standards-table { width: 100%; border-collapse: collapse; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .measurement-table th, .measurement-table td, .standards-table th, .standards-table td { padding: 17px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .measurement-table tr:last-child th, .measurement-table tr:last-child td, .standards-table tr:last-child th, .standards-table tr:last-child td { border-bottom: 0; }
+    .measurement-table th, .standards-table th { width: 23%; color: var(--ink); font-size: 13px; }
+    .measurement-table td, .standards-table td { color: var(--muted); font-size: 13px; }
+    .measurement-table td:nth-child(2) { width: 25%; color: var(--ink); }
+    .status { display: inline-flex; padding: 3px 7px; border-radius: 999px; background: #e8f3ec; color: var(--green); font-size: 9px; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; }
+    .status.derived { background: #eaf0fb; color: var(--blue); }
+    .status.extension { background: #f8eee5; color: var(--orange); }
+    .standards-table th { width: 21%; }
+    .standards-table td:nth-child(2) { width: 31%; color: var(--ink); }
+    .note { margin-top: 20px; padding-left: 16px; border-left: 3px solid var(--green); color: var(--muted); font-size: 13px; }
+    .task-band { display: grid; grid-template-columns: minmax(260px, .7fr) minmax(0, 1.3fr); gap: 50px; align-items: start; }
+    .task-copy p { margin: 14px 0 0; color: var(--muted); }
+    .task-list { border-top: 1px solid var(--line); }
+    .task-row { display: grid; grid-template-columns: 120px minmax(180px, .8fr) minmax(240px, 1.2fr); gap: 18px; padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .task-row span { color: var(--green); font-size: 11px; font-weight: 850; letter-spacing: .06em; }
+    .task-row strong { font-size: 14px; }
+    .task-row p { margin: 0; color: var(--muted); font-size: 12px; }
+    .file-tree { margin: 0; padding: 22px; overflow: auto; border: 1px solid var(--line); border-radius: 9px; background: #101828; color: #eef4ff; font-size: 13px; line-height: 1.65; }
+    .growth-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+    .growth-item { display: grid; grid-template-columns: 42px 1fr; gap: 14px; padding: 23px 24px 23px 0; border-bottom: 1px solid var(--line); }
+    .growth-item:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line); }
+    .growth-number { color: var(--green); font-size: 11px; font-weight: 850; }
+    .growth-item p { margin: 7px 0 0; color: var(--muted); font-size: 13px; }
+    .resource-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .resource-link { display: flex; min-height: 92px; align-items: center; justify-content: space-between; gap: 14px; padding: 18px; border-left: 1px solid var(--line); color: var(--ink); font-size: 14px; font-weight: 800; text-decoration: none; }
+    .resource-link:first-child { padding-left: 0; border-left: 0; }
+    .resource-link:hover, .resource-link:focus-visible { color: var(--blue); outline: none; }
+    .footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--muted); font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    @media (max-width: 900px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .nav-links { width: 100%; overflow-x: auto; padding-bottom: 2px; }
+      .hero, .section-head, .task-band { grid-template-columns: 1fr; }
+      .hero { gap: 34px; padding-top: 48px; }
+      .hero-side { padding: 25px 0 0; border-top: 1px solid var(--line); border-left: 0; }
+      .layer-grid { grid-template-columns: 1fr 1fr; }
+      .layer:nth-child(3) { border-left: 0; }
+      .layer:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .resource-links { grid-template-columns: 1fr 1fr; }
+      .resource-link:nth-child(3) { border-left: 0; }
+      .resource-link:nth-child(n+3) { border-top: 1px solid var(--line); }
+    }
+    @media (max-width: 620px) {
+      .nav, .shell, .inner { width: min(100% - 28px, 1180px); }
+      .release-compare, .layer-grid, .growth-list, .resource-links { grid-template-columns: 1fr; }
+      .release-column, .release-column:first-child { padding: 24px 0; }
+      .release-column + .release-column { border-top: 1px solid var(--line); border-left: 0; }
+      .layer, .layer:first-child { padding: 21px 0; border-top: 1px solid var(--line); border-left: 0; }
+      .layer:first-child { border-top: 0; }
+      .growth-item, .growth-item:nth-child(even) { padding: 20px 0; border-left: 0; }
+      .resource-link, .resource-link:first-child { padding: 16px 0; border-top: 1px solid var(--line); border-left: 0; }
+      .resource-link:first-child { border-top: 0; }
+      .task-row { grid-template-columns: 1fr; gap: 5px; }
+      .measurement-table, .measurement-table tbody, .measurement-table tr, .measurement-table th, .measurement-table td,
+      .standards-table, .standards-table tbody, .standards-table tr, .standards-table th, .standards-table td { display: block; width: 100%; }
+      .measurement-table th, .standards-table th { padding-bottom: 4px; border-bottom: 0; }
+      .measurement-table td, .standards-table td { padding-top: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>SURGE</span></a>
+      <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a class="active" href="dataset.html" aria-current="page">Dataset Details</a>
+        <a href="live/index.html">Explore Events</a>
+        <a href="https://github.com/synlp/SURGE">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Dataset details</p>
+          <h1 id="page-title">A dataset designed to grow beyond a single benchmark task.</h1>
+          <p class="hero-copy">SURGE organizes public-event data as temporal signals, aligned text, and interaction structure. This page separates the expanding public collection from the fixed paper-aligned benchmark and defines broader standards for future releases.</p>
+        </div>
+        <aside class="hero-side">
+          <strong>Two release views, one evolving data model.</strong>
+          <p>The public explorer prioritizes broad event coverage and readable analysis. The benchmark release fixes a reproducible protocol for model comparison. Their counts and guarantees should not be treated as interchangeable.</p>
+          <div class="hero-actions"><a class="button primary" href="live/index.html">Explore events →</a><a class="button" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md">Read datasheet</a></div>
+        </aside>
+      </section>
+
+      <section class="release-compare" aria-label="SURGE release views">
+        <article class="release-column">
+          <span class="release-tag">Expanding public collection</span>
+          <h2>Event Explorer release</h2>
+          <p>The current public website presents aggregate activity and available analysis across the expanded event collection. It is optimized for event discovery and interpretation.</p>
+          <div class="release-metrics">
+            <span class="release-metric"><strong>297</strong><span>events</span></span>
+            <span class="release-metric"><strong>2.60M</strong><span>posts represented</span></span>
+            <span class="release-metric"><strong>6H</strong><span>public timeline view</span></span>
+          </div>
+        </article>
+        <article class="release-column">
+          <span class="release-tag">Fixed paper-aligned protocol</span>
+          <h2>Benchmark release</h2>
+          <p>The repository release fixes event selection, granularities, targets, splits, and preprocessing for reproducible experiments described by the dataset paper.</p>
+          <div class="release-metrics">
+            <span class="release-metric"><strong>67</strong><span>released events</span></span>
+            <span class="release-metric"><strong>817,442</strong><span>retained posts</span></span>
+            <span class="release-metric"><strong>67 / 64 / 55</strong><span>6H / 12H / 1D events</span></span>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <section class="section" id="data-model">
+      <div class="inner">
+        <div class="section-head"><h2>One event, four connected data layers.</h2><p>The stable unit is the event. Numerical, textual, and relational artifacts share identifiers and time boundaries so downstream analysis can move between signals without losing context.</p></div>
+        <div class="layer-grid">
+          <article class="layer"><span class="layer-index">01 · REGISTRY</span><h3>Event definition</h3><p>Stable ID, title, category, active period, notes, and available granularities.</p><code>event_metadata.json</code></article>
+          <article class="layer"><span class="layer-index">02 · TIME SERIES</span><h3>Temporal signals</h3><p>Raw and normalized post volume and mean sentiment polarity for each released bin.</p><code>comment_count.csv</code></article>
+          <article class="layer"><span class="layer-index">03 · TEXT</span><h3>Aligned evidence</h3><p>Sampled main posts and replies attached to the same event and time bin.</p><code>text_view.jsonl</code></article>
+          <article class="layer"><span class="layer-index">04 · GRAPH</span><h3>Interaction structure</h3><p>Reply, repost, quote, and comment edges with anonymized endpoints and times.</p><code>edges.jsonl</code></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="measurements">
+      <div class="inner">
+        <div class="section-head"><h2>Measurements are separated by purpose.</h2><p>Core observations, derived analyses, and task-specific metrics should not be presented as if they were equally direct or equally permanent.</p></div>
+        <table class="measurement-table">
+          <thead><tr><th>Layer</th><th>Examples</th><th>Interpretation</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Core observations</th><td>Post count, event window, bin boundaries, reply/repost edges</td><td>Directly constructed from the released event collection and its canonical preprocessing.</td><td><span class="status">Core</span></td></tr>
+            <tr><th scope="row">LLM-derived labels</th><td>Per-post polarity and bin-level Sentiment Polarity</td><td>Reproducible model-derived signals with documented prompts and validation—not gold-standard human labels.</td><td><span class="status derived">Derived</span></td></tr>
+            <tr><th scope="row">Public analysis</th><td>Topics, sentiment coverage, conversation diagnostics, stance or emotion views</td><td>Versioned analytical products. Availability and methods can vary by event and release.</td><td><span class="status derived">Derived</span></td></tr>
+            <tr><th scope="row">Benchmark targets</th><td>Discussion Intensity and Sentiment Polarity forecasting</td><td>Paper-aligned prediction tasks retained for reproducibility; they do not define the full future scope of SURGE.</td><td><span class="status extension">Task-specific</span></td></tr>
+          </tbody>
+        </table>
+        <p class="note">The paper-aligned sentiment series uses Qwen3-32B labels and reports a stratified verification study on 3,000 posts. Expanded releases should continue to publish model, prompt, sampling, coverage, and audit information alongside any new label family.</p>
+      </div>
+    </section>
+
+    <section class="section" id="standards">
+      <div class="inner">
+        <div class="section-head"><h2>A broader standard for an expanding dataset.</h2><p>Future releases should be judged by transparent coverage and data quality, not only by whether they reproduce one paper's forecasting score.</p></div>
+        <table class="standards-table">
+          <thead><tr><th>Dimension</th><th>What should be reported</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Coverage and balance</th><td>Event-family counts, platform coverage, active-period range, language availability, and retained versus candidate events.</td><td>Shows which kinds of public events the collection represents and where conclusions should not be generalized.</td></tr>
+            <tr><th scope="row">Completeness</th><td>Missing-bin rate, sentiment-label coverage, text-view availability, graph availability, and unknown-reason breakdowns.</td><td>Prevents absent labels or artifacts from being mistaken for neutral or zero-valued observations.</td></tr>
+            <tr><th scope="row">Temporal consistency</th><td>Timezone, bin alignment, active-window construction, sampling interval, and cross-granularity derivation rules.</td><td>Keeps event timelines comparable and prevents leakage across time boundaries.</td></tr>
+            <tr><th scope="row">Provenance</th><td>Collection source, query or seed version, pipeline version, transformation history, model and prompt version, and generation date.</td><td>Makes every published field traceable to the process that produced it.</td></tr>
+            <tr><th scope="row">Label validity</th><td>Annotation protocol, audit sample, agreement or error analysis, uncertainty, coverage, and known domain limitations.</td><td>Distinguishes useful derived signals from universal ground truth.</td></tr>
+            <tr><th scope="row">Graph integrity</th><td>Edge-type counts, unresolved endpoint rate, temporal validity, duplicate-edge rate, and node/edge coverage.</td><td>Clarifies whether structural conclusions are supported by complete and valid interaction records.</td></tr>
+            <tr><th scope="row">Reproducibility</th><td>Immutable release manifest, checksums, deterministic splits, schema version, loader version, and release notes.</td><td>Allows an experiment or public visualization to be reconstructed from a named release.</td></tr>
+            <tr><th scope="row">Privacy and responsible use</th><td>Anonymization rules, excluded identifiers, text-release policy, licensing, intended uses, and misuse boundaries.</td><td>Reduces re-identification and surveillance risks while keeping the dataset auditable.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section alt" id="benchmark">
+      <div class="inner task-band">
+        <div class="task-copy"><p class="eyebrow">Current benchmark profile</p><h2>Keep paper metrics reproducible, but label them as one task view.</h2><p>The original tasks remain valuable comparison anchors. Expanded SURGE releases can add analysis and evaluation views without redefining the canonical observations.</p></div>
+        <div class="task-list">
+          <div class="task-row"><span>TARGET 01</span><strong>Discussion Intensity</strong><p>Post volume per event-aligned bin, expressed as c<sub>t</sub> = |P<sub>t</sub>|.</p></div>
+          <div class="task-row"><span>TARGET 02</span><strong>Sentiment Polarity</strong><p>Mean model-assigned per-post polarity within each non-empty bin.</p></div>
+          <div class="task-row"><span>EVALUATION</span><strong>MAE, MSE, MAE_reply(k%)</strong><p>Implemented paper-aligned measures. Future reports should also include per-event distributions, category slices, coverage, and uncertainty rather than one aggregate score alone.</p></div>
+          <div class="task-row"><span>SPLITS</span><strong>Chronological 70 / 10 / 20</strong><p>Missing-bin imputation occurs inside each split so information never crosses a split boundary.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="files">
+      <div class="inner">
+        <div class="section-head"><h2>Release structure.</h2><p>Event-granularity artifacts and event-level graph artifacts are separated, while stable IDs keep them joinable.</p></div>
+        <pre class="file-tree" aria-label="SURGE release file structure">data/events/&lt;event_name&gt;_&lt;granularity&gt;/
+├── comment_count.csv
+├── comment_count_normalized.csv
+├── sentiment_polarity.csv
+├── sentiment_polarity_normalized.csv
+├── normalization.json
+└── text_view.jsonl
+
+data/events/&lt;event_name&gt;/
+├── edges.jsonl
+└── post_id_lookup.jsonl
+
+data/events/event_metadata.json</pre>
+      </div>
+    </section>
+
+    <section class="section alt" id="growth">
+      <div class="inner">
+        <div class="section-head"><h2>How SURGE can grow without losing comparability.</h2><p>The public collection can expand continuously while benchmark snapshots remain immutable and citable.</p></div>
+        <div class="growth-list">
+          <article class="growth-item"><span class="growth-number">01</span><div><h3>Stable event identity</h3><p>New collection passes can add events or artifacts without silently changing existing event IDs.</p></div></article>
+          <article class="growth-item"><span class="growth-number">02</span><div><h3>Layered releases</h3><p>Canonical observations, derived labels, and public analysis should carry separate versions and availability manifests.</p></div></article>
+          <article class="growth-item"><span class="growth-number">03</span><div><h3>Immutable benchmark views</h3><p>Paper-aligned snapshots preserve event lists, splits, targets, and preprocessing even as the broader collection grows.</p></div></article>
+          <article class="growth-item"><span class="growth-number">04</span><div><h3>Event-level quality records</h3><p>Each event should publish completeness, label coverage, graph integrity, provenance, and known limitations.</p></div></article>
+          <article class="growth-item"><span class="growth-number">05</span><div><h3>Comparable reporting</h3><p>Dataset summaries should include macro event results, category slices, missingness, and uncertainty alongside overall values.</p></div></article>
+          <article class="growth-item"><span class="growth-number">06</span><div><h3>Explicit deprecation</h3><p>Schema or method changes require migration notes instead of silently overwriting historical interpretations.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="inner">
+        <div class="section-head"><h2>Continue with the data or the events.</h2><p>The repository remains the source of truth for schemas and code; the public explorer presents the current event-level analysis.</p></div>
+        <div class="resource-links">
+          <a class="resource-link" href="live/index.html"><span>Explore Events</span><span aria-hidden="true">→</span></a>
+          <a class="resource-link" href="https://github.com/synlp/SURGE/blob/main/DATASHEET.md"><span>Datasheet</span><span aria-hidden="true">↗</span></a>
+          <a class="resource-link" href="https://github.com/synlp/SURGE/tree/main/schema"><span>Schema Documentation</span><span aria-hidden="true">↗</span></a>
+          <a class="resource-link" href="https://github.com/synlp/SURGE"><span>GitHub Repository</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="inner footer-inner"><span>SURGE Dataset</span><span><a href="index.html">Overview</a> · <a href="live/index.html">Explore Events</a></span></div></footer>
+</body>
+</html>
