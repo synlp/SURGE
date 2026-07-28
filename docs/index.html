@@ -360,24 +360,51 @@
       color: var(--blue);
     }
 
-    .figure-band {
+    .system-overview {
+      margin-top: 58px;
+      padding: 54px 0;
+      background: var(--ink);
+      color: #fff;
+    }
+    .system-overview-inner {
       width: min(1180px, calc(100% - 40px));
-      margin: 0 auto 58px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(250px, .7fr) minmax(0, 1.5fr);
+      gap: 58px;
+      align-items: start;
     }
-
-    .figure-frame {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: var(--shadow);
+    .overview-intro .eyebrow { color: #9dd8b4; }
+    .overview-intro h2 { max-width: 430px; font-size: 35px; }
+    .overview-intro p:not(.eyebrow) { max-width: 410px; margin: 16px 0 0; color: rgba(255, 255, 255, .68); font-size: 15px; }
+    .overview-intro a { display: inline-flex; gap: 8px; margin-top: 22px; color: #fff; font-size: 13px; font-weight: 850; text-decoration: none; }
+    .overview-model { min-width: 0; }
+    .overview-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid rgba(255, 255, 255, .2);
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
     }
-
-    .figure-frame img {
-      display: block;
-      width: 100%;
-      height: auto;
+    .overview-step {
+      min-width: 0;
+      padding: 24px 22px 25px;
+      border-left: 1px solid rgba(255, 255, 255, .2);
     }
+    .overview-step:first-child { padding-left: 0; border-left: 0; }
+    .overview-step-number { display: block; margin-bottom: 22px; color: #9dd8b4; font-size: 11px; font-weight: 850; letter-spacing: .1em; }
+    .overview-step strong { display: block; font-size: 21px; }
+    .overview-step p { margin: 9px 0 0; color: rgba(255, 255, 255, .62); font-size: 12px; line-height: 1.55; }
+    .overview-targets {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 9px 22px;
+      padding-top: 19px;
+      color: rgba(255, 255, 255, .62);
+      font-size: 12px;
+    }
+    .overview-targets > span:first-child { color: #9dd8b4; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+    .overview-targets strong { color: #fff; font-size: 13px; }
 
     .section {
       padding: 64px 0;
@@ -581,19 +608,21 @@
       .pathways,
       .grid,
       .section-head,
-      .layout {
+      .layout,
+      .system-overview-inner {
         grid-template-columns: 1fr;
       }
       .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .system-overview-inner { gap: 34px; }
     }
 
     @media (max-width: 540px) {
       .nav,
       .hero,
       .pathways,
-      .figure-band,
       .inner,
-      .footer-inner {
+      .footer-inner,
+      .system-overview-inner {
         width: min(100% - 28px, 1180px);
       }
 
@@ -603,6 +632,10 @@
       .stats { grid-template-columns: 1fr; }
       .stat, .stat:first-child { padding: 14px 0; border-left: 0; border-top: 1px solid var(--line); }
       .stat:first-child { border-top: 0; }
+      .system-overview { margin-top: 40px; padding: 40px 0; }
+      .overview-steps { grid-template-columns: 1fr; }
+      .overview-step, .overview-step:first-child { padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, .2); border-left: 0; }
+      .overview-step:first-child { border-top: 0; }
 
       h2 {
         font-size: 30px;
@@ -725,9 +758,38 @@
       </article>
     </section>
 
-    <section class="figure-band" aria-label="SURGE visual overview">
-      <div class="figure-frame">
-        <img src="assets/surge-overview.svg" alt="SURGE overview showing event coverage, temporal views, targets, and artifact stack.">
+    <section class="system-overview" aria-labelledby="system-overview-title">
+      <div class="system-overview-inner">
+        <div class="overview-intro">
+          <p class="eyebrow">How the release is organized</p>
+          <h2 id="system-overview-title">From public events to explainable time-based analysis.</h2>
+          <p>SURGE connects the numerical timeline to the text and interaction evidence behind it, so an event can be examined rather than reduced to a single score.</p>
+          <a href="#data-card">Review the release structure <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="overview-model">
+          <div class="overview-steps">
+            <div class="overview-step">
+              <span class="overview-step-number">01 · COVERAGE</span>
+              <strong>297 events</strong>
+              <p>2,600,877 posts across five broad event families.</p>
+            </div>
+            <div class="overview-step">
+              <span class="overview-step-number">02 · TIME</span>
+              <strong>6H primary view</strong>
+              <p>Event-aligned 12H and 1D derivatives support broader temporal comparisons.</p>
+            </div>
+            <div class="overview-step">
+              <span class="overview-step-number">03 · EVIDENCE</span>
+              <strong>Text + interaction graph</strong>
+              <p>Numerical series remain connected to aligned text and reply or repost structure.</p>
+            </div>
+          </div>
+          <div class="overview-targets">
+            <span>Forecasting targets</span>
+            <strong>Discussion Intensity</strong>
+            <strong>Sentiment Polarity</strong>
+          </div>
+        </div>
       </div>
     </section>
 
