@@ -432,15 +432,14 @@
 
     @media (max-width: 900px) {
       .nav {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 14px 0;
+        min-height: 60px;
+        padding: 8px 0;
       }
 
       .nav-links {
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 2px;
+        width: auto;
+        gap: 14px;
+        overflow: visible;
       }
 
       .hero {
@@ -485,6 +484,10 @@
       h1 {
         font-size: 35px;
       }
+      .brand { gap: 8px; }
+      .brand-mark { width: 30px; height: 30px; }
+      .nav-links { gap: 12px; font-size: 12px; }
+      .nav-links a:last-child { display: none; }
       .stats { grid-template-columns: 1fr; }
       .stat, .stat:first-child { padding: 14px 0; border-left: 0; border-top: 1px solid var(--line); }
       .stat:first-child { border-top: 0; }
@@ -524,8 +527,8 @@
       </a>
       <div class="nav-links">
         <a href="#overview">Overview</a>
-        <a href="dataset.html">Dataset Details</a>
-        <a class="nav-live" href="live/index.html">Explore Events</a>
+        <a href="dataset.html" aria-label="Dataset Details">Dataset</a>
+        <a class="nav-live" href="live/index.html" aria-label="Explore Events">Events</a>
         <a href="https://github.com/synlp/SURGE">GitHub</a>
       </div>
     </nav>

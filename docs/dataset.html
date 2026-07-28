@@ -96,8 +96,8 @@
     .footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--muted); font-size: 13px; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
     @media (max-width: 900px) {
-      .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
-      .nav-links { width: 100%; overflow-x: auto; padding-bottom: 2px; }
+      .nav { min-height: 60px; padding: 8px 0; }
+      .nav-links { width: auto; gap: 14px; overflow: visible; }
       .hero, .section-head, .task-band { grid-template-columns: 1fr; }
       .hero { gap: 34px; padding-top: 48px; }
       .hero-side { padding: 25px 0 0; border-top: 1px solid var(--line); border-left: 0; }
@@ -110,6 +110,14 @@
     }
     @media (max-width: 620px) {
       .nav, .shell, .inner { width: min(100% - 28px, 1180px); }
+      .brand { gap: 8px; }
+      .brand-mark { width: 30px; height: 30px; }
+      .nav-links { gap: 12px; font-size: 12px; }
+      .nav-links a:last-child { display: none; }
+      .hero { gap: 28px; padding: 42px 0 38px; }
+      h1 { font-size: clamp(35px, 10vw, 43px); }
+      .hero-copy { font-size: 17px; }
+      .section { padding: 52px 0; }
       .release-compare, .layer-grid, .growth-list, .resource-links { grid-template-columns: 1fr; }
       .release-column, .release-column:first-child { padding: 24px 0; }
       .release-column + .release-column { border-top: 1px solid var(--line); border-left: 0; }
@@ -132,8 +140,8 @@
       <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>SURGE</span></a>
       <div class="nav-links">
         <a href="index.html">Overview</a>
-        <a class="active" href="dataset.html" aria-current="page">Dataset Details</a>
-        <a href="live/index.html">Explore Events</a>
+        <a class="active" href="dataset.html" aria-current="page" aria-label="Dataset Details">Dataset</a>
+        <a href="live/index.html" aria-label="Explore Events">Events</a>
         <a href="https://github.com/synlp/SURGE">GitHub</a>
       </div>
     </nav>
