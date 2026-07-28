@@ -643,7 +643,15 @@
     .topic-keywords { display: flex; flex-wrap: wrap; gap: 6px; }
     .topic-keyword { padding: 3px 7px; border-radius: 999px; background: var(--paper); color: var(--muted); font-size: 10px; }
     .keyword-reveal { position: relative; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; padding: 4px 8px; border-radius: 999px; background: var(--paper); color: var(--muted); font-size: 9px; cursor: help; outline: none; }
-    .keyword-reveal::before { content: "⌁"; color: var(--blue); font-size: 12px; }
+    .keyword-reveal::before {
+      content: "";
+      width: 10px;
+      height: 2px;
+      margin-right: 1px;
+      border-radius: 999px;
+      background: var(--blue);
+      box-shadow: 0 3px var(--blue), 0 6px var(--blue);
+    }
     .keyword-reveal:focus { box-shadow: 0 0 0 2px rgba(36,84,166,.2); }
     .keyword-reveal-panel { position: absolute; top: calc(100% + 6px); left: 0; z-index: 12; display: flex; visibility: hidden; width: max-content; max-width: min(360px, calc(100vw - 64px)); flex-wrap: wrap; gap: 6px; padding: 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translateY(-3px); transition: opacity .15s ease, transform .15s ease, visibility .15s ease; }
     .keyword-reveal:hover .keyword-reveal-panel, .keyword-reveal:focus .keyword-reveal-panel, .keyword-reveal:focus-within .keyword-reveal-panel { visibility: visible; opacity: 1; transform: translateY(0); }
