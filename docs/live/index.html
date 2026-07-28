@@ -220,15 +220,93 @@
       text-align: left;
     }
     .category-icon {
+      position: relative;
       width: 34px;
       height: 34px;
-      display: inline-grid;
-      place-items: center;
+      display: inline-block;
       border-radius: 9px;
       background: var(--blue-soft);
       color: var(--blue);
-      font-size: 15px;
-      font-weight: 850;
+    }
+    .category-icon::before,
+    .category-icon::after { content: ""; position: absolute; box-sizing: border-box; }
+    .category-icon--sports-entertainment::before {
+      inset: 8px;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+    }
+    .category-icon--sports-entertainment::after {
+      width: 15px;
+      height: 7px;
+      top: 13px;
+      left: 10px;
+      border-top: 2px solid currentColor;
+      border-radius: 50%;
+      transform: rotate(-32deg);
+    }
+    .category-icon--technology::before {
+      width: 14px;
+      height: 14px;
+      top: 10px;
+      left: 10px;
+      border: 2px solid currentColor;
+      border-radius: 3px;
+    }
+    .category-icon--technology::after {
+      width: 2px;
+      height: 4px;
+      top: 6px;
+      left: 12px;
+      background: currentColor;
+      box-shadow: 8px 0 currentColor, 0 18px currentColor, 8px 18px currentColor,
+        -6px 6px currentColor, -6px 14px currentColor, 14px 6px currentColor, 14px 14px currentColor;
+    }
+    .category-icon--political::before {
+      width: 20px;
+      height: 7px;
+      top: 7px;
+      left: 7px;
+      border-right: 10px solid transparent;
+      border-bottom: 7px solid currentColor;
+      border-left: 10px solid transparent;
+    }
+    .category-icon--political::after {
+      width: 20px;
+      height: 13px;
+      top: 15px;
+      left: 7px;
+      border-top: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      background: linear-gradient(90deg, currentColor 0 2px, transparent 2px 6px, currentColor 6px 8px, transparent 8px 12px, currentColor 12px 14px, transparent 14px 18px, currentColor 18px 20px);
+    }
+    .category-icon--natural-disaster::before,
+    .category-icon--natural-disaster::after {
+      width: 18px;
+      height: 8px;
+      left: 8px;
+      border-bottom: 2px solid currentColor;
+      border-radius: 50%;
+    }
+    .category-icon--natural-disaster::before { top: 8px; }
+    .category-icon--natural-disaster::after { top: 15px; left: 10px; }
+    .category-icon--social-movement::before {
+      width: 6px;
+      height: 6px;
+      top: 8px;
+      left: 14px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: -8px 4px currentColor, 8px 4px currentColor;
+    }
+    .category-icon--social-movement::after {
+      width: 20px;
+      height: 9px;
+      top: 18px;
+      left: 7px;
+      border: 2px solid currentColor;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom: 0;
     }
     .category-copy { min-width: 0; }
     .category-card:hover, .category-card:focus-visible { border-color: var(--blue); background: var(--blue-soft); outline: none; }
@@ -513,13 +591,10 @@
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
     })[character]);
     const categoryLabel = value => String(value || "Other").replaceAll("_", " ").replace(/\b\w/g, letter => letter.toUpperCase());
-    const categoryIcon = value => ({
-      political: "◆",
-      natural_disaster: "≈",
-      social_movement: "◎",
-      technology: "⌘",
-      sports_entertainment: "★"
-    })[String(value || "").toLowerCase()] || "•";
+    const categoryIconClass = value => String(value || "other")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
     const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);
 
     function normalizedEvent(event) {
@@ -575,7 +650,7 @@
       $("#category-grid").innerHTML = [...counts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([category, count]) => `<button class="category-card" type="button" data-category="${escapeHtml(category)}">
-          <span class="category-icon" aria-hidden="true">${escapeHtml(categoryIcon(category))}</span>
+          <span class="category-icon category-icon--${escapeHtml(categoryIconClass(category))}" aria-hidden="true"></span>
           <span class="category-copy"><strong>${escapeHtml(categoryLabel(category))}</strong><span>${fmt.format(count)} events</span></span>
         </button>`).join("");
       document.querySelectorAll("[data-category]").forEach(button => button.addEventListener("click", () => {
