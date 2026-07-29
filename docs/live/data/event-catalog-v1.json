@@ -1,8 +1,8 @@
 {
   "schemaVersion": "surge-live-event-catalog-v1",
-  "generatedAt": "2026-07-27T11:09:24.711162Z",
+  "generatedAt": "2026-07-29T12:00:00Z",
   "partial": false,
-  "source": "unified_tree_public_aggregate",
+  "source": "unified_tree_public_aggregate_with_incremental_updates",
   "events": [
     {
       "id": "surge300v2-127",
@@ -15,9 +15,9 @@
       "eventDate": "2026-06-27",
       "windowStart": "2026-06-27T00:00:00Z",
       "windowEnd": "2026-07-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 10790,
-      "windowPostCount": 10790,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 10916,
+      "windowPostCount": 10916,
       "peakVolume": 1551,
       "platforms": [
         "x"
@@ -27,7 +27,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -41,10 +42,10 @@
       "eventDate": "2026-06-15",
       "windowStart": "2026-06-15T00:00:00Z",
       "windowEnd": "2026-07-13T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1163,
-      "windowPostCount": 1163,
-      "peakVolume": 334,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1911,
+      "windowPostCount": 1911,
+      "peakVolume": 548,
       "platforms": [
         "x"
       ],
@@ -53,7 +54,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -67,7 +69,7 @@
       "eventDate": "2026-06-14",
       "windowStart": "2026-06-14T00:00:00Z",
       "windowEnd": "2026-07-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2570,
       "windowPostCount": 2570,
       "peakVolume": 421,
@@ -79,7 +81,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -93,7 +96,7 @@
       "eventDate": "2026-06-14",
       "windowStart": "2026-06-14T00:00:00Z",
       "windowEnd": "2026-07-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 26606,
       "windowPostCount": 26606,
       "peakVolume": 3375,
@@ -105,7 +108,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -119,7 +123,7 @@
       "eventDate": "2026-06-12",
       "windowStart": "2026-06-12T00:00:00Z",
       "windowEnd": "2026-07-10T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 29293,
       "windowPostCount": 29293,
       "peakVolume": 2158,
@@ -131,7 +135,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -145,10 +150,10 @@
       "eventDate": "2026-06-10",
       "windowStart": "2026-06-10T00:00:00Z",
       "windowEnd": "2026-07-08T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 7299,
-      "windowPostCount": 7299,
-      "peakVolume": 422,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8843,
+      "windowPostCount": 8843,
+      "peakVolume": 524,
       "platforms": [
         "x"
       ],
@@ -157,7 +162,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -171,7 +177,7 @@
       "eventDate": "2026-06-08",
       "windowStart": "2026-06-08T00:00:00Z",
       "windowEnd": "2026-07-06T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 61,
       "windowPostCount": 61,
       "peakVolume": 17,
@@ -183,7 +189,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -197,7 +204,7 @@
       "eventDate": "2026-06-03",
       "windowStart": "2026-06-03T00:00:00Z",
       "windowEnd": "2026-07-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 87922,
       "windowPostCount": 87922,
       "peakVolume": 5058,
@@ -209,7 +216,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -223,10 +231,10 @@
       "eventDate": "2026-06-01",
       "windowStart": "2026-06-01T00:00:00Z",
       "windowEnd": "2026-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1313,
-      "windowPostCount": 1313,
-      "peakVolume": 87,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 2885,
+      "windowPostCount": 2885,
+      "peakVolume": 247,
       "platforms": [
         "x"
       ],
@@ -235,7 +243,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -249,10 +258,10 @@
       "eventDate": "2026-06-01",
       "windowStart": "2026-06-01T00:00:00Z",
       "windowEnd": "2026-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 4874,
-      "windowPostCount": 4874,
-      "peakVolume": 697,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 13036,
+      "windowPostCount": 13036,
+      "peakVolume": 2486,
       "platforms": [
         "x"
       ],
@@ -261,7 +270,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -275,10 +285,10 @@
       "eventDate": "2026-06-01",
       "windowStart": "2026-06-01T00:00:00Z",
       "windowEnd": "2026-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 5963,
-      "windowPostCount": 5963,
-      "peakVolume": 695,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 7101,
+      "windowPostCount": 7101,
+      "peakVolume": 871,
       "platforms": [
         "x"
       ],
@@ -287,7 +297,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -301,7 +312,7 @@
       "eventDate": "2026-05-30",
       "windowStart": "2026-05-30T00:00:00Z",
       "windowEnd": "2026-06-27T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 22718,
       "windowPostCount": 22718,
       "peakVolume": 3395,
@@ -313,7 +324,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -327,7 +339,7 @@
       "eventDate": "2026-05-26",
       "windowStart": "2026-05-26T00:00:00Z",
       "windowEnd": "2026-06-23T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 348,
       "windowPostCount": 348,
       "peakVolume": 25,
@@ -339,7 +351,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -353,7 +366,7 @@
       "eventDate": "2026-05-25",
       "windowStart": "2026-05-25T00:00:00Z",
       "windowEnd": "2026-06-22T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3,
       "windowPostCount": 3,
       "peakVolume": 2,
@@ -365,7 +378,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -379,7 +393,7 @@
       "eventDate": "2026-05-25",
       "windowStart": "2026-05-25T00:00:00Z",
       "windowEnd": "2026-06-22T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7683,
       "windowPostCount": 7683,
       "peakVolume": 410,
@@ -391,7 +405,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -405,7 +420,7 @@
       "eventDate": "2026-05-25",
       "windowStart": "2026-05-25T00:00:00Z",
       "windowEnd": "2026-06-22T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12736,
       "windowPostCount": 12736,
       "peakVolume": 1459,
@@ -417,7 +432,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -431,7 +447,7 @@
       "eventDate": "2026-05-24",
       "windowStart": "2026-05-24T00:00:00Z",
       "windowEnd": "2026-06-21T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 281,
       "windowPostCount": 281,
       "peakVolume": 73,
@@ -443,7 +459,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -457,7 +474,7 @@
       "eventDate": "2026-05-23",
       "windowStart": "2026-05-23T00:00:00Z",
       "windowEnd": "2026-06-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 465,
       "windowPostCount": 465,
       "peakVolume": 114,
@@ -469,7 +486,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -483,7 +501,7 @@
       "eventDate": "2026-05-20",
       "windowStart": "2026-05-20T00:00:00Z",
       "windowEnd": "2026-06-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6408,
       "windowPostCount": 6408,
       "peakVolume": 1947,
@@ -495,7 +513,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -509,7 +528,7 @@
       "eventDate": "2026-05-20",
       "windowStart": "2026-05-20T00:00:00Z",
       "windowEnd": "2026-06-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 764,
       "windowPostCount": 764,
       "peakVolume": 141,
@@ -521,7 +540,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -535,7 +555,7 @@
       "eventDate": "2026-05-20",
       "windowStart": "2026-05-20T00:00:00Z",
       "windowEnd": "2026-06-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1036,
       "windowPostCount": 1036,
       "peakVolume": 226,
@@ -547,7 +567,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -561,7 +582,7 @@
       "eventDate": "2026-05-18",
       "windowStart": "2026-05-18T00:00:00Z",
       "windowEnd": "2026-06-15T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12911,
       "windowPostCount": 12911,
       "peakVolume": 1492,
@@ -573,7 +594,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -587,10 +609,10 @@
       "eventDate": "2026-05-15",
       "windowStart": "2026-05-15T00:00:00Z",
       "windowEnd": "2026-06-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 11962,
-      "windowPostCount": 11962,
-      "peakVolume": 1747,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 19063,
+      "windowPostCount": 19063,
+      "peakVolume": 2530,
       "platforms": [
         "x"
       ],
@@ -599,7 +621,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -613,7 +636,7 @@
       "eventDate": "2026-05-15",
       "windowStart": "2026-05-15T00:00:00Z",
       "windowEnd": "2026-06-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6810,
       "windowPostCount": 6810,
       "peakVolume": 450,
@@ -625,7 +648,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -639,7 +663,7 @@
       "eventDate": "2026-05-14",
       "windowStart": "2026-05-14T00:00:00Z",
       "windowEnd": "2026-06-11T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 904,
       "windowPostCount": 904,
       "peakVolume": 73,
@@ -651,7 +675,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -665,7 +690,7 @@
       "eventDate": "2026-05-12",
       "windowStart": "2026-05-12T00:00:00Z",
       "windowEnd": "2026-06-09T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 249,
       "windowPostCount": 249,
       "peakVolume": 21,
@@ -677,7 +702,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -691,7 +717,7 @@
       "eventDate": "2026-05-04",
       "windowStart": "2026-05-04T00:00:00Z",
       "windowEnd": "2026-06-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 8218,
       "windowPostCount": 8218,
       "peakVolume": 792,
@@ -703,7 +729,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -717,10 +744,10 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 15495,
-      "windowPostCount": 15495,
-      "peakVolume": 2350,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 17253,
+      "windowPostCount": 17253,
+      "peakVolume": 2468,
       "platforms": [
         "x"
       ],
@@ -729,7 +756,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -743,7 +771,7 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 18919,
       "windowPostCount": 18919,
       "peakVolume": 1540,
@@ -755,7 +783,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -769,7 +798,7 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 872,
       "windowPostCount": 872,
       "peakVolume": 182,
@@ -781,7 +810,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -795,10 +825,10 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 9753,
-      "windowPostCount": 9753,
-      "peakVolume": 1356,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 18892,
+      "windowPostCount": 18892,
+      "peakVolume": 2538,
       "platforms": [
         "x"
       ],
@@ -807,7 +837,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -821,7 +852,7 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2282,
       "windowPostCount": 2282,
       "peakVolume": 545,
@@ -833,7 +864,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -847,10 +879,10 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 9753,
-      "windowPostCount": 9753,
-      "peakVolume": 1833,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 12100,
+      "windowPostCount": 12100,
+      "peakVolume": 2517,
       "platforms": [
         "x"
       ],
@@ -859,7 +891,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -873,10 +906,10 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 14757,
-      "windowPostCount": 14757,
-      "peakVolume": 1592,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 15759,
+      "windowPostCount": 15759,
+      "peakVolume": 1612,
       "platforms": [
         "x"
       ],
@@ -885,7 +918,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -899,7 +933,7 @@
       "eventDate": "2026-05-01",
       "windowStart": "2026-05-01T00:00:00Z",
       "windowEnd": "2026-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2267,
       "windowPostCount": 2267,
       "peakVolume": 663,
@@ -911,7 +945,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -925,7 +960,7 @@
       "eventDate": "2026-04-22",
       "windowStart": "2026-04-22T00:00:00Z",
       "windowEnd": "2026-05-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10141,
       "windowPostCount": 10141,
       "peakVolume": 922,
@@ -937,7 +972,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -951,9 +987,9 @@
       "eventDate": "2026-04-20",
       "windowStart": "2026-04-20T00:00:00Z",
       "windowEnd": "2026-05-18T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 934,
-      "windowPostCount": 934,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1004,
+      "windowPostCount": 1004,
       "peakVolume": 52,
       "platforms": [
         "x"
@@ -963,7 +999,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -977,7 +1014,7 @@
       "eventDate": "2026-04-20",
       "windowStart": "2026-04-20T00:00:00Z",
       "windowEnd": "2026-05-18T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 997,
       "windowPostCount": 997,
       "peakVolume": 303,
@@ -989,7 +1026,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1003,7 +1041,7 @@
       "eventDate": "2026-04-10",
       "windowStart": "2026-04-10T00:00:00Z",
       "windowEnd": "2026-05-08T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1403,
       "windowPostCount": 1403,
       "peakVolume": 554,
@@ -1015,7 +1053,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1029,7 +1068,7 @@
       "eventDate": "2026-04-01",
       "windowStart": "2026-04-01T00:00:00Z",
       "windowEnd": "2026-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2723,
       "windowPostCount": 2723,
       "peakVolume": 276,
@@ -1041,7 +1080,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1055,10 +1095,10 @@
       "eventDate": "2026-04-01",
       "windowStart": "2026-04-01T00:00:00Z",
       "windowEnd": "2026-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 11649,
-      "windowPostCount": 11649,
-      "peakVolume": 739,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 14413,
+      "windowPostCount": 14413,
+      "peakVolume": 800,
       "platforms": [
         "x"
       ],
@@ -1067,7 +1107,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1081,10 +1122,10 @@
       "eventDate": "2026-04-01",
       "windowStart": "2026-04-01T00:00:00Z",
       "windowEnd": "2026-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 14312,
-      "windowPostCount": 14312,
-      "peakVolume": 1128,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 17854,
+      "windowPostCount": 17854,
+      "peakVolume": 1263,
       "platforms": [
         "x"
       ],
@@ -1093,7 +1134,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1107,10 +1149,10 @@
       "eventDate": "2026-03-20",
       "windowStart": "2026-03-20T00:00:00Z",
       "windowEnd": "2026-04-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 4136,
-      "windowPostCount": 4136,
-      "peakVolume": 2087,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4411,
+      "windowPostCount": 4411,
+      "peakVolume": 2172,
       "platforms": [
         "x"
       ],
@@ -1119,7 +1161,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1133,7 +1176,7 @@
       "eventDate": "2026-03-09",
       "windowStart": "2026-03-09T00:00:00Z",
       "windowEnd": "2026-04-06T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1239,
       "windowPostCount": 1239,
       "peakVolume": 549,
@@ -1145,7 +1188,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1159,7 +1203,7 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 18807,
       "windowPostCount": 18807,
       "peakVolume": 856,
@@ -1171,7 +1215,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1185,7 +1230,7 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1428,
       "windowPostCount": 1428,
       "peakVolume": 293,
@@ -1197,7 +1242,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1211,7 +1257,7 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1049,
       "windowPostCount": 1049,
       "peakVolume": 349,
@@ -1223,7 +1269,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1237,10 +1284,10 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 205,
-      "windowPostCount": 205,
-      "peakVolume": 43,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1027,
+      "windowPostCount": 1027,
+      "peakVolume": 430,
       "platforms": [
         "x"
       ],
@@ -1249,7 +1296,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1263,7 +1311,7 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 18238,
       "windowPostCount": 18238,
       "peakVolume": 651,
@@ -1275,7 +1323,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1289,10 +1338,10 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6626,
-      "windowPostCount": 6626,
-      "peakVolume": 705,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 10751,
+      "windowPostCount": 10751,
+      "peakVolume": 1993,
       "platforms": [
         "x"
       ],
@@ -1301,7 +1350,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1315,7 +1365,7 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 8652,
       "windowPostCount": 8652,
       "peakVolume": 780,
@@ -1327,7 +1377,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1341,7 +1392,7 @@
       "eventDate": "2026-03-01",
       "windowStart": "2026-03-01T00:00:00Z",
       "windowEnd": "2026-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 25,
       "windowPostCount": 25,
       "peakVolume": 7,
@@ -1353,7 +1404,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1367,7 +1419,7 @@
       "eventDate": "2026-02-24",
       "windowStart": "2026-02-24T00:00:00Z",
       "windowEnd": "2026-03-24T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 28945,
       "windowPostCount": 28945,
       "peakVolume": 841,
@@ -1379,7 +1431,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1393,10 +1446,10 @@
       "eventDate": "2026-02-20",
       "windowStart": "2026-02-20T00:00:00Z",
       "windowEnd": "2026-03-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1512,
-      "windowPostCount": 1512,
-      "peakVolume": 813,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4055,
+      "windowPostCount": 4055,
+      "peakVolume": 1774,
       "platforms": [
         "x"
       ],
@@ -1405,7 +1458,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1419,7 +1473,7 @@
       "eventDate": "2026-02-05",
       "windowStart": "2026-02-05T00:00:00Z",
       "windowEnd": "2026-03-18T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 867,
       "windowPostCount": 867,
       "peakVolume": 134,
@@ -1431,7 +1485,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1445,7 +1500,7 @@
       "eventDate": "2025-12-17",
       "windowStart": "2025-12-17T00:00:00Z",
       "windowEnd": "2026-03-16T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1211,
       "windowPostCount": 1211,
       "peakVolume": 260,
@@ -1457,7 +1512,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1471,7 +1527,7 @@
       "eventDate": "2026-02-25",
       "windowStart": "2026-02-25T00:00:00Z",
       "windowEnd": "2026-03-14T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2581,
       "windowPostCount": 2581,
       "peakVolume": 220,
@@ -1483,7 +1539,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1497,7 +1554,7 @@
       "eventDate": "2025-11-05",
       "windowStart": "2025-11-05T00:00:00Z",
       "windowEnd": "2026-03-14T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 9124,
       "windowPostCount": 9124,
       "peakVolume": 454,
@@ -1509,7 +1566,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1523,7 +1581,7 @@
       "eventDate": "2026-02-07",
       "windowStart": "2026-02-07T00:00:00Z",
       "windowEnd": "2026-03-07T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 16813,
       "windowPostCount": 16813,
       "peakVolume": 951,
@@ -1535,7 +1593,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1549,7 +1608,7 @@
       "eventDate": "2026-02-04",
       "windowStart": "2026-02-04T00:00:00Z",
       "windowEnd": "2026-03-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 337,
       "windowPostCount": 337,
       "peakVolume": 35,
@@ -1561,7 +1620,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1575,7 +1635,7 @@
       "eventDate": "2026-02-01",
       "windowStart": "2026-02-01T00:00:00Z",
       "windowEnd": "2026-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 32,
       "windowPostCount": 32,
       "peakVolume": 14,
@@ -1587,7 +1647,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1601,10 +1662,10 @@
       "eventDate": "2026-02-01",
       "windowStart": "2026-02-01T00:00:00Z",
       "windowEnd": "2026-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 8628,
-      "windowPostCount": 8628,
-      "peakVolume": 398,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 11938,
+      "windowPostCount": 11938,
+      "peakVolume": 443,
       "platforms": [
         "x"
       ],
@@ -1613,7 +1674,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1627,7 +1689,7 @@
       "eventDate": "2026-02-01",
       "windowStart": "2026-02-01T00:00:00Z",
       "windowEnd": "2026-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 18263,
       "windowPostCount": 18263,
       "peakVolume": 844,
@@ -1639,7 +1701,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1653,10 +1716,10 @@
       "eventDate": "2026-02-01",
       "windowStart": "2026-02-01T00:00:00Z",
       "windowEnd": "2026-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2062,
-      "windowPostCount": 2062,
-      "peakVolume": 741,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 2302,
+      "windowPostCount": 2302,
+      "peakVolume": 761,
       "platforms": [
         "x"
       ],
@@ -1665,7 +1728,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1679,7 +1743,7 @@
       "eventDate": "2026-02-01",
       "windowStart": "2026-02-01T00:00:00Z",
       "windowEnd": "2026-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 16412,
       "windowPostCount": 16412,
       "peakVolume": 2609,
@@ -1691,7 +1755,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1705,7 +1770,7 @@
       "eventDate": "2026-02-01",
       "windowStart": "2026-02-01T00:00:00Z",
       "windowEnd": "2026-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2165,
       "windowPostCount": 2165,
       "peakVolume": 428,
@@ -1717,7 +1782,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1731,7 +1797,7 @@
       "eventDate": "2026-01-28",
       "windowStart": "2026-01-28T00:00:00Z",
       "windowEnd": "2026-02-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 81,
       "windowPostCount": 81,
       "peakVolume": 9,
@@ -1743,7 +1809,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1757,7 +1824,7 @@
       "eventDate": "2026-01-25",
       "windowStart": "2026-01-25T00:00:00Z",
       "windowEnd": "2026-02-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19958,
       "windowPostCount": 19958,
       "peakVolume": 872,
@@ -1769,7 +1836,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1783,7 +1851,7 @@
       "eventDate": "2026-01-23",
       "windowStart": "2026-01-23T00:00:00Z",
       "windowEnd": "2026-02-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19333,
       "windowPostCount": 19333,
       "peakVolume": 1713,
@@ -1795,7 +1863,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1809,7 +1878,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2026-02-08T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1329,
       "windowPostCount": 1329,
       "peakVolume": 159,
@@ -1821,7 +1890,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1835,7 +1905,7 @@
       "eventDate": "2026-01-05",
       "windowStart": "2026-01-05T00:00:00Z",
       "windowEnd": "2026-02-05T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 9093,
       "windowPostCount": 9093,
       "peakVolume": 360,
@@ -1847,7 +1917,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1861,7 +1932,7 @@
       "eventDate": "2026-01-07",
       "windowStart": "2026-01-07T00:00:00Z",
       "windowEnd": "2026-02-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 89,
       "windowPostCount": 89,
       "peakVolume": 63,
@@ -1873,7 +1944,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1887,7 +1959,7 @@
       "eventDate": "2025-12-20",
       "windowStart": "2025-12-20T00:00:00Z",
       "windowEnd": "2026-01-31T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1451,
       "windowPostCount": 1451,
       "peakVolume": 137,
@@ -1899,7 +1971,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1913,7 +1986,7 @@
       "eventDate": "2025-12-08",
       "windowStart": "2025-12-08T00:00:00Z",
       "windowEnd": "2026-01-30T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1106,
       "windowPostCount": 1106,
       "peakVolume": 168,
@@ -1925,7 +1998,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1939,7 +2013,7 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 11953,
       "windowPostCount": 11953,
       "peakVolume": 889,
@@ -1951,7 +2025,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1965,7 +2040,7 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 16155,
       "windowPostCount": 16155,
       "peakVolume": 948,
@@ -1977,7 +2052,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -1991,10 +2067,10 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 4950,
-      "windowPostCount": 4950,
-      "peakVolume": 459,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 5032,
+      "windowPostCount": 5032,
+      "peakVolume": 463,
       "platforms": [
         "x"
       ],
@@ -2003,7 +2079,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2017,10 +2094,10 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6758,
-      "windowPostCount": 6758,
-      "peakVolume": 546,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 7831,
+      "windowPostCount": 7831,
+      "peakVolume": 632,
       "platforms": [
         "x"
       ],
@@ -2029,7 +2106,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2043,7 +2121,7 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1880,
       "windowPostCount": 1880,
       "peakVolume": 398,
@@ -2055,7 +2133,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2069,10 +2148,10 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 870,
-      "windowPostCount": 870,
-      "peakVolume": 38,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 2511,
+      "windowPostCount": 2511,
+      "peakVolume": 144,
       "platforms": [
         "x"
       ],
@@ -2081,7 +2160,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2095,10 +2175,10 @@
       "eventDate": "2026-01-01",
       "windowStart": "2026-01-01T00:00:00Z",
       "windowEnd": "2026-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6086,
-      "windowPostCount": 6086,
-      "peakVolume": 335,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 6420,
+      "windowPostCount": 6420,
+      "peakVolume": 340,
       "platforms": [
         "x"
       ],
@@ -2107,7 +2187,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2121,7 +2202,7 @@
       "eventDate": "2024-01-31",
       "windowStart": "2024-01-31T00:00:00Z",
       "windowEnd": "2026-01-24T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7350,
       "windowPostCount": 7350,
       "peakVolume": 353,
@@ -2133,7 +2214,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2147,7 +2229,7 @@
       "eventDate": "2024-12-04",
       "windowStart": "2024-12-04T00:00:00Z",
       "windowEnd": "2026-01-20T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 26287,
       "windowPostCount": 26287,
       "peakVolume": 1006,
@@ -2159,7 +2241,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2173,7 +2256,7 @@
       "eventDate": "2025-10-15",
       "windowStart": "2025-10-15T00:00:00Z",
       "windowEnd": "2026-01-14T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10541,
       "windowPostCount": 10541,
       "peakVolume": 291,
@@ -2185,7 +2268,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2199,7 +2283,7 @@
       "eventDate": "2025-11-01",
       "windowStart": "2025-11-01T00:00:00Z",
       "windowEnd": "2026-01-14T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1012,
       "windowPostCount": 1012,
       "peakVolume": 422,
@@ -2211,7 +2295,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2225,7 +2310,7 @@
       "eventDate": "2025-01-01",
       "windowStart": "2025-01-01T00:00:00Z",
       "windowEnd": "2025-12-31T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 28328,
       "windowPostCount": 28328,
       "peakVolume": 251,
@@ -2237,7 +2322,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2251,7 +2337,7 @@
       "eventDate": "2025-12-01",
       "windowStart": "2025-12-01T00:00:00Z",
       "windowEnd": "2025-12-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12427,
       "windowPostCount": 12427,
       "peakVolume": 1988,
@@ -2263,7 +2349,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2277,7 +2364,7 @@
       "eventDate": "2025-12-01",
       "windowStart": "2025-12-01T00:00:00Z",
       "windowEnd": "2025-12-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 11284,
       "windowPostCount": 11284,
       "peakVolume": 622,
@@ -2289,7 +2376,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2303,10 +2391,10 @@
       "eventDate": "2025-12-01",
       "windowStart": "2025-12-01T00:00:00Z",
       "windowEnd": "2025-12-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 8427,
-      "windowPostCount": 8427,
-      "peakVolume": 641,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8546,
+      "windowPostCount": 8546,
+      "peakVolume": 646,
       "platforms": [
         "x"
       ],
@@ -2315,7 +2403,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2329,7 +2418,7 @@
       "eventDate": "2025-12-01",
       "windowStart": "2025-12-01T00:00:00Z",
       "windowEnd": "2025-12-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 11411,
       "windowPostCount": 11411,
       "peakVolume": 1406,
@@ -2341,7 +2430,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2355,7 +2445,7 @@
       "eventDate": "2024-12-09",
       "windowStart": "2024-12-09T00:00:00Z",
       "windowEnd": "2025-12-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7502,
       "windowPostCount": 7502,
       "peakVolume": 494,
@@ -2367,7 +2457,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2381,10 +2472,10 @@
       "eventDate": "2025-11-09",
       "windowStart": "2025-11-09T00:00:00Z",
       "windowEnd": "2025-12-07T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 9164,
-      "windowPostCount": 9164,
-      "peakVolume": 1365,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 15152,
+      "windowPostCount": 15152,
+      "peakVolume": 1642,
       "platforms": [
         "x"
       ],
@@ -2393,7 +2484,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2407,7 +2499,7 @@
       "eventDate": "2024-02-01",
       "windowStart": "2024-02-01T00:00:00Z",
       "windowEnd": "2025-12-05T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14477,
       "windowPostCount": 14477,
       "peakVolume": 525,
@@ -2419,7 +2511,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2433,10 +2526,10 @@
       "eventDate": "2025-11-01",
       "windowStart": "2025-11-01T00:00:00Z",
       "windowEnd": "2025-11-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 14592,
-      "windowPostCount": 14592,
-      "peakVolume": 1634,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 15001,
+      "windowPostCount": 15001,
+      "peakVolume": 1719,
       "platforms": [
         "x"
       ],
@@ -2445,7 +2538,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2459,7 +2553,7 @@
       "eventDate": "2025-11-01",
       "windowStart": "2025-11-01T00:00:00Z",
       "windowEnd": "2025-11-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19842,
       "windowPostCount": 19842,
       "peakVolume": 865,
@@ -2471,7 +2565,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2485,7 +2580,7 @@
       "eventDate": "2025-10-31",
       "windowStart": "2025-10-31T00:00:00Z",
       "windowEnd": "2025-11-28T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14697,
       "windowPostCount": 14697,
       "peakVolume": 706,
@@ -2497,7 +2592,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2511,7 +2607,7 @@
       "eventDate": "2025-09-15",
       "windowStart": "2025-09-15T00:00:00Z",
       "windowEnd": "2025-11-25T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 89548,
       "windowPostCount": 89548,
       "peakVolume": 3269,
@@ -2523,7 +2619,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2537,7 +2634,7 @@
       "eventDate": "2025-09-20",
       "windowStart": "2025-09-20T00:00:00Z",
       "windowEnd": "2025-11-15T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 66595,
       "windowPostCount": 66595,
       "peakVolume": 1836,
@@ -2549,7 +2646,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2563,7 +2661,7 @@
       "eventDate": "2025-06-07",
       "windowStart": "2025-06-07T12:00:00Z",
       "windowEnd": "2025-11-08T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10321,
       "windowPostCount": 10321,
       "peakVolume": 405,
@@ -2575,7 +2673,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2589,7 +2688,7 @@
       "eventDate": "2025-10-01",
       "windowStart": "2025-10-01T00:00:00Z",
       "windowEnd": "2025-10-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12128,
       "windowPostCount": 12128,
       "peakVolume": 1236,
@@ -2601,7 +2700,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2615,10 +2715,10 @@
       "eventDate": "2025-10-01",
       "windowStart": "2025-10-01T00:00:00Z",
       "windowEnd": "2025-10-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 13299,
-      "windowPostCount": 13299,
-      "peakVolume": 1024,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 13833,
+      "windowPostCount": 13833,
+      "peakVolume": 1026,
       "platforms": [
         "x"
       ],
@@ -2627,7 +2727,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2641,10 +2742,10 @@
       "eventDate": "2025-10-01",
       "windowStart": "2025-10-01T00:00:00Z",
       "windowEnd": "2025-10-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 5094,
-      "windowPostCount": 5094,
-      "peakVolume": 985,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8368,
+      "windowPostCount": 8368,
+      "peakVolume": 1282,
       "platforms": [
         "x"
       ],
@@ -2653,7 +2754,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2667,7 +2769,7 @@
       "eventDate": "2025-10-01",
       "windowStart": "2025-10-01T00:00:00Z",
       "windowEnd": "2025-10-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1237,
       "windowPostCount": 1237,
       "peakVolume": 393,
@@ -2679,7 +2781,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2693,10 +2796,10 @@
       "eventDate": "2025-10-01",
       "windowStart": "2025-10-01T00:00:00Z",
       "windowEnd": "2025-10-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 3026,
-      "windowPostCount": 3026,
-      "peakVolume": 913,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 3129,
+      "windowPostCount": 3129,
+      "peakVolume": 925,
       "platforms": [
         "x"
       ],
@@ -2705,7 +2808,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2719,7 +2823,7 @@
       "eventDate": "2025-09-26",
       "windowStart": "2025-09-26T00:00:00Z",
       "windowEnd": "2025-10-24T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14126,
       "windowPostCount": 14126,
       "peakVolume": 822,
@@ -2731,7 +2835,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2745,10 +2850,10 @@
       "eventDate": "2025-09-08",
       "windowStart": "2025-09-08T00:00:00Z",
       "windowEnd": "2025-10-06T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1080,
-      "windowPostCount": 1080,
-      "peakVolume": 299,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1187,
+      "windowPostCount": 1187,
+      "peakVolume": 300,
       "platforms": [
         "x"
       ],
@@ -2757,7 +2862,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2771,7 +2877,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-09-30T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 30532,
       "windowPostCount": 30532,
       "peakVolume": 536,
@@ -2783,7 +2889,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2797,7 +2904,7 @@
       "eventDate": "2025-09-01",
       "windowStart": "2025-09-01T00:00:00Z",
       "windowEnd": "2025-09-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 13588,
       "windowPostCount": 13588,
       "peakVolume": 812,
@@ -2809,7 +2916,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2823,7 +2931,7 @@
       "eventDate": "2025-09-01",
       "windowStart": "2025-09-01T00:00:00Z",
       "windowEnd": "2025-09-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1185,
       "windowPostCount": 1185,
       "peakVolume": 139,
@@ -2835,7 +2943,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2849,7 +2958,7 @@
       "eventDate": "2025-09-08",
       "windowStart": "2025-09-08T00:00:00Z",
       "windowEnd": "2025-09-24T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7985,
       "windowPostCount": 7985,
       "peakVolume": 422,
@@ -2861,7 +2970,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2875,7 +2985,7 @@
       "eventDate": "2025-08-20",
       "windowStart": "2025-08-20T00:00:00Z",
       "windowEnd": "2025-09-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 9857,
       "windowPostCount": 9857,
       "peakVolume": 782,
@@ -2887,7 +2997,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2901,10 +3012,10 @@
       "eventDate": "2025-08-18",
       "windowStart": "2025-08-18T00:00:00Z",
       "windowEnd": "2025-09-15T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 12571,
-      "windowPostCount": 12571,
-      "peakVolume": 2705,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 21771,
+      "windowPostCount": 21771,
+      "peakVolume": 3781,
       "platforms": [
         "x"
       ],
@@ -2913,7 +3024,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2927,7 +3039,7 @@
       "eventDate": "2025-08-15",
       "windowStart": "2025-08-15T00:00:00Z",
       "windowEnd": "2025-09-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6277,
       "windowPostCount": 6277,
       "peakVolume": 295,
@@ -2939,7 +3051,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2953,7 +3066,7 @@
       "eventDate": "2025-08-15",
       "windowStart": "2025-08-15T00:00:00Z",
       "windowEnd": "2025-09-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 616,
       "windowPostCount": 616,
       "peakVolume": 191,
@@ -2965,7 +3078,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -2979,7 +3093,7 @@
       "eventDate": "2025-08-05",
       "windowStart": "2025-08-05T00:00:00Z",
       "windowEnd": "2025-09-02T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 8045,
       "windowPostCount": 8045,
       "peakVolume": 619,
@@ -2991,7 +3105,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3005,10 +3120,10 @@
       "eventDate": "2025-08-01",
       "windowStart": "2025-08-01T00:00:00Z",
       "windowEnd": "2025-08-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 420,
-      "windowPostCount": 420,
-      "peakVolume": 43,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4093,
+      "windowPostCount": 4093,
+      "peakVolume": 904,
       "platforms": [
         "x"
       ],
@@ -3017,7 +3132,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3031,10 +3147,10 @@
       "eventDate": "2025-07-28",
       "windowStart": "2025-07-28T00:00:00Z",
       "windowEnd": "2025-08-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6984,
-      "windowPostCount": 6984,
-      "peakVolume": 2689,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 9159,
+      "windowPostCount": 9159,
+      "peakVolume": 3552,
       "platforms": [
         "x"
       ],
@@ -3043,7 +3159,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3057,7 +3174,7 @@
       "eventDate": "2025-07-08",
       "windowStart": "2025-07-08T00:00:00Z",
       "windowEnd": "2025-08-05T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 923,
       "windowPostCount": 923,
       "peakVolume": 123,
@@ -3069,7 +3186,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3083,9 +3201,9 @@
       "eventDate": "2025-07-07",
       "windowStart": "2025-07-07T00:00:00Z",
       "windowEnd": "2025-08-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1931,
-      "windowPostCount": 1931,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1935,
+      "windowPostCount": 1935,
       "peakVolume": 127,
       "platforms": [
         "x"
@@ -3095,7 +3213,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3109,10 +3228,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6079,
-      "windowPostCount": 6079,
-      "peakVolume": 1277,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 9053,
+      "windowPostCount": 9053,
+      "peakVolume": 1830,
       "platforms": [
         "x"
       ],
@@ -3121,7 +3240,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3135,7 +3255,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15375,
       "windowPostCount": 15375,
       "peakVolume": 1601,
@@ -3147,7 +3267,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3161,10 +3282,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 10099,
-      "windowPostCount": 10099,
-      "peakVolume": 3348,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 10132,
+      "windowPostCount": 10132,
+      "peakVolume": 3353,
       "platforms": [
         "x"
       ],
@@ -3173,7 +3294,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3187,10 +3309,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 9232,
-      "windowPostCount": 9232,
-      "peakVolume": 668,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 12810,
+      "windowPostCount": 12810,
+      "peakVolume": 830,
       "platforms": [
         "x"
       ],
@@ -3199,7 +3321,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3213,7 +3336,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14563,
       "windowPostCount": 14563,
       "peakVolume": 938,
@@ -3225,7 +3348,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3239,7 +3363,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1626,
       "windowPostCount": 1626,
       "peakVolume": 372,
@@ -3251,7 +3375,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3265,9 +3390,9 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 5460,
-      "windowPostCount": 5460,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 5484,
+      "windowPostCount": 5484,
       "peakVolume": 677,
       "platforms": [
         "x"
@@ -3277,7 +3402,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3291,7 +3417,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12981,
       "windowPostCount": 12981,
       "peakVolume": 928,
@@ -3303,7 +3429,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3317,10 +3444,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2560,
-      "windowPostCount": 2560,
-      "peakVolume": 739,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 3465,
+      "windowPostCount": 3465,
+      "peakVolume": 836,
       "platforms": [
         "x"
       ],
@@ -3329,7 +3456,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3343,7 +3471,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1242,
       "windowPostCount": 1242,
       "peakVolume": 292,
@@ -3355,7 +3483,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3369,7 +3498,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 17883,
       "windowPostCount": 17883,
       "peakVolume": 871,
@@ -3381,7 +3510,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3395,7 +3525,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 18338,
       "windowPostCount": 18338,
       "peakVolume": 2043,
@@ -3407,7 +3537,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3421,7 +3552,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15089,
       "windowPostCount": 15089,
       "peakVolume": 549,
@@ -3433,7 +3564,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3447,7 +3579,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 16419,
       "windowPostCount": 16419,
       "peakVolume": 1073,
@@ -3459,7 +3591,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3473,10 +3606,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 14536,
-      "windowPostCount": 14536,
-      "peakVolume": 3275,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 14540,
+      "windowPostCount": 14540,
+      "peakVolume": 3276,
       "platforms": [
         "x"
       ],
@@ -3485,7 +3618,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3499,10 +3633,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1428,
-      "windowPostCount": 1428,
-      "peakVolume": 128,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 6781,
+      "windowPostCount": 6781,
+      "peakVolume": 1731,
       "platforms": [
         "x"
       ],
@@ -3511,7 +3645,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3525,10 +3660,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 8010,
-      "windowPostCount": 8010,
-      "peakVolume": 1141,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 15509,
+      "windowPostCount": 15509,
+      "peakVolume": 2141,
       "platforms": [
         "x"
       ],
@@ -3537,7 +3672,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3551,7 +3687,7 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 18828,
       "windowPostCount": 18828,
       "peakVolume": 1850,
@@ -3563,7 +3699,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3577,10 +3714,10 @@
       "eventDate": "2025-07-01",
       "windowStart": "2025-07-01T00:00:00Z",
       "windowEnd": "2025-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 796,
-      "windowPostCount": 796,
-      "peakVolume": 61,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4062,
+      "windowPostCount": 4062,
+      "peakVolume": 298,
       "platforms": [
         "x"
       ],
@@ -3589,7 +3726,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3603,10 +3741,10 @@
       "eventDate": "2025-06-20",
       "windowStart": "2025-06-20T00:00:00Z",
       "windowEnd": "2025-07-18T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 4656,
-      "windowPostCount": 4656,
-      "peakVolume": 329,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 5203,
+      "windowPostCount": 5203,
+      "peakVolume": 333,
       "platforms": [
         "x"
       ],
@@ -3615,7 +3753,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3629,7 +3768,7 @@
       "eventDate": "2025-06-12",
       "windowStart": "2025-06-12T00:00:00Z",
       "windowEnd": "2025-07-16T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1065,
       "windowPostCount": 1065,
       "peakVolume": 122,
@@ -3641,7 +3780,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3655,7 +3795,7 @@
       "eventDate": "2025-07-03",
       "windowStart": "2025-07-03T00:00:00Z",
       "windowEnd": "2025-07-14T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3058,
       "windowPostCount": 3058,
       "peakVolume": 244,
@@ -3667,7 +3807,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3681,7 +3822,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-07-14T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 5424,
       "windowPostCount": 5424,
       "peakVolume": 1129,
@@ -3693,7 +3834,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3707,7 +3849,7 @@
       "eventDate": "2025-06-09",
       "windowStart": "2025-06-09T00:00:00Z",
       "windowEnd": "2025-07-07T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3832,
       "windowPostCount": 3832,
       "peakVolume": 201,
@@ -3719,7 +3861,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3733,7 +3876,7 @@
       "eventDate": "2025-06-06",
       "windowStart": "2025-06-06T00:00:00Z",
       "windowEnd": "2025-07-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12013,
       "windowPostCount": 12013,
       "peakVolume": 1700,
@@ -3745,7 +3888,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3759,7 +3903,7 @@
       "eventDate": "2025-06-13",
       "windowStart": "2025-06-13T00:00:00Z",
       "windowEnd": "2025-06-30T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 4882,
       "windowPostCount": 4882,
       "peakVolume": 433,
@@ -3771,7 +3915,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3785,10 +3930,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6968,
-      "windowPostCount": 6968,
-      "peakVolume": 884,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 7688,
+      "windowPostCount": 7688,
+      "peakVolume": 1085,
       "platforms": [
         "x"
       ],
@@ -3797,7 +3942,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3811,10 +3957,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 619,
-      "windowPostCount": 619,
-      "peakVolume": 108,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 629,
+      "windowPostCount": 629,
+      "peakVolume": 112,
       "platforms": [
         "x"
       ],
@@ -3823,7 +3969,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3837,7 +3984,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10174,
       "windowPostCount": 10174,
       "peakVolume": 665,
@@ -3849,7 +3996,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3863,10 +4011,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 3522,
-      "windowPostCount": 3522,
-      "peakVolume": 164,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 6324,
+      "windowPostCount": 6324,
+      "peakVolume": 650,
       "platforms": [
         "x"
       ],
@@ -3875,7 +4023,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3889,10 +4038,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 4811,
-      "windowPostCount": 4811,
-      "peakVolume": 2075,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8555,
+      "windowPostCount": 8555,
+      "peakVolume": 3378,
       "platforms": [
         "x"
       ],
@@ -3901,7 +4050,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3915,7 +4065,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 13396,
       "windowPostCount": 13396,
       "peakVolume": 2472,
@@ -3927,7 +4077,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3941,10 +4092,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 7126,
-      "windowPostCount": 7126,
-      "peakVolume": 1522,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 12396,
+      "windowPostCount": 12396,
+      "peakVolume": 2208,
       "platforms": [
         "x"
       ],
@@ -3953,7 +4104,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3967,7 +4119,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 13008,
       "windowPostCount": 13008,
       "peakVolume": 1621,
@@ -3979,7 +4131,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -3993,7 +4146,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10350,
       "windowPostCount": 10350,
       "peakVolume": 675,
@@ -4005,7 +4158,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4019,7 +4173,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14249,
       "windowPostCount": 14249,
       "peakVolume": 800,
@@ -4031,7 +4185,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4045,10 +4200,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6560,
-      "windowPostCount": 6560,
-      "peakVolume": 1282,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 6698,
+      "windowPostCount": 6698,
+      "peakVolume": 1332,
       "platforms": [
         "x"
       ],
@@ -4057,7 +4212,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4071,7 +4227,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 4435,
       "windowPostCount": 4435,
       "peakVolume": 1222,
@@ -4083,7 +4239,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4097,10 +4254,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 13827,
-      "windowPostCount": 13827,
-      "peakVolume": 1176,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 17221,
+      "windowPostCount": 17221,
+      "peakVolume": 1697,
       "platforms": [
         "x"
       ],
@@ -4109,7 +4266,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4123,10 +4281,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2168,
-      "windowPostCount": 2168,
-      "peakVolume": 487,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4946,
+      "windowPostCount": 4946,
+      "peakVolume": 650,
       "platforms": [
         "x"
       ],
@@ -4135,7 +4293,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4149,10 +4308,10 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2933,
-      "windowPostCount": 2933,
-      "peakVolume": 615,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 3579,
+      "windowPostCount": 3579,
+      "peakVolume": 636,
       "platforms": [
         "x"
       ],
@@ -4161,7 +4320,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4175,7 +4335,7 @@
       "eventDate": "2025-06-01",
       "windowStart": "2025-06-01T00:00:00Z",
       "windowEnd": "2025-06-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 476,
       "windowPostCount": 476,
       "peakVolume": 35,
@@ -4187,7 +4347,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4201,7 +4362,7 @@
       "eventDate": "2025-06-14",
       "windowStart": "2025-06-14T00:00:00Z",
       "windowEnd": "2025-06-27T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1341,
       "windowPostCount": 1341,
       "peakVolume": 232,
@@ -4213,7 +4374,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4227,7 +4389,7 @@
       "eventDate": "2024-10-15",
       "windowStart": "2024-10-15T00:00:00Z",
       "windowEnd": "2025-06-26T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 85953,
       "windowPostCount": 85953,
       "peakVolume": 977,
@@ -4239,7 +4401,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4253,7 +4416,7 @@
       "eventDate": "2025-05-28",
       "windowStart": "2025-05-28T00:00:00Z",
       "windowEnd": "2025-06-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3211,
       "windowPostCount": 3211,
       "peakVolume": 277,
@@ -4265,7 +4428,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4279,7 +4443,7 @@
       "eventDate": "2025-05-28",
       "windowStart": "2025-05-28T00:00:00Z",
       "windowEnd": "2025-06-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3762,
       "windowPostCount": 3762,
       "peakVolume": 844,
@@ -4291,7 +4455,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4305,10 +4470,10 @@
       "eventDate": "2025-05-27",
       "windowStart": "2025-05-27T00:00:00Z",
       "windowEnd": "2025-06-24T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2517,
-      "windowPostCount": 2517,
-      "peakVolume": 1629,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 3817,
+      "windowPostCount": 3817,
+      "peakVolume": 2268,
       "platforms": [
         "x"
       ],
@@ -4317,7 +4482,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4331,10 +4497,10 @@
       "eventDate": "2025-05-26",
       "windowStart": "2025-05-26T00:00:00Z",
       "windowEnd": "2025-06-23T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 7835,
-      "windowPostCount": 7835,
-      "peakVolume": 631,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 16356,
+      "windowPostCount": 16356,
+      "peakVolume": 1531,
       "platforms": [
         "x"
       ],
@@ -4343,7 +4509,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4357,10 +4524,10 @@
       "eventDate": "2025-05-26",
       "windowStart": "2025-05-26T00:00:00Z",
       "windowEnd": "2025-06-23T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1024,
-      "windowPostCount": 1024,
-      "peakVolume": 108,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 12465,
+      "windowPostCount": 12465,
+      "peakVolume": 1852,
       "platforms": [
         "x"
       ],
@@ -4369,7 +4536,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4383,10 +4551,10 @@
       "eventDate": "2025-05-13",
       "windowStart": "2025-05-13T00:00:00Z",
       "windowEnd": "2025-06-10T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6380,
-      "windowPostCount": 6380,
-      "peakVolume": 1942,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 6522,
+      "windowPostCount": 6522,
+      "peakVolume": 1982,
       "platforms": [
         "x"
       ],
@@ -4395,7 +4563,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4409,7 +4578,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14644,
       "windowPostCount": 14644,
       "peakVolume": 742,
@@ -4421,7 +4590,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4435,7 +4605,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15252,
       "windowPostCount": 15252,
       "peakVolume": 1349,
@@ -4447,7 +4617,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4461,7 +4632,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14139,
       "windowPostCount": 14139,
       "peakVolume": 2811,
@@ -4473,7 +4644,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4487,10 +4659,10 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 3831,
-      "windowPostCount": 3831,
-      "peakVolume": 681,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8025,
+      "windowPostCount": 8025,
+      "peakVolume": 2089,
       "platforms": [
         "x"
       ],
@@ -4499,7 +4671,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4513,10 +4686,10 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1716,
-      "windowPostCount": 1716,
-      "peakVolume": 126,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1901,
+      "windowPostCount": 1901,
+      "peakVolume": 183,
       "platforms": [
         "x"
       ],
@@ -4525,7 +4698,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4539,7 +4713,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10910,
       "windowPostCount": 10910,
       "peakVolume": 1610,
@@ -4551,7 +4725,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4565,10 +4740,10 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2425,
-      "windowPostCount": 2425,
-      "peakVolume": 656,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 2560,
+      "windowPostCount": 2560,
+      "peakVolume": 687,
       "platforms": [
         "x"
       ],
@@ -4577,7 +4752,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4591,7 +4767,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14727,
       "windowPostCount": 14727,
       "peakVolume": 1124,
@@ -4603,7 +4779,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4617,10 +4794,10 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6774,
-      "windowPostCount": 6774,
-      "peakVolume": 1204,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 7408,
+      "windowPostCount": 7408,
+      "peakVolume": 1378,
       "platforms": [
         "x"
       ],
@@ -4629,7 +4806,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4643,7 +4821,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 9987,
       "windowPostCount": 9987,
       "peakVolume": 1354,
@@ -4655,7 +4833,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4669,7 +4848,7 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 13788,
       "windowPostCount": 13788,
       "peakVolume": 2245,
@@ -4681,7 +4860,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4695,10 +4875,10 @@
       "eventDate": "2025-05-01",
       "windowStart": "2025-05-01T00:00:00Z",
       "windowEnd": "2025-05-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 14372,
-      "windowPostCount": 14372,
-      "peakVolume": 1613,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 15675,
+      "windowPostCount": 15675,
+      "peakVolume": 1757,
       "platforms": [
         "x"
       ],
@@ -4707,7 +4887,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4721,7 +4902,7 @@
       "eventDate": "2025-04-25",
       "windowStart": "2025-04-25T00:00:00Z",
       "windowEnd": "2025-05-23T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 104,
       "windowPostCount": 104,
       "peakVolume": 12,
@@ -4733,7 +4914,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4747,7 +4929,7 @@
       "eventDate": "2025-04-23",
       "windowStart": "2025-04-23T00:00:00Z",
       "windowEnd": "2025-05-21T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 861,
       "windowPostCount": 861,
       "peakVolume": 133,
@@ -4759,7 +4941,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4773,7 +4956,7 @@
       "eventDate": "2025-04-22",
       "windowStart": "2025-04-22T00:00:00Z",
       "windowEnd": "2025-05-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2623,
       "windowPostCount": 2623,
       "peakVolume": 366,
@@ -4785,7 +4968,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4799,7 +4983,7 @@
       "eventDate": "2025-03-30",
       "windowStart": "2025-03-30T00:00:00Z",
       "windowEnd": "2025-05-14T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19269,
       "windowPostCount": 19269,
       "peakVolume": 1191,
@@ -4811,7 +4995,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4825,7 +5010,7 @@
       "eventDate": "2025-04-22",
       "windowStart": "2025-04-22T00:00:00Z",
       "windowEnd": "2025-05-14T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 17877,
       "windowPostCount": 17877,
       "peakVolume": 769,
@@ -4837,7 +5022,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4851,7 +5037,7 @@
       "eventDate": "2025-04-15",
       "windowStart": "2025-04-15T00:00:00Z",
       "windowEnd": "2025-05-13T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 8005,
       "windowPostCount": 8005,
       "peakVolume": 335,
@@ -4863,7 +5049,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4877,10 +5064,10 @@
       "eventDate": "2025-04-15",
       "windowStart": "2025-04-15T00:00:00Z",
       "windowEnd": "2025-05-13T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 5737,
-      "windowPostCount": 5737,
-      "peakVolume": 587,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 14524,
+      "windowPostCount": 14524,
+      "peakVolume": 964,
       "platforms": [
         "x"
       ],
@@ -4889,7 +5076,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4903,10 +5091,10 @@
       "eventDate": "2025-04-14",
       "windowStart": "2025-04-14T00:00:00Z",
       "windowEnd": "2025-05-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 436,
-      "windowPostCount": 436,
-      "peakVolume": 164,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 5717,
+      "windowPostCount": 5717,
+      "peakVolume": 517,
       "platforms": [
         "x"
       ],
@@ -4915,7 +5103,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4929,7 +5118,7 @@
       "eventDate": "2025-04-14",
       "windowStart": "2025-04-14T00:00:00Z",
       "windowEnd": "2025-05-12T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2670,
       "windowPostCount": 2670,
       "peakVolume": 287,
@@ -4941,7 +5130,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4955,7 +5145,7 @@
       "eventDate": "2025-04-10",
       "windowStart": "2025-04-10T00:00:00Z",
       "windowEnd": "2025-05-08T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6139,
       "windowPostCount": 6139,
       "peakVolume": 1070,
@@ -4967,7 +5157,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -4981,7 +5172,7 @@
       "eventDate": "2025-04-08",
       "windowStart": "2025-04-08T00:00:00Z",
       "windowEnd": "2025-05-06T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1280,
       "windowPostCount": 1280,
       "peakVolume": 150,
@@ -4993,7 +5184,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5007,7 +5199,7 @@
       "eventDate": "2025-04-07",
       "windowStart": "2025-04-07T00:00:00Z",
       "windowEnd": "2025-05-05T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 17805,
       "windowPostCount": 17805,
       "peakVolume": 3496,
@@ -5019,7 +5211,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5033,7 +5226,7 @@
       "eventDate": "2025-04-03",
       "windowStart": "2025-04-03T00:00:00Z",
       "windowEnd": "2025-05-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6339,
       "windowPostCount": 6339,
       "peakVolume": 1285,
@@ -5045,7 +5238,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5059,10 +5253,10 @@
       "eventDate": "2025-04-02",
       "windowStart": "2025-04-02T00:00:00Z",
       "windowEnd": "2025-04-30T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 9766,
-      "windowPostCount": 9766,
-      "peakVolume": 714,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 24178,
+      "windowPostCount": 24178,
+      "peakVolume": 1011,
       "platforms": [
         "x"
       ],
@@ -5071,7 +5265,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5085,10 +5280,10 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 6377,
-      "windowPostCount": 6377,
-      "peakVolume": 3153,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 7652,
+      "windowPostCount": 7652,
+      "peakVolume": 3592,
       "platforms": [
         "x"
       ],
@@ -5097,7 +5292,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5111,7 +5307,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 989,
       "windowPostCount": 989,
       "peakVolume": 156,
@@ -5123,7 +5319,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5137,7 +5334,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 12765,
       "windowPostCount": 12765,
       "peakVolume": 902,
@@ -5149,7 +5346,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5163,7 +5361,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14181,
       "windowPostCount": 14181,
       "peakVolume": 1580,
@@ -5175,7 +5373,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5189,7 +5388,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14902,
       "windowPostCount": 14902,
       "peakVolume": 3645,
@@ -5201,7 +5400,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5215,7 +5415,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15592,
       "windowPostCount": 15592,
       "peakVolume": 1237,
@@ -5227,7 +5427,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5241,10 +5442,10 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 216,
-      "windowPostCount": 216,
-      "peakVolume": 70,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 220,
+      "windowPostCount": 220,
+      "peakVolume": 72,
       "platforms": [
         "x"
       ],
@@ -5253,7 +5454,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5267,10 +5469,10 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2037,
-      "windowPostCount": 2037,
-      "peakVolume": 377,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4145,
+      "windowPostCount": 4145,
+      "peakVolume": 536,
       "platforms": [
         "x"
       ],
@@ -5279,7 +5481,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5293,7 +5496,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 11886,
       "windowPostCount": 11886,
       "peakVolume": 884,
@@ -5305,7 +5508,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5319,7 +5523,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 16028,
       "windowPostCount": 16028,
       "peakVolume": 660,
@@ -5331,7 +5535,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5345,7 +5550,7 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14809,
       "windowPostCount": 14809,
       "peakVolume": 605,
@@ -5357,7 +5562,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5371,10 +5577,10 @@
       "eventDate": "2025-04-01",
       "windowStart": "2025-04-01T00:00:00Z",
       "windowEnd": "2025-04-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 8058,
-      "windowPostCount": 8058,
-      "peakVolume": 468,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8541,
+      "windowPostCount": 8541,
+      "peakVolume": 469,
       "platforms": [
         "x"
       ],
@@ -5383,7 +5589,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5397,7 +5604,7 @@
       "eventDate": "2025-03-29",
       "windowStart": "2025-03-29T00:00:00Z",
       "windowEnd": "2025-04-26T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7800,
       "windowPostCount": 7800,
       "peakVolume": 2106,
@@ -5409,7 +5616,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5423,7 +5631,7 @@
       "eventDate": "2025-03-25",
       "windowStart": "2025-03-25T00:00:00Z",
       "windowEnd": "2025-04-22T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 5117,
       "windowPostCount": 5117,
       "peakVolume": 362,
@@ -5435,7 +5643,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5449,7 +5658,7 @@
       "eventDate": "2025-03-20",
       "windowStart": "2025-03-20T00:00:00Z",
       "windowEnd": "2025-04-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6924,
       "windowPostCount": 6924,
       "peakVolume": 2219,
@@ -5461,7 +5670,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5475,7 +5685,7 @@
       "eventDate": "2025-03-17",
       "windowStart": "2025-03-17T00:00:00Z",
       "windowEnd": "2025-04-14T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 20,
       "windowPostCount": 20,
       "peakVolume": 2,
@@ -5487,7 +5697,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5501,7 +5712,7 @@
       "eventDate": "2025-03-16",
       "windowStart": "2025-03-16T00:00:00Z",
       "windowEnd": "2025-04-13T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1623,
       "windowPostCount": 1623,
       "peakVolume": 424,
@@ -5513,7 +5724,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5527,7 +5739,7 @@
       "eventDate": "2025-03-20",
       "windowStart": "2025-03-20T00:00:00Z",
       "windowEnd": "2025-04-09T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 402,
       "windowPostCount": 402,
       "peakVolume": 37,
@@ -5539,7 +5751,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5553,7 +5766,7 @@
       "eventDate": "2025-03-10",
       "windowStart": "2025-03-10T00:00:00Z",
       "windowEnd": "2025-04-07T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 68,
       "windowPostCount": 68,
       "peakVolume": 7,
@@ -5565,7 +5778,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5579,7 +5793,7 @@
       "eventDate": "2025-03-08",
       "windowStart": "2025-03-08T00:00:00Z",
       "windowEnd": "2025-04-05T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6195,
       "windowPostCount": 6195,
       "peakVolume": 978,
@@ -5591,7 +5805,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5605,7 +5820,7 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7986,
       "windowPostCount": 7986,
       "peakVolume": 521,
@@ -5617,7 +5832,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5631,7 +5847,7 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14663,
       "windowPostCount": 14663,
       "peakVolume": 3428,
@@ -5643,7 +5859,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5657,10 +5874,10 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1070,
-      "windowPostCount": 1070,
-      "peakVolume": 188,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 2896,
+      "windowPostCount": 2896,
+      "peakVolume": 791,
       "platforms": [
         "x"
       ],
@@ -5669,7 +5886,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5683,10 +5901,10 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 3730,
-      "windowPostCount": 3730,
-      "peakVolume": 1373,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 3841,
+      "windowPostCount": 3841,
+      "peakVolume": 1420,
       "platforms": [
         "x"
       ],
@@ -5695,7 +5913,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5709,7 +5928,7 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 9027,
       "windowPostCount": 9027,
       "peakVolume": 1480,
@@ -5721,7 +5940,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5735,7 +5955,7 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 14552,
       "windowPostCount": 14552,
       "peakVolume": 1136,
@@ -5747,7 +5967,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5761,10 +5982,10 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 5551,
-      "windowPostCount": 5551,
-      "peakVolume": 1276,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 5790,
+      "windowPostCount": 5790,
+      "peakVolume": 1389,
       "platforms": [
         "x"
       ],
@@ -5773,7 +5994,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5787,9 +6009,9 @@
       "eventDate": "2025-03-01",
       "windowStart": "2025-03-01T00:00:00Z",
       "windowEnd": "2025-03-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 8626,
-      "windowPostCount": 8626,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 8628,
+      "windowPostCount": 8628,
       "peakVolume": 2247,
       "platforms": [
         "x"
@@ -5799,7 +6021,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5813,7 +6036,7 @@
       "eventDate": "2025-02-25",
       "windowStart": "2025-02-25T00:00:00Z",
       "windowEnd": "2025-03-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2840,
       "windowPostCount": 2840,
       "peakVolume": 680,
@@ -5825,7 +6048,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5839,10 +6063,10 @@
       "eventDate": "2025-02-23",
       "windowStart": "2025-02-23T00:00:00Z",
       "windowEnd": "2025-03-23T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 1360,
-      "windowPostCount": 1360,
-      "peakVolume": 67,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 1916,
+      "windowPostCount": 1916,
+      "peakVolume": 88,
       "platforms": [
         "x"
       ],
@@ -5851,7 +6075,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5865,10 +6090,10 @@
       "eventDate": "2025-02-21",
       "windowStart": "2025-02-21T00:00:00Z",
       "windowEnd": "2025-03-21T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 15720,
-      "windowPostCount": 15720,
-      "peakVolume": 3240,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 19817,
+      "windowPostCount": 19817,
+      "peakVolume": 4434,
       "platforms": [
         "x"
       ],
@@ -5877,7 +6102,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5891,10 +6117,10 @@
       "eventDate": "2025-02-20",
       "windowStart": "2025-02-20T00:00:00Z",
       "windowEnd": "2025-03-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 7404,
-      "windowPostCount": 7404,
-      "peakVolume": 981,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 11017,
+      "windowPostCount": 11017,
+      "peakVolume": 1725,
       "platforms": [
         "x"
       ],
@@ -5903,7 +6129,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5917,7 +6144,7 @@
       "eventDate": "2025-02-20",
       "windowStart": "2025-02-20T00:00:00Z",
       "windowEnd": "2025-03-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 16996,
       "windowPostCount": 16996,
       "peakVolume": 2082,
@@ -5929,7 +6156,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5943,7 +6171,7 @@
       "eventDate": "2025-02-17",
       "windowStart": "2025-02-17T00:00:00Z",
       "windowEnd": "2025-03-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1845,
       "windowPostCount": 1845,
       "peakVolume": 71,
@@ -5955,7 +6183,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5969,7 +6198,7 @@
       "eventDate": "2025-01-08",
       "windowStart": "2025-01-08T12:00:00Z",
       "windowEnd": "2025-03-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2558,
       "windowPostCount": 2558,
       "peakVolume": 192,
@@ -5981,7 +6210,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -5995,7 +6225,7 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2791,
       "windowPostCount": 2791,
       "peakVolume": 298,
@@ -6007,7 +6237,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6021,7 +6252,7 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3,
       "windowPostCount": 3,
       "peakVolume": 1,
@@ -6033,7 +6264,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6047,10 +6279,10 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 3915,
-      "windowPostCount": 3915,
-      "peakVolume": 278,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 4642,
+      "windowPostCount": 4642,
+      "peakVolume": 283,
       "platforms": [
         "x"
       ],
@@ -6059,7 +6291,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6073,10 +6306,10 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 11230,
-      "windowPostCount": 11230,
-      "peakVolume": 2442,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 18099,
+      "windowPostCount": 18099,
+      "peakVolume": 5371,
       "platforms": [
         "x"
       ],
@@ -6085,7 +6318,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6099,9 +6333,9 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 13787,
-      "windowPostCount": 13787,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 14160,
+      "windowPostCount": 14160,
       "peakVolume": 1203,
       "platforms": [
         "x"
@@ -6111,7 +6345,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6125,9 +6360,9 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 13852,
-      "windowPostCount": 13852,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 13861,
+      "windowPostCount": 13861,
       "peakVolume": 2969,
       "platforms": [
         "x"
@@ -6137,7 +6372,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6151,7 +6387,7 @@
       "eventDate": "2025-02-01",
       "windowStart": "2025-02-01T00:00:00Z",
       "windowEnd": "2025-03-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2769,
       "windowPostCount": 2769,
       "peakVolume": 546,
@@ -6163,7 +6399,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6177,7 +6414,7 @@
       "eventDate": "2024-12-02",
       "windowStart": "2024-12-02T00:00:00Z",
       "windowEnd": "2025-02-28T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 38752,
       "windowPostCount": 38752,
       "peakVolume": 2158,
@@ -6189,7 +6426,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6203,7 +6441,7 @@
       "eventDate": "2025-01-31",
       "windowStart": "2025-01-31T00:00:00Z",
       "windowEnd": "2025-02-28T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2780,
       "windowPostCount": 2780,
       "peakVolume": 391,
@@ -6215,7 +6453,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6229,10 +6468,10 @@
       "eventDate": "2025-01-28",
       "windowStart": "2025-01-28T00:00:00Z",
       "windowEnd": "2025-02-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 416,
-      "windowPostCount": 416,
-      "peakVolume": 175,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 6643,
+      "windowPostCount": 6643,
+      "peakVolume": 2385,
       "platforms": [
         "x"
       ],
@@ -6241,7 +6480,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6255,7 +6495,7 @@
       "eventDate": "2025-01-23",
       "windowStart": "2025-01-23T00:00:00Z",
       "windowEnd": "2025-02-20T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3420,
       "windowPostCount": 3420,
       "peakVolume": 368,
@@ -6267,7 +6507,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6281,9 +6522,9 @@
       "eventDate": "2025-01-20",
       "windowStart": "2025-01-20T00:00:00Z",
       "windowEnd": "2025-02-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 13474,
-      "windowPostCount": 13474,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 13475,
+      "windowPostCount": 13475,
       "peakVolume": 2044,
       "platforms": [
         "x"
@@ -6293,7 +6534,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6307,7 +6549,7 @@
       "eventDate": "2025-01-20",
       "windowStart": "2025-01-20T00:00:00Z",
       "windowEnd": "2025-02-17T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15828,
       "windowPostCount": 15828,
       "peakVolume": 1445,
@@ -6319,7 +6561,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6333,10 +6576,10 @@
       "eventDate": "2025-01-10",
       "windowStart": "2025-01-10T00:00:00Z",
       "windowEnd": "2025-02-07T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
-      "postCount": 2297,
-      "windowPostCount": 2297,
-      "peakVolume": 599,
+      "updatedAt": "2026-07-29T12:00:00Z",
+      "postCount": 2298,
+      "windowPostCount": 2298,
+      "peakVolume": 600,
       "platforms": [
         "x"
       ],
@@ -6345,7 +6588,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6359,7 +6603,7 @@
       "eventDate": "2025-01-09",
       "windowStart": "2025-01-09T00:00:00Z",
       "windowEnd": "2025-02-06T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1072,
       "windowPostCount": 1072,
       "peakVolume": 186,
@@ -6371,7 +6615,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6385,7 +6630,7 @@
       "eventDate": "2025-01-07",
       "windowStart": "2025-01-07T00:00:00Z",
       "windowEnd": "2025-02-04T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 193,
       "windowPostCount": 193,
       "peakVolume": 60,
@@ -6397,7 +6642,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6411,7 +6657,7 @@
       "eventDate": "2025-01-01",
       "windowStart": "2025-01-01T00:00:00Z",
       "windowEnd": "2025-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19140,
       "windowPostCount": 19140,
       "peakVolume": 3823,
@@ -6423,7 +6669,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6437,7 +6684,7 @@
       "eventDate": "2025-01-01",
       "windowStart": "2025-01-01T00:00:00Z",
       "windowEnd": "2025-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10644,
       "windowPostCount": 10644,
       "peakVolume": 1468,
@@ -6449,7 +6696,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6463,7 +6711,7 @@
       "eventDate": "2025-01-01",
       "windowStart": "2025-01-01T00:00:00Z",
       "windowEnd": "2025-01-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15384,
       "windowPostCount": 15384,
       "peakVolume": 1872,
@@ -6475,7 +6723,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6489,7 +6738,7 @@
       "eventDate": "2024-12-04",
       "windowStart": "2024-12-04T00:00:00Z",
       "windowEnd": "2025-01-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 17267,
       "windowPostCount": 17267,
       "peakVolume": 5027,
@@ -6501,7 +6750,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6515,7 +6765,7 @@
       "eventDate": "2024-10-29",
       "windowStart": "2024-10-29T00:00:00Z",
       "windowEnd": "2024-11-26T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7766,
       "windowPostCount": 7766,
       "peakVolume": 471,
@@ -6527,7 +6777,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6541,7 +6792,7 @@
       "eventDate": "2024-10-22",
       "windowStart": "2024-10-22T00:00:00Z",
       "windowEnd": "2024-11-19T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 13579,
       "windowPostCount": 13579,
       "peakVolume": 700,
@@ -6553,7 +6804,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6567,7 +6819,7 @@
       "eventDate": "2024-10-22",
       "windowStart": "2024-10-22T00:00:00Z",
       "windowEnd": "2024-11-12T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1539,
       "windowPostCount": 1539,
       "peakVolume": 287,
@@ -6579,7 +6831,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6593,7 +6846,7 @@
       "eventDate": "2024-10-05",
       "windowStart": "2024-10-05T00:00:00Z",
       "windowEnd": "2024-11-02T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15889,
       "windowPostCount": 15889,
       "peakVolume": 1836,
@@ -6605,7 +6858,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6619,7 +6873,7 @@
       "eventDate": "2024-09-24",
       "windowStart": "2024-09-24T00:00:00Z",
       "windowEnd": "2024-10-22T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15212,
       "windowPostCount": 15212,
       "peakVolume": 1629,
@@ -6631,7 +6885,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6645,7 +6900,7 @@
       "eventDate": "2024-09-01",
       "windowStart": "2024-09-01T00:00:00Z",
       "windowEnd": "2024-09-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 6713,
       "windowPostCount": 6713,
       "peakVolume": 298,
@@ -6657,7 +6912,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6671,7 +6927,7 @@
       "eventDate": "2024-04-29",
       "windowStart": "2024-04-29T00:00:00Z",
       "windowEnd": "2024-09-19T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 900,
       "windowPostCount": 900,
       "peakVolume": 62,
@@ -6683,7 +6939,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6697,7 +6954,7 @@
       "eventDate": "2024-07-12",
       "windowStart": "2024-07-12T00:00:00Z",
       "windowEnd": "2024-08-31T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19711,
       "windowPostCount": 19711,
       "peakVolume": 951,
@@ -6709,7 +6966,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6723,7 +6981,7 @@
       "eventDate": "2024-07-29",
       "windowStart": "2024-07-29T00:00:00Z",
       "windowEnd": "2024-08-26T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 5171,
       "windowPostCount": 5171,
       "peakVolume": 739,
@@ -6735,7 +6993,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6749,7 +7008,7 @@
       "eventDate": "2024-07-01",
       "windowStart": "2024-07-01T00:00:00Z",
       "windowEnd": "2024-08-14T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 39068,
       "windowPostCount": 39068,
       "peakVolume": 1295,
@@ -6761,7 +7020,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6775,7 +7035,7 @@
       "eventDate": "2024-07-01",
       "windowStart": "2024-07-01T00:00:00Z",
       "windowEnd": "2024-07-29T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1894,
       "windowPostCount": 1894,
       "peakVolume": 146,
@@ -6787,7 +7047,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6801,7 +7062,7 @@
       "eventDate": "2024-06-28",
       "windowStart": "2024-06-28T00:00:00Z",
       "windowEnd": "2024-07-26T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 17308,
       "windowPostCount": 17308,
       "peakVolume": 898,
@@ -6813,7 +7074,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6827,7 +7089,7 @@
       "eventDate": "2024-03-11",
       "windowStart": "2024-03-11T00:00:00Z",
       "windowEnd": "2024-06-25T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1486,
       "windowPostCount": 1486,
       "peakVolume": 93,
@@ -6839,7 +7101,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6853,7 +7116,7 @@
       "eventDate": "2024-05-24",
       "windowStart": "2024-05-24T00:00:00Z",
       "windowEnd": "2024-06-21T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 5961,
       "windowPostCount": 5961,
       "peakVolume": 391,
@@ -6865,7 +7128,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6879,7 +7143,7 @@
       "eventDate": "2024-02-28",
       "windowStart": "2024-02-28T00:00:00Z",
       "windowEnd": "2024-06-06T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1418,
       "windowPostCount": 1418,
       "peakVolume": 98,
@@ -6891,7 +7155,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6905,7 +7170,7 @@
       "eventDate": "2024-05-05",
       "windowStart": "2024-05-05T00:00:00Z",
       "windowEnd": "2024-05-28T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 74,
       "windowPostCount": 74,
       "peakVolume": 11,
@@ -6917,7 +7182,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6931,7 +7197,7 @@
       "eventDate": "2024-04-29",
       "windowStart": "2024-04-29T00:00:00Z",
       "windowEnd": "2024-05-27T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 17082,
       "windowPostCount": 17082,
       "peakVolume": 832,
@@ -6943,7 +7209,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6957,7 +7224,7 @@
       "eventDate": "2024-04-15",
       "windowStart": "2024-04-15T00:00:00Z",
       "windowEnd": "2024-05-13T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1622,
       "windowPostCount": 1622,
       "peakVolume": 170,
@@ -6969,7 +7236,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -6983,7 +7251,7 @@
       "eventDate": "2024-05-04",
       "windowStart": "2024-05-04T06:00:00Z",
       "windowEnd": "2024-05-11T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 466,
       "windowPostCount": 466,
       "peakVolume": 188,
@@ -6995,7 +7263,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7009,7 +7278,7 @@
       "eventDate": "2024-04-03",
       "windowStart": "2024-04-03T00:00:00Z",
       "windowEnd": "2024-05-01T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2131,
       "windowPostCount": 2131,
       "peakVolume": 275,
@@ -7021,7 +7290,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7035,7 +7305,7 @@
       "eventDate": "2024-03-26",
       "windowStart": "2024-03-26T06:00:00Z",
       "windowEnd": "2024-04-02T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2504,
       "windowPostCount": 2504,
       "peakVolume": 436,
@@ -7047,7 +7317,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7061,7 +7332,7 @@
       "eventDate": "2024-03-22",
       "windowStart": "2024-03-22T12:00:00Z",
       "windowEnd": "2024-04-02T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1062,
       "windowPostCount": 1062,
       "peakVolume": 276,
@@ -7073,7 +7344,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7087,7 +7359,7 @@
       "eventDate": "2024-01-01",
       "windowStart": "2024-01-01T00:00:00Z",
       "windowEnd": "2024-01-31T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2711,
       "windowPostCount": 2711,
       "peakVolume": 456,
@@ -7099,7 +7371,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7113,7 +7386,7 @@
       "eventDate": "2024-01-02",
       "windowStart": "2024-01-02T00:00:00Z",
       "windowEnd": "2024-01-30T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1613,
       "windowPostCount": 1613,
       "peakVolume": 373,
@@ -7125,7 +7398,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7139,7 +7413,7 @@
       "eventDate": "2023-10-01",
       "windowStart": "2023-10-01T00:00:00Z",
       "windowEnd": "2023-12-23T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 10976,
       "windowPostCount": 10976,
       "peakVolume": 491,
@@ -7151,7 +7425,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7165,7 +7440,7 @@
       "eventDate": "2023-07-01",
       "windowStart": "2023-07-01T00:00:00Z",
       "windowEnd": "2023-12-08T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2579,
       "windowPostCount": 2579,
       "peakVolume": 138,
@@ -7177,7 +7452,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7191,7 +7467,7 @@
       "eventDate": "2023-05-02",
       "windowStart": "2023-05-02T00:00:00Z",
       "windowEnd": "2023-06-24T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 683,
       "windowPostCount": 683,
       "peakVolume": 167,
@@ -7203,7 +7479,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7217,7 +7494,7 @@
       "eventDate": "2023-03-01",
       "windowStart": "2023-03-01T00:00:00Z",
       "windowEnd": "2023-05-03T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 640,
       "windowPostCount": 640,
       "peakVolume": 42,
@@ -7229,7 +7506,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7243,7 +7521,7 @@
       "eventDate": "2023-03-14",
       "windowStart": "2023-03-14T00:00:00Z",
       "windowEnd": "2023-04-05T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 289,
       "windowPostCount": 289,
       "peakVolume": 29,
@@ -7255,7 +7533,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7269,7 +7548,7 @@
       "eventDate": "2023-01-03",
       "windowStart": "2023-01-03T00:00:00Z",
       "windowEnd": "2023-03-31T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 909,
       "windowPostCount": 909,
       "peakVolume": 37,
@@ -7281,7 +7560,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7295,7 +7575,7 @@
       "eventDate": "2023-02-01",
       "windowStart": "2023-02-01T00:00:00Z",
       "windowEnd": "2023-03-29T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 4589,
       "windowPostCount": 4589,
       "peakVolume": 452,
@@ -7307,7 +7587,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7321,7 +7602,7 @@
       "eventDate": "2022-03-28",
       "windowStart": "2022-03-28T00:00:00Z",
       "windowEnd": "2023-01-24T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2131,
       "windowPostCount": 2131,
       "peakVolume": 207,
@@ -7333,7 +7614,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7347,7 +7629,7 @@
       "eventDate": "2022-11-01",
       "windowStart": "2022-11-01T00:00:00Z",
       "windowEnd": "2022-12-31T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 22071,
       "windowPostCount": 22071,
       "peakVolume": 630,
@@ -7359,7 +7641,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7373,7 +7656,7 @@
       "eventDate": "2022-11-10",
       "windowStart": "2022-11-10T00:00:00Z",
       "windowEnd": "2022-12-28T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1842,
       "windowPostCount": 1842,
       "peakVolume": 261,
@@ -7385,7 +7668,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7399,7 +7683,7 @@
       "eventDate": "2022-10-09",
       "windowStart": "2022-10-09T00:00:00Z",
       "windowEnd": "2022-11-27T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 7778,
       "windowPostCount": 7778,
       "peakVolume": 451,
@@ -7411,7 +7695,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7425,7 +7710,7 @@
       "eventDate": "2022-09-07",
       "windowStart": "2022-09-07T00:00:00Z",
       "windowEnd": "2022-11-07T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 8603,
       "windowPostCount": 8603,
       "peakVolume": 232,
@@ -7437,7 +7722,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7451,7 +7737,7 @@
       "eventDate": "2022-10-10",
       "windowStart": "2022-10-10T00:00:00Z",
       "windowEnd": "2022-11-02T06:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 132,
       "windowPostCount": 132,
       "peakVolume": 12,
@@ -7463,7 +7749,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7477,7 +7764,7 @@
       "eventDate": "2022-08-20",
       "windowStart": "2022-08-20T00:00:00Z",
       "windowEnd": "2022-09-30T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 4359,
       "windowPostCount": 4359,
       "peakVolume": 154,
@@ -7489,7 +7776,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7503,7 +7791,7 @@
       "eventDate": "2022-09-24",
       "windowStart": "2022-09-24T12:00:00Z",
       "windowEnd": "2022-09-30T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 2959,
       "windowPostCount": 2959,
       "peakVolume": 421,
@@ -7515,7 +7803,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7529,7 +7818,7 @@
       "eventDate": "2022-09-18",
       "windowStart": "2022-09-18T00:00:00Z",
       "windowEnd": "2022-09-29T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3587,
       "windowPostCount": 3587,
       "peakVolume": 297,
@@ -7541,7 +7830,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7555,7 +7845,7 @@
       "eventDate": "2022-06-24",
       "windowStart": "2022-06-24T12:00:00Z",
       "windowEnd": "2022-08-18T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 3961,
       "windowPostCount": 3961,
       "peakVolume": 232,
@@ -7567,7 +7857,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7581,7 +7872,7 @@
       "eventDate": "2022-07-01",
       "windowStart": "2022-07-01T00:00:00Z",
       "windowEnd": "2022-08-03T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1613,
       "windowPostCount": 1613,
       "peakVolume": 220,
@@ -7593,7 +7884,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7607,7 +7899,7 @@
       "eventDate": "2022-06-12",
       "windowStart": "2022-06-12T00:00:00Z",
       "windowEnd": "2022-07-31T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 19686,
       "windowPostCount": 19686,
       "peakVolume": 401,
@@ -7619,7 +7911,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7633,7 +7926,7 @@
       "eventDate": "2022-04-01",
       "windowStart": "2022-04-01T00:00:00Z",
       "windowEnd": "2022-05-31T00:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1046,
       "windowPostCount": 1046,
       "peakVolume": 295,
@@ -7645,7 +7938,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7659,7 +7953,7 @@
       "eventDate": "2022-02-01",
       "windowStart": "2022-02-01T00:00:00Z",
       "windowEnd": "2022-03-28T18:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 5214,
       "windowPostCount": 5214,
       "peakVolume": 150,
@@ -7671,7 +7965,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7685,7 +7980,7 @@
       "eventDate": "2022-01-17",
       "windowStart": "2022-01-17T00:00:00Z",
       "windowEnd": "2022-03-10T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 15846,
       "windowPostCount": 15846,
       "peakVolume": 667,
@@ -7697,7 +7992,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     },
     {
@@ -7711,7 +8007,7 @@
       "eventDate": "2022-01-01",
       "windowStart": "2022-01-01T00:00:00Z",
       "windowEnd": "2022-01-31T12:00:00Z",
-      "updatedAt": "2026-07-27T11:09:24.711162Z",
+      "updatedAt": "2026-07-29T12:00:00Z",
       "postCount": 1213,
       "windowPostCount": 1213,
       "peakVolume": 73,
@@ -7723,7 +8019,8 @@
       "availableSections": [
         "overview",
         "timeline",
-        "conversation_structure"
+        "conversation_structure",
+        "sentiment"
       ]
     }
   ]
