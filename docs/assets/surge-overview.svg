@@ -20,7 +20,7 @@
 
   <g transform="translate(90 210)">
     <text x="0" y="0" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Released coverage</text>
-    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">297 events, 2,810,462 posts, five event families</text>
+    <text x="0" y="34" fill="#5d677c" font-family="Inter, Arial, sans-serif" font-size="16">341 events, 3,068,313 posts, five event families</text>
     <g transform="translate(0 72)">
       <rect x="0" y="0" width="310" height="44" rx="8" fill="#edf3ff" stroke="#b9c8e6"/>
       <text x="14" y="28" fill="#14213d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="750">political</text>
