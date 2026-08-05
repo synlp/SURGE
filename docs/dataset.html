@@ -168,8 +168,8 @@
           <h2>Event Explorer release</h2>
           <p>The current public website presents aggregate activity and available analysis across the expanded event collection. It is optimized for event discovery and interpretation.</p>
           <div class="release-metrics">
-            <span class="release-metric"><strong>348</strong><span>events</span></span>
-            <span class="release-metric"><strong>4.93M</strong><span>posts represented</span></span>
+            <span class="release-metric"><strong id="public-event-count">348</strong><span>events</span></span>
+            <span class="release-metric"><strong id="public-post-count">5.01M</strong><span>posts represented</span></span>
             <span class="release-metric"><strong>6H</strong><span>public timeline view</span></span>
           </div>
         </article>
@@ -292,5 +292,18 @@ data/events/event_metadata.json</pre>
   </main>
 
   <footer class="footer"><div class="inner footer-inner"><span>SURGE Dataset</span><span><a href="index.html">Overview</a> · <a href="live/index.html">Explore Events</a></span></div></footer>
+  <script src="live/data/event-catalog-v1.js"></script>
+  <script>
+    (() => {
+      const events = window.SURGE_EVENT_CATALOG?.events;
+      if (!Array.isArray(events) || !events.length) return;
+      const totalPosts = events.reduce((sum, event) => sum + Number(event.postCount || event.sourcePostCount || 0), 0);
+      document.querySelector("#public-event-count").textContent = new Intl.NumberFormat("en-US").format(events.length);
+      document.querySelector("#public-post-count").textContent = new Intl.NumberFormat("en-US", {
+        notation: "compact",
+        maximumFractionDigits: 2
+      }).format(totalPosts);
+    })();
+  </script>
 </body>
 </html>
