@@ -241,6 +241,7 @@
     }
     .panel-kicker { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
     .timeline-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; }
+    #focus-time { max-width: 100%; white-space: normal; text-align: right; line-height: 1.35; }
 
     .focus-panel { overflow: visible; }
     .focus-title { margin: 0 0 5px; font-size: clamp(21px, 2.3vw, 29px); font-weight: 500; letter-spacing: -0.025em; }
@@ -765,6 +766,7 @@
       .metric:first-child { border-top: 0; }
       .focus-panel .panel-head { align-items: flex-start; flex-direction: column; }
       .timeline-actions { width: 100%; align-items: center; justify-content: space-between; }
+      .timeline-actions #focus-time { width: 100%; justify-content: flex-start; text-align: left; }
       .series-head { align-items: flex-start; flex-direction: column; }
       .series-tabs { display: grid; width: 100%; grid-template-columns: 1fr 1fr; }
       .series-body { padding: 12px 14px 14px; }
@@ -882,7 +884,7 @@
             <div class="range-group" role="group" aria-label="Chart time range">
               <button class="control-button" type="button" data-range="4" aria-pressed="false">24H</button>
               <button class="control-button" type="button" data-range="28" aria-pressed="false">7D</button>
-              <button class="control-button" type="button" data-range="all" aria-pressed="true">All</button>
+              <button class="control-button" type="button" data-range="all" aria-pressed="true">Full event</button>
             </div>
             <span class="badge" id="focus-time">—</span>
           </div>
@@ -1141,6 +1143,18 @@
     const dateFmt = new Intl.DateTimeFormat("en", { dateStyle: "medium", timeZone: "UTC" });
     const selectedEvent = () => activeEvents.find(event => event.id === state.eventId) || activeEvents[0];
     const currentPoint = (event) => event.points[Math.min(state.index, event.points.length - 1)];
+    const visibleBounds = (event) => {
+      const end = event.points.length;
+      const length = Math.min(end, Math.max(1, Number(state.range) || end));
+      return { start: Math.max(0, end - length), end };
+    };
+    const visibleRangeLabel = (event) => {
+      const visible = visibleBounds(event).end - visibleBounds(event).start;
+      if (visible >= event.points.length) return "Full event";
+      if (visible === 4) return "24H";
+      if (visible === 28) return "7D";
+      return `${visible * 6}H`;
+    };
     const sentimentLabel = value => value > .2 ? "Positive" : value < -.2 ? "Negative" : "Mixed / neutral";
     const signed = value => `${value > 0 ? "+" : ""}${value.toFixed(2)}`;
     const pctDelta = (current, previous) => previous === 0 ? (current === 0 ? 0 : 100) : ((current - previous) / previous) * 100;
@@ -1196,8 +1210,7 @@
     }
 
     function renderCharts(event) {
-      const end = Math.min(state.index + 1, event.points.length);
-      const start = Math.max(0, end - state.range);
+      const { start, end } = visibleBounds(event);
       const points = event.points.slice(start, end);
       const pointRadius = points.length > 60 ? 1.8 : 3.2;
       const width = 820, left = 54, right = 18, plotWidth = width - left - right;
@@ -1280,8 +1293,7 @@
     }
 
     function renderSentimentSeries(event) {
-      const end = Math.min(state.index + 1, event.points.length);
-      const start = Math.max(0, end - state.range);
+      const { start, end } = visibleBounds(event);
       const visibleIndexes = Array.from({ length: end - start }, (_, index) => start + index);
       const cumulative = [];
       const running = { posts: 0, analyzed: 0, positive: 0, neutral: 0, negative: 0 };
@@ -1415,8 +1427,7 @@
         content.innerHTML = `<p class="conversation-quality-empty">Discussion-quality detail is unavailable for this snapshot.</p>`;
         return;
       }
-      const end = Math.min(state.index + 1, replayEvent.points.length);
-      const start = Math.max(0, end - state.range);
+      const { start, end } = visibleBounds(event);
       const points = replayEvent.points.slice(start, end);
       const totals = points.reduce((sum, point) => ({
         content: sum.content + Number(point.content || 0),
@@ -1640,8 +1651,7 @@
       const qualityFoldSummary = $("#topic-quality-fold-summary");
       renderTopicReview(event);
       const topics = event.topics || [];
-      const end = Math.min(state.index + 1, event.points.length);
-      const start = Math.max(0, end - state.range);
+      const { start, end } = visibleBounds(event);
       const windowPoints = event.points.slice(start, end);
       evolutionFoldSummary.textContent = `${windowPoints.length} bins · ${windowPoints[0]?.[0] || "No start"} to ${windowPoints[windowPoints.length - 1]?.[0] || "No end"}`;
       const counts = topics.map(() => 0);
@@ -2069,6 +2079,8 @@
 
     function render() {
       const event = selectedEvent();
+      const { start: visibleStart, end: visibleEnd } = visibleBounds(event);
+      if (state.index < visibleStart || state.index >= visibleEnd) state.index = visibleEnd - 1;
       const topicsAvailable = event.topicAnalysisAvailable !== false;
       document.querySelector(".stance-panel").hidden = false;
       document.querySelector(".topic-panel").hidden = !topicsAvailable;
@@ -2083,7 +2095,8 @@
         $("#mode-badge").className = "badge";
         $("#mode-badge").textContent = "Activity and sentiment";
       }
-      els.slider.max = event.points.length - 1;
+      els.slider.min = visibleStart;
+      els.slider.max = visibleEnd - 1;
       els.slider.value = state.index;
       $("#focus-title").textContent = event.title;
       document.title = `${event.title} | SURGE Live`;
@@ -2091,9 +2104,12 @@
       $("#event-category").textContent = event.category;
       const windowDays = Math.max(1, Math.round((new Date(event.windowEnd) - new Date(event.windowStart)) / 86400000));
       $("#event-window").textContent = `${dateFmt.format(new Date(event.windowStart))} – ${dateFmt.format(new Date(event.windowEnd))} · ${windowDays}-day event window`;
-      $("#focus-time").textContent = currentPoint(event)[0];
-      $("#replay-detail").textContent = `${currentPoint(event)[0]} · ${state.index + 1} of ${event.points.length}`;
-      $("#freshness").textContent = `Through ${currentPoint(event)[0]}`;
+      const rangeStart = event.points[visibleStart][0];
+      const rangeEnd = event.points[visibleEnd - 1][0];
+      $("#focus-time").textContent = `${visibleRangeLabel(event)} · ${rangeStart} to ${rangeEnd}`;
+      $("#focus-time").title = `Visible chart range: ${rangeStart} to ${rangeEnd}`;
+      $("#replay-detail").textContent = `${currentPoint(event)[0]} · interval ${state.index - visibleStart + 1} of ${visibleEnd - visibleStart} in view`;
+      $("#freshness").textContent = `Through ${event.points[event.points.length - 1][0]}`;
       const selected = currentPoint(event);
       const selectedDetail = selected[3] || {};
       const selectedVolume = Number(selected[1] || 0);
@@ -2169,6 +2185,7 @@
 
     document.querySelectorAll("[data-range]").forEach(button => button.addEventListener("click", () => {
       state.range = button.dataset.range === "all" ? selectedEvent().points.length : Number(button.dataset.range);
+      state.index = selectedEvent().points.length - 1;
       document.querySelectorAll("[data-range]").forEach(peer => peer.setAttribute("aria-pressed", String(peer === button)));
       render();
     }));
