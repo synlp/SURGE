@@ -1143,8 +1143,15 @@
     const dateFmt = new Intl.DateTimeFormat("en", { dateStyle: "medium", timeZone: "UTC" });
     const selectedEvent = () => activeEvents.find(event => event.id === state.eventId) || activeEvents[0];
     const currentPoint = (event) => event.points[Math.min(state.index, event.points.length - 1)];
+    const lastObservedIndex = (event) => {
+      for (let index = event.points.length - 1; index >= 0; index -= 1) {
+        if (Number(event.points[index][1] || 0) > 0) return index;
+      }
+      return Math.max(0, event.points.length - 1);
+    };
     const visibleBounds = (event) => {
-      const end = event.points.length;
+      const fullEvent = Number(state.range) >= event.points.length;
+      const end = fullEvent ? event.points.length : lastObservedIndex(event) + 1;
       const length = Math.min(end, Math.max(1, Number(state.range) || end));
       return { start: Math.max(0, end - length), end };
     };
@@ -2184,8 +2191,9 @@
     }
 
     document.querySelectorAll("[data-range]").forEach(button => button.addEventListener("click", () => {
-      state.range = button.dataset.range === "all" ? selectedEvent().points.length : Number(button.dataset.range);
-      state.index = selectedEvent().points.length - 1;
+      const event = selectedEvent();
+      state.range = button.dataset.range === "all" ? event.points.length : Number(button.dataset.range);
+      state.index = lastObservedIndex(event);
       document.querySelectorAll("[data-range]").forEach(peer => peer.setAttribute("aria-pressed", String(peer === button)));
       render();
     }));
@@ -2213,7 +2221,7 @@
         }];
         liveMetadata = payload;
         state.eventId = activeEvents[0].id;
-        state.index = selectedEvent().points.length - 1;
+        state.index = lastObservedIndex(selectedEvent());
         state.range = selectedEvent().points.length;
         render();
         hideDataNotice();
