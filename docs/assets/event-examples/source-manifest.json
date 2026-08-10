@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-10",
+  "note": "Homepage example media downloaded from the media attached to each listed public post. The homepage uses local cached copies and retains these source URLs for provenance.",
+  "items": [
+    {"event":"hotset-001","sentiment":"positive","postUrl":"https://x.com/ActuFoot_/status/1812979222446514559","mediaUrl":"https://pbs.twimg.com/media/GSj--0TXQAAA3G0.jpg?name=orig","localFile":"copa-positive.jpg"},
+    {"event":"hotset-001","sentiment":"neutral","postUrl":"https://x.com/ELTIEMPO/status/1812656007249567958","mediaUrl":"https://pbs.twimg.com/media/GSfLqX4W8AASTSE.jpg?name=orig","localFile":"copa-neutral.jpg"},
+    {"event":"hotset-001","sentiment":"negative","postUrl":"https://x.com/AtaqueFutbolero/status/1813292276875210935","mediaUrl":"https://pbs.twimg.com/media/GSobcMtXkAAEa8n.jpg?name=orig","localFile":"copa-negative.jpg"},
+    {"event":"hotset-005","sentiment":"positive","postUrl":"https://x.com/Cultination1/status/1833465272889405706","mediaUrl":"https://pbs.twimg.com/media/GXHG7fVWYAA0G0o.jpg?name=orig","localFile":"iphone-positive.jpg"},
+    {"event":"hotset-005","sentiment":"neutral","postUrl":"https://x.com/Stocktwits/status/1833207236342296638","mediaUrl":"https://pbs.twimg.com/media/GXDcQXcXIAA9IHO.jpg?name=orig","localFile":"iphone-neutral.jpg"},
+    {"event":"hotset-005","sentiment":"negative","postUrl":"https://x.com/redmagicgaming/status/1833779637534789739","mediaUrl":"https://pbs.twimg.com/media/GXLkohtbsAALqM-.jpg?name=orig","localFile":"iphone-negative.jpg"},
+    {"event":"hotset-049","sentiment":"positive","postUrl":"https://x.com/NetflixFR/status/1857589403532632164","mediaUrl":"https://pbs.twimg.com/media/GccJWLPWUAA7ko_.jpg","localFile":"tyson-positive.jpg"},
+    {"event":"hotset-049","sentiment":"neutral","postUrl":"https://x.com/MailSport/status/1857629487527006513","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/1857629202884780032/img/TLFKo829sdLQMnG6.jpg","localFile":"tyson-neutral.jpg"},
+    {"event":"hotset-049","sentiment":"negative","postUrl":"https://x.com/Dexerto/status/1857632195516530901","mediaUrl":"https://pbs.twimg.com/media/GceinSYWsAEnQW_.jpg?name=orig","localFile":"tyson-negative.jpg"}
+  ]
+}
