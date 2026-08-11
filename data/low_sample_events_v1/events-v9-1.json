@@ -1,7 +1,7 @@
 {
   "schemaVersion": "surge-live-events-v5",
   "releaseMode": "low_sample_archive",
-  "generatedAt": "2026-08-09T09:55:49.104678Z",
+  "generatedAt": "2026-08-11T11:53:31.436638Z",
   "granularity": "6H",
   "topicMethod": "Not included in the public timeline release",
   "topicLabelMethod": "Not included",
@@ -24886,6 +24886,2268 @@
       ]
     },
     {
+      "id": "surge300v2-155",
+      "sourceEventId": "SURGE300V2-155",
+      "title": "Live Nation antitrust settlement and ticketing debate 2026",
+      "category": "Social Movement",
+      "summary": "Explore public discussion and participation around Live Nation antitrust settlement and ticketing debate 2026, including when activity intensified across the published event window.",
+      "narrative": "This page summarizes 1,239 posts from the catalog-defined event window for Live Nation antitrust settlement and ticketing debate 2026. It focuses on observable activity, timing, and conversation structure.",
+      "entities": [],
+      "location": "",
+      "sourceCategory": "Social Movement",
+      "tags": [
+        "SURGE300V2-155",
+        "Social Movement"
+      ],
+      "structure": [
+        23,
+        76,
+        1
+      ],
+      "structureCounts": {
+        "mainPosts": 293,
+        "replies": 947,
+        "quotes": 9,
+        "reposts": 0,
+        "other": 0
+      },
+      "sourcePostCount": 1249,
+      "reviewPendingPostCount": 105,
+      "analysisEligiblePostCount": 1144,
+      "usableTextPostCount": 1249,
+      "windowPostCount": 1249,
+      "sourceStart": "2026-03-09T04:44:32Z",
+      "sourceEnd": "2026-04-05T14:14:33Z",
+      "windowStart": "2026-03-09T00:00:00Z",
+      "windowEnd": "2026-04-06T00:00:00Z",
+      "platforms": [
+        {
+          "name": "x",
+          "count": 1249,
+          "share": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "code": "en",
+          "count": 1132,
+          "share": 90.6
+        },
+        {
+          "code": "qme",
+          "count": 76,
+          "share": 6.1
+        },
+        {
+          "code": "und",
+          "count": 12,
+          "share": 1.0
+        },
+        {
+          "code": "qam",
+          "count": 6,
+          "share": 0.5
+        },
+        {
+          "code": "zxx",
+          "count": 6,
+          "share": 0.5
+        }
+      ],
+      "engagement": {
+        "likes": 92263,
+        "replies": 2212,
+        "reposts": 18316,
+        "quotes": 1565,
+        "views": 7090735,
+        "viewCoverage": 99.5
+      },
+      "activityHighlights": [
+        {
+          "time": "2026-03-09T12:00:00Z",
+          "label": "Mar 09, 2026 · 12:00 UTC",
+          "volume": 553,
+          "windowShare": 44.3,
+          "changeFromPreviousBin": 7800,
+          "kind": "peak",
+          "title": "Highest observed activity"
+        },
+        {
+          "time": "2026-03-10T12:00:00Z",
+          "label": "Mar 10, 2026 · 12:00 UTC",
+          "volume": 63,
+          "windowShare": 5.0,
+          "changeFromPreviousBin": 66,
+          "kind": "high_activity",
+          "title": "Activity high point 2"
+        },
+        {
+          "time": "2026-03-30T12:00:00Z",
+          "label": "Mar 30, 2026 · 12:00 UTC",
+          "volume": 28,
+          "windowShare": 2.2,
+          "changeFromPreviousBin": null,
+          "kind": "high_activity",
+          "title": "Activity high point 3"
+        }
+      ],
+      "dataNotes": [
+        "Counts are aggregated into 6-hour UTC intervals.",
+        "The chart uses the event window defined by the crawler catalog.",
+        "No post text, account identifier, or post URL is included in this public snapshot.",
+        "105 posts held by the current text-quality rules remain included in public activity totals.",
+        "Incremental activity was merged on 2026-08-05."
+      ],
+      "modelVersion": "SURGE300V2-155-incremental-public-timeline-v2",
+      "releaseMode": "timeline_sentiment",
+      "sentimentAvailable": true,
+      "sentimentSummary": {
+        "annotatedPosts": 1144,
+        "coverage": 91.6,
+        "meanScore": -0.5332,
+        "counts": {
+          "positive": 117,
+          "neutral": 300,
+          "negative": 727
+        },
+        "model": "Qwen3.5-4B",
+        "promptVersion": "surge-sentiment-qwen3-v1.2"
+      },
+      "topicAnalysisAvailable": false,
+      "stanceAnalysisAvailable": false,
+      "topics": [],
+      "points": [
+        {
+          "time": "2026-03-09T00:00:00Z",
+          "label": "2026-03-09 00:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T06:00:00Z",
+          "label": "2026-03-09 06:00 UTC",
+          "volume": 7,
+          "sentiment": -0.1429,
+          "sentimentAnnotatedPosts": 7,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 4,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 7,
+          "unknownReasons": {
+            "analysis_pending": 7
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T12:00:00Z",
+          "label": "2026-03-09 12:00 UTC",
+          "volume": 553,
+          "sentiment": -0.5089,
+          "sentimentAnnotatedPosts": 507,
+          "sentimentCounts": {
+            "positive": 46,
+            "neutral": 157,
+            "negative": 304
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 553,
+          "unknownReasons": {
+            "analysis_pending": 553
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T18:00:00Z",
+          "label": "2026-03-09 18:00 UTC",
+          "volume": 319,
+          "sentiment": -0.5222,
+          "sentimentAnnotatedPosts": 293,
+          "sentimentCounts": {
+            "positive": 40,
+            "neutral": 60,
+            "negative": 193
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 319,
+          "unknownReasons": {
+            "analysis_pending": 319
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T00:00:00Z",
+          "label": "2026-03-10 00:00 UTC",
+          "volume": 68,
+          "sentiment": -0.4839,
+          "sentimentAnnotatedPosts": 62,
+          "sentimentCounts": {
+            "positive": 10,
+            "neutral": 12,
+            "negative": 40
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 68,
+          "unknownReasons": {
+            "analysis_pending": 68
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T06:00:00Z",
+          "label": "2026-03-10 06:00 UTC",
+          "volume": 38,
+          "sentiment": -0.5172,
+          "sentimentAnnotatedPosts": 29,
+          "sentimentCounts": {
+            "positive": 4,
+            "neutral": 6,
+            "negative": 19
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 38,
+          "unknownReasons": {
+            "analysis_pending": 38
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T12:00:00Z",
+          "label": "2026-03-10 12:00 UTC",
+          "volume": 63,
+          "sentiment": -0.5439,
+          "sentimentAnnotatedPosts": 57,
+          "sentimentCounts": {
+            "positive": 5,
+            "neutral": 16,
+            "negative": 36
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 63,
+          "unknownReasons": {
+            "analysis_pending": 63
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T18:00:00Z",
+          "label": "2026-03-10 18:00 UTC",
+          "volume": 45,
+          "sentiment": -0.7073,
+          "sentimentAnnotatedPosts": 41,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 6,
+            "negative": 32
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 45,
+          "unknownReasons": {
+            "analysis_pending": 45
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T00:00:00Z",
+          "label": "2026-03-11 00:00 UTC",
+          "volume": 17,
+          "sentiment": -0.8235,
+          "sentimentAnnotatedPosts": 17,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 14
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 17,
+          "unknownReasons": {
+            "analysis_pending": 17
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T06:00:00Z",
+          "label": "2026-03-11 06:00 UTC",
+          "volume": 3,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T12:00:00Z",
+          "label": "2026-03-11 12:00 UTC",
+          "volume": 4,
+          "sentiment": -0.5,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T18:00:00Z",
+          "label": "2026-03-11 18:00 UTC",
+          "volume": 1,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T00:00:00Z",
+          "label": "2026-03-12 00:00 UTC",
+          "volume": 2,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T06:00:00Z",
+          "label": "2026-03-12 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T12:00:00Z",
+          "label": "2026-03-12 12:00 UTC",
+          "volume": 4,
+          "sentiment": -0.75,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T18:00:00Z",
+          "label": "2026-03-12 18:00 UTC",
+          "volume": 2,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T00:00:00Z",
+          "label": "2026-03-13 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T06:00:00Z",
+          "label": "2026-03-13 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T12:00:00Z",
+          "label": "2026-03-13 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T18:00:00Z",
+          "label": "2026-03-13 18:00 UTC",
+          "volume": 1,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T00:00:00Z",
+          "label": "2026-03-14 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T06:00:00Z",
+          "label": "2026-03-14 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T12:00:00Z",
+          "label": "2026-03-14 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T18:00:00Z",
+          "label": "2026-03-14 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T00:00:00Z",
+          "label": "2026-03-15 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T06:00:00Z",
+          "label": "2026-03-15 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T12:00:00Z",
+          "label": "2026-03-15 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T18:00:00Z",
+          "label": "2026-03-15 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T00:00:00Z",
+          "label": "2026-03-16 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T06:00:00Z",
+          "label": "2026-03-16 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T12:00:00Z",
+          "label": "2026-03-16 12:00 UTC",
+          "volume": 9,
+          "sentiment": 0.1111,
+          "sentimentAnnotatedPosts": 9,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 8,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 9,
+          "unknownReasons": {
+            "analysis_pending": 9
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T18:00:00Z",
+          "label": "2026-03-16 18:00 UTC",
+          "volume": 8,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 6,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 6,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 8,
+          "unknownReasons": {
+            "analysis_pending": 8
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T00:00:00Z",
+          "label": "2026-03-17 00:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 1,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T06:00:00Z",
+          "label": "2026-03-17 06:00 UTC",
+          "volume": 2,
+          "sentiment": 0.5,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 1,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T12:00:00Z",
+          "label": "2026-03-17 12:00 UTC",
+          "volume": 6,
+          "sentiment": -0.3333,
+          "sentimentAnnotatedPosts": 6,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 6,
+          "unknownReasons": {
+            "analysis_pending": 6
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T18:00:00Z",
+          "label": "2026-03-17 18:00 UTC",
+          "volume": 8,
+          "sentiment": -0.625,
+          "sentimentAnnotatedPosts": 8,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 5
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 8,
+          "unknownReasons": {
+            "analysis_pending": 8
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T00:00:00Z",
+          "label": "2026-03-18 00:00 UTC",
+          "volume": 2,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T06:00:00Z",
+          "label": "2026-03-18 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T12:00:00Z",
+          "label": "2026-03-18 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T18:00:00Z",
+          "label": "2026-03-18 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T00:00:00Z",
+          "label": "2026-03-19 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T06:00:00Z",
+          "label": "2026-03-19 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T12:00:00Z",
+          "label": "2026-03-19 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T18:00:00Z",
+          "label": "2026-03-19 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T00:00:00Z",
+          "label": "2026-03-20 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T06:00:00Z",
+          "label": "2026-03-20 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T12:00:00Z",
+          "label": "2026-03-20 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T18:00:00Z",
+          "label": "2026-03-20 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T00:00:00Z",
+          "label": "2026-03-21 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T06:00:00Z",
+          "label": "2026-03-21 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T12:00:00Z",
+          "label": "2026-03-21 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T18:00:00Z",
+          "label": "2026-03-21 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T00:00:00Z",
+          "label": "2026-03-22 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T06:00:00Z",
+          "label": "2026-03-22 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T12:00:00Z",
+          "label": "2026-03-22 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T18:00:00Z",
+          "label": "2026-03-22 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T00:00:00Z",
+          "label": "2026-03-23 00:00 UTC",
+          "volume": 16,
+          "sentiment": -0.6667,
+          "sentimentAnnotatedPosts": 15,
+          "sentimentCounts": {
+            "positive": 2,
+            "neutral": 1,
+            "negative": 12
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 16,
+          "unknownReasons": {
+            "analysis_pending": 16
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T06:00:00Z",
+          "label": "2026-03-23 06:00 UTC",
+          "volume": 7,
+          "sentiment": -0.8571,
+          "sentimentAnnotatedPosts": 7,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 6
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 7,
+          "unknownReasons": {
+            "analysis_pending": 7
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T12:00:00Z",
+          "label": "2026-03-23 12:00 UTC",
+          "volume": 5,
+          "sentiment": -0.6,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T18:00:00Z",
+          "label": "2026-03-23 18:00 UTC",
+          "volume": 4,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 4
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T00:00:00Z",
+          "label": "2026-03-24 00:00 UTC",
+          "volume": 2,
+          "sentiment": -0.5,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T06:00:00Z",
+          "label": "2026-03-24 06:00 UTC",
+          "volume": 1,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T12:00:00Z",
+          "label": "2026-03-24 12:00 UTC",
+          "volume": 2,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T18:00:00Z",
+          "label": "2026-03-24 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T00:00:00Z",
+          "label": "2026-03-25 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T06:00:00Z",
+          "label": "2026-03-25 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T12:00:00Z",
+          "label": "2026-03-25 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T18:00:00Z",
+          "label": "2026-03-25 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T00:00:00Z",
+          "label": "2026-03-26 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T06:00:00Z",
+          "label": "2026-03-26 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T12:00:00Z",
+          "label": "2026-03-26 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T18:00:00Z",
+          "label": "2026-03-26 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T00:00:00Z",
+          "label": "2026-03-27 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T06:00:00Z",
+          "label": "2026-03-27 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T12:00:00Z",
+          "label": "2026-03-27 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T18:00:00Z",
+          "label": "2026-03-27 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T00:00:00Z",
+          "label": "2026-03-28 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T06:00:00Z",
+          "label": "2026-03-28 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T12:00:00Z",
+          "label": "2026-03-28 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T18:00:00Z",
+          "label": "2026-03-28 18:00 UTC",
+          "volume": 1,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-29T00:00:00Z",
+          "label": "2026-03-29 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-29T06:00:00Z",
+          "label": "2026-03-29 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-29T12:00:00Z",
+          "label": "2026-03-29 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-29T18:00:00Z",
+          "label": "2026-03-29 18:00 UTC",
+          "volume": 1,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-30T00:00:00Z",
+          "label": "2026-03-30 00:00 UTC",
+          "volume": 1,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-30T06:00:00Z",
+          "label": "2026-03-30 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-30T12:00:00Z",
+          "label": "2026-03-30 12:00 UTC",
+          "volume": 28,
+          "sentiment": -0.7308,
+          "sentimentAnnotatedPosts": 26,
+          "sentimentCounts": {
+            "positive": 2,
+            "neutral": 3,
+            "negative": 21
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 28,
+          "unknownReasons": {
+            "analysis_pending": 28
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-30T18:00:00Z",
+          "label": "2026-03-30 18:00 UTC",
+          "volume": 7,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 6,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 6
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 7,
+          "unknownReasons": {
+            "analysis_pending": 7
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-31T00:00:00Z",
+          "label": "2026-03-31 00:00 UTC",
+          "volume": 3,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-31T06:00:00Z",
+          "label": "2026-03-31 06:00 UTC",
+          "volume": 1,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-31T12:00:00Z",
+          "label": "2026-03-31 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-31T18:00:00Z",
+          "label": "2026-03-31 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-01T00:00:00Z",
+          "label": "2026-04-01 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-01T06:00:00Z",
+          "label": "2026-04-01 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-01T12:00:00Z",
+          "label": "2026-04-01 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-01T18:00:00Z",
+          "label": "2026-04-01 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-02T00:00:00Z",
+          "label": "2026-04-02 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-02T06:00:00Z",
+          "label": "2026-04-02 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-02T12:00:00Z",
+          "label": "2026-04-02 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-02T18:00:00Z",
+          "label": "2026-04-02 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-03T00:00:00Z",
+          "label": "2026-04-03 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-03T06:00:00Z",
+          "label": "2026-04-03 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-03T12:00:00Z",
+          "label": "2026-04-03 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-03T18:00:00Z",
+          "label": "2026-04-03 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-04T00:00:00Z",
+          "label": "2026-04-04 00:00 UTC",
+          "volume": 1,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-04T06:00:00Z",
+          "label": "2026-04-04 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-04T12:00:00Z",
+          "label": "2026-04-04 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-04T18:00:00Z",
+          "label": "2026-04-04 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-05T00:00:00Z",
+          "label": "2026-04-05 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-05T06:00:00Z",
+          "label": "2026-04-05 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-05T12:00:00Z",
+          "label": "2026-04-05 12:00 UTC",
+          "volume": 1,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-04-05T18:00:00Z",
+          "label": "2026-04-05 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        }
+      ]
+    },
+    {
       "id": "surge300v2-092",
       "sourceEventId": "SURGE300V2-092",
       "title": "Nepal general election 2026",
@@ -27122,6 +29384,2268 @@
           "unknownPosts": 2,
           "unknownReasons": {
             "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T18:00:00Z",
+          "label": "2026-03-28 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        }
+      ]
+    },
+    {
+      "id": "surge300v2-068",
+      "sourceEventId": "SURGE300V2-068",
+      "title": "Bolivia regional elections 2026",
+      "category": "Political",
+      "summary": "Follow public discussion surrounding Bolivia regional elections 2026, including when activity intensified across the published event window.",
+      "narrative": "This page summarizes 25 posts from the catalog-defined event window for Bolivia regional elections 2026. It focuses on observable activity, timing, and conversation structure.",
+      "entities": [],
+      "location": "",
+      "sourceCategory": "Political",
+      "tags": [
+        "SURGE300V2-068",
+        "Political"
+      ],
+      "structure": [
+        49,
+        49,
+        2
+      ],
+      "structureCounts": {
+        "mainPosts": 612,
+        "replies": 618,
+        "quotes": 19,
+        "reposts": 0,
+        "other": 0
+      },
+      "sourcePostCount": 1249,
+      "reviewPendingPostCount": 85,
+      "analysisEligiblePostCount": 1164,
+      "usableTextPostCount": 1249,
+      "windowPostCount": 1241,
+      "sourceStart": "2026-03-01T08:29:22Z",
+      "sourceEnd": "2026-03-29T23:17:01Z",
+      "windowStart": "2026-03-01T00:00:00Z",
+      "windowEnd": "2026-03-29T00:00:00Z",
+      "platforms": [
+        {
+          "name": "x",
+          "count": 1241,
+          "share": 100.0
+        }
+      ],
+      "languages": [
+        {
+          "code": "es",
+          "count": 979,
+          "share": 78.9
+        },
+        {
+          "code": "en",
+          "count": 160,
+          "share": 12.9
+        },
+        {
+          "code": "qme",
+          "count": 73,
+          "share": 5.9
+        },
+        {
+          "code": "pt",
+          "count": 15,
+          "share": 1.2
+        },
+        {
+          "code": "qam",
+          "count": 3,
+          "share": 0.2
+        }
+      ],
+      "engagement": {
+        "likes": 5943,
+        "replies": 923,
+        "reposts": 1387,
+        "quotes": 138,
+        "views": 508547,
+        "viewCoverage": 99.4
+      },
+      "activityHighlights": [
+        {
+          "time": "2026-03-13T12:00:00Z",
+          "label": "Mar 13, 2026 · 12:00 UTC",
+          "volume": 87,
+          "windowShare": 7.0,
+          "changeFromPreviousBin": null,
+          "kind": "high_activity",
+          "title": "Activity high point 1"
+        },
+        {
+          "time": "2026-03-19T12:00:00Z",
+          "label": "Mar 19, 2026 · 12:00 UTC",
+          "volume": 88,
+          "windowShare": 7.1,
+          "changeFromPreviousBin": 700,
+          "kind": "peak",
+          "title": "Highest observed activity"
+        },
+        {
+          "time": "2026-03-22T12:00:00Z",
+          "label": "Mar 22, 2026 · 12:00 UTC",
+          "volume": 80,
+          "windowShare": 6.4,
+          "changeFromPreviousBin": 627,
+          "kind": "high_activity",
+          "title": "Activity high point 3"
+        }
+      ],
+      "dataNotes": [
+        "Counts are aggregated into 6-hour UTC intervals.",
+        "The chart uses the event window defined by the crawler catalog.",
+        "No post text, account identifier, or post URL is included in this public snapshot.",
+        "85 posts held by the current text-quality rules remain included in public activity totals.",
+        "Incremental activity was merged on 2026-07-30."
+      ],
+      "modelVersion": "SURGE300V2-068-incremental-public-timeline-v2",
+      "releaseMode": "timeline_sentiment",
+      "sentimentAvailable": true,
+      "sentimentSummary": {
+        "annotatedPosts": 1156,
+        "coverage": 93.2,
+        "meanScore": -0.2603,
+        "counts": {
+          "positive": 160,
+          "neutral": 535,
+          "negative": 461
+        },
+        "model": "Qwen3.5-4B",
+        "promptVersion": "surge-sentiment-qwen3-v1"
+      },
+      "topicAnalysisAvailable": false,
+      "stanceAnalysisAvailable": false,
+      "topics": [],
+      "points": [
+        {
+          "time": "2026-03-01T00:00:00Z",
+          "label": "2026-03-01 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-01T06:00:00Z",
+          "label": "2026-03-01 06:00 UTC",
+          "volume": 1,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-01T12:00:00Z",
+          "label": "2026-03-01 12:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-01T18:00:00Z",
+          "label": "2026-03-01 18:00 UTC",
+          "volume": 1,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-02T00:00:00Z",
+          "label": "2026-03-02 00:00 UTC",
+          "volume": 2,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-02T06:00:00Z",
+          "label": "2026-03-02 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-02T12:00:00Z",
+          "label": "2026-03-02 12:00 UTC",
+          "volume": 5,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 5,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-02T18:00:00Z",
+          "label": "2026-03-02 18:00 UTC",
+          "volume": 3,
+          "sentiment": 0.3333,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-03T00:00:00Z",
+          "label": "2026-03-03 00:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-03T06:00:00Z",
+          "label": "2026-03-03 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-03T12:00:00Z",
+          "label": "2026-03-03 12:00 UTC",
+          "volume": 5,
+          "sentiment": -0.2,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-03T18:00:00Z",
+          "label": "2026-03-03 18:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-04T00:00:00Z",
+          "label": "2026-03-04 00:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-04T06:00:00Z",
+          "label": "2026-03-04 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-04T12:00:00Z",
+          "label": "2026-03-04 12:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-04T18:00:00Z",
+          "label": "2026-03-04 18:00 UTC",
+          "volume": 2,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-05T00:00:00Z",
+          "label": "2026-03-05 00:00 UTC",
+          "volume": 2,
+          "sentiment": 0.5,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 1,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-05T06:00:00Z",
+          "label": "2026-03-05 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-05T12:00:00Z",
+          "label": "2026-03-05 12:00 UTC",
+          "volume": 2,
+          "sentiment": -0.5,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-05T18:00:00Z",
+          "label": "2026-03-05 18:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-06T00:00:00Z",
+          "label": "2026-03-06 00:00 UTC",
+          "volume": 5,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 5,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-06T06:00:00Z",
+          "label": "2026-03-06 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-06T12:00:00Z",
+          "label": "2026-03-06 12:00 UTC",
+          "volume": 5,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 5,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-06T18:00:00Z",
+          "label": "2026-03-06 18:00 UTC",
+          "volume": 5,
+          "sentiment": -0.2,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-07T00:00:00Z",
+          "label": "2026-03-07 00:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-07T06:00:00Z",
+          "label": "2026-03-07 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-07T12:00:00Z",
+          "label": "2026-03-07 12:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-07T18:00:00Z",
+          "label": "2026-03-07 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-08T00:00:00Z",
+          "label": "2026-03-08 00:00 UTC",
+          "volume": 1,
+          "sentiment": 1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-08T06:00:00Z",
+          "label": "2026-03-08 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-08T12:00:00Z",
+          "label": "2026-03-08 12:00 UTC",
+          "volume": 21,
+          "sentiment": -0.0475,
+          "sentimentAnnotatedPosts": 21,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 18,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 21,
+          "unknownReasons": {
+            "analysis_pending": 21
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-08T18:00:00Z",
+          "label": "2026-03-08 18:00 UTC",
+          "volume": 9,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 9,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 3,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 9,
+          "unknownReasons": {
+            "analysis_pending": 9
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T00:00:00Z",
+          "label": "2026-03-09 00:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T06:00:00Z",
+          "label": "2026-03-09 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T12:00:00Z",
+          "label": "2026-03-09 12:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-09T18:00:00Z",
+          "label": "2026-03-09 18:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T00:00:00Z",
+          "label": "2026-03-10 00:00 UTC",
+          "volume": 6,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 6,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 6,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 6,
+          "unknownReasons": {
+            "analysis_pending": 6
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T06:00:00Z",
+          "label": "2026-03-10 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T12:00:00Z",
+          "label": "2026-03-10 12:00 UTC",
+          "volume": 14,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 14,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 14,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 14,
+          "unknownReasons": {
+            "analysis_pending": 14
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-10T18:00:00Z",
+          "label": "2026-03-10 18:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T00:00:00Z",
+          "label": "2026-03-11 00:00 UTC",
+          "volume": 2,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T06:00:00Z",
+          "label": "2026-03-11 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T12:00:00Z",
+          "label": "2026-03-11 12:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-11T18:00:00Z",
+          "label": "2026-03-11 18:00 UTC",
+          "volume": 8,
+          "sentiment": -0.0,
+          "sentimentAnnotatedPosts": 8,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 6,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 8,
+          "unknownReasons": {
+            "analysis_pending": 8
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T00:00:00Z",
+          "label": "2026-03-12 00:00 UTC",
+          "volume": 3,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 3,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T06:00:00Z",
+          "label": "2026-03-12 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T12:00:00Z",
+          "label": "2026-03-12 12:00 UTC",
+          "volume": 5,
+          "sentiment": 0.2,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 2,
+            "neutral": 2,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-12T18:00:00Z",
+          "label": "2026-03-12 18:00 UTC",
+          "volume": 2,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T00:00:00Z",
+          "label": "2026-03-13 00:00 UTC",
+          "volume": 13,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 13,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 13,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 13,
+          "unknownReasons": {
+            "analysis_pending": 13
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T06:00:00Z",
+          "label": "2026-03-13 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T12:00:00Z",
+          "label": "2026-03-13 12:00 UTC",
+          "volume": 87,
+          "sentiment": -0.1572,
+          "sentimentAnnotatedPosts": 70,
+          "sentimentCounts": {
+            "positive": 26,
+            "neutral": 7,
+            "negative": 37
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 87,
+          "unknownReasons": {
+            "analysis_pending": 87
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-13T18:00:00Z",
+          "label": "2026-03-13 18:00 UTC",
+          "volume": 74,
+          "sentiment": -0.222,
+          "sentimentAnnotatedPosts": 63,
+          "sentimentCounts": {
+            "positive": 21,
+            "neutral": 7,
+            "negative": 35
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 74,
+          "unknownReasons": {
+            "analysis_pending": 74
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T00:00:00Z",
+          "label": "2026-03-14 00:00 UTC",
+          "volume": 16,
+          "sentiment": -0.0714,
+          "sentimentAnnotatedPosts": 14,
+          "sentimentCounts": {
+            "positive": 5,
+            "neutral": 3,
+            "negative": 6
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 16,
+          "unknownReasons": {
+            "analysis_pending": 16
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T06:00:00Z",
+          "label": "2026-03-14 06:00 UTC",
+          "volume": 8,
+          "sentiment": -0.1667,
+          "sentimentAnnotatedPosts": 6,
+          "sentimentCounts": {
+            "positive": 2,
+            "neutral": 1,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 8,
+          "unknownReasons": {
+            "analysis_pending": 8
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T12:00:00Z",
+          "label": "2026-03-14 12:00 UTC",
+          "volume": 18,
+          "sentiment": -0.3333,
+          "sentimentAnnotatedPosts": 12,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 2,
+            "negative": 7
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 18,
+          "unknownReasons": {
+            "analysis_pending": 18
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-14T18:00:00Z",
+          "label": "2026-03-14 18:00 UTC",
+          "volume": 11,
+          "sentiment": -0.2857,
+          "sentimentAnnotatedPosts": 7,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 3,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 11,
+          "unknownReasons": {
+            "analysis_pending": 11
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T00:00:00Z",
+          "label": "2026-03-15 00:00 UTC",
+          "volume": 6,
+          "sentiment": -0.5,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 6,
+          "unknownReasons": {
+            "analysis_pending": 6
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T06:00:00Z",
+          "label": "2026-03-15 06:00 UTC",
+          "volume": 2,
+          "sentiment": -0.5,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T12:00:00Z",
+          "label": "2026-03-15 12:00 UTC",
+          "volume": 5,
+          "sentiment": -0.2,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 2,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-15T18:00:00Z",
+          "label": "2026-03-15 18:00 UTC",
+          "volume": 10,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 8,
+          "sentimentCounts": {
+            "positive": 2,
+            "neutral": 4,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 10,
+          "unknownReasons": {
+            "analysis_pending": 10
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T00:00:00Z",
+          "label": "2026-03-16 00:00 UTC",
+          "volume": 1,
+          "sentiment": 1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T06:00:00Z",
+          "label": "2026-03-16 06:00 UTC",
+          "volume": 2,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T12:00:00Z",
+          "label": "2026-03-16 12:00 UTC",
+          "volume": 11,
+          "sentiment": -0.1,
+          "sentimentAnnotatedPosts": 10,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 9,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 11,
+          "unknownReasons": {
+            "analysis_pending": 11
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-16T18:00:00Z",
+          "label": "2026-03-16 18:00 UTC",
+          "volume": 24,
+          "sentiment": -0.2609,
+          "sentimentAnnotatedPosts": 23,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 15,
+            "negative": 7
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 24,
+          "unknownReasons": {
+            "analysis_pending": 24
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T00:00:00Z",
+          "label": "2026-03-17 00:00 UTC",
+          "volume": 5,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T06:00:00Z",
+          "label": "2026-03-17 06:00 UTC",
+          "volume": 6,
+          "sentiment": 0.2,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 6,
+          "unknownReasons": {
+            "analysis_pending": 6
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T12:00:00Z",
+          "label": "2026-03-17 12:00 UTC",
+          "volume": 21,
+          "sentiment": -0.2999,
+          "sentimentAnnotatedPosts": 20,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 12,
+            "negative": 7
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 21,
+          "unknownReasons": {
+            "analysis_pending": 21
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-17T18:00:00Z",
+          "label": "2026-03-17 18:00 UTC",
+          "volume": 32,
+          "sentiment": 0.074,
+          "sentimentAnnotatedPosts": 27,
+          "sentimentCounts": {
+            "positive": 6,
+            "neutral": 17,
+            "negative": 4
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 32,
+          "unknownReasons": {
+            "analysis_pending": 32
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T00:00:00Z",
+          "label": "2026-03-18 00:00 UTC",
+          "volume": 6,
+          "sentiment": -0.6,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 6,
+          "unknownReasons": {
+            "analysis_pending": 6
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T06:00:00Z",
+          "label": "2026-03-18 06:00 UTC",
+          "volume": 4,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 1,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T12:00:00Z",
+          "label": "2026-03-18 12:00 UTC",
+          "volume": 18,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 17,
+          "sentimentCounts": {
+            "positive": 2,
+            "neutral": 13,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 18,
+          "unknownReasons": {
+            "analysis_pending": 18
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-18T18:00:00Z",
+          "label": "2026-03-18 18:00 UTC",
+          "volume": 12,
+          "sentiment": -0.0833,
+          "sentimentAnnotatedPosts": 12,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 9,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 12,
+          "unknownReasons": {
+            "analysis_pending": 12
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T00:00:00Z",
+          "label": "2026-03-19 00:00 UTC",
+          "volume": 26,
+          "sentiment": -0.375,
+          "sentimentAnnotatedPosts": 24,
+          "sentimentCounts": {
+            "positive": 6,
+            "neutral": 3,
+            "negative": 15
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 26,
+          "unknownReasons": {
+            "analysis_pending": 26
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T06:00:00Z",
+          "label": "2026-03-19 06:00 UTC",
+          "volume": 11,
+          "sentiment": -0.5455,
+          "sentimentAnnotatedPosts": 11,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 3,
+            "negative": 7
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 11,
+          "unknownReasons": {
+            "analysis_pending": 11
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T12:00:00Z",
+          "label": "2026-03-19 12:00 UTC",
+          "volume": 88,
+          "sentiment": -0.7438,
+          "sentimentAnnotatedPosts": 82,
+          "sentimentCounts": {
+            "positive": 6,
+            "neutral": 9,
+            "negative": 67
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 88,
+          "unknownReasons": {
+            "analysis_pending": 88
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-19T18:00:00Z",
+          "label": "2026-03-19 18:00 UTC",
+          "volume": 53,
+          "sentiment": -0.6199,
+          "sentimentAnnotatedPosts": 50,
+          "sentimentCounts": {
+            "positive": 4,
+            "neutral": 11,
+            "negative": 35
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 53,
+          "unknownReasons": {
+            "analysis_pending": 53
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T00:00:00Z",
+          "label": "2026-03-20 00:00 UTC",
+          "volume": 31,
+          "sentiment": -0.6551,
+          "sentimentAnnotatedPosts": 29,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 4,
+            "negative": 22
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 31,
+          "unknownReasons": {
+            "analysis_pending": 31
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T06:00:00Z",
+          "label": "2026-03-20 06:00 UTC",
+          "volume": 9,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 9,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 9
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 9,
+          "unknownReasons": {
+            "analysis_pending": 9
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T12:00:00Z",
+          "label": "2026-03-20 12:00 UTC",
+          "volume": 32,
+          "sentiment": -0.4515,
+          "sentimentAnnotatedPosts": 31,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 11,
+            "negative": 17
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 32,
+          "unknownReasons": {
+            "analysis_pending": 32
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-20T18:00:00Z",
+          "label": "2026-03-20 18:00 UTC",
+          "volume": 34,
+          "sentiment": -0.394,
+          "sentimentAnnotatedPosts": 33,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 20,
+            "negative": 13
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 34,
+          "unknownReasons": {
+            "analysis_pending": 34
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T00:00:00Z",
+          "label": "2026-03-21 00:00 UTC",
+          "volume": 12,
+          "sentiment": -0.6,
+          "sentimentAnnotatedPosts": 10,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 4,
+            "negative": 6
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 12,
+          "unknownReasons": {
+            "analysis_pending": 12
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T06:00:00Z",
+          "label": "2026-03-21 06:00 UTC",
+          "volume": 4,
+          "sentiment": -0.25,
+          "sentimentAnnotatedPosts": 4,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 1,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 4,
+          "unknownReasons": {
+            "analysis_pending": 4
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T12:00:00Z",
+          "label": "2026-03-21 12:00 UTC",
+          "volume": 28,
+          "sentiment": -0.4641,
+          "sentimentAnnotatedPosts": 28,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 9,
+            "negative": 16
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 28,
+          "unknownReasons": {
+            "analysis_pending": 28
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-21T18:00:00Z",
+          "label": "2026-03-21 18:00 UTC",
+          "volume": 23,
+          "sentiment": -0.7273,
+          "sentimentAnnotatedPosts": 22,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 6,
+            "negative": 16
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 23,
+          "unknownReasons": {
+            "analysis_pending": 23
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T00:00:00Z",
+          "label": "2026-03-22 00:00 UTC",
+          "volume": 13,
+          "sentiment": -0.0909,
+          "sentimentAnnotatedPosts": 11,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 4,
+            "negative": 4
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 13,
+          "unknownReasons": {
+            "analysis_pending": 13
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T06:00:00Z",
+          "label": "2026-03-22 06:00 UTC",
+          "volume": 11,
+          "sentiment": -0.0909,
+          "sentimentAnnotatedPosts": 11,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 10,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 11,
+          "unknownReasons": {
+            "analysis_pending": 11
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T12:00:00Z",
+          "label": "2026-03-22 12:00 UTC",
+          "volume": 80,
+          "sentiment": 0.0501,
+          "sentimentAnnotatedPosts": 80,
+          "sentimentCounts": {
+            "positive": 9,
+            "neutral": 66,
+            "negative": 5
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 80,
+          "unknownReasons": {
+            "analysis_pending": 80
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-22T18:00:00Z",
+          "label": "2026-03-22 18:00 UTC",
+          "volume": 48,
+          "sentiment": -0.0212,
+          "sentimentAnnotatedPosts": 47,
+          "sentimentCounts": {
+            "positive": 7,
+            "neutral": 32,
+            "negative": 8
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 48,
+          "unknownReasons": {
+            "analysis_pending": 48
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T00:00:00Z",
+          "label": "2026-03-23 00:00 UTC",
+          "volume": 20,
+          "sentiment": 0.15,
+          "sentimentAnnotatedPosts": 20,
+          "sentimentCounts": {
+            "positive": 5,
+            "neutral": 13,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 20,
+          "unknownReasons": {
+            "analysis_pending": 20
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T06:00:00Z",
+          "label": "2026-03-23 06:00 UTC",
+          "volume": 2,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T12:00:00Z",
+          "label": "2026-03-23 12:00 UTC",
+          "volume": 17,
+          "sentiment": 0.2352,
+          "sentimentAnnotatedPosts": 17,
+          "sentimentCounts": {
+            "positive": 5,
+            "neutral": 11,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 17,
+          "unknownReasons": {
+            "analysis_pending": 17
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-23T18:00:00Z",
+          "label": "2026-03-23 18:00 UTC",
+          "volume": 24,
+          "sentiment": -0.0416,
+          "sentimentAnnotatedPosts": 24,
+          "sentimentCounts": {
+            "positive": 4,
+            "neutral": 15,
+            "negative": 5
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 24,
+          "unknownReasons": {
+            "analysis_pending": 24
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T00:00:00Z",
+          "label": "2026-03-24 00:00 UTC",
+          "volume": 11,
+          "sentiment": -0.1818,
+          "sentimentAnnotatedPosts": 11,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 9,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 11,
+          "unknownReasons": {
+            "analysis_pending": 11
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T06:00:00Z",
+          "label": "2026-03-24 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T12:00:00Z",
+          "label": "2026-03-24 12:00 UTC",
+          "volume": 10,
+          "sentiment": 0.2,
+          "sentimentAnnotatedPosts": 10,
+          "sentimentCounts": {
+            "positive": 4,
+            "neutral": 4,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 10,
+          "unknownReasons": {
+            "analysis_pending": 10
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-24T18:00:00Z",
+          "label": "2026-03-24 18:00 UTC",
+          "volume": 9,
+          "sentiment": 0.2222,
+          "sentimentAnnotatedPosts": 9,
+          "sentimentCounts": {
+            "positive": 3,
+            "neutral": 5,
+            "negative": 1
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 9,
+          "unknownReasons": {
+            "analysis_pending": 9
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T00:00:00Z",
+          "label": "2026-03-25 00:00 UTC",
+          "volume": 5,
+          "sentiment": 0.2,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 4,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T06:00:00Z",
+          "label": "2026-03-25 06:00 UTC",
+          "volume": 2,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T12:00:00Z",
+          "label": "2026-03-25 12:00 UTC",
+          "volume": 3,
+          "sentiment": 0.3333,
+          "sentimentAnnotatedPosts": 3,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 2,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 3,
+          "unknownReasons": {
+            "analysis_pending": 3
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-25T18:00:00Z",
+          "label": "2026-03-25 18:00 UTC",
+          "volume": 25,
+          "sentiment": -0.9602,
+          "sentimentAnnotatedPosts": 25,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 24
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 25,
+          "unknownReasons": {
+            "analysis_pending": 25
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T00:00:00Z",
+          "label": "2026-03-26 00:00 UTC",
+          "volume": 20,
+          "sentiment": -0.7778,
+          "sentimentAnnotatedPosts": 18,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 2,
+            "negative": 15
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 20,
+          "unknownReasons": {
+            "analysis_pending": 20
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T06:00:00Z",
+          "label": "2026-03-26 06:00 UTC",
+          "volume": 7,
+          "sentiment": -0.7143,
+          "sentimentAnnotatedPosts": 7,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 6
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 7,
+          "unknownReasons": {
+            "analysis_pending": 7
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T12:00:00Z",
+          "label": "2026-03-26 12:00 UTC",
+          "volume": 17,
+          "sentiment": -0.4375,
+          "sentimentAnnotatedPosts": 16,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 7,
+            "negative": 8
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 17,
+          "unknownReasons": {
+            "analysis_pending": 17
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-26T18:00:00Z",
+          "label": "2026-03-26 18:00 UTC",
+          "volume": 11,
+          "sentiment": -0.5455,
+          "sentimentAnnotatedPosts": 11,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 5,
+            "negative": 6
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 11,
+          "unknownReasons": {
+            "analysis_pending": 11
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T00:00:00Z",
+          "label": "2026-03-27 00:00 UTC",
+          "volume": 2,
+          "sentiment": -1.0,
+          "sentimentAnnotatedPosts": 2,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 2
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 2,
+          "unknownReasons": {
+            "analysis_pending": 2
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T06:00:00Z",
+          "label": "2026-03-27 06:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T12:00:00Z",
+          "label": "2026-03-27 12:00 UTC",
+          "volume": 5,
+          "sentiment": -0.6,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-27T18:00:00Z",
+          "label": "2026-03-27 18:00 UTC",
+          "volume": 5,
+          "sentiment": -0.6,
+          "sentimentAnnotatedPosts": 5,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 2,
+            "negative": 3
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 5,
+          "unknownReasons": {
+            "analysis_pending": 5
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T00:00:00Z",
+          "label": "2026-03-28 00:00 UTC",
+          "volume": 1,
+          "sentiment": 0.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 1,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T06:00:00Z",
+          "label": "2026-03-28 06:00 UTC",
+          "volume": 1,
+          "sentiment": 1.0,
+          "sentimentAnnotatedPosts": 1,
+          "sentimentCounts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 1,
+          "unknownReasons": {
+            "analysis_pending": 1
+          },
+          "topicCounts": [],
+          "topicSentimentCounts": []
+        },
+        {
+          "time": "2026-03-28T12:00:00Z",
+          "label": "2026-03-28 12:00 UTC",
+          "volume": 0,
+          "sentiment": null,
+          "sentimentAnnotatedPosts": 0,
+          "sentimentCounts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          },
+          "classifiedPosts": 0,
+          "unknownPosts": 0,
+          "unknownReasons": {
+            "analysis_pending": 0
           },
           "topicCounts": [],
           "topicSentimentCounts": []
@@ -87381,748 +91905,6 @@
       ]
     },
     {
-      "id": "hotset-034",
-      "sourceEventId": "HOTSET-034",
-      "title": "Nobody Wants This Netflix release",
-      "category": "Sports Entertainment",
-      "summary": "Track public discussion surrounding Nobody Wants This Netflix release, including when activity intensified across the published event window.",
-      "narrative": "This page summarizes 838 posts from the catalog-defined event window for Nobody Wants This Netflix release. It focuses on observable activity, timing, and conversation structure.",
-      "entities": [],
-      "location": "",
-      "sourceCategory": "entertainment",
-      "tags": [
-        "HOTSET-034",
-        "sports_entertainment"
-      ],
-      "structure": [
-        68,
-        22,
-        10
-      ],
-      "structureCounts": {
-        "mainPosts": 765,
-        "replies": 255,
-        "quotes": 110,
-        "reposts": 0,
-        "other": 0
-      },
-      "sourcePostCount": 1130,
-      "reviewPendingPostCount": 11,
-      "analysisEligiblePostCount": 1119,
-      "usableTextPostCount": 1130,
-      "windowPostCount": 919,
-      "sourceStart": "2024-09-26T15:35:18Z",
-      "sourceEnd": "2024-10-27T04:06:08Z",
-      "windowStart": "2024-09-26T00:00:00Z",
-      "windowEnd": "2024-10-04T00:00:00Z",
-      "platforms": [
-        {
-          "name": "x",
-          "count": 919,
-          "share": 100.0
-        }
-      ],
-      "languages": [
-        {
-          "code": "en",
-          "count": 842,
-          "share": 91.6
-        },
-        {
-          "code": "es",
-          "count": 30,
-          "share": 3.3
-        },
-        {
-          "code": "it",
-          "count": 15,
-          "share": 1.6
-        },
-        {
-          "code": "tr",
-          "count": 8,
-          "share": 0.9
-        },
-        {
-          "code": "und",
-          "count": 5,
-          "share": 0.5
-        }
-      ],
-      "engagement": {
-        "likes": 426806,
-        "replies": 26544,
-        "reposts": 53149,
-        "quotes": 18207,
-        "views": 66535341,
-        "viewCoverage": 100.0
-      },
-      "activityHighlights": [
-        {
-          "time": "2024-09-28T18:00:00Z",
-          "label": "Sep 28, 2024 · 18:00 UTC",
-          "volume": 8,
-          "windowShare": 0.9,
-          "changeFromPreviousBin": 300,
-          "kind": "high_activity",
-          "title": "Activity high point 1"
-        },
-        {
-          "time": "2024-09-29T18:00:00Z",
-          "label": "Sep 29, 2024 · 18:00 UTC",
-          "volume": 143,
-          "windowShare": 15.6,
-          "changeFromPreviousBin": 32,
-          "kind": "high_activity",
-          "title": "Activity high point 2"
-        },
-        {
-          "time": "2024-09-30T18:00:00Z",
-          "label": "Sep 30, 2024 · 18:00 UTC",
-          "volume": 171,
-          "windowShare": 18.6,
-          "changeFromPreviousBin": 18,
-          "kind": "peak",
-          "title": "Highest observed activity"
-        }
-      ],
-      "dataNotes": [
-        "Counts are aggregated into 6-hour UTC intervals.",
-        "The chart uses the event window defined by the crawler catalog.",
-        "No post text, account identifier, or post URL is included in this public snapshot.",
-        "11 posts held by the current text-quality rules remain included in public activity totals.",
-        "Incremental activity was merged on 2026-08-09."
-      ],
-      "modelVersion": "HOTSET-034-incremental-public-timeline-v2",
-      "releaseMode": "timeline_sentiment",
-      "sentimentAvailable": true,
-      "sentimentSummary": {
-        "annotatedPosts": 911,
-        "coverage": 99.1,
-        "meanScore": -0.0439,
-        "counts": {
-          "positive": 403,
-          "neutral": 65,
-          "negative": 443
-        },
-        "model": "Qwen3.5-4B",
-        "promptVersion": "surge-sentiment-qwen3-v1.2"
-      },
-      "topicAnalysisAvailable": false,
-      "stanceAnalysisAvailable": false,
-      "topics": [],
-      "points": [
-        {
-          "time": "2024-09-26T00:00:00Z",
-          "label": "2024-09-26 00:00 UTC",
-          "volume": 0,
-          "sentiment": null,
-          "sentimentAnnotatedPosts": 0,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 0,
-          "unknownReasons": {
-            "analysis_pending": 0
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-26T06:00:00Z",
-          "label": "2024-09-26 06:00 UTC",
-          "volume": 0,
-          "sentiment": null,
-          "sentimentAnnotatedPosts": 0,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 0,
-          "unknownReasons": {
-            "analysis_pending": 0
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-26T12:00:00Z",
-          "label": "2024-09-26 12:00 UTC",
-          "volume": 1,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 1,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-26T18:00:00Z",
-          "label": "2024-09-26 18:00 UTC",
-          "volume": 2,
-          "sentiment": 0.0,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-27T00:00:00Z",
-          "label": "2024-09-27 00:00 UTC",
-          "volume": 4,
-          "sentiment": -0.5,
-          "sentimentAnnotatedPosts": 4,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 0,
-            "negative": 3
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 4,
-          "unknownReasons": {
-            "analysis_pending": 4
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-27T06:00:00Z",
-          "label": "2024-09-27 06:00 UTC",
-          "volume": 0,
-          "sentiment": null,
-          "sentimentAnnotatedPosts": 0,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 0,
-          "unknownReasons": {
-            "analysis_pending": 0
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-27T12:00:00Z",
-          "label": "2024-09-27 12:00 UTC",
-          "volume": 1,
-          "sentiment": -1.0,
-          "sentimentAnnotatedPosts": 1,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-27T18:00:00Z",
-          "label": "2024-09-27 18:00 UTC",
-          "volume": 4,
-          "sentiment": 0.0,
-          "sentimentAnnotatedPosts": 4,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 4,
-          "unknownReasons": {
-            "analysis_pending": 4
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-28T00:00:00Z",
-          "label": "2024-09-28 00:00 UTC",
-          "volume": 3,
-          "sentiment": 0.6667,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 1,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-28T06:00:00Z",
-          "label": "2024-09-28 06:00 UTC",
-          "volume": 1,
-          "sentiment": -1.0,
-          "sentimentAnnotatedPosts": 1,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-28T12:00:00Z",
-          "label": "2024-09-28 12:00 UTC",
-          "volume": 2,
-          "sentiment": 0.0,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-28T18:00:00Z",
-          "label": "2024-09-28 18:00 UTC",
-          "volume": 8,
-          "sentiment": 0.1428,
-          "sentimentAnnotatedPosts": 7,
-          "sentimentCounts": {
-            "positive": 3,
-            "neutral": 2,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 8,
-          "unknownReasons": {
-            "analysis_pending": 8
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-29T00:00:00Z",
-          "label": "2024-09-29 00:00 UTC",
-          "volume": 2,
-          "sentiment": -0.5,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 1,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-29T06:00:00Z",
-          "label": "2024-09-29 06:00 UTC",
-          "volume": 6,
-          "sentiment": -0.3333,
-          "sentimentAnnotatedPosts": 6,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 4
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 6,
-          "unknownReasons": {
-            "analysis_pending": 6
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-29T12:00:00Z",
-          "label": "2024-09-29 12:00 UTC",
-          "volume": 108,
-          "sentiment": -0.1401,
-          "sentimentAnnotatedPosts": 107,
-          "sentimentCounts": {
-            "positive": 44,
-            "neutral": 4,
-            "negative": 59
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 108,
-          "unknownReasons": {
-            "analysis_pending": 108
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-29T18:00:00Z",
-          "label": "2024-09-29 18:00 UTC",
-          "volume": 143,
-          "sentiment": -0.0349,
-          "sentimentAnnotatedPosts": 143,
-          "sentimentCounts": {
-            "positive": 66,
-            "neutral": 6,
-            "negative": 71
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 143,
-          "unknownReasons": {
-            "analysis_pending": 143
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-30T00:00:00Z",
-          "label": "2024-09-30 00:00 UTC",
-          "volume": 123,
-          "sentiment": 0.0569,
-          "sentimentAnnotatedPosts": 123,
-          "sentimentCounts": {
-            "positive": 62,
-            "neutral": 6,
-            "negative": 55
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 123,
-          "unknownReasons": {
-            "analysis_pending": 123
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-30T06:00:00Z",
-          "label": "2024-09-30 06:00 UTC",
-          "volume": 73,
-          "sentiment": 0.0556,
-          "sentimentAnnotatedPosts": 72,
-          "sentimentCounts": {
-            "positive": 35,
-            "neutral": 6,
-            "negative": 31
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 73,
-          "unknownReasons": {
-            "analysis_pending": 73
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-30T12:00:00Z",
-          "label": "2024-09-30 12:00 UTC",
-          "volume": 145,
-          "sentiment": -0.1748,
-          "sentimentAnnotatedPosts": 143,
-          "sentimentCounts": {
-            "positive": 49,
-            "neutral": 20,
-            "negative": 74
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 145,
-          "unknownReasons": {
-            "analysis_pending": 145
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-09-30T18:00:00Z",
-          "label": "2024-09-30 18:00 UTC",
-          "volume": 171,
-          "sentiment": -0.0647,
-          "sentimentAnnotatedPosts": 170,
-          "sentimentCounts": {
-            "positive": 75,
-            "neutral": 9,
-            "negative": 86
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 171,
-          "unknownReasons": {
-            "analysis_pending": 171
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-01T00:00:00Z",
-          "label": "2024-10-01 00:00 UTC",
-          "volume": 88,
-          "sentiment": -0.0341,
-          "sentimentAnnotatedPosts": 88,
-          "sentimentCounts": {
-            "positive": 39,
-            "neutral": 7,
-            "negative": 42
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 88,
-          "unknownReasons": {
-            "analysis_pending": 88
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-01T06:00:00Z",
-          "label": "2024-10-01 06:00 UTC",
-          "volume": 5,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 4,
-          "sentimentCounts": {
-            "positive": 4,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 5,
-          "unknownReasons": {
-            "analysis_pending": 5
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-01T12:00:00Z",
-          "label": "2024-10-01 12:00 UTC",
-          "volume": 4,
-          "sentiment": 0.5,
-          "sentimentAnnotatedPosts": 4,
-          "sentimentCounts": {
-            "positive": 3,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 4,
-          "unknownReasons": {
-            "analysis_pending": 4
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-01T18:00:00Z",
-          "label": "2024-10-01 18:00 UTC",
-          "volume": 3,
-          "sentiment": 0.0,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 1,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-02T00:00:00Z",
-          "label": "2024-10-02 00:00 UTC",
-          "volume": 1,
-          "sentiment": null,
-          "sentimentAnnotatedPosts": 0,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-02T06:00:00Z",
-          "label": "2024-10-02 06:00 UTC",
-          "volume": 2,
-          "sentiment": -1.0,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-02T12:00:00Z",
-          "label": "2024-10-02 12:00 UTC",
-          "volume": 2,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-02T18:00:00Z",
-          "label": "2024-10-02 18:00 UTC",
-          "volume": 2,
-          "sentiment": 0.5,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 1,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-03T00:00:00Z",
-          "label": "2024-10-03 00:00 UTC",
-          "volume": 2,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-03T06:00:00Z",
-          "label": "2024-10-03 06:00 UTC",
-          "volume": 3,
-          "sentiment": -0.3333,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 0,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-03T12:00:00Z",
-          "label": "2024-10-03 12:00 UTC",
-          "volume": 7,
-          "sentiment": 0.2857,
-          "sentimentAnnotatedPosts": 7,
-          "sentimentCounts": {
-            "positive": 4,
-            "neutral": 1,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 7,
-          "unknownReasons": {
-            "analysis_pending": 7
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2024-10-03T18:00:00Z",
-          "label": "2024-10-03 18:00 UTC",
-          "volume": 3,
-          "sentiment": 0.3333,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        }
-      ]
-    },
-    {
       "id": "cannes_film_festival_2024",
       "sourceEventId": "cannes_film_festival_2024",
       "title": "Cannes Film Festival 2024",
@@ -120389,672 +124171,6 @@
           "unknownPosts": 1,
           "unknownReasons": {
             "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        }
-      ]
-    },
-    {
-      "id": "hotset-095",
-      "sourceEventId": "HOTSET-095",
-      "title": "Eslabon Armado and Peso Pluma Ella Baila Sola release",
-      "category": "Sports Entertainment",
-      "summary": "Track public discussion surrounding Eslabon Armado and Peso Pluma Ella Baila Sola release, including when activity intensified across the published event window.",
-      "narrative": "This page summarizes 194 posts from the catalog-defined event window for Eslabon Armado and Peso Pluma Ella Baila Sola release. It focuses on observable activity, timing, and conversation structure.",
-      "entities": [],
-      "location": "",
-      "sourceCategory": "Music",
-      "tags": [
-        "HOTSET-095",
-        "sports_entertainment"
-      ],
-      "structure": [
-        90,
-        7,
-        3
-      ],
-      "structureCounts": {
-        "mainPosts": 675,
-        "replies": 50,
-        "quotes": 21,
-        "reposts": 0,
-        "other": 0
-      },
-      "sourcePostCount": 746,
-      "reviewPendingPostCount": 22,
-      "analysisEligiblePostCount": 724,
-      "usableTextPostCount": 746,
-      "windowPostCount": 196,
-      "sourceStart": "2023-03-16T06:36:28Z",
-      "sourceEnd": "2023-04-16T05:33:31Z",
-      "windowStart": "2023-03-16T00:00:00Z",
-      "windowEnd": "2023-03-23T00:00:00Z",
-      "platforms": [
-        {
-          "name": "x",
-          "count": 196,
-          "share": 100.0
-        }
-      ],
-      "languages": [
-        {
-          "code": "es",
-          "count": 151,
-          "share": 77.0
-        },
-        {
-          "code": "en",
-          "count": 27,
-          "share": 13.8
-        },
-        {
-          "code": "eu",
-          "count": 7,
-          "share": 3.6
-        },
-        {
-          "code": "fr",
-          "count": 3,
-          "share": 1.5
-        },
-        {
-          "code": "zxx",
-          "count": 3,
-          "share": 1.5
-        }
-      ],
-      "engagement": {
-        "likes": 3264,
-        "replies": 118,
-        "reposts": 394,
-        "quotes": 116,
-        "views": 241707,
-        "viewCoverage": 100.0
-      },
-      "activityHighlights": [
-        {
-          "time": "2023-03-17T00:00:00Z",
-          "label": "Mar 17, 2023 · 00:00 UTC",
-          "volume": 29,
-          "windowShare": 14.8,
-          "changeFromPreviousBin": 1350,
-          "kind": "peak",
-          "title": "Highest observed activity"
-        },
-        {
-          "time": "2023-03-18T00:00:00Z",
-          "label": "Mar 18, 2023 · 00:00 UTC",
-          "volume": 15,
-          "windowShare": 7.7,
-          "changeFromPreviousBin": 15,
-          "kind": "high_activity",
-          "title": "Activity high point 2"
-        },
-        {
-          "time": "2023-03-20T18:00:00Z",
-          "label": "Mar 20, 2023 · 18:00 UTC",
-          "volume": 15,
-          "windowShare": 7.7,
-          "changeFromPreviousBin": 200,
-          "kind": "high_activity",
-          "title": "Activity high point 3"
-        }
-      ],
-      "dataNotes": [
-        "Counts are aggregated into 6-hour UTC intervals.",
-        "The chart uses the event window defined by the crawler catalog.",
-        "No post text, account identifier, or post URL is included in this public snapshot.",
-        "22 posts held by the current text-quality rules remain included in public activity totals.",
-        "Incremental activity was merged on 2026-08-09."
-      ],
-      "modelVersion": "HOTSET-095-incremental-public-timeline-v2",
-      "releaseMode": "timeline_sentiment",
-      "sentimentAvailable": true,
-      "sentimentSummary": {
-        "annotatedPosts": 190,
-        "coverage": 96.9,
-        "meanScore": 0.3895,
-        "counts": {
-          "positive": 121,
-          "neutral": 22,
-          "negative": 47
-        },
-        "model": "Qwen3.5-4B",
-        "promptVersion": "surge-sentiment-qwen3-v1.2"
-      },
-      "topicAnalysisAvailable": false,
-      "stanceAnalysisAvailable": false,
-      "topics": [],
-      "points": [
-        {
-          "time": "2023-03-16T00:00:00Z",
-          "label": "2023-03-16 00:00 UTC",
-          "volume": 0,
-          "sentiment": null,
-          "sentimentAnnotatedPosts": 0,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 0,
-          "unknownReasons": {
-            "analysis_pending": 0
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-16T06:00:00Z",
-          "label": "2023-03-16 06:00 UTC",
-          "volume": 1,
-          "sentiment": 0.0,
-          "sentimentAnnotatedPosts": 1,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 1,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-16T12:00:00Z",
-          "label": "2023-03-16 12:00 UTC",
-          "volume": 3,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 3,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-16T18:00:00Z",
-          "label": "2023-03-16 18:00 UTC",
-          "volume": 2,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 2,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 2,
-          "unknownReasons": {
-            "analysis_pending": 2
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-17T00:00:00Z",
-          "label": "2023-03-17 00:00 UTC",
-          "volume": 29,
-          "sentiment": 0.4483,
-          "sentimentAnnotatedPosts": 29,
-          "sentimentCounts": {
-            "positive": 20,
-            "neutral": 2,
-            "negative": 7
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 29,
-          "unknownReasons": {
-            "analysis_pending": 29
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-17T06:00:00Z",
-          "label": "2023-03-17 06:00 UTC",
-          "volume": 7,
-          "sentiment": 0.5714,
-          "sentimentAnnotatedPosts": 7,
-          "sentimentCounts": {
-            "positive": 5,
-            "neutral": 1,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 7,
-          "unknownReasons": {
-            "analysis_pending": 7
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-17T12:00:00Z",
-          "label": "2023-03-17 12:00 UTC",
-          "volume": 18,
-          "sentiment": 0.4118,
-          "sentimentAnnotatedPosts": 17,
-          "sentimentCounts": {
-            "positive": 12,
-            "neutral": 0,
-            "negative": 5
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 18,
-          "unknownReasons": {
-            "analysis_pending": 18
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-17T18:00:00Z",
-          "label": "2023-03-17 18:00 UTC",
-          "volume": 13,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 12,
-          "sentimentCounts": {
-            "positive": 12,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 13,
-          "unknownReasons": {
-            "analysis_pending": 13
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-18T00:00:00Z",
-          "label": "2023-03-18 00:00 UTC",
-          "volume": 15,
-          "sentiment": 0.2143,
-          "sentimentAnnotatedPosts": 14,
-          "sentimentCounts": {
-            "positive": 8,
-            "neutral": 1,
-            "negative": 5
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 15,
-          "unknownReasons": {
-            "analysis_pending": 15
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-18T06:00:00Z",
-          "label": "2023-03-18 06:00 UTC",
-          "volume": 0,
-          "sentiment": null,
-          "sentimentAnnotatedPosts": 0,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 0,
-          "unknownReasons": {
-            "analysis_pending": 0
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-18T12:00:00Z",
-          "label": "2023-03-18 12:00 UTC",
-          "volume": 3,
-          "sentiment": 0.3333,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-18T18:00:00Z",
-          "label": "2023-03-18 18:00 UTC",
-          "volume": 15,
-          "sentiment": 0.4667,
-          "sentimentAnnotatedPosts": 15,
-          "sentimentCounts": {
-            "positive": 9,
-            "neutral": 4,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 15,
-          "unknownReasons": {
-            "analysis_pending": 15
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-19T00:00:00Z",
-          "label": "2023-03-19 00:00 UTC",
-          "volume": 8,
-          "sentiment": 0.125,
-          "sentimentAnnotatedPosts": 8,
-          "sentimentCounts": {
-            "positive": 4,
-            "neutral": 1,
-            "negative": 3
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 8,
-          "unknownReasons": {
-            "analysis_pending": 8
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-19T06:00:00Z",
-          "label": "2023-03-19 06:00 UTC",
-          "volume": 3,
-          "sentiment": -1.0,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 3
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-19T12:00:00Z",
-          "label": "2023-03-19 12:00 UTC",
-          "volume": 4,
-          "sentiment": 1.0,
-          "sentimentAnnotatedPosts": 4,
-          "sentimentCounts": {
-            "positive": 4,
-            "neutral": 0,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 4,
-          "unknownReasons": {
-            "analysis_pending": 4
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-19T18:00:00Z",
-          "label": "2023-03-19 18:00 UTC",
-          "volume": 5,
-          "sentiment": 0.2,
-          "sentimentAnnotatedPosts": 5,
-          "sentimentCounts": {
-            "positive": 1,
-            "neutral": 4,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 5,
-          "unknownReasons": {
-            "analysis_pending": 5
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-20T00:00:00Z",
-          "label": "2023-03-20 00:00 UTC",
-          "volume": 7,
-          "sentiment": 0.0,
-          "sentimentAnnotatedPosts": 7,
-          "sentimentCounts": {
-            "positive": 3,
-            "neutral": 1,
-            "negative": 3
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 7,
-          "unknownReasons": {
-            "analysis_pending": 7
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-20T06:00:00Z",
-          "label": "2023-03-20 06:00 UTC",
-          "volume": 1,
-          "sentiment": -1.0,
-          "sentimentAnnotatedPosts": 1,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-20T12:00:00Z",
-          "label": "2023-03-20 12:00 UTC",
-          "volume": 5,
-          "sentiment": 0.4,
-          "sentimentAnnotatedPosts": 5,
-          "sentimentCounts": {
-            "positive": 3,
-            "neutral": 1,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 5,
-          "unknownReasons": {
-            "analysis_pending": 5
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-20T18:00:00Z",
-          "label": "2023-03-20 18:00 UTC",
-          "volume": 15,
-          "sentiment": 0.1428,
-          "sentimentAnnotatedPosts": 14,
-          "sentimentCounts": {
-            "positive": 7,
-            "neutral": 2,
-            "negative": 5
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 15,
-          "unknownReasons": {
-            "analysis_pending": 15
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-21T00:00:00Z",
-          "label": "2023-03-21 00:00 UTC",
-          "volume": 10,
-          "sentiment": 0.3,
-          "sentimentAnnotatedPosts": 10,
-          "sentimentCounts": {
-            "positive": 6,
-            "neutral": 1,
-            "negative": 3
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 10,
-          "unknownReasons": {
-            "analysis_pending": 10
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-21T06:00:00Z",
-          "label": "2023-03-21 06:00 UTC",
-          "volume": 1,
-          "sentiment": -1.0,
-          "sentimentAnnotatedPosts": 1,
-          "sentimentCounts": {
-            "positive": 0,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 1,
-          "unknownReasons": {
-            "analysis_pending": 1
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-21T12:00:00Z",
-          "label": "2023-03-21 12:00 UTC",
-          "volume": 3,
-          "sentiment": 0.3333,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-21T18:00:00Z",
-          "label": "2023-03-21 18:00 UTC",
-          "volume": 6,
-          "sentiment": 0.3333,
-          "sentimentAnnotatedPosts": 6,
-          "sentimentCounts": {
-            "positive": 4,
-            "neutral": 0,
-            "negative": 2
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 6,
-          "unknownReasons": {
-            "analysis_pending": 6
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-22T00:00:00Z",
-          "label": "2023-03-22 00:00 UTC",
-          "volume": 8,
-          "sentiment": 0.4286,
-          "sentimentAnnotatedPosts": 7,
-          "sentimentCounts": {
-            "positive": 4,
-            "neutral": 2,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 8,
-          "unknownReasons": {
-            "analysis_pending": 8
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-22T06:00:00Z",
-          "label": "2023-03-22 06:00 UTC",
-          "volume": 3,
-          "sentiment": 0.6667,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 1,
-            "negative": 0
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 3,
-          "unknownReasons": {
-            "analysis_pending": 3
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-22T12:00:00Z",
-          "label": "2023-03-22 12:00 UTC",
-          "volume": 4,
-          "sentiment": 0.3333,
-          "sentimentAnnotatedPosts": 3,
-          "sentimentCounts": {
-            "positive": 2,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 4,
-          "unknownReasons": {
-            "analysis_pending": 4
-          },
-          "topicCounts": [],
-          "topicSentimentCounts": []
-        },
-        {
-          "time": "2023-03-22T18:00:00Z",
-          "label": "2023-03-22 18:00 UTC",
-          "volume": 7,
-          "sentiment": 0.7143,
-          "sentimentAnnotatedPosts": 7,
-          "sentimentCounts": {
-            "positive": 6,
-            "neutral": 0,
-            "negative": 1
-          },
-          "classifiedPosts": 0,
-          "unknownPosts": 7,
-          "unknownReasons": {
-            "analysis_pending": 7
           },
           "topicCounts": [],
           "topicSentimentCounts": []

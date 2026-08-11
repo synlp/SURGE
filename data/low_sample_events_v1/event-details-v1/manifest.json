@@ -1,6 +1,6 @@
 {
   "schemaVersion": "surge-live-event-detail-manifest-v1",
-  "generatedAt": "2026-08-09T09:55:49.104678Z",
+  "generatedAt": "2026-08-11T11:53:31.436638Z",
   "sourceSnapshot": "events-v9-1.json",
   "eventCount": 47,
   "eventIds": [
@@ -15,7 +15,9 @@
     "e057",
     "surge300v2-179",
     "surge300v2-132",
+    "surge300v2-155",
     "surge300v2-092",
+    "surge300v2-068",
     "gpt_5_3_codex_release",
     "damascus_sdf_conflict",
     "surge300v2-011",
@@ -38,7 +40,6 @@
     "surge300v2-170",
     "surge300v2-008",
     "surge300v2-050",
-    "hotset-034",
     "cannes_film_festival_2024",
     "change_6_moon_mission",
     "tiktok_ban",
@@ -47,7 +48,6 @@
     "israel_judicial_reform_protests",
     "gwyneth_paltrow_trial",
     "battle_of_bakhmut_2023",
-    "hotset-095",
     "20th_cpc_national_congress",
     "axiom_mission_2022",
     "kazakhstan_protests_2022"
