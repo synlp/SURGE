@@ -437,7 +437,6 @@
     .event-row:hover::after, .event-row:focus-visible::after { transform: translateX(3px); }
     .event-main { min-width: 0; }
     .event-title { display: block; overflow: hidden; font-size: 14px; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
-    .event-post-count { margin-left: 7px; color: var(--muted); font-size: .82em; font-weight: 600; white-space: nowrap; }
     .event-description { display: block; overflow: hidden; margin-top: 3px; color: var(--muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
     .cell-label { display: none; color: var(--muted); font-size: 9px; text-transform: uppercase; }
     .cell-value { display: block; color: var(--muted); font-size: 12px; }
@@ -666,7 +665,7 @@
       const latest = [...state.events].sort((a, b) => eventDate(b).localeCompare(eventDate(a)) || a.title.localeCompare(b.title)).slice(0, 6);
       $("#latest-events").innerHTML = latest.map(event => `<a class="event-card" href="${escapeHtml(eventHref(event, "index.html"))}">
         <div class="card-top"><span class="category">${escapeHtml(categoryLabel(event.category))}</span><span class="time">${escapeHtml(eventDate(event) || "Date unavailable")}</span></div>
-        <h3>${escapeHtml(event.title)}<span class="event-post-count">${fmt.format(event.postCount)} posts</span></h3>
+        <h3>${escapeHtml(event.title)}</h3>
         <p class="event-summary">${escapeHtml(event.summary || "Open the event to explore its published activity and sentiment timeline.")}</p>
         <div class="card-footer"><span><strong>${fmt.format(event.postCount)}</strong> posts</span><span class="open-event">Open analysis →</span></div>
       </a>`).join("");
@@ -693,7 +692,7 @@
           ? `${String(event.windowStart).slice(0, 10)} – ${String(event.windowEnd).slice(0, 10)}`
           : eventDate(event) || "Date unavailable";
         return `<a class="event-row" href="${escapeHtml(eventHref(event, returnTarget))}" aria-label="Open ${escapeHtml(event.title)}">
-          <div class="event-main"><span class="event-title">${escapeHtml(event.title)}<span class="event-post-count">${fmt.format(event.postCount)} posts</span></span><span class="event-description">${escapeHtml(event.summary || event.id)}</span></div>
+          <div class="event-main"><span class="event-title">${escapeHtml(event.title)}</span><span class="event-description">${escapeHtml(event.summary || event.id)}</span></div>
           <div><span class="cell-label">Category</span><span class="category">${escapeHtml(categoryLabel(event.category))}</span></div>
           <div><span class="cell-label">Date</span><span class="cell-value">${escapeHtml(date)}</span></div>
           <div><span class="cell-label">Posts</span><span class="cell-value">${fmt.format(event.postCount)}</span></div>
