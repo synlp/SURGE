@@ -1,0 +1,1 @@
+window.SURGE_COLLECTION_SUMMARY={"schemaVersion":"surge-collection-summary-v1","updatedAt":"2026-08-20T00:00:00+08:00","totalPosts":16500000,"displayTotalPosts":"16.5M","browsableEvents":351,"browsableDetailPosts":8479147,"scope":"full_archived_collection","note":"The aggregate archive total is newer than the currently browsable per-event detail snapshot."};

@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/surge-symbol.svg" type="image/svg+xml">
   <meta name="description" content="SURGE is an event-centric social media benchmark pairing sentiment time series with bin-aligned text and reply/repost interaction structure.">
   <title>SURGE Dataset</title>
   <style>
@@ -70,17 +71,7 @@
       white-space: nowrap;
     }
 
-    .brand-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
-      display: inline-grid;
-      place-items: center;
-      color: #fff;
-      font-size: 15px;
-      font-weight: 900;
-    }
+    .brand-logo { display: block; width: 172px; height: 45px; }
 
     .nav-links {
       display: flex;
@@ -712,8 +703,7 @@
       h1 {
         font-size: 35px;
       }
-      .brand { gap: 8px; }
-      .brand-mark { width: 30px; height: 30px; }
+      .brand-logo { width: 126px; height: 34px; }
       .nav-links { gap: 12px; font-size: 12px; }
       .nav-links a:last-child { display: none; }
       .stats { grid-template-columns: 1fr; }
@@ -750,8 +740,7 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="SURGE Dataset home">
-        <span class="brand-mark" aria-hidden="true">S</span>
-        <span>SURGE</span>
+        <img class="brand-logo" src="assets/surge-logo.svg" alt="SURGE Event Intelligence">
       </a>
       <div class="nav-links">
         <a href="#overview">Overview</a>
@@ -794,8 +783,8 @@
           <span>released events after quality filtering</span>
         </div>
         <div class="stat">
-          <strong id="release-post-count">8.59M</strong>
-          <span>posts represented in the current release</span>
+          <strong id="release-post-count">16.5M</strong>
+          <span>posts archived in the full collection</span>
         </div>
         <div class="stat">
           <strong>5</strong>
@@ -908,7 +897,7 @@
             </tr>
             <tr>
               <th scope="row">Release scale</th>
-              <td id="release-scale">351 events and 8,479,147 posts in the complete event collection.</td>
+              <td id="release-scale">351 browsable events and 16,500,000 archived posts in the full collection.</td>
             </tr>
             <tr>
               <th scope="row">Granularities</th>
@@ -972,19 +961,22 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
     </div>
   </footer>
   <script src="live/data/event-catalog-v1.js"></script>
+  <script src="live/data/collection-summary-v1.js"></script>
   <script>
     (() => {
       const catalog = window.SURGE_EVENT_CATALOG;
       if (!catalog || !Array.isArray(catalog.events) || !catalog.events.length) return;
       const totalEvents = catalog.events.length;
-      const totalPosts = catalog.events.reduce((sum, event) => sum + Number(event.postCount || event.sourcePostCount || 0), 0);
+      const detailPosts = catalog.events.reduce((sum, event) => sum + Number(event.postCount || event.sourcePostCount || 0), 0);
+      const collectionSummary = window.SURGE_COLLECTION_SUMMARY || {};
+      const totalPosts = Number(collectionSummary.totalPosts || detailPosts);
       const compactNumber = value => new Intl.NumberFormat("en-US", {
         notation: "compact",
         maximumFractionDigits: 2
       }).format(value);
       document.querySelector("#release-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       document.querySelector("#release-post-count").textContent = compactNumber(totalPosts);
-      document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${new Intl.NumberFormat("en-US").format(totalPosts)} posts in the complete event collection.`;
+      document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} browsable events and ${new Intl.NumberFormat("en-US").format(totalPosts)} archived posts in the full collection.`;
       document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);

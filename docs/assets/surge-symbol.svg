@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" role="img" aria-labelledby="title desc">
+  <title id="title">SURGE symbol</title>
+  <desc id="desc">A distorted five by five event grid in navy, teal, and blue.</desc>
+  <rect x="2" y="2" width="84" height="84" rx="18" fill="#f5f2ed"/>
+  <g stroke="#f5f2ed" stroke-width="3.2" stroke-linejoin="round">
+    <path fill="#172b4d" d="M14 14h13l-1 13H14z"/><path fill="#172b4d" d="M27 14h13l-2 13H26z"/><path fill="#4f8194" d="M40 14h13l-1 13H38z"/><path fill="#5a8fa0" d="M53 14h13l-1 13H52z"/><path fill="#172b4d" d="M66 14h10v13H65z"/>
+    <path fill="#172b4d" d="M14 27h12l-2 13H14z"/><path fill="#172b4d" d="M26 27h12l-3 13H24z"/><path fill="#5a8fa0" d="M38 27h14l-2 13H35z"/><path fill="#5a8fa0" d="M52 27h13l-1 13H50z"/><path fill="#3855a3" d="M65 27h11v13H64z"/>
+    <path fill="#172b4d" d="M14 40h10l2 13H14z"/><path fill="#172b4d" d="M24 40h11l3 13H26z"/><path fill="#4f8194" d="M35 40h15l2 13H38z"/><path fill="#3855a3" d="M50 40h14l1 13H52z"/><path fill="#3855a3" d="M64 40h12v13H65z"/>
+    <path fill="#172b4d" d="M14 53h12l3 13H14z"/><path fill="#4f8194" d="M26 53h12l5 13H29z"/><path fill="#5a8fa0" d="M38 53h14l3 13H43z"/><path fill="#3855a3" d="M52 53h13l2 13H55z"/><path fill="#3855a3" d="M65 53h11v13h-9z"/>
+    <path fill="#172b4d" d="M14 66h15l1 10H14z"/><path fill="#4f8194" d="M29 66h14l2 10H30z"/><path fill="#5a8fa0" d="M43 66h12l2 10H45z"/><path fill="#3855a3" d="M55 66h12l1 10H57z"/><path fill="#172b4d" d="M67 66h9v10h-8z"/>
+  </g>
+</svg>

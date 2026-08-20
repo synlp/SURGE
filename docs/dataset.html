@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/surge-symbol.svg" type="image/svg+xml">
   <meta name="description" content="SURGE dataset details: release scope, data model, measurements, quality standards, benchmark tasks, and expansion policy.">
   <title>SURGE Dataset Details</title>
   <style>
@@ -23,8 +24,8 @@
     a { color: inherit; }
     .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(216, 222, 233, .9); background: rgba(255, 255, 255, .94); backdrop-filter: blur(14px); }
     .nav { width: min(1180px, calc(100% - 40px)); min-height: 64px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; text-decoration: none; white-space: nowrap; }
-    .brand-mark { width: 32px; height: 32px; display: inline-grid; place-items: center; border-radius: 8px; background: linear-gradient(135deg, var(--blue), var(--green)); color: #fff; font-size: 15px; }
+    .brand { display: flex; align-items: center; text-decoration: none; white-space: nowrap; }
+    .brand-logo { display: block; width: 172px; height: 45px; }
     .nav-links { display: flex; align-items: center; gap: 18px; color: var(--muted); font-size: 14px; font-weight: 700; white-space: nowrap; }
     .nav-links a { text-decoration: none; }
     .nav-links a:hover, .nav-links a:focus-visible, .nav-links .active { color: var(--green); outline: none; }
@@ -110,8 +111,7 @@
     }
     @media (max-width: 620px) {
       .nav, .shell, .inner { width: min(100% - 28px, 1180px); }
-      .brand { gap: 8px; }
-      .brand-mark { width: 30px; height: 30px; }
+      .brand-logo { width: 126px; height: 34px; }
       .nav-links { gap: 12px; font-size: 12px; }
       .nav-links a:last-child { display: none; }
       .hero { gap: 28px; padding: 42px 0 38px; }
@@ -137,7 +137,7 @@
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>SURGE</span></a>
+      <a class="brand" href="index.html" aria-label="SURGE Dataset home"><img class="brand-logo" src="assets/surge-logo.svg" alt="SURGE Event Intelligence"></a>
       <div class="nav-links">
         <a href="index.html">Overview</a>
         <a class="active" href="dataset.html" aria-current="page" aria-label="Dataset Details">Dataset</a>
@@ -169,7 +169,7 @@
           <p>The current public website presents aggregate activity and available analysis across the expanded event collection. It is optimized for event discovery and interpretation.</p>
           <div class="release-metrics">
             <span class="release-metric"><strong id="public-event-count">351</strong><span>events</span></span>
-            <span class="release-metric"><strong id="public-post-count">8.59M</strong><span>posts represented</span></span>
+            <span class="release-metric"><strong id="public-post-count">16.5M</strong><span>archived posts</span></span>
             <span class="release-metric"><strong>6H</strong><span>public timeline view</span></span>
           </div>
         </article>
@@ -293,11 +293,13 @@ data/events/event_metadata.json</pre>
 
   <footer class="footer"><div class="inner footer-inner"><span>SURGE Dataset</span><span><a href="index.html">Overview</a> · <a href="live/index.html">Explore Events</a></span></div></footer>
   <script src="live/data/event-catalog-v1.js"></script>
+  <script src="live/data/collection-summary-v1.js"></script>
   <script>
     (() => {
       const events = window.SURGE_EVENT_CATALOG?.events;
       if (!Array.isArray(events) || !events.length) return;
-      const totalPosts = events.reduce((sum, event) => sum + Number(event.postCount || event.sourcePostCount || 0), 0);
+      const detailPosts = events.reduce((sum, event) => sum + Number(event.postCount || event.sourcePostCount || 0), 0);
+      const totalPosts = Number(window.SURGE_COLLECTION_SUMMARY?.totalPosts || detailPosts);
       document.querySelector("#public-event-count").textContent = new Intl.NumberFormat("en-US").format(events.length);
       document.querySelector("#public-post-count").textContent = new Intl.NumberFormat("en-US", {
         notation: "compact",

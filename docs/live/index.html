@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore and search 360 public SURGE social-media events.">
+  <link rel="icon" href="../assets/surge-symbol.svg" type="image/svg+xml">
+  <meta name="description" content="Explore and search 351 public SURGE social-media events within a 16.5M-post archive.">
   <title>SURGE Events | Explore Public Discussion</title>
   <style>
     :root {
@@ -59,17 +60,7 @@
       font-weight: 650;
       text-decoration: none;
     }
-    .brand-mark {
-      width: 32px;
-      height: 32px;
-      display: grid;
-      place-items: center;
-      border-radius: 9px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
-      color: #fff;
-    }
-    .brand-copy { display: flex; align-items: baseline; gap: 9px; }
-    .brand-copy small { color: var(--muted); font-size: 12px; font-weight: 500; }
+    .brand-logo { display: block; width: 172px; height: 45px; }
     .nav-links { display: flex; align-items: center; gap: 18px; color: var(--muted); font-size: 14px; font-weight: 650; }
     .nav-links a { text-decoration: none; }
     .nav-links a:hover, .nav-links a:focus-visible { color: var(--ink); }
@@ -467,7 +458,8 @@
     }
     @media (max-width: 680px) {
       .nav, .shell { width: min(100% - 28px, 1180px); }
-      .brand-copy small, .nav-secondary { display: none; }
+      .brand-logo { width: 126px; height: 34px; }
+      .nav-secondary { display: none; }
       .shell { padding-top: 34px; }
       .hero { gap: 24px; }
       .filter-panel { grid-template-columns: 1fr; padding: 14px; }
@@ -498,8 +490,7 @@
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="../index.html" aria-label="SURGE Dataset home">
-        <span class="brand-mark" aria-hidden="true">S</span>
-        <span class="brand-copy"><span>SURGE</span><small>Events</small></span>
+        <img class="brand-logo" src="../assets/surge-logo.svg" alt="SURGE Event Intelligence">
       </a>
       <div class="nav-links">
         <a class="nav-secondary" href="../index.html#overview">Dataset</a>
@@ -518,7 +509,7 @@
       </div>
       <aside class="hero-stats" aria-label="Published event collection">
         <div class="hero-stat"><span>Events</span><strong id="event-total">—</strong></div>
-        <div class="hero-stat"><span>Posts</span><strong id="post-total">—</strong></div>
+        <div class="hero-stat"><span>Archived posts</span><strong id="post-total">—</strong></div>
         <div class="hero-update" id="collection-status">Loading the published collection</div>
       </aside>
     </section>
@@ -578,6 +569,7 @@
   </main>
 
   <script src="data/event-catalog-v1.js"></script>
+  <script src="data/collection-summary-v1.js"></script>
   <script src="data/runtime-config.js"></script>
   <script src="assets/data-client.js"></script>
   <script>
@@ -737,8 +729,10 @@
         ).join(""));
         restoreState(categories);
         $("#event-total").textContent = fmt.format(state.events.length);
-        $("#post-total").textContent = compactFmt.format(state.events.reduce((total, event) => total + event.postCount, 0));
-        $("#collection-status").textContent = `${fmt.format(categories.length)} categories · aggregate public data`;
+        const detailPosts = state.events.reduce((total, event) => total + event.postCount, 0);
+        const collectionSummary = window.SURGE_COLLECTION_SUMMARY || {};
+        $("#post-total").textContent = collectionSummary.displayTotalPosts || compactFmt.format(Number(collectionSummary.totalPosts || detailPosts));
+        $("#collection-status").textContent = `${fmt.format(state.events.length)} browsable events · archive updated Aug 20`;
         renderCategories();
         renderLatest();
         render();
