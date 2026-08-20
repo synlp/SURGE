@@ -784,7 +784,7 @@
         </div>
         <div class="stat">
           <strong id="release-post-count">16.5M</strong>
-          <span>posts archived in the full collection</span>
+          <span>posts in the current collection</span>
         </div>
         <div class="stat">
           <strong>5</strong>
@@ -897,7 +897,7 @@
             </tr>
             <tr>
               <th scope="row">Release scale</th>
-              <td id="release-scale">351 browsable events and 16,500,000 archived posts in the full collection.</td>
+              <td id="release-scale">351 events and 16.5M posts in the current collection.</td>
             </tr>
             <tr>
               <th scope="row">Granularities</th>
@@ -976,7 +976,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       }).format(value);
       document.querySelector("#release-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       document.querySelector("#release-post-count").textContent = compactNumber(totalPosts);
-      document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} browsable events and ${new Intl.NumberFormat("en-US").format(totalPosts)} archived posts in the full collection.`;
+      document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${compactNumber(totalPosts)} posts in the current collection.`;
       document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);

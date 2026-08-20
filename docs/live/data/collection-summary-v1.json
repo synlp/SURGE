@@ -4,7 +4,5 @@
   "totalPosts": 16500000,
   "displayTotalPosts": "16.5M",
   "browsableEvents": 351,
-  "browsableDetailPosts": 8479147,
-  "scope": "full_archived_collection",
-  "note": "The aggregate archive total is newer than the currently browsable per-event detail snapshot."
+  "scope": "current_collection"
 }

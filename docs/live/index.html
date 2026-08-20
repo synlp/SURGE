@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../assets/surge-symbol.svg" type="image/svg+xml">
-  <meta name="description" content="Explore and search 351 public SURGE social-media events within a 16.5M-post archive.">
+  <meta name="description" content="Explore and search 351 public SURGE social-media events across 16.5M posts.">
   <title>SURGE Events | Explore Public Discussion</title>
   <style>
     :root {
@@ -509,7 +509,7 @@
       </div>
       <aside class="hero-stats" aria-label="Published event collection">
         <div class="hero-stat"><span>Events</span><strong id="event-total">—</strong></div>
-        <div class="hero-stat"><span>Archived posts</span><strong id="post-total">—</strong></div>
+        <div class="hero-stat"><span>Posts</span><strong id="post-total">—</strong></div>
         <div class="hero-update" id="collection-status">Loading the published collection</div>
       </aside>
     </section>
@@ -732,7 +732,7 @@
         const detailPosts = state.events.reduce((total, event) => total + event.postCount, 0);
         const collectionSummary = window.SURGE_COLLECTION_SUMMARY || {};
         $("#post-total").textContent = collectionSummary.displayTotalPosts || compactFmt.format(Number(collectionSummary.totalPosts || detailPosts));
-        $("#collection-status").textContent = `${fmt.format(state.events.length)} browsable events · archive updated Aug 20`;
+        $("#collection-status").textContent = `${fmt.format(state.events.length)} events · updated Aug 20`;
         renderCategories();
         renderLatest();
         render();
