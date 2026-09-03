@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../assets/surge-symbol.svg" type="image/svg+xml">
-  <meta name="description" content="Explore and search 351 public SURGE social-media events across 19.23M posts.">
+  <meta name="description" content="Explore the SURGE collection of 395 social-media events across 21.8M posts.">
   <title>SURGE Events | Explore Public Discussion</title>
   <style>
     :root {
@@ -728,11 +728,12 @@
           `<option value="${escapeHtml(category)}">${escapeHtml(categoryLabel(category))}</option>`
         ).join(""));
         restoreState(categories);
-        $("#event-total").textContent = fmt.format(state.events.length);
-        const detailPosts = state.events.reduce((total, event) => total + event.postCount, 0);
         const collectionSummary = window.SURGE_COLLECTION_SUMMARY || {};
+        const collectionEvents = Number(collectionSummary.totalEvents || collectionSummary.browsableEvents || state.events.length);
+        $("#event-total").textContent = fmt.format(collectionEvents);
+        const detailPosts = state.events.reduce((total, event) => total + event.postCount, 0);
         $("#post-total").textContent = collectionSummary.displayTotalPosts || compactFmt.format(Number(collectionSummary.totalPosts || detailPosts));
-        $("#collection-status").textContent = `${fmt.format(state.events.length)} events · updated Aug 23`;
+        $("#collection-status").textContent = `${fmt.format(state.events.length)} analyses currently browsable · updated Sep 3`;
         renderCategories();
         renderLatest();
         render();

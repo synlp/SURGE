@@ -779,11 +779,11 @@
       </aside>
       <div class="stats" aria-label="Dataset snapshot">
         <div class="stat">
-          <strong id="release-event-count">351</strong>
+          <strong id="release-event-count">395</strong>
           <span>released events after quality filtering</span>
         </div>
         <div class="stat">
-          <strong id="release-post-count">19.23M</strong>
+          <strong id="release-post-count">21.8M</strong>
           <span>posts in the current collection</span>
         </div>
         <div class="stat">
@@ -852,7 +852,7 @@
             <span class="principle-index">01 · EVENT</span>
             <h3>Event-Centric</h3>
             <p>
-              The registry covers <span id="registry-event-count">351</span> real events across natural disasters, politics, social
+              The registry covers <span id="registry-event-count">395</span> real events across natural disasters, politics, social
               movements, technology, and sports or entertainment.
             </p>
           </article>
@@ -897,7 +897,7 @@
             </tr>
             <tr>
               <th scope="row">Release scale</th>
-              <td id="release-scale">351 events and 19.23M posts in the current collection.</td>
+              <td id="release-scale">395 events and 21.8M posts in the current collection.</td>
             </tr>
             <tr>
               <th scope="row">Granularities</th>
@@ -966,9 +966,10 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
     (() => {
       const catalog = window.SURGE_EVENT_CATALOG;
       if (!catalog || !Array.isArray(catalog.events) || !catalog.events.length) return;
-      const totalEvents = catalog.events.length;
+      const browsableEvents = catalog.events.length;
       const detailPosts = catalog.events.reduce((sum, event) => sum + Number(event.postCount || event.sourcePostCount || 0), 0);
       const collectionSummary = window.SURGE_COLLECTION_SUMMARY || {};
+      const totalEvents = Number(collectionSummary.totalEvents || collectionSummary.browsableEvents || browsableEvents);
       const totalPosts = Number(collectionSummary.totalPosts || detailPosts);
       const compactNumber = value => new Intl.NumberFormat("en-US", {
         notation: "compact",
@@ -977,7 +978,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#release-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       document.querySelector("#release-post-count").textContent = compactNumber(totalPosts);
       document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${compactNumber(totalPosts)} posts in the current collection.`;
-      document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events online`;
+      document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(browsableEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);
       const latest = [...catalog.events].sort((a, b) => eventDate(b).localeCompare(eventDate(a)) || String(a.title).localeCompare(String(b.title)))[0];
