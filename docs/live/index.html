@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="../assets/surge-symbol.svg" type="image/svg+xml">
-  <meta name="description" content="Explore the SURGE collection of 395 social-media events across 21.8M posts.">
+  <meta name="description" content="Explore the SURGE collection of 395 social-media events across 21.9M posts.">
   <title>SURGE Events | Explore Public Discussion</title>
   <style>
     :root {
@@ -733,7 +733,7 @@
         $("#event-total").textContent = fmt.format(collectionEvents);
         const detailPosts = state.events.reduce((total, event) => total + event.postCount, 0);
         $("#post-total").textContent = collectionSummary.displayTotalPosts || compactFmt.format(Number(collectionSummary.totalPosts || detailPosts));
-        $("#collection-status").textContent = `${fmt.format(state.events.length)} analyses currently browsable · updated Sep 3`;
+        $("#collection-status").textContent = `${fmt.format(state.events.length)} analyses currently browsable · updated Sep 4`;
         renderCategories();
         renderLatest();
         render();
