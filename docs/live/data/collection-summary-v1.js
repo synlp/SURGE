@@ -1,1 +1,1 @@
-window.SURGE_COLLECTION_SUMMARY={"schemaVersion":"surge-collection-summary-v1","updatedAt":"2026-09-04T00:00:00+08:00","totalEvents":395,"totalPosts":21900000,"displayTotalPosts":"21.9M","browsableEvents":351,"scope":"current_collection"};
+window.SURGE_COLLECTION_SUMMARY={"schemaVersion":"surge-collection-summary-v1","updatedAt":"2026-09-06T00:00:00+08:00","totalEvents":395,"totalPosts":22000000,"displayTotalPosts":"22.0M","browsableEvents":351,"scope":"current_collection"};
