@@ -1,17 +1,8 @@
 {
   "schemaVersion": "surge-collection-growth-v1",
-  "updatedAt": "2026-09-27T00:00:00+08:00",
+  "updatedAt": "2026-09-30T00:00:00+08:00",
   "unit": "posts",
   "entries": [
-    { "date": "2026-09-13", "totalPosts": 23200000, "netChange": null, "changeKind": "baseline" },
-    { "date": "2026-09-14", "totalPosts": 23500000, "netChange": 300000, "changeKind": "growth" },
-    { "date": "2026-09-16", "totalPosts": 23900000, "netChange": 400000, "changeKind": "growth" },
-    { "date": "2026-09-18", "totalPosts": 24400000, "netChange": 500000, "changeKind": "growth" },
-    { "date": "2026-09-19", "totalPosts": 24500000, "netChange": 100000, "changeKind": "growth" },
-    { "date": "2026-09-20", "totalPosts": 24600000, "netChange": 100000, "changeKind": "growth" },
-    { "date": "2026-09-21", "totalPosts": 24800000, "netChange": 200000, "changeKind": "growth" },
-    { "date": "2026-09-22", "totalPosts": 24700000, "netChange": -100000, "changeKind": "reconciliation" },
-    { "date": "2026-09-26", "totalPosts": 25000000, "netChange": 300000, "changeKind": "growth" },
-    { "date": "2026-09-27", "totalPosts": 25100000, "netChange": 100000, "changeKind": "growth" }
+    { "date": "2026-09-30", "totalPosts": 25100000, "displayTotalPosts": "25.1M", "addedPosts": 203644, "changeKind": "growth" }
   ]
 }

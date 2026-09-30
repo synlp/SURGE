@@ -595,18 +595,18 @@
 
       <section class="surface" id="growth-log" aria-labelledby="growth-title">
         <div class="section-head">
-          <div><h2 id="growth-title">Collection growth log</h2><p>Published collection snapshots and the net change from the previous snapshot.</p></div>
+          <div><h2 id="growth-title">Collection growth log</h2><p>Daily additions and the published collection total.</p></div>
         </div>
         <div class="growth-summary" aria-label="Collection growth summary">
           <div class="growth-metric"><span>Latest total</span><strong id="growth-latest">—</strong></div>
-          <div class="growth-metric"><span>Net growth from baseline</span><strong id="growth-net">—</strong></div>
+          <div class="growth-metric"><span>Recorded additions</span><strong id="growth-net">—</strong></div>
           <div class="growth-metric"><span>Published snapshots</span><strong id="growth-snapshots">—</strong></div>
         </div>
         <div class="growth-table" role="table" aria-label="Collection growth history">
-          <div class="growth-row growth-row--head" role="row"><span role="columnheader">Date</span><span role="columnheader">Total posts</span><span role="columnheader">Net change</span><span role="columnheader">Reading note</span></div>
+          <div class="growth-row growth-row--head" role="row"><span role="columnheader">Date</span><span role="columnheader">Total posts</span><span role="columnheader">New posts</span><span role="columnheader">Reading note</span></div>
           <div id="growth-rows"></div>
         </div>
-        <p class="growth-footnote">Only dates with a published total are listed. A gap does not imply zero collection; it means no new total was published for that date.</p>
+        <p class="growth-footnote">Public growth tracking begins on Sep 30, 2026. Earlier collection snapshots are not included in this log.</p>
       </section>
     </div>
 
@@ -730,25 +730,23 @@
         $("#growth-rows").innerHTML = `<div class="empty"><strong>Growth history unavailable</strong>No published snapshots are available yet.</div>`;
         return;
       }
-      const baseline = entries[0];
       const latest = entries[entries.length - 1];
-      const netGrowth = Number(latest.totalPosts) - Number(baseline.totalPosts);
-      const signed = value => `${value >= 0 ? "+" : "−"}${fmt.format(Math.abs(value))}`;
+      const recordedAdditions = entries.reduce((total, entry) => total + Math.max(0, Number(entry.addedPosts || 0)), 0);
       const displayDate = value => new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${value}T00:00:00Z`));
-      $("#growth-latest").textContent = compactFmt.format(Number(latest.totalPosts));
-      $("#growth-net").textContent = signed(netGrowth);
+      $("#growth-latest").textContent = latest.displayTotalPosts || compactFmt.format(Number(latest.totalPosts));
+      $("#growth-net").textContent = fmt.format(recordedAdditions);
       $("#growth-snapshots").textContent = fmt.format(entries.length);
       $("#growth-rows").innerHTML = [...entries].reverse().map(entry => {
-        const kind = entry.changeKind === "reconciliation" ? "reconciliation" : entry.changeKind === "baseline" ? "baseline" : "growth";
-        const change = entry.netChange == null ? "Baseline" : signed(Number(entry.netChange));
+        const kind = entry.changeKind === "reconciliation" ? "reconciliation" : entry.addedPosts == null ? "baseline" : "growth";
+        const change = entry.addedPosts == null ? "Not recorded" : fmt.format(Number(entry.addedPosts));
         const note = kind === "reconciliation"
           ? "Published total reconciled to the latest collection count."
           : kind === "baseline"
-            ? "First retained snapshot in this public log."
-            : "Net collection growth since the prior published snapshot.";
+            ? "Daily additions were not recorded for this snapshot."
+            : "Posts added on this date.";
         return `<div class="growth-row" role="row">
           <time class="growth-date" role="cell" datetime="${escapeHtml(entry.date)}">${escapeHtml(displayDate(entry.date))}</time>
-          <span class="growth-total" role="cell">${fmt.format(Number(entry.totalPosts))}</span>
+          <span class="growth-total" role="cell">${escapeHtml(entry.displayTotalPosts || compactFmt.format(Number(entry.totalPosts)))}</span>
           <span class="growth-change growth-change--${kind}" role="cell">${escapeHtml(change)}</span>
           <span class="growth-note" role="cell">${escapeHtml(note)}</span>
         </div>`;
