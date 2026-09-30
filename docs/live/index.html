@@ -112,7 +112,9 @@
     .hero-stat:first-child { border-left: 0; }
     .hero-stat span { display: block; color: var(--muted); font-size: 11px; }
     .hero-stat strong { display: block; margin-top: 4px; font-size: 24px; letter-spacing: -.03em; }
-    .hero-update { grid-column: 1 / -1; padding: 11px 17px; border-top: 1px solid var(--line); color: var(--green); font-size: 12px; font-weight: 700; }
+    .hero-update { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 17px; border-top: 1px solid var(--line); color: var(--green); font-size: 12px; font-weight: 700; }
+    .hero-update a { color: var(--blue); font-size: 11px; text-decoration: none; white-space: nowrap; }
+    .hero-update a:hover, .hero-update a:focus-visible { text-decoration: underline; }
 
     .filter-panel {
       display: grid;
@@ -304,6 +306,41 @@
     .category-card strong { display: block; overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
     .category-card span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
 
+    .growth-summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      overflow: hidden;
+      margin-bottom: 13px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #fbfcfd;
+    }
+    .growth-metric { min-width: 0; padding: 14px 16px; border-left: 1px solid var(--line); }
+    .growth-metric:first-child { border-left: 0; }
+    .growth-metric span { display: block; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .035em; text-transform: uppercase; }
+    .growth-metric strong { display: block; margin-top: 4px; font-size: 21px; letter-spacing: -.03em; }
+    .growth-table { overflow-x: auto; border: 1px solid var(--line); border-radius: 11px; }
+    .growth-row {
+      min-width: 650px;
+      display: grid;
+      grid-template-columns: 130px 150px 170px minmax(200px, 1fr);
+      gap: 14px;
+      align-items: center;
+      min-height: 48px;
+      padding: 9px 14px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+    }
+    .growth-row:first-child { border-top: 0; }
+    .growth-row--head { min-height: 38px; background: #f7f9fb; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
+    .growth-date { color: var(--muted); }
+    .growth-total { color: var(--ink); font-weight: 750; }
+    .growth-change { justify-self: start; display: inline-flex; padding: 4px 8px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: 11px; font-weight: 800; }
+    .growth-change--baseline { background: var(--blue-soft); color: var(--blue); }
+    .growth-change--reconciliation { background: #f8eee5; color: #934a1a; }
+    .growth-note { color: var(--muted); }
+    .growth-footnote { margin: 11px 0 0; color: var(--muted); font-size: 11px; }
+
     .event-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -452,6 +489,7 @@
       .filter-panel .search-field { grid-column: 1 / -1; }
       .filter-panel .clear-button { width: 100%; }
       .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .growth-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .event-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .column-head, .event-row { grid-template-columns: minmax(220px, 1.4fr) minmax(100px, .55fr) minmax(130px, .65fr); }
       .column-head > :nth-child(4), .event-row > :nth-child(4) { display: none; }
@@ -465,6 +503,9 @@
       .filter-panel { grid-template-columns: 1fr; padding: 14px; }
       .filter-panel .search-field { grid-column: auto; }
       .category-grid { grid-template-columns: 1fr 1fr; }
+      .growth-summary { grid-template-columns: 1fr; }
+      .growth-metric, .growth-metric:first-child { border-left: 0; border-top: 1px solid var(--line); }
+      .growth-metric:first-child { border-top: 0; }
       .event-grid { grid-template-columns: 1fr; }
       .section-head, .results-head { align-items: stretch; flex-direction: column; }
       .section-actions { justify-content: flex-start; }
@@ -510,7 +551,7 @@
       <aside class="hero-stats" aria-label="Published event collection">
         <div class="hero-stat"><span>Events</span><strong id="event-total">—</strong></div>
         <div class="hero-stat"><span>Posts</span><strong id="post-total">—</strong></div>
-        <div class="hero-update" id="collection-status">Loading the published collection</div>
+        <div class="hero-update"><span id="collection-status">Loading the published collection</span><a href="#growth-log">View growth log ↓</a></div>
       </aside>
     </section>
 
@@ -551,6 +592,22 @@
         </div>
         <div class="event-grid" id="latest-events"></div>
       </section>
+
+      <section class="surface" id="growth-log" aria-labelledby="growth-title">
+        <div class="section-head">
+          <div><h2 id="growth-title">Collection growth log</h2><p>Published collection snapshots and the net change from the previous snapshot.</p></div>
+        </div>
+        <div class="growth-summary" aria-label="Collection growth summary">
+          <div class="growth-metric"><span>Latest total</span><strong id="growth-latest">—</strong></div>
+          <div class="growth-metric"><span>Net growth from baseline</span><strong id="growth-net">—</strong></div>
+          <div class="growth-metric"><span>Published snapshots</span><strong id="growth-snapshots">—</strong></div>
+        </div>
+        <div class="growth-table" role="table" aria-label="Collection growth history">
+          <div class="growth-row growth-row--head" role="row"><span role="columnheader">Date</span><span role="columnheader">Total posts</span><span role="columnheader">Net change</span><span role="columnheader">Reading note</span></div>
+          <div id="growth-rows"></div>
+        </div>
+        <p class="growth-footnote">Only dates with a published total are listed. A gap does not imply zero collection; it means no new total was published for that date.</p>
+      </section>
     </div>
 
     <section class="surface results-surface" id="results-view" aria-labelledby="results-title" hidden>
@@ -570,6 +627,7 @@
 
   <script src="data/event-catalog-v1.js"></script>
   <script src="data/collection-summary-v1.js"></script>
+  <script src="data/collection-growth-v1.js"></script>
   <script src="data/runtime-config.js"></script>
   <script src="assets/data-client.js"></script>
   <script>
@@ -663,6 +721,40 @@
       </a>`).join("");
     }
 
+    function renderGrowthLog() {
+      const payload = window.SURGE_COLLECTION_GROWTH || {};
+      const entries = Array.isArray(payload.entries) ? payload.entries
+        .filter(entry => entry && entry.date && Number.isFinite(Number(entry.totalPosts)))
+        .sort((a, b) => String(a.date).localeCompare(String(b.date))) : [];
+      if (!entries.length) {
+        $("#growth-rows").innerHTML = `<div class="empty"><strong>Growth history unavailable</strong>No published snapshots are available yet.</div>`;
+        return;
+      }
+      const baseline = entries[0];
+      const latest = entries[entries.length - 1];
+      const netGrowth = Number(latest.totalPosts) - Number(baseline.totalPosts);
+      const signed = value => `${value >= 0 ? "+" : "−"}${fmt.format(Math.abs(value))}`;
+      const displayDate = value => new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${value}T00:00:00Z`));
+      $("#growth-latest").textContent = compactFmt.format(Number(latest.totalPosts));
+      $("#growth-net").textContent = signed(netGrowth);
+      $("#growth-snapshots").textContent = fmt.format(entries.length);
+      $("#growth-rows").innerHTML = [...entries].reverse().map(entry => {
+        const kind = entry.changeKind === "reconciliation" ? "reconciliation" : entry.changeKind === "baseline" ? "baseline" : "growth";
+        const change = entry.netChange == null ? "Baseline" : signed(Number(entry.netChange));
+        const note = kind === "reconciliation"
+          ? "Published total reconciled to the latest collection count."
+          : kind === "baseline"
+            ? "First retained snapshot in this public log."
+            : "Net collection growth since the prior published snapshot.";
+        return `<div class="growth-row" role="row">
+          <time class="growth-date" role="cell" datetime="${escapeHtml(entry.date)}">${escapeHtml(displayDate(entry.date))}</time>
+          <span class="growth-total" role="cell">${fmt.format(Number(entry.totalPosts))}</span>
+          <span class="growth-change growth-change--${kind}" role="cell">${escapeHtml(change)}</span>
+          <span class="growth-note" role="cell">${escapeHtml(note)}</span>
+        </div>`;
+      }).join("");
+    }
+
     function renderResults() {
       const filtered = filteredEvents();
       const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
@@ -736,6 +828,7 @@
         $("#collection-status").textContent = `${fmt.format(state.events.length)} analyses currently browsable · updated Sep 27`;
         renderCategories();
         renderLatest();
+        renderGrowthLog();
         render();
       } catch (error) {
         $("#event-total").textContent = "0";
