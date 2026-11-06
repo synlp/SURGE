@@ -1,16 +1,16 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-10",
-  "note": "Homepage example media downloaded from the media attached to each listed public post. The homepage uses local cached copies and retains these source URLs for provenance.",
+  "generatedAt": "2026-11-06",
+  "note": "Homepage example media downloaded from the media attached to each reviewed public post. These events come from the latest month represented in the current published event catalog. The homepage uses local cached copies and retains source URLs for provenance.",
   "items": [
-    {"event":"hotset-001","sentiment":"positive","postUrl":"https://x.com/ActuFoot_/status/1812979222446514559","mediaUrl":"https://pbs.twimg.com/media/GSj--0TXQAAA3G0.jpg?name=orig","localFile":"copa-positive.jpg"},
-    {"event":"hotset-001","sentiment":"neutral","postUrl":"https://x.com/ELTIEMPO/status/1812656007249567958","mediaUrl":"https://pbs.twimg.com/media/GSfLqX4W8AASTSE.jpg?name=orig","localFile":"copa-neutral.jpg"},
-    {"event":"hotset-001","sentiment":"negative","postUrl":"https://x.com/AtaqueFutbolero/status/1813292276875210935","mediaUrl":"https://pbs.twimg.com/media/GSobcMtXkAAEa8n.jpg?name=orig","localFile":"copa-negative.jpg"},
-    {"event":"hotset-005","sentiment":"positive","postUrl":"https://x.com/Cultination1/status/1833465272889405706","mediaUrl":"https://pbs.twimg.com/media/GXHG7fVWYAA0G0o.jpg?name=orig","localFile":"iphone-positive.jpg"},
-    {"event":"hotset-005","sentiment":"neutral","postUrl":"https://x.com/Stocktwits/status/1833207236342296638","mediaUrl":"https://pbs.twimg.com/media/GXDcQXcXIAA9IHO.jpg?name=orig","localFile":"iphone-neutral.jpg"},
-    {"event":"hotset-005","sentiment":"negative","postUrl":"https://x.com/redmagicgaming/status/1833779637534789739","mediaUrl":"https://pbs.twimg.com/media/GXLkohtbsAALqM-.jpg?name=orig","localFile":"iphone-negative.jpg"},
-    {"event":"hotset-049","sentiment":"positive","postUrl":"https://x.com/NetflixFR/status/1857589403532632164","mediaUrl":"https://pbs.twimg.com/media/GccJWLPWUAA7ko_.jpg","localFile":"tyson-positive.jpg"},
-    {"event":"hotset-049","sentiment":"neutral","postUrl":"https://x.com/MailSport/status/1857629487527006513","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/1857629202884780032/img/TLFKo829sdLQMnG6.jpg","localFile":"tyson-neutral.jpg"},
-    {"event":"hotset-049","sentiment":"negative","postUrl":"https://x.com/Dexerto/status/1857632195516530901","mediaUrl":"https://pbs.twimg.com/media/GceinSYWsAEnQW_.jpg?name=orig","localFile":"tyson-negative.jpg"}
+    {"event":"europeearlyheatdome2026","sentiment":"positive","postUrl":"https://x.com/ifrc/status/2069466612508348429","mediaUrl":"https://pbs.twimg.com/media/HLg4nNSbEAA2iOe?format=webp&name=large","localFile":"heat-positive.jpg"},
+    {"event":"europeearlyheatdome2026","sentiment":"neutral","postUrl":"https://x.com/ECIU_UK/status/2070824515278360802","mediaUrl":"https://pbs.twimg.com/media/HL0L7CxW4AABhAE?format=webp&name=large","localFile":"heat-neutral.jpg"},
+    {"event":"europeearlyheatdome2026","sentiment":"negative","postUrl":"https://x.com/DDIndialive/status/2070458292707754395","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/2070458049144446976/img/1hbNh4HYcUTZ-1VA?format=webp&name=large","localFile":"heat-negative.jpg"},
+    {"event":"aimodelexportcontrols2026","sentiment":"positive","postUrl":"https://x.com/Sanjay_Sriv/status/2066494983776145770","mediaUrl":"https://pbs.twimg.com/media/HK2pGkTbUAA8gP-?format=webp&name=large","localFile":"ai-controls-positive.jpg"},
+    {"event":"aimodelexportcontrols2026","sentiment":"neutral","postUrl":"https://x.com/HarryStebbings/status/2066920487079248293","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/2066877682915147776/img/WkAeDw9C7eI8SMNP?format=webp&name=large","localFile":"ai-controls-neutral.jpg"},
+    {"event":"aimodelexportcontrols2026","sentiment":"negative","postUrl":"https://x.com/SebAaltonen/status/2066045779299471737","mediaUrl":"https://pbs.twimg.com/card_img/2117012418735820800/X37MLI_L?format=webp&name=medium","localFile":"ai-controls-negative.jpg"},
+    {"event":"hormuzenergyinflation2026","sentiment":"positive","postUrl":"https://x.com/business/status/2072745909780087174","mediaUrl":"https://pbs.twimg.com/card_img/2117821185584992256/b74th2Xy?format=webp&name=medium","localFile":"hormuz-positive.jpg"},
+    {"event":"hormuzenergyinflation2026","sentiment":"neutral","postUrl":"https://x.com/Reuters/status/2067260728625803391","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/2067255991931146240/img/3crP2O74pEYoJhxl?format=webp&name=large","localFile":"hormuz-neutral.jpg"},
+    {"event":"hormuzenergyinflation2026","sentiment":"negative","postUrl":"https://x.com/JKempEnergy/status/2073352141834527072","mediaUrl":"https://pbs.twimg.com/media/HMYGxqOW0AAGJJ4?format=webp&name=large","localFile":"hormuz-negative.jpg"}
   ]
 }
