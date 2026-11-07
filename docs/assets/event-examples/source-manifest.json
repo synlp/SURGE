@@ -1,16 +1,8 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-06",
-  "note": "Homepage example media downloaded from the media attached to each reviewed public post. These events come from the latest month represented in the current published event catalog. The homepage uses local cached copies and retains source URLs for provenance.",
+  "generatedAt": "2026-11-07",
+  "note": "Homepage examples were selected from posts collected during the latest 30-day crawl layer. They represent recent discussion of established events, not newly occurring events. Only the SpaceX example uses cached source media; text-only examples use typographic placeholders. Sentiment has not yet been applied to these samples.",
   "items": [
-    {"event":"europeearlyheatdome2026","sentiment":"positive","postUrl":"https://x.com/ifrc/status/2069466612508348429","mediaUrl":"https://pbs.twimg.com/media/HLg4nNSbEAA2iOe?format=webp&name=large","localFile":"heat-positive.jpg"},
-    {"event":"europeearlyheatdome2026","sentiment":"neutral","postUrl":"https://x.com/ECIU_UK/status/2070824515278360802","mediaUrl":"https://pbs.twimg.com/media/HL0L7CxW4AABhAE?format=webp&name=large","localFile":"heat-neutral.jpg"},
-    {"event":"europeearlyheatdome2026","sentiment":"negative","postUrl":"https://x.com/DDIndialive/status/2070458292707754395","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/2070458049144446976/img/1hbNh4HYcUTZ-1VA?format=webp&name=large","localFile":"heat-negative.jpg"},
-    {"event":"aimodelexportcontrols2026","sentiment":"positive","postUrl":"https://x.com/Sanjay_Sriv/status/2066494983776145770","mediaUrl":"https://pbs.twimg.com/media/HK2pGkTbUAA8gP-?format=webp&name=large","localFile":"ai-controls-positive.jpg"},
-    {"event":"aimodelexportcontrols2026","sentiment":"neutral","postUrl":"https://x.com/HarryStebbings/status/2066920487079248293","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/2066877682915147776/img/WkAeDw9C7eI8SMNP?format=webp&name=large","localFile":"ai-controls-neutral.jpg"},
-    {"event":"aimodelexportcontrols2026","sentiment":"negative","postUrl":"https://x.com/SebAaltonen/status/2066045779299471737","mediaUrl":"https://pbs.twimg.com/card_img/2117012418735820800/X37MLI_L?format=webp&name=medium","localFile":"ai-controls-negative.jpg"},
-    {"event":"hormuzenergyinflation2026","sentiment":"positive","postUrl":"https://x.com/business/status/2072745909780087174","mediaUrl":"https://pbs.twimg.com/card_img/2117821185584992256/b74th2Xy?format=webp&name=medium","localFile":"hormuz-positive.jpg"},
-    {"event":"hormuzenergyinflation2026","sentiment":"neutral","postUrl":"https://x.com/Reuters/status/2067260728625803391","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/2067255991931146240/img/3crP2O74pEYoJhxl?format=webp&name=large","localFile":"hormuz-neutral.jpg"},
-    {"event":"hormuzenergyinflation2026","sentiment":"negative","postUrl":"https://x.com/JKempEnergy/status/2073352141834527072","mediaUrl":"https://pbs.twimg.com/media/HMYGxqOW0AAGJJ4?format=webp&name=large","localFile":"hormuz-negative.jpg"}
+    {"event":"spacex-booster-catch-recent-discussion","role":"source context","postUrl":"https://x.com/SpaceX/status/1845442658397049011","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg","localFile":"recent-spacex-catch.jpg"}
   ]
 }

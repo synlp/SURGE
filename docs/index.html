@@ -480,14 +480,11 @@
     .case-peak b { color: #8fd4aa; font-size: 18px; }
     .case-chart { display: block; width: 100%; height: auto; min-height: 230px; }
     .case-axis { display: flex; justify-content: space-between; margin-top: 7px; color: #8092ab; font-size: 10px; }
-    .sentiment-band { margin-top: 24px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.12); }
-    .sentiment-band-head { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 10px; color: #aebbd0; font-size: 11px; }
-    .sentiment-mix { display: flex; height: 8px; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,.12); }
-    .sentiment-mix span:nth-child(1) { width: 31.5%; background: #5ca878; }
-    .sentiment-mix span:nth-child(2) { width: 43.7%; background: #95a2b4; }
-    .sentiment-mix span:nth-child(3) { width: 24.8%; background: #d16559; }
-    .sentiment-legend { display: flex; flex-wrap: wrap; gap: 14px 22px; margin-top: 10px; color: #93a4bb; font-size: 11px; }
-    .sentiment-legend i { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; }
+    .review-band { margin-top: 24px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.12); }
+    .review-band-head { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 10px; color: #aebbd0; font-size: 11px; }
+    .review-status { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid rgba(255,255,255,.13); }
+    .review-status span { padding: 9px 11px; border-left: 1px solid rgba(255,255,255,.13); color: #aab9cc; font-size: 10px; text-align: center; text-transform: uppercase; letter-spacing: .055em; }
+    .review-status span:first-child { border-left: 0; color: #8fd4aa; }
     .case-excerpts { padding: 28px 30px; border-left: 1px solid rgba(255,255,255,.16); }
     .excerpt-heading { margin-bottom: 8px; }
     .case-excerpts h3 { margin: 0; color: #fff; font-size: 18px; }
@@ -496,11 +493,9 @@
     .post-media-link { height: 66px; display: block; overflow: hidden; border: 1px solid rgba(255,255,255,.2); background: #101c31; }
     .post-media-link img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .2s ease, filter .2s ease; }
     .post-media-link:hover img, .post-media-link:focus-visible img { transform: scale(1.045); filter: brightness(1.08); }
+    .post-media-placeholder { height: 66px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.18); background: linear-gradient(135deg, rgba(71,113,176,.22), rgba(77,139,106,.12)); color: #adc3df; font-size: 10px; font-weight: 900; letter-spacing: .13em; }
     .processed-post-meta { display: flex; flex-wrap: wrap; gap: 7px 12px; align-items: center; color: #8496ae; font-size: 10px; text-transform: uppercase; letter-spacing: .055em; }
-    .sentiment-chip { padding: 2px 7px; border: 1px solid currentColor; border-radius: 999px; letter-spacing: .04em; }
-    .sentiment-chip.positive { color: #80c99b; }
-    .sentiment-chip.neutral { color: #b9c3d1; }
-    .sentiment-chip.negative { color: #e18a80; }
+    .review-chip { padding: 2px 7px; border: 1px solid #527eb7; border-radius: 999px; color: #b8cce6; letter-spacing: .04em; }
     .post-source-link { color: #9db4d1; text-decoration: none; }
     .post-source-link:hover, .post-source-link:focus-visible { color: #fff; }
     .processed-post blockquote { margin: 10px 0 0; color: #f5f8fc; font-size: 15px; line-height: 1.45; }
@@ -583,7 +578,7 @@
         align-items: center;
       }
       .case-study-head { align-items: center; }
-      .case-study h2 { max-width: none; font-size: clamp(32px, 3.2vw, 42px); white-space: nowrap; }
+      .case-study h2 { max-width: 760px; font-size: clamp(30px, 3vw, 40px); white-space: normal; }
       .case-study .eyebrow { margin-bottom: 4px; }
       .case-study-intro { font-size: 13px; line-height: 1.5; }
       .case-carousel-controls { margin: 7px 0 0; }
@@ -603,17 +598,18 @@
       .case-peak b { font-size: 15px; }
       .case-chart { min-height: 110px; max-height: 125px; }
       .case-axis { margin-top: 2px; }
-      .sentiment-band { margin-top: 9px; padding-top: 9px; }
-      .sentiment-band-head { margin-bottom: 6px; font-size: 9px; }
-      .sentiment-legend { gap: 8px 14px; margin-top: 6px; font-size: 9px; }
+      .review-band { margin-top: 9px; padding-top: 9px; }
+      .review-band-head { margin-bottom: 6px; font-size: 9px; }
+      .review-status span { padding: 5px 7px; font-size: 8px; }
       .case-excerpts { padding: 14px 20px; }
       .case-excerpts h3 { font-size: 15px; }
       .case-excerpts-intro { margin: 2px 0 6px; font-size: 10px; }
       .excerpt-heading { margin-bottom: 2px; }
       .processed-post { grid-template-columns: 76px minmax(0, 1fr); gap: 8px; padding: 4px 0; }
       .post-media-link { height: 52px; }
+      .post-media-placeholder { height: 52px; font-size: 8px; }
       .processed-post-meta { gap: 5px 8px; font-size: 8px; }
-      .sentiment-chip { padding: 1px 5px; }
+      .review-chip { padding: 1px 5px; }
       .processed-post blockquote { margin-top: 4px; font-size: 11px; line-height: 1.28; }
       .event-story-footer { padding: 7px 22px 12px; }
       .event-story-footer .case-caption { font-size: 9px; }
@@ -813,10 +809,10 @@
       <div class="case-study-inner">
         <div class="case-study-head">
           <div>
-            <p class="eyebrow">Latest published month</p>
-            <h2 id="case-study-title">Three serious events, traced through public discussion.</h2>
+            <p class="eyebrow">Recent collection · Oct 07 — Nov 01, 2026</p>
+            <h2 id="case-study-title">Recent conversations, selected for clarity.</h2>
           </div>
-          <p class="case-study-intro">Explore recent examples from the current release window, connecting reviewed source posts and media with sentiment labels, interaction structure, and temporal activity.</p>
+          <p class="case-study-intro">Three serious discussions from the latest crawl layer, manually reviewed for relevance, tone, and public display. These posts are thread-linked; sentiment analysis has not yet been applied.</p>
         </div>
         <div class="case-carousel-controls">
           <span class="case-counter"><span id="case-counter">01 / 03</span>&nbsp;&nbsp;·&nbsp;&nbsp;Auto-advance 10s</span>
@@ -826,16 +822,16 @@
           </div>
         </div>
         <div class="case-carousel-viewport">
-          <div class="case-carousel-track" id="case-carousel" aria-label="Processed event examples"></div>
+          <div class="case-carousel-track" id="case-carousel" aria-label="Recently collected conversation examples"></div>
         </div>
         <div class="case-carousel-dots" id="case-dots" aria-label="Choose an event card"></div>
 
         <div class="case-pipeline" aria-label="Processing stages">
           <span class="pipeline-step">Collected posts</span>
-          <span class="pipeline-step">Normalized text</span>
-          <span class="pipeline-step">Reply structure</span>
-          <span class="pipeline-step">Post-level sentiment</span>
-          <span class="pipeline-step">Event signals</span>
+          <span class="pipeline-step">Thread-linked</span>
+          <span class="pipeline-step">Relevance reviewed</span>
+          <span class="pipeline-step">Media checked</span>
+          <span class="pipeline-step">Publication sample</span>
         </div>
       </div>
     </section>
@@ -996,51 +992,48 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
     (() => {
       const demos = [
         {
-          id: "europeearlyheatdome2026",
-          title: "2026 Early-Summer European Heat Dome",
-          window: "Jun 12 — Jul 10, 2026",
-          posts: 29293,
-          labeled: 26472,
-          bins: 95,
-          replies: 23268,
-          coverage: 90.4,
-          sentiment: [10.7, 41.8, 47.5],
+          title: "Four Years After ChatGPT's Public Preview",
+          window: "Oct 07 — Oct 19, 2026",
+          posts: 1194,
+          replies: 717,
+          quotes: 494,
+          threads: 263,
+          sourceUrl: "https://x.com/i/status/2110954538253344883",
+          points: [["2026-10-07T00:00:00Z",11],["2026-10-08T00:00:00Z",13],["2026-10-10T00:00:00Z",1],["2026-10-11T00:00:00Z",16],["2026-10-12T00:00:00Z",9],["2026-10-13T00:00:00Z",8],["2026-10-14T00:00:00Z",380],["2026-10-15T00:00:00Z",578],["2026-10-16T00:00:00Z",59],["2026-10-17T00:00:00Z",37],["2026-10-18T00:00:00Z",81],["2026-10-19T00:00:00Z",1]].map(([time, volume]) => ({ time, volume })),
           excerpts: [
-            { date: "Jun 23", type: "Root post", tone: "positive", text: "Another heatwave is gripping Europe. As temperatures climb, Red Cross and Red Crescent Societies are mobilizing staff and volunteers to keep communities safe.", image: "assets/event-examples/heat-positive.jpg", alt: "Red Cross volunteers supporting residents during the European heatwave", postUrl: "https://x.com/ifrc/status/2069466612508348429", mediaUrl: "https://pbs.twimg.com/media/HLg4nNSbEAA2iOe?format=webp&name=large" },
-            { date: "Jun 27", type: "Root post", tone: "neutral", text: "It’s not just hot, it’s climate change: the heatwave scorching Europe would have been impossible just 50 years ago.", image: "assets/event-examples/heat-neutral.jpg", alt: "Pedestrians sheltering from the sun near Notre-Dame during the European heatwave", postUrl: "https://x.com/ECIU_UK/status/2070824515278360802", mediaUrl: "https://pbs.twimg.com/media/HL0L7CxW4AABhAE?format=webp&name=large" },
-            { date: "Jun 26", type: "Root post", tone: "negative", text: "A record-breaking heatwave is sweeping across Western Europe, with Germany, France, and several other countries experiencing dangerously high temperatures.", image: "assets/event-examples/heat-negative.jpg", alt: "DD India news report on the record-breaking Western European heatwave", postUrl: "https://x.com/DDIndialive/status/2070458292707754395", mediaUrl: "https://pbs.twimg.com/amplify_video_thumb/2070458049144446976/img/1hbNh4HYcUTZ-1VA?format=webp&name=large" }
+            { date: "Oct 16", type: "Quote post", role: "Delegation question", tag: "AI", text: "In 2022, Sam Altman described three stages of AI: assistants that answer questions, agents that perform tasks, and systems that discover knowledge. The question is no longer just what AI can do. It’s what we should delegate to it.", postUrl: "https://x.com/i/status/2110954538253344883" },
+            { date: "Oct 18", type: "Quote post", role: "Developer experience", tag: "CODE", text: "The model is a fast guesser. You still need something boring that can say yes or no. I’ve been building verifiers ever since.", postUrl: "https://x.com/i/status/2111693729039839383" },
+            { date: "Oct 19", type: "Quote post", role: "Public retrospective", tag: "TIME", text: "Can’t believe it has only been four years since ChatGPT was launched. Feels like forty.", postUrl: "https://x.com/i/status/2112077080410333583" }
           ]
         },
         {
-          id: "aimodelexportcontrols2026",
-          title: "2026 AI Model Export Controls",
-          window: "Jun 11 — Jul 09, 2026",
-          posts: 77749,
-          labeled: 73411,
-          bins: 112,
-          replies: 82045,
-          coverage: 94.4,
-          sentiment: [32.4, 20.6, 47.0],
+          title: "UK Assisted Dying Bill: Faith and Public Office",
+          window: "Oct 07 — Oct 14, 2026",
+          posts: 268,
+          replies: 268,
+          quotes: 0,
+          threads: 29,
+          sourceUrl: "https://x.com/i/status/2108502603801718932",
+          points: [["2026-10-07T00:00:00Z",4],["2026-10-08T00:00:00Z",151],["2026-10-09T00:00:00Z",85],["2026-10-10T00:00:00Z",26],["2026-10-12T00:00:00Z",1],["2026-10-14T00:00:00Z",1]].map(([time, volume]) => ({ time, volume })),
           excerpts: [
-            { date: "Jun 15", type: "Root post", tone: "positive", text: "Building on foreign AI is a Fable that vanishes with one order. India is placing a ₹10,000 Cr bet on sovereign models.", image: "assets/event-examples/ai-controls-positive.jpg", alt: "Article graphic about India's investment in sovereign AI models", postUrl: "https://x.com/Sanjay_Sriv/status/2066494983776145770", mediaUrl: "https://pbs.twimg.com/media/HK2pGkTbUAA8gP-?format=webp&name=large" },
-            { date: "Jun 16", type: "Root post", tone: "neutral", text: "Export controls have probably helped in the short term by preserving a gap between frontier AI labs and open-source competitors. But the long-term effect is less clear.", image: "assets/event-examples/ai-controls-neutral.jpg", alt: "Policy discussion on the short- and long-term effects of AI export controls", postUrl: "https://x.com/HarryStebbings/status/2066920487079248293", mediaUrl: "https://pbs.twimg.com/amplify_video_thumb/2066877682915147776/img/WkAeDw9C7eI8SMNP?format=webp&name=large" },
-            { date: "Jun 14", type: "Root post", tone: "negative", text: "USA might be shooting themselves in the foot by restricting latest AI model access to foreign individuals. This gives China and the EU a massive advantage in the worldwide market.", image: "assets/event-examples/ai-controls-negative.jpg", alt: "Anthropic leadership pictured during discussion of AI access and export controls", postUrl: "https://x.com/SebAaltonen/status/2066045779299471737", mediaUrl: "https://pbs.twimg.com/card_img/2117012418735820800/X37MLI_L?format=webp&name=medium" }
+            { date: "Oct 09", type: "Reply", role: "Pastoral concern", tag: "CARE", text: "Whatever one’s convictions concerning assisted dying, no one should underestimate the personal hurt that can arise when faith, conscience and public responsibility become the subject of confrontation. I hope there remains room for respectful conversation and healing.", postUrl: "https://x.com/i/status/2108502603801718932" },
+            { date: "Oct 09", type: "Reply", role: "Representative duty", tag: "CIVIC", text: "A representative role is not to be a perfect mirror of their electorate’s wishes. Your role is to vote for what you believe is best for them.", postUrl: "https://x.com/i/status/2108456882310684759" },
+            { date: "Oct 08", type: "Reply", role: "Institutional boundary", tag: "FAITH", text: "It seems a reasonable measure to distance himself from an appearance of agreement with something he is against and has a responsibility to represent his local church.", postUrl: "https://x.com/i/status/2108319115874300202" }
           ]
         },
         {
-          id: "hormuzenergyinflation2026",
-          title: "2026 Strait of Hormuz Energy and Inflation Crisis",
-          window: "Jun 11 — Jul 09, 2026",
-          posts: 59036,
-          labeled: 52963,
-          bins: 112,
-          replies: 117908,
-          coverage: 89.7,
-          sentiment: [18.8, 14.6, 66.6],
+          title: "SpaceX Booster Catch: Continued Public Reaction",
+          window: "Oct 11 — Oct 25, 2026",
+          posts: 8,
+          replies: 8,
+          quotes: 1,
+          threads: 5,
+          sourceUrl: "https://x.com/SpaceX/status/1845442658397049011",
+          points: [["2026-10-11T12:00:00Z",1],["2026-10-13T18:00:00Z",2],["2026-10-14T00:00:00Z",2],["2026-10-25T18:00:00Z",3]].map(([time, volume]) => ({ time, volume })),
           excerpts: [
-            { date: "Jul 02", type: "Root post", tone: "positive", text: "US crude refiners are enjoying some of their best profit margins in years as lingering supply-chain disruptions ripple through markets, even as energy shipments resume via the Strait of Hormuz.", image: "assets/event-examples/hormuz-positive.jpg", alt: "Oil pumpjack illustrating renewed energy flows through the Strait of Hormuz", postUrl: "https://x.com/business/status/2072745909780087174", mediaUrl: "https://pbs.twimg.com/card_img/2117821185584992256/b74th2Xy?format=webp&name=medium" },
-            { date: "Jun 17", type: "Root post", tone: "neutral", text: "The oil market will fall into a significant supply overhang in 2027, the IEA said, after recovering from the Strait of Hormuz closure.", image: "assets/event-examples/hormuz-neutral.jpg", alt: "Industrial energy facility accompanying a Reuters report on oil supply after the Strait reopened", postUrl: "https://x.com/Reuters/status/2067260728625803391", mediaUrl: "https://pbs.twimg.com/amplify_video_thumb/2067255991931146240/img/3crP2O74pEYoJhxl?format=webp&name=large" },
-            { date: "Jul 04", type: "Root post", tone: "negative", text: "Investors have become extremely bearish about the outlook for crude oil prices as the re-opening of the Strait of Hormuz has pushed the spot market into a temporary surplus.", image: "assets/event-examples/hormuz-negative.jpg", alt: "Chart showing money managers' Brent crude positioning after the Strait reopened", postUrl: "https://x.com/JKempEnergy/status/2073352141834527072", mediaUrl: "https://pbs.twimg.com/media/HMYGxqOW0AAGJJ4?format=webp&name=large" }
+            { date: "Oct 14", type: "Reply", role: "Engineering reaction", tag: "SPACE", text: "Awesome — the timing and all of it. Congratulations to SpaceX and the team.", image: "assets/event-examples/recent-spacex-catch.jpg", alt: "SpaceX Super Heavy booster descending toward the Mechazilla catch tower", postUrl: "https://x.com/i/status/2110180830337520049", mediaUrl: "https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg" },
+            { date: "Oct 13", type: "Reply", role: "Ethical reflection", tag: "IDEA", text: "A rocket launches into space, fulfills its mission, returns to Earth, and lands safely, ready to fly again. True greatness is measured by what we can achieve without destroying.", postUrl: "https://x.com/i/status/2110078691153756521" },
+            { date: "Oct 13", type: "Reply", role: "Public response", tag: "TEAM", text: "Such beautiful moments captured — everyone celebrates you and the entire team.", postUrl: "https://x.com/i/status/2110137539285729583" }
           ]
         }
       ];
@@ -1049,11 +1042,13 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       const counter = document.querySelector("#case-counter");
       if (!track || !dots || !counter) return;
       const number = value => new Intl.NumberFormat("en-US").format(value);
-      const postMarkup = ({ date, type, tone, text, image, alt, postUrl, mediaUrl }) => `
+      const postMarkup = ({ date, type, role, tag, text, image, alt, postUrl, mediaUrl = "" }) => `
         <article class="processed-post">
-          <a class="post-media-link" href="${postUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open the source post" data-media-source="${mediaUrl}"><img src="${image}" alt="${alt}" loading="lazy" decoding="async"></a>
+          ${image
+            ? `<a class="post-media-link" href="${postUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open the source post" data-media-source="${mediaUrl}"><img src="${image}" alt="${alt}" loading="lazy" decoding="async"></a>`
+            : `<span class="post-media-placeholder" aria-hidden="true"><span>${tag}</span></span>`}
           <div class="processed-post-copy">
-            <div class="processed-post-meta"><span>${date}</span><span>${type}</span><span class="sentiment-chip ${tone}">${tone}</span><a class="post-source-link" href="${postUrl}" target="_blank" rel="noopener noreferrer">Source&nbsp;&nearr;</a></div>
+            <div class="processed-post-meta"><span>${date}</span><span>${type}</span><span class="review-chip">${role}</span><a class="post-source-link" href="${postUrl}" target="_blank" rel="noopener noreferrer">Source&nbsp;&nearr;</a></div>
             <blockquote>“${text}”</blockquote>
           </div>
         </article>`;
@@ -1065,9 +1060,9 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
           </header>
           <div class="case-proof" aria-label="${demo.title} processing summary">
             <div class="case-proof-item"><strong>${number(demo.posts)}</strong><span>collected posts</span></div>
-            <div class="case-proof-item"><strong>${number(demo.labeled)}</strong><span>sentiment-labeled</span></div>
-            <div class="case-proof-item"><strong>${number(demo.bins)}</strong><span>six-hour windows</span></div>
-            <div class="case-proof-item"><strong>${number(demo.replies)}</strong><span>reply relations</span></div>
+            <div class="case-proof-item"><strong>${number(demo.replies)}</strong><span>reply posts</span></div>
+            <div class="case-proof-item"><strong>${number(demo.quotes)}</strong><span>quote posts</span></div>
+            <div class="case-proof-item"><strong>${number(demo.threads)}</strong><span>linked threads</span></div>
           </div>
           <div class="case-study-grid">
             <div class="case-chart-panel">
@@ -1079,22 +1074,21 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
                 <text x="380" y="125" text-anchor="middle" fill="#8fa1b9" font-size="13">Loading released event series...</text>
               </svg>
               <div class="case-axis" id="case-axis-${index}" aria-hidden="true"><span>Start</span><span>Event timeline</span><span>End</span></div>
-              <div class="sentiment-band">
-                <div class="sentiment-band-head"><span>Post-level sentiment mix</span><span>${demo.coverage}% annotated coverage</span></div>
-                <div class="sentiment-mix"><span style="width:${demo.sentiment[0]}%"></span><span style="width:${demo.sentiment[1]}%"></span><span style="width:${demo.sentiment[2]}%"></span></div>
-                <div class="sentiment-legend"><span><i style="background:#5ca878"></i>${demo.sentiment[0]}% positive</span><span><i style="background:#95a2b4"></i>${demo.sentiment[1]}% neutral</span><span><i style="background:#d16559"></i>${demo.sentiment[2]}% negative</span></div>
+              <div class="review-band">
+                <div class="review-band-head"><span>Current processing status</span><span>No sentiment inferred for this recent sample</span></div>
+                <div class="review-status"><span>Thread-linked</span><span>Manually reviewed</span><span>Sentiment pending</span></div>
               </div>
             </div>
             <aside class="case-excerpts">
               <div class="excerpt-heading">
-                <h3>Processed post examples</h3><p class="case-excerpts-intro">Positive, neutral, and negative examples paired with media from the same source posts.</p>
+                <h3>Reviewed post excerpts</h3><p class="case-excerpts-intro">Recent posts selected for topic relevance, readable context, and suitability for public display.</p>
               </div>
               ${demo.excerpts.map(postMarkup).join("")}
             </aside>
           </div>
           <footer class="event-story-footer">
-            <p class="case-caption">Selected from processed public posts. Text is lightly trimmed; each thumbnail links to its source post.</p>
-            <a class="case-link" href="live/event.html?id=${encodeURIComponent(demo.id)}&amp;return=index.html">Open event analysis&nbsp;&rarr;</a>
+            <p class="case-caption">Recently collected public posts, lightly trimmed after relevance and safety review. Sentiment labels are intentionally omitted until processing is complete.</p>
+            <a class="case-link" href="${demo.sourceUrl}" target="_blank" rel="noopener noreferrer">Open a source post&nbsp;&nearr;</a>
           </footer>
         </article>`).join("");
       dots.innerHTML = demos.map((demo, index) => `<button class="case-dot" type="button" aria-label="Show ${demo.title}" aria-current="${index === 0}"></button>`).join("");
@@ -1138,19 +1132,13 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
         add("circle", { cx: peakX, cy: peakY, r: 5, fill: "#0e1b34", stroke: "#8fd4aa", "stroke-width": 3 });
       };
       demos.forEach((demo, index) => {
-        fetch(`live/data/event-details-v1/${demo.id}.json`)
-          .then(response => response.ok ? response.json() : Promise.reject())
-          .then(detail => {
-            const points = detail && detail.event && Array.isArray(detail.event.points) ? detail.event.points : [];
-            if (points.length < 2) throw new Error("empty series");
-            drawChart(document.querySelector(`#case-chart-${index}`), points, index);
-            const peak = Math.max(...points.map(point => Number(point.volume || 0)));
-            document.querySelector(`#case-peak-${index}`).textContent = number(peak);
-            const formatDate = value => new Date(value).toLocaleDateString("en-US", { month: "short", day: "2-digit", timeZone: "UTC" });
-            const axis = document.querySelector(`#case-axis-${index}`);
-            axis.innerHTML = `<span>${formatDate(points[0].time)}</span><span>Event timeline</span><span>${formatDate(points[points.length - 1].time)}</span>`;
-          })
-          .catch(() => { document.querySelector(`#case-chart-${index} text`).textContent = "Series preview unavailable."; });
+        const points = demo.points;
+        drawChart(document.querySelector(`#case-chart-${index}`), points, index);
+        const peak = Math.max(...points.map(point => Number(point.volume || 0)));
+        document.querySelector(`#case-peak-${index}`).textContent = number(peak);
+        const formatDate = value => new Date(value).toLocaleDateString("en-US", { month: "short", day: "2-digit", timeZone: "UTC" });
+        const axis = document.querySelector(`#case-axis-${index}`);
+        axis.innerHTML = `<span>${formatDate(points[0].time)}</span><span>Recent collection timeline</span><span>${formatDate(points[points.length - 1].time)}</span>`;
       });
 
       let activeIndex = 0;
