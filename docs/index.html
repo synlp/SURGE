@@ -578,7 +578,7 @@
         align-items: center;
       }
       .case-study-head { align-items: center; }
-      .case-study h2 { max-width: 760px; font-size: clamp(30px, 3vw, 40px); white-space: normal; }
+      .case-study h2 { max-width: none; font-size: clamp(32px, 3.2vw, 42px); white-space: nowrap; }
       .case-study .eyebrow { margin-bottom: 4px; }
       .case-study-intro { font-size: 13px; line-height: 1.5; }
       .case-carousel-controls { margin: 7px 0 0; }
@@ -809,10 +809,10 @@
       <div class="case-study-inner">
         <div class="case-study-head">
           <div>
-            <p class="eyebrow">Recent collection · Oct 07 — Nov 01, 2026</p>
-            <h2 id="case-study-title">Recent conversations, selected for clarity.</h2>
+            <p class="eyebrow">Latest published month</p>
+            <h2 id="case-study-title">Three serious events, traced through public discussion.</h2>
           </div>
-          <p class="case-study-intro">Three serious discussions from the latest crawl layer, manually reviewed for relevance, tone, and public display. These posts are thread-linked; sentiment analysis has not yet been applied.</p>
+          <p class="case-study-intro">Explore examples from the current release window, connecting reviewed source posts and media with interaction structure and temporal activity.</p>
         </div>
         <div class="case-carousel-controls">
           <span class="case-counter"><span id="case-counter">01 / 03</span>&nbsp;&nbsp;·&nbsp;&nbsp;Auto-advance 10s</span>
@@ -822,16 +822,16 @@
           </div>
         </div>
         <div class="case-carousel-viewport">
-          <div class="case-carousel-track" id="case-carousel" aria-label="Recently collected conversation examples"></div>
+          <div class="case-carousel-track" id="case-carousel" aria-label="Processed event examples"></div>
         </div>
         <div class="case-carousel-dots" id="case-dots" aria-label="Choose an event card"></div>
 
         <div class="case-pipeline" aria-label="Processing stages">
           <span class="pipeline-step">Collected posts</span>
-          <span class="pipeline-step">Thread-linked</span>
-          <span class="pipeline-step">Relevance reviewed</span>
-          <span class="pipeline-step">Media checked</span>
-          <span class="pipeline-step">Publication sample</span>
+          <span class="pipeline-step">Normalized text</span>
+          <span class="pipeline-step">Reply structure</span>
+          <span class="pipeline-step">Post-level sentiment</span>
+          <span class="pipeline-step">Event signals</span>
         </div>
       </div>
     </section>
@@ -1075,19 +1075,19 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
               </svg>
               <div class="case-axis" id="case-axis-${index}" aria-hidden="true"><span>Start</span><span>Event timeline</span><span>End</span></div>
               <div class="review-band">
-                <div class="review-band-head"><span>Current processing status</span><span>No sentiment inferred for this recent sample</span></div>
+                <div class="review-band-head"><span>Current processing status</span><span>No sentiment inferred for this sample</span></div>
                 <div class="review-status"><span>Thread-linked</span><span>Manually reviewed</span><span>Sentiment pending</span></div>
               </div>
             </div>
             <aside class="case-excerpts">
               <div class="excerpt-heading">
-                <h3>Reviewed post excerpts</h3><p class="case-excerpts-intro">Recent posts selected for topic relevance, readable context, and suitability for public display.</p>
+                <h3>Reviewed post excerpts</h3><p class="case-excerpts-intro">Posts selected for topic relevance, readable context, and suitability for public display.</p>
               </div>
               ${demo.excerpts.map(postMarkup).join("")}
             </aside>
           </div>
           <footer class="event-story-footer">
-            <p class="case-caption">Recently collected public posts, lightly trimmed after relevance and safety review. Sentiment labels are intentionally omitted until processing is complete.</p>
+            <p class="case-caption">Selected from collected public posts. Text is lightly trimmed after relevance and safety review; sentiment labels are omitted until processing is complete.</p>
             <a class="case-link" href="${demo.sourceUrl}" target="_blank" rel="noopener noreferrer">Open a source post&nbsp;&nearr;</a>
           </footer>
         </article>`).join("");
@@ -1138,7 +1138,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
         document.querySelector(`#case-peak-${index}`).textContent = number(peak);
         const formatDate = value => new Date(value).toLocaleDateString("en-US", { month: "short", day: "2-digit", timeZone: "UTC" });
         const axis = document.querySelector(`#case-axis-${index}`);
-        axis.innerHTML = `<span>${formatDate(points[0].time)}</span><span>Recent collection timeline</span><span>${formatDate(points[points.length - 1].time)}</span>`;
+        axis.innerHTML = `<span>${formatDate(points[0].time)}</span><span>Event timeline</span><span>${formatDate(points[points.length - 1].time)}</span>`;
       });
 
       let activeIndex = 0;
