@@ -1,8 +1,16 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-07",
-  "note": "Homepage examples were selected from posts collected during the latest 30-day crawl layer. They represent recent discussion of established events, not newly occurring events. Only the SpaceX example uses cached source media; text-only examples use typographic placeholders. Sentiment has not yet been applied to these samples.",
+  "generatedAt": "2026-11-08",
+  "note": "Homepage examples are high-volume 2026 public-event analyses from the released SURGE catalog. Excerpts retain their published sentiment labels and link to their source posts. Text-only posts are presented without artificial image placeholders.",
   "items": [
-    {"event":"spacex-booster-catch-recent-discussion","role":"source context","postUrl":"https://x.com/SpaceX/status/1845442658397049011","mediaUrl":"https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg","localFile":"recent-spacex-catch.jpg"}
+    {"event":"middleeastceasefirecrisis","sentiment":"positive","postUrl":"https://x.com/EstherEdenaw6f/status/2059086549795623011"},
+    {"event":"middleeastceasefirecrisis","sentiment":"neutral","postUrl":"https://x.com/MeghUpdates/status/2059088824215708060"},
+    {"event":"middleeastceasefirecrisis","sentiment":"negative","postUrl":"https://x.com/SaraHirschhorn1/status/2059084971793416666"},
+    {"event":"surge300v2-127","sentiment":"positive","postUrl":"https://x.com/YankeeInstitute/status/2080663292104561090"},
+    {"event":"surge300v2-127","sentiment":"neutral","postUrl":"https://x.com/RoadMN/status/2075264587486703751"},
+    {"event":"surge300v2-127","sentiment":"negative","postUrl":"https://x.com/Bruce_DePuyt/status/2078936050777342041"},
+    {"event":"hormuzenergyinflation2026","sentiment":"positive","postUrl":"https://x.com/SteveForbesCEO/status/2080416053062943003"},
+    {"event":"hormuzenergyinflation2026","sentiment":"neutral","postUrl":"https://x.com/MTS_alerts/status/2081152622179049533"},
+    {"event":"hormuzenergyinflation2026","sentiment":"negative","postUrl":"https://x.com/PhilosophyOnX/status/2081132691471438048"}
   ]
 }

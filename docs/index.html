@@ -480,22 +480,25 @@
     .case-peak b { color: #8fd4aa; font-size: 18px; }
     .case-chart { display: block; width: 100%; height: auto; min-height: 230px; }
     .case-axis { display: flex; justify-content: space-between; margin-top: 7px; color: #8092ab; font-size: 10px; }
-    .review-band { margin-top: 24px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.12); }
-    .review-band-head { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 10px; color: #aebbd0; font-size: 11px; }
-    .review-status { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid rgba(255,255,255,.13); }
-    .review-status span { padding: 9px 11px; border-left: 1px solid rgba(255,255,255,.13); color: #aab9cc; font-size: 10px; text-align: center; text-transform: uppercase; letter-spacing: .055em; }
-    .review-status span:first-child { border-left: 0; color: #8fd4aa; }
+    .sentiment-band { margin-top: 24px; padding-top: 19px; border-top: 1px solid rgba(255,255,255,.12); }
+    .sentiment-band-head { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 10px; color: #aebbd0; font-size: 11px; }
+    .sentiment-mix { display: flex; height: 8px; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,.12); }
+    .sentiment-legend { display: flex; flex-wrap: wrap; gap: 14px 22px; margin-top: 10px; color: #93a4bb; font-size: 11px; }
+    .sentiment-legend i { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; }
     .case-excerpts { padding: 28px 30px; border-left: 1px solid rgba(255,255,255,.16); }
     .excerpt-heading { margin-bottom: 8px; }
     .case-excerpts h3 { margin: 0; color: #fff; font-size: 18px; }
     .case-excerpts-intro { margin: 5px 0 16px; color: #8fa1b9; font-size: 12px; }
     .processed-post { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.13); }
+    .processed-post.no-media { grid-template-columns: 1fr; }
     .post-media-link { height: 66px; display: block; overflow: hidden; border: 1px solid rgba(255,255,255,.2); background: #101c31; }
     .post-media-link img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .2s ease, filter .2s ease; }
     .post-media-link:hover img, .post-media-link:focus-visible img { transform: scale(1.045); filter: brightness(1.08); }
-    .post-media-placeholder { height: 66px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.18); background: linear-gradient(135deg, rgba(71,113,176,.22), rgba(77,139,106,.12)); color: #adc3df; font-size: 10px; font-weight: 900; letter-spacing: .13em; }
     .processed-post-meta { display: flex; flex-wrap: wrap; gap: 7px 12px; align-items: center; color: #8496ae; font-size: 10px; text-transform: uppercase; letter-spacing: .055em; }
-    .review-chip { padding: 2px 7px; border: 1px solid #527eb7; border-radius: 999px; color: #b8cce6; letter-spacing: .04em; }
+    .sentiment-chip { padding: 2px 7px; border: 1px solid currentColor; border-radius: 999px; letter-spacing: .04em; }
+    .sentiment-chip.positive { color: #80c99b; }
+    .sentiment-chip.neutral { color: #b9c3d1; }
+    .sentiment-chip.negative { color: #e18a80; }
     .post-source-link { color: #9db4d1; text-decoration: none; }
     .post-source-link:hover, .post-source-link:focus-visible { color: #fff; }
     .processed-post blockquote { margin: 10px 0 0; color: #f5f8fc; font-size: 15px; line-height: 1.45; }
@@ -577,8 +580,8 @@
         display: flex;
         align-items: center;
       }
-      .case-study-head { align-items: center; }
-      .case-study h2 { max-width: none; font-size: clamp(32px, 3.2vw, 42px); white-space: nowrap; }
+      .case-study-head { grid-template-columns: minmax(0, 1.25fr) minmax(300px, .55fr); gap: 44px; align-items: center; }
+      .case-study h2 { max-width: 760px; font-size: clamp(30px, 2.7vw, 38px); white-space: normal; text-wrap: balance; }
       .case-study .eyebrow { margin-bottom: 4px; }
       .case-study-intro { font-size: 13px; line-height: 1.5; }
       .case-carousel-controls { margin: 7px 0 0; }
@@ -598,18 +601,17 @@
       .case-peak b { font-size: 15px; }
       .case-chart { min-height: 110px; max-height: 125px; }
       .case-axis { margin-top: 2px; }
-      .review-band { margin-top: 9px; padding-top: 9px; }
-      .review-band-head { margin-bottom: 6px; font-size: 9px; }
-      .review-status span { padding: 5px 7px; font-size: 8px; }
+      .sentiment-band { margin-top: 9px; padding-top: 9px; }
+      .sentiment-band-head { margin-bottom: 6px; font-size: 9px; }
+      .sentiment-legend { gap: 8px 14px; margin-top: 6px; font-size: 9px; }
       .case-excerpts { padding: 14px 20px; }
       .case-excerpts h3 { font-size: 15px; }
       .case-excerpts-intro { margin: 2px 0 6px; font-size: 10px; }
       .excerpt-heading { margin-bottom: 2px; }
       .processed-post { grid-template-columns: 76px minmax(0, 1fr); gap: 8px; padding: 4px 0; }
       .post-media-link { height: 52px; }
-      .post-media-placeholder { height: 52px; font-size: 8px; }
       .processed-post-meta { gap: 5px 8px; font-size: 8px; }
-      .review-chip { padding: 1px 5px; }
+      .sentiment-chip { padding: 1px 5px; }
       .processed-post blockquote { margin-top: 4px; font-size: 11px; line-height: 1.28; }
       .event-story-footer { padding: 7px 22px 12px; }
       .event-story-footer .case-caption { font-size: 9px; }
@@ -617,6 +619,12 @@
       .case-carousel-dots { margin-top: 4px; }
       .case-pipeline { margin-top: 4px; }
       .pipeline-step { padding: 5px 22px 5px 0; font-size: 8px; }
+    }
+
+    @media (min-width: 901px) and (max-width: 1120px) {
+      .case-study-head { grid-template-columns: 1fr; gap: 12px; align-items: start; }
+      .case-study h2 { max-width: 820px; }
+      .case-study-intro { max-width: 720px; }
     }
 
     @media (max-width: 900px) {
@@ -765,7 +773,7 @@
         </div>
       </div>
       <aside class="featured-event" aria-labelledby="featured-title">
-        <div class="featured-label"><span>Latest published analysis</span><span class="featured-status" id="featured-event-count">351 events online</span></div>
+        <div class="featured-label"><span>Featured recent analysis</span><span class="featured-status" id="featured-event-count">351 events online</span></div>
         <h2 id="featured-title">Explore the latest public event</h2>
         <p class="featured-summary" id="featured-summary">Open an event to follow attention, sentiment, topics, and emerging viewpoints across its published timeline.</p>
         <div class="featured-meta"><span id="featured-category">Event analysis</span><span><strong id="featured-posts">—</strong> posts</span><span id="featured-date">Updated release</span></div>
@@ -809,8 +817,8 @@
       <div class="case-study-inner">
         <div class="case-study-head">
           <div>
-            <p class="eyebrow">Latest published month</p>
-            <h2 id="case-study-title">Three serious events, traced through public discussion.</h2>
+            <p class="eyebrow">Recent high-volume examples</p>
+            <h2 id="case-study-title">Three major events, traced through public discussion.</h2>
           </div>
           <p class="case-study-intro">Explore examples from the current release window, connecting reviewed source posts and media with interaction structure and temporal activity.</p>
         </div>
@@ -979,61 +987,64 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${compactNumber(totalPosts)} posts in the current collection.`;
       document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(browsableEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
-      const eventDate = event => String(event.windowEnd || event.eventDate || event.updatedAt || "").slice(0, 10);
-      const latest = [...catalog.events].sort((a, b) => eventDate(b).localeCompare(eventDate(a)) || String(a.title).localeCompare(String(b.title)))[0];
-      document.querySelector("#featured-title").textContent = latest.title || "Explore the latest public event";
-      document.querySelector("#featured-summary").textContent = latest.summary || "Open the event to examine its published activity, sentiment, topics, and viewpoints.";
-      document.querySelector("#featured-category").textContent = String(latest.category || "Event analysis").replaceAll("_", " ");
-      document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(latest.postCount || latest.sourcePostCount || 0));
-      document.querySelector("#featured-date").textContent = eventDate(latest) || "Published event";
-      document.querySelector("#featured-link").href = `live/event.html?id=${encodeURIComponent(latest.id)}&return=index.html`;
+      const featured = catalog.events.find(event => event.id === "middleeastceasefirecrisis");
+      if (!featured) return;
+      document.querySelector("#featured-title").textContent = featured.title;
+      document.querySelector("#featured-summary").textContent = "Follow a major 2026 ceasefire crisis through shifts in public attention, sentiment, and the structure of the surrounding conversation.";
+      document.querySelector("#featured-category").textContent = String(featured.category || "Event analysis").replaceAll("_", " ");
+      document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(featured.postCount || featured.sourcePostCount || 0));
+      document.querySelector("#featured-date").textContent = "May–Jul 2026";
+      document.querySelector("#featured-link").href = `live/event.html?id=${encodeURIComponent(featured.id)}&return=index.html`;
     })();
 
     (() => {
       const demos = [
         {
-          title: "Four Years After ChatGPT's Public Preview",
-          window: "Oct 07 — Oct 19, 2026",
-          posts: 1194,
-          replies: 717,
-          quotes: 494,
-          threads: 263,
-          sourceUrl: "https://x.com/i/status/2110954538253344883",
-          points: [["2026-10-07T00:00:00Z",11],["2026-10-08T00:00:00Z",13],["2026-10-10T00:00:00Z",1],["2026-10-11T00:00:00Z",16],["2026-10-12T00:00:00Z",9],["2026-10-13T00:00:00Z",8],["2026-10-14T00:00:00Z",380],["2026-10-15T00:00:00Z",578],["2026-10-16T00:00:00Z",59],["2026-10-17T00:00:00Z",37],["2026-10-18T00:00:00Z",81],["2026-10-19T00:00:00Z",1]].map(([time, volume]) => ({ time, volume })),
+          id: "middleeastceasefirecrisis",
+          title: "Middle East Ceasefire Crisis",
+          window: "May 24 — Jun 21, 2026",
+          posts: 529925,
+          labeled: 271972,
+          bins: 112,
+          replies: 494716,
+          coverage: 87.1,
+          sentiment: [16.0, 9.2, 74.8],
           excerpts: [
-            { date: "Oct 16", type: "Quote post", role: "Delegation question", tag: "AI", text: "In 2022, Sam Altman described three stages of AI: assistants that answer questions, agents that perform tasks, and systems that discover knowledge. The question is no longer just what AI can do. It’s what we should delegate to it.", postUrl: "https://x.com/i/status/2110954538253344883" },
-            { date: "Oct 18", type: "Quote post", role: "Developer experience", tag: "CODE", text: "The model is a fast guesser. You still need something boring that can say yes or no. I’ve been building verifiers ever since.", postUrl: "https://x.com/i/status/2111693729039839383" },
-            { date: "Oct 19", type: "Quote post", role: "Public retrospective", tag: "TIME", text: "Can’t believe it has only been four years since ChatGPT was launched. Feels like forty.", postUrl: "https://x.com/i/status/2112077080410333583" }
+            { date: "Jun 2026", type: "Public post", tone: "positive", text: "The precision strikes have ended, the ceasefire has not been violated, and strong pressure continues to be applied to the Iranian nuclear issue—this is true strategic deterrence.", postUrl: "https://x.com/EstherEdenaw6f/status/2059086549795623011" },
+            { date: "Jun 2026", type: "News update", tone: "neutral", text: "U.S. conducts ‘self-defense’ strikes in Iran, targeting missile launch sites and mine-laying boats. CENTCOM says the strikes were meant to protect troops.", postUrl: "https://x.com/MeghUpdates/status/2059088824215708060" },
+            { date: "Jun 2026", type: "Public post", tone: "negative", text: "In what universe do we define this as ‘productive negotiations’ or a ‘valid ceasefire’?!", postUrl: "https://x.com/SaraHirschhorn1/status/2059084971793416666" }
           ]
         },
         {
-          title: "UK Assisted Dying Bill: Faith and Public Office",
-          window: "Oct 07 — Oct 14, 2026",
-          posts: 268,
-          replies: 268,
-          quotes: 0,
-          threads: 29,
-          sourceUrl: "https://x.com/i/status/2108502603801718932",
-          points: [["2026-10-07T00:00:00Z",4],["2026-10-08T00:00:00Z",151],["2026-10-09T00:00:00Z",85],["2026-10-10T00:00:00Z",26],["2026-10-12T00:00:00Z",1],["2026-10-14T00:00:00Z",1]].map(([time, volume]) => ({ time, volume })),
+          id: "surge300v2-127",
+          title: "America 250",
+          window: "Jun 11 — Jul 09, 2026",
+          posts: 137114,
+          labeled: 75730,
+          bins: 112,
+          replies: 125252,
+          coverage: 84.9,
+          sentiment: [40.2, 7.3, 52.5],
           excerpts: [
-            { date: "Oct 09", type: "Reply", role: "Pastoral concern", tag: "CARE", text: "Whatever one’s convictions concerning assisted dying, no one should underestimate the personal hurt that can arise when faith, conscience and public responsibility become the subject of confrontation. I hope there remains room for respectful conversation and healing.", postUrl: "https://x.com/i/status/2108502603801718932" },
-            { date: "Oct 09", type: "Reply", role: "Representative duty", tag: "CIVIC", text: "A representative role is not to be a perfect mirror of their electorate’s wishes. Your role is to vote for what you believe is best for them.", postUrl: "https://x.com/i/status/2108456882310684759" },
-            { date: "Oct 08", type: "Reply", role: "Institutional boundary", tag: "FAITH", text: "It seems a reasonable measure to distance himself from an appearance of agreement with something he is against and has a responsibility to represent his local church.", postUrl: "https://x.com/i/status/2108319115874300202" }
+            { date: "Jul 24", type: "Public post", tone: "positive", text: "America wasn't founded on shared ancestry or geography—it was founded on an idea: that every person is created equal and endowed with the rights to life, liberty, and the pursuit of happiness.", postUrl: "https://x.com/YankeeInstitute/status/2080663292104561090" },
+            { date: "Jul 09", type: "Media report", tone: "neutral", text: "Fox News peaked at over 5.4 million viewers for America's 250th Independence Day, with nearly 700,000 viewers in the demo.", postUrl: "https://x.com/RoadMN/status/2075264587486703751" },
+            { date: "Jul 19", type: "Public post", tone: "negative", text: "The America 250 celebration should have capped off with the scale and creativity of the World Cup halftime show. Instead, it ended up a missed opportunity and an embarrassment.", postUrl: "https://x.com/Bruce_DePuyt/status/2078936050777342041" }
           ]
         },
         {
-          title: "SpaceX Booster Catch: Continued Public Reaction",
-          window: "Oct 11 — Oct 25, 2026",
-          posts: 8,
-          replies: 8,
-          quotes: 1,
-          threads: 5,
-          sourceUrl: "https://x.com/SpaceX/status/1845442658397049011",
-          points: [["2026-10-11T12:00:00Z",1],["2026-10-13T18:00:00Z",2],["2026-10-14T00:00:00Z",2],["2026-10-25T18:00:00Z",3]].map(([time, volume]) => ({ time, volume })),
+          id: "hormuzenergyinflation2026",
+          title: "Strait of Hormuz Energy and Inflation Crisis",
+          window: "Jun 11 — Jul 09, 2026",
+          posts: 134487,
+          labeled: 52963,
+          bins: 112,
+          replies: 117908,
+          coverage: 89.7,
+          sentiment: [18.8, 14.6, 66.6],
           excerpts: [
-            { date: "Oct 14", type: "Reply", role: "Engineering reaction", tag: "SPACE", text: "Awesome — the timing and all of it. Congratulations to SpaceX and the team.", image: "assets/event-examples/recent-spacex-catch.jpg", alt: "SpaceX Super Heavy booster descending toward the Mechazilla catch tower", postUrl: "https://x.com/i/status/2110180830337520049", mediaUrl: "https://pbs.twimg.com/amplify_video_thumb/1845442585206325256/img/aKpvzYSImQ6_9niU.jpg" },
-            { date: "Oct 13", type: "Reply", role: "Ethical reflection", tag: "IDEA", text: "A rocket launches into space, fulfills its mission, returns to Earth, and lands safely, ready to fly again. True greatness is measured by what we can achieve without destroying.", postUrl: "https://x.com/i/status/2110078691153756521" },
-            { date: "Oct 13", type: "Reply", role: "Public response", tag: "TEAM", text: "Such beautiful moments captured — everyone celebrates you and the entire team.", postUrl: "https://x.com/i/status/2110137539285729583" }
+            { date: "Jul 23", type: "Market view", tone: "positive", text: "The Iran war and closure of the Strait of Hormuz could have produced a far worse energy shock. Oil is back above $100, but markets have remained relatively calm.", postUrl: "https://x.com/SteveForbesCEO/status/2080416053062943003" },
+            { date: "Jul 25", type: "News update", tone: "neutral", text: "President Trump ordered a halt to U.S. airstrikes on Iran after thirteen nights, with Oman mediating talks in Tehran to reopen the Strait of Hormuz.", postUrl: "https://x.com/MTS_alerts/status/2081152622179049533" },
+            { date: "Jul 25", type: "Public analysis", tone: "negative", text: "A tanker strike in the Strait of Hormuz moves through shipping insurance, oil prices, inflation, central-bank decisions, and eventually lands on someone's mortgage rate.", postUrl: "https://x.com/PhilosophyOnX/status/2081132691471438048" }
           ]
         }
       ];
@@ -1042,13 +1053,13 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       const counter = document.querySelector("#case-counter");
       if (!track || !dots || !counter) return;
       const number = value => new Intl.NumberFormat("en-US").format(value);
-      const postMarkup = ({ date, type, role, tag, text, image, alt, postUrl, mediaUrl = "" }) => `
-        <article class="processed-post">
+      const postMarkup = ({ date, type, tone, text, image, alt, postUrl, mediaUrl = "" }) => `
+        <article class="processed-post${image ? "" : " no-media"}">
           ${image
             ? `<a class="post-media-link" href="${postUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open the source post" data-media-source="${mediaUrl}"><img src="${image}" alt="${alt}" loading="lazy" decoding="async"></a>`
-            : `<span class="post-media-placeholder" aria-hidden="true"><span>${tag}</span></span>`}
+            : ""}
           <div class="processed-post-copy">
-            <div class="processed-post-meta"><span>${date}</span><span>${type}</span><span class="review-chip">${role}</span><a class="post-source-link" href="${postUrl}" target="_blank" rel="noopener noreferrer">Source&nbsp;&nearr;</a></div>
+            <div class="processed-post-meta"><span>${date}</span><span>${type}</span><span class="sentiment-chip ${tone}">${tone}</span><a class="post-source-link" href="${postUrl}" target="_blank" rel="noopener noreferrer">Source&nbsp;&nearr;</a></div>
             <blockquote>“${text}”</blockquote>
           </div>
         </article>`;
@@ -1060,9 +1071,9 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
           </header>
           <div class="case-proof" aria-label="${demo.title} processing summary">
             <div class="case-proof-item"><strong>${number(demo.posts)}</strong><span>collected posts</span></div>
+            <div class="case-proof-item"><strong>${number(demo.labeled)}</strong><span>sentiment labels</span></div>
+            <div class="case-proof-item"><strong>${number(demo.bins)}</strong><span>six-hour bins</span></div>
             <div class="case-proof-item"><strong>${number(demo.replies)}</strong><span>reply posts</span></div>
-            <div class="case-proof-item"><strong>${number(demo.quotes)}</strong><span>quote posts</span></div>
-            <div class="case-proof-item"><strong>${number(demo.threads)}</strong><span>linked threads</span></div>
           </div>
           <div class="case-study-grid">
             <div class="case-chart-panel">
@@ -1074,9 +1085,14 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
                 <text x="380" y="125" text-anchor="middle" fill="#8fa1b9" font-size="13">Loading released event series...</text>
               </svg>
               <div class="case-axis" id="case-axis-${index}" aria-hidden="true"><span>Start</span><span>Event timeline</span><span>End</span></div>
-              <div class="review-band">
-                <div class="review-band-head"><span>Current processing status</span><span>No sentiment inferred for this sample</span></div>
-                <div class="review-status"><span>Thread-linked</span><span>Manually reviewed</span><span>Sentiment pending</span></div>
+              <div class="sentiment-band">
+                <div class="sentiment-band-head"><span>Sentiment distribution</span><span>${demo.coverage}% of event-window posts labeled</span></div>
+                <div class="sentiment-mix" aria-label="${demo.sentiment[0]}% positive, ${demo.sentiment[1]}% neutral, ${demo.sentiment[2]}% negative">
+                  <span style="width:${demo.sentiment[0]}%;background:#4d8b62"></span>
+                  <span style="width:${demo.sentiment[1]}%;background:#9aa7b8"></span>
+                  <span style="width:${demo.sentiment[2]}%;background:#b54d42"></span>
+                </div>
+                <div class="sentiment-legend"><span><i style="background:#4d8b62"></i>${demo.sentiment[0]}% positive</span><span><i style="background:#9aa7b8"></i>${demo.sentiment[1]}% neutral</span><span><i style="background:#b54d42"></i>${demo.sentiment[2]}% negative</span></div>
               </div>
             </div>
             <aside class="case-excerpts">
@@ -1087,8 +1103,8 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
             </aside>
           </div>
           <footer class="event-story-footer">
-            <p class="case-caption">Selected from collected public posts. Text is lightly trimmed after relevance and safety review; sentiment labels are omitted until processing is complete.</p>
-            <a class="case-link" href="${demo.sourceUrl}" target="_blank" rel="noopener noreferrer">Open a source post&nbsp;&nearr;</a>
+            <p class="case-caption">Selected from collected public posts. Excerpts are lightly trimmed for readability; the chart and sentiment mix use the published event analysis.</p>
+            <a class="case-link" href="live/event.html?id=${encodeURIComponent(demo.id)}&return=index.html">Open full event analysis&nbsp;&rarr;</a>
           </footer>
         </article>`).join("");
       dots.innerHTML = demos.map((demo, index) => `<button class="case-dot" type="button" aria-label="Show ${demo.title}" aria-current="${index === 0}"></button>`).join("");
@@ -1131,14 +1147,24 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
         add("line", { x1: peakX, y1: peakY, x2: peakX, y2: bottom, stroke: "#8fd4aa", "stroke-width": 1, "stroke-dasharray": "4 5", opacity: .75 });
         add("circle", { cx: peakX, cy: peakY, r: 5, fill: "#0e1b34", stroke: "#8fd4aa", "stroke-width": 3 });
       };
-      demos.forEach((demo, index) => {
-        const points = demo.points;
-        drawChart(document.querySelector(`#case-chart-${index}`), points, index);
-        const peak = Math.max(...points.map(point => Number(point.volume || 0)));
-        document.querySelector(`#case-peak-${index}`).textContent = number(peak);
-        const formatDate = value => new Date(value).toLocaleDateString("en-US", { month: "short", day: "2-digit", timeZone: "UTC" });
-        const axis = document.querySelector(`#case-axis-${index}`);
-        axis.innerHTML = `<span>${formatDate(points[0].time)}</span><span>Event timeline</span><span>${formatDate(points[points.length - 1].time)}</span>`;
+      demos.forEach(async (demo, index) => {
+        try {
+          const response = await fetch(`live/data/event-details-v1/${encodeURIComponent(demo.id)}.json`);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const detail = await response.json();
+          const releasedEvent = detail.event || detail;
+          const points = Array.isArray(releasedEvent.points) ? releasedEvent.points.filter(point => Number.isFinite(Number(point.volume))) : [];
+          if (points.length < 2) throw new Error("Event series unavailable");
+          drawChart(document.querySelector(`#case-chart-${index}`), points, index);
+          const peak = Math.max(...points.map(point => Number(point.volume || 0)));
+          document.querySelector(`#case-peak-${index}`).textContent = number(peak);
+          const formatDate = value => new Date(value).toLocaleDateString("en-US", { month: "short", day: "2-digit", timeZone: "UTC" });
+          const axis = document.querySelector(`#case-axis-${index}`);
+          axis.innerHTML = `<span>${formatDate(points[0].time)}</span><span>Event timeline</span><span>${formatDate(points[points.length - 1].time)}</span>`;
+        } catch (error) {
+          document.querySelector(`#case-chart-${index}`).innerHTML = '<text x="380" y="125" text-anchor="middle" fill="#8fa1b9" font-size="13">Published series is temporarily unavailable.</text>';
+          document.querySelector(`#case-peak-${index}`).textContent = "—";
+        }
       });
 
       let activeIndex = 0;
