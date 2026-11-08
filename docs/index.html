@@ -970,6 +970,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
   <script src="live/data/event-catalog-v1.js"></script>
   <script src="live/data/collection-summary-v1.js"></script>
   <script>
+    const ceasefireDisplayTitle = "U.S.–Iran Ceasefire Negotiations";
     (() => {
       const catalog = window.SURGE_EVENT_CATALOG;
       if (!catalog || !Array.isArray(catalog.events) || !catalog.events.length) return;
@@ -989,7 +990,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       const featured = catalog.events.find(event => event.id === "middleeastceasefirecrisis");
       if (!featured) return;
-      document.querySelector("#featured-title").textContent = featured.title;
+      document.querySelector("#featured-title").textContent = ceasefireDisplayTitle;
       document.querySelector("#featured-summary").textContent = "Follow a major 2026 ceasefire crisis through shifts in public attention, sentiment, and the structure of the surrounding conversation.";
       document.querySelector("#featured-category").textContent = String(featured.category || "Event analysis").replaceAll("_", " ");
       document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(featured.postCount || featured.sourcePostCount || 0));
@@ -1001,7 +1002,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       const demos = [
         {
           id: "middleeastceasefirecrisis",
-          title: "Middle East Ceasefire Crisis",
+          title: ceasefireDisplayTitle,
           window: "May 24 — Jun 21, 2026",
           posts: 529925,
           labeled: 271972,
