@@ -991,7 +991,7 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
       const featured = catalog.events.find(event => event.id === "surge300v2-127");
       if (!featured) return;
-      document.querySelector("#featured-title").textContent = "AMERICAN250";
+      document.querySelector("#featured-title").textContent = "American 250";
       document.querySelector("#featured-summary").textContent = "Explore public discussion around the 250th anniversary of U.S. independence.";
       document.querySelector("#featured-category").textContent = String(featured.category || "Event analysis").replaceAll("_", " ");
       document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(featured.postCount || featured.sourcePostCount || 0));
