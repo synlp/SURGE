@@ -989,13 +989,13 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${compactNumber(totalPosts)} posts in the current collection.`;
       document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(browsableEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
-      const featured = catalog.events.find(event => event.id === "middleeastceasefirecrisis");
+      const featured = catalog.events.find(event => event.id === "surge300v2-127");
       if (!featured) return;
-      document.querySelector("#featured-title").textContent = ceasefireDisplayTitle;
-      document.querySelector("#featured-summary").textContent = "Follow a major 2026 ceasefire crisis through shifts in public attention, sentiment, and the structure of the surrounding conversation.";
+      document.querySelector("#featured-title").textContent = "AMERICAN250";
+      document.querySelector("#featured-summary").textContent = "Explore public discussion around the 250th anniversary of U.S. independence.";
       document.querySelector("#featured-category").textContent = String(featured.category || "Event analysis").replaceAll("_", " ");
       document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(featured.postCount || featured.sourcePostCount || 0));
-      document.querySelector("#featured-date").textContent = "May–Jul 2026";
+      document.querySelector("#featured-date").textContent = "July 4, 2026";
       document.querySelector("#featured-link").href = `live/event.html?id=${encodeURIComponent(featured.id)}&return=index.html`;
     })();
 
