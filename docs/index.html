@@ -989,13 +989,13 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${compactNumber(totalPosts)} posts in the current collection.`;
       document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(browsableEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
-      const featured = catalog.events.find(event => event.id === "surge300v2-127");
+      const featured = catalog.events.find(event => event.id === "fifaworldcup2026kickoff");
       if (!featured) return;
-      document.querySelector("#featured-title").textContent = "American 250";
-      document.querySelector("#featured-summary").textContent = "Explore public discussion around the 250th anniversary of U.S. independence.";
+      document.querySelector("#featured-title").textContent = "2026 FIFA World Cup Kickoff";
+      document.querySelector("#featured-summary").textContent = "Follow public discussion around the opening of the 2026 FIFA World Cup.";
       document.querySelector("#featured-category").textContent = String(featured.category || "Event analysis").replaceAll("_", " ");
       document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(featured.postCount || featured.sourcePostCount || 0));
-      document.querySelector("#featured-date").textContent = "July 4, 2026";
+      document.querySelector("#featured-date").textContent = "June 11, 2026";
       document.querySelector("#featured-link").href = `live/event.html?id=${encodeURIComponent(featured.id)}&return=index.html`;
     })();
 
