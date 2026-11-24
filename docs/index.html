@@ -989,10 +989,10 @@ print(len(meta['event_names']), len(train.dataset), len(val.dataset), len(test.d
       document.querySelector("#release-scale").textContent = `${new Intl.NumberFormat("en-US").format(totalEvents)} events and ${compactNumber(totalPosts)} posts in the current collection.`;
       document.querySelector("#featured-event-count").textContent = `${new Intl.NumberFormat("en-US").format(browsableEvents)} events online`;
       document.querySelector("#registry-event-count").textContent = new Intl.NumberFormat("en-US").format(totalEvents);
-      const featured = catalog.events.find(event => event.id === "hormuzenergyinflation2026");
+      const featured = catalog.events.find(event => event.id === "aimodelexportcontrols2026");
       if (!featured) return;
-      document.querySelector("#featured-title").textContent = "Strait of Hormuz Energy Crisis";
-      document.querySelector("#featured-summary").textContent = "Explore public discussion of shipping disruption, energy prices, and inflation around the Strait of Hormuz.";
+      document.querySelector("#featured-title").textContent = "AI Model Export Controls";
+      document.querySelector("#featured-summary").textContent = "Explore public discussion of AI model export controls and follow shifts in attention and sentiment.";
       document.querySelector("#featured-category").textContent = String(featured.category || "Event analysis").replaceAll("_", " ");
       document.querySelector("#featured-posts").textContent = new Intl.NumberFormat("en-US").format(Number(featured.postCount || featured.sourcePostCount || 0));
       document.querySelector("#featured-date").textContent = "Jun 11–Jul 9, 2026";
